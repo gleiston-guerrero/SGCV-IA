@@ -1,23 +1,24 @@
-# Grabaciones de Sesiones
-En este repositorio se encuentran las **grabaciones correspondientes a la Sesión 1 y Sesión 2** del proyecto.
-## Contenido
--  **Sesión 1:** Grabación de la primera sesión.
--  **Sesión 2:** Grabación de la segunda sesión.
+Grabaciones de Sesiones
 
-##  Enlaces a las grabaciones (los enlaces descargan el video no habre otra pagina)
+En este repositorio se encuentran las grabaciones correspondientes a la Sesión 1 y Sesión 2 del proyecto.
 
-Las grabaciones fueron agregadas mediante **enlaces externos**, debido a que los archivos de video superan el límite de **25 MB** permitido para subir directamente al repositorio.
+Contenido
+Sesion_1.md: Fecha, participantes, roles, tema tratado y enlace a la grabación de la primera sesión.
+Sesion_2.md: Fecha, participantes, roles, tema tratado y enlace a la grabación de la segunda sesión.
 
-### Sesión 1
+Nota: Los videos no fueron subidos directamente al repositorio debido a que superan el límite de tamaño de archivo permitido (25 MB). Por este motivo, se utilizaron enlaces externos para acceder a las grabaciones (ver detalle en cada archivo de sesión).
 
-[Ver grabación de la Sesión 1](https://github.com/ramaguas-ship-it/SGCV-IA/releases/download/Secion_1/Secion_1.2026-09-06.124311.mp4)
+Estructura de la carpeta
+Grabaciones/
+├── Sesiones.md        # Este archivo: índice general de la carpeta
+├── Sesion_1.md       # Detalle de la Sesión 1: fecha, participantes, roles, tema y enlace
+└── Sesion_2.md       # Detalle de la Sesión 2: fecha, participantes, roles, tema y enlace
 
-### Sesión 2
+Orden de lectura recomendado:
 
-[Ver grabación de la Sesión 2](https://github.com/ramaguas-ship-it/SGCV-IA/releases/download/Sesion_2/Sesion.2.mp4)
-
-> **Nota:** Los videos no fueron subidos directamente al repositorio debido a que superan el límite de tamaño de archivo permitido. Por este motivo, se utilizaron enlaces externos para acceder a las grabaciones.
-
-## 📌 Información
+Sesiones.md — punto de entrada, resume qué hay en la carpeta.
+Sesion_1.md — contexto completo de la primera sesión (asignación de tareas).
+Sesion_2.md — contexto completo de la segunda sesión (avance de tareas).
+Información
 
 Este repositorio tiene como finalidad almacenar y organizar las evidencias correspondientes a las sesiones realizadas.
