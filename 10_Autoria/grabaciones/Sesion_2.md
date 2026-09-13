@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Fecha** | 11 de septiembre de 2026 |
+| **Fecha** | 10 de septiembre de 2026 |
 | **Tema** | Presentación de lo finalizado por cada integrante |
 | **Grabación** | [Ver grabación de la Sesión 2](https://github.com/ramaguas-ship-it/SGCV-IA/releases/download/Sesion_2/Sesion.2.mp4) |
 
