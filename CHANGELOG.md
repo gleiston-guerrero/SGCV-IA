@@ -2,6 +2,42 @@
 
 Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
+## [2B-cierre] - 2026-09-15
+
+### Corregido
+- 3 capturas de Mesías en `10_Autoria/capturas/` con fecha imposible
+  (`2026-10-09`, posterior al corte) renombradas a la fecha real de
+  captura (`2026-07-09`); eliminados los espacios en el nombre del
+  archivo `..._actualizacionmailmap mailmap.png` que rompían los
+  scripts de conteo.
+- 9 capturas de Barrionuevo y Marcillo en `10_Autoria/capturas/`
+  renombradas para eliminar espacios y guiones medios, ajustándose al
+  patrón `AAAA-MM-DD_Integrante_Actividad.ext`.
+- `CITATION.cff`: `repository-code` y el `origin=` del identificador
+  SWHID actualizados de `ramaguas-ship-it/SGCV-IA` a
+  `gleiston-guerrero/SGCV-IA` tras la transferencia de propiedad del
+  repositorio.
+- `README.md` (raíz): las 3 instrucciones `git clone` actualizadas al
+  nuevo propietario del repositorio; corregido el conteo de
+  `10_Autoria/capturas/` de 19 a 20 imágenes.
+
+### Añadido
+- `10_Autoria/grabaciones/Sesion_1.mp4` y `Sesion_2.mp4`: grabaciones
+  de sesión de trabajo depositadas directamente en el repositorio
+  (23,7 MB y 24,2 MB respectivamente, bajo el límite de 25 MB de
+  GitHub), sustituyendo los enlaces externos previos.
+- `10_Autoria/grabaciones/README.md`: tabla de inventario con fecha,
+  participantes, duración, tamaño y hash SHA-256 de ambas grabaciones.
+- `10_Autoria/fuentes_editables/`: 53 archivos (22 `.drawio`, 4 `.py`,
+  26 `.png` exportados y 1 `README.md`) con las fuentes editables de
+  los diagramas UML y del modelado organizacional i*, como evidencia
+  de autoría del modelado (elemento A3).
+
+### Eliminado
+- `10_Autoria/grabaciones/Sesiones.md`, `Sesion_1.md` y `Sesion_2.md`:
+  reemplazados por los archivos de video depositados directamente y
+  su nuevo `README.md` de inventario.
+
 ## [2B] - 2026-09-01
 
 ### Añadido
