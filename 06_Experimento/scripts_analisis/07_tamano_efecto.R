@@ -184,8 +184,6 @@ print(tabla_n_perfiles, row.names = FALSE)
 reporte_potencia <- c(
   "# Justificación de potencia estadística — comparación entre perfiles",
   "",
-  sprintf("Generado: %s", format(Sys.time(), "%Y-%m-%d %H:%M:%S")),
-  "",
   "## Requisito de la guía",
   "",
   "n ≥ 60 por perfil dominante, o justificación explícita con cálculo de",
