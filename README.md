@@ -435,11 +435,11 @@ Los materiales de la presentación final se encuentran en:
 ```
 
 Los 5 archivos están completos: `presentacion.pptx`, `presentacion.pdf`, `guion.md` (con el
-reparto de tiempos por integrante), `video_defensa.mp4` y `folleto_una_hoja.pdf`.
+reparto de tiempos por integrante), `video_defensa.mp4` y `folleto_defensa_SGCV-IA.pdf`.
 
-> Pendiente aparte de esta carpeta: `guion.md` y `presentacion.pptx` todavía citan el DOI de
-> Zenodo y el OSF antiguos (ver nota de consistencia en "Identificadores externos"); corregir
-> antes de la defensa.
+> Pendiente aparte de esta carpeta: `guion.md` todavía cita el DOI de Zenodo y el OSF antiguos
+> (ver nota de consistencia en "Identificadores externos"); corregir antes de la defensa.
+> `presentacion.pptx` ya fue corregido.
 
 ---
 
