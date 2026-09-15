@@ -21,7 +21,7 @@ evidencia de autoría. El detalle de cada elemento:
 ## Nota sobre A3 — Fuentes editables de los diagramas
 
 Las fuentes editables de los diagramas UML y del modelado organizacional i* están depositadas
-en `fuentes_editables/`, cada una junto a la imagen exportada que genera, como evidencia
+en `fuentes_editables/`, cada una junto a la imagen exportada (png) que genera, como evidencia
 directa de autoría del modelado.
 
 | Conjunto de diagramas | Fuente editable | Formato |
