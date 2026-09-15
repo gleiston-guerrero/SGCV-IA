@@ -1,0 +1,9 @@
+Codigo,Descripcion,Frecuencia,N_total,Participantes
+IA-1,Moderate-to-high acceptance of or confidence in AI-assisted diagnostic suggestions (self-reported agreement/trust),11,16,P01;P03;P05;P09;P10;P11;P12;P13;P14;P15;P16
+IA-2,Rejects or limits automated/remote diagnosis without physical evaluation of the patient,5,16,P01;P02;P07;P09;P11
+IA-3,Requires that the veterinarian review/correct AI suggestions before applying them,4,16,P01;P03;P04;P12
+IA-4,"Requires conditions such as validated scientific literature, data protection, or periodic updates to trust AI suggestions",6,16,P06;P08;P13;P14;P15;P16
+IA-5,"Skepticism toward unvalidated internet sources (e.g., search engines, chatbots) consulted by pet owners",1,16,P16
+IA-6,Interest in AI reducing workload for record-keeping and treatment tasks,1,16,P10
+IA-7,AI-assisted dose calculation by patient weight,1,16,P01
+IA-8,AI-assisted messaging/chatbot for appointment scheduling,1,16,P08

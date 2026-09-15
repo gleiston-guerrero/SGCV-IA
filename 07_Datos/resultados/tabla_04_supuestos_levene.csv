@@ -1,0 +1,5 @@
+"pregunta","gl1","gl2","estadistico_F","valor_p","nota"
+"1. ¿Cómo califica la organización y gestión de la información en las clínicas veterinarias que conoce o utiliza?",3,206,20.8025,0,"rechaza homogeneidad (p < 0.05)"
+"3. ¿Qué tan importante considera el uso de un sistema informático para mejorar la atención y gestión de una clínica veterinaria?",3,206,1.9404,0.1242,"no rechaza homogeneidad"
+"5. ¿Qué tan útil considera recibir recordatorios de citas, vacunas, tratamientos o controles veterinarios mediante un sistema digital?",3,206,10.1368,0,"rechaza homogeneidad (p < 0.05)"
+"6. ¿Qué tan de acuerdo está con el uso de Inteligencia Artificial como apoyo para mejorar la gestión y atención en las clínicas veterinarias?",3,206,10.2298,0,"rechaza homogeneidad (p < 0.05)"
