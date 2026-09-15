@@ -54,7 +54,7 @@ Nuestro marco teórico se sustenta en los trabajos de Chazette y Schneider (2020
 
 En cuanto al diseño metodológico, aplicamos un estudio de caso con elicitación cualitativa mediante entrevistas semiestructuradas, complementado con un cuestionario cuantitativo dirigido a cuatro perfiles de usuario distintos.
 
-Un aspecto que quiero resaltar es el registro previo: inscribimos nuestro protocolo de investigación en el Open Science Framework, en osf.io/wkg32, antes de iniciar la recolección de datos. Esto funciona como salvaguarda metodológica contra el HARKing y el p-hacking, es decir, contra formular hipótesis después de ver los resultados o manipular el análisis para obtener resultados favorables.
+Un aspecto que quiero resaltar es el registro previo: inscribimos nuestro protocolo de investigación en el Open Science Framework, en osf.io/r5p8d, antes de iniciar la recolección de datos. Esto funciona como salvaguarda metodológica contra el HARKing y el p-hacking, es decir, contra formular hipótesis después de ver los resultados o manipular el análisis para obtener resultados favorables.
 
 La unidad de análisis de este estudio es específicamente el módulo de sugerencias diagnósticas por IA, correspondiente a los requisitos funcionales RF-17, RF-18 y RF-19 del propio sistema SGCV-IA.
 
@@ -174,7 +174,7 @@ Con este prototipo cubrimos los requisitos funcionales de prioridad Must-have: l
 ## Diapositiva 15 — Cierre
 **Habla: Marcillo Ponce**
 
-Con esto concluye la presentación de nuestro proyecto SGCV-IA. Todos los artefactos del estudio son públicos y verificables: el repositorio en GitHub, en github.com/ramaguas-ship-it/SGCV-IA; el conjunto de datos con DOI en Zenodo; y el protocolo de registro previo en el Open Science Framework, en osf.io/wkg32.
+Con esto concluye la presentación de nuestro proyecto SGCV-IA. Todos los artefactos del estudio son públicos y verificables: el repositorio en GitHub, en github.com/ramaguas-ship-it/SGCV-IA; el conjunto de datos con DOI en Zenodo, 10.5281/zenodo.22558095; y el protocolo de registro previo en el Open Science Framework, en osf.io/r5p8d.
 
 Agradecemos al tribunal por su tiempo y atención, y quedamos atentos a sus observaciones.
 
