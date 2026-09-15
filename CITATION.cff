@@ -30,11 +30,11 @@ authors:
     affiliation: "Universidad Técnica Estatal de Quevedo"
     orcid: "https://orcid.org/0000-0001-5990-2357"
 license: "MIT"
-repository-code: "https://github.com/ramaguas-ship-it/SGCV-IA"
+repository-code: "https://github.com/gleiston-guerrero/SGCV-IA"
 doi: "10.5281/zenodo.22558095"
 identifiers:
   - type: swhid
-    value: "swh:1:dir:61ecd6edd0a82807ae244055a854fa84afbd0810;origin=https://github.com/ramaguas-ship-it/SGCV-IA;visit=swh:1:snp:1da151cabf50d5976f9f0e8edabbe3b86e625451;anchor=swh:1:rev:54dc96f04be3df212bafc54de6703b07e3f5f4ab"
+    value: "swh:1:dir:61ecd6edd0a82807ae244055a854fa84afbd0810;origin=https://github.com/gleiston-guerrero/SGCV-IA;visit=swh:1:snp:1da151cabf50d5976f9f0e8edabbe3b86e625451;anchor=swh:1:rev:54dc96f04be3df212bafc54de6703b07e3f5f4ab"
 keywords:
   - "Ingeniería de Requerimientos"
   - "Inteligencia Artificial"
