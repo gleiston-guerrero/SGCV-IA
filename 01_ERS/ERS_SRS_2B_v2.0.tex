@@ -3653,10 +3653,9 @@ permisos correspondientes a su rol. \textbf{Flujo principal:}
   El sistema concede el acceso y muestra el panel correspondiente.
 \end{enumerate}
 
-\textbf{Flujos alternativos:} A1: Credenciales incorrectas → El sistema informa el error y permite un
-nuevo intento. A2: Campos obligatorios vacíos → El sistema solicita
-completar la información. A3: Cuenta inactiva → El sistema deniega el
-acceso. \textbf{Postcondición (fallo):} El usuario no accede al sistema.
+\textbf{Flujos alternativos:} Flujo alternativo A1: Credenciales incorrectas → el sistema informa el error y permite un nuevo intento, sin bloquear la cuenta. A2: Campos obligatorios vacíos → el sistema solicita completar la información antes de reintentar el envío.
+\textbf{Excepciones:} Excepción E1: Condición de disparo: la cuenta del usuario está marcada como inactiva o suspendida. Conducta del sistema: deniega el acceso y no procesa las credenciales, aunque sean correctas. Poscondición: el usuario permanece fuera del sistema y no se genera ninguna sesión.
+\textbf{Postcondición (fallo):} El usuario no accede al sistema.
 \end{minipage} \\
 \hline
 \endhead
@@ -3693,11 +3692,9 @@ el historial del paciente es actualizado. \textbf{Flujo principal:}
   El sistema actualiza el historial clínico.
 \end{enumerate}
 
-\textbf{Flujos alternativos:} A1: El veterinario solicita sugerencias de IA → El
-sistema presenta recomendaciones para apoyar el diagnóstico.
-A2: El veterinario registra un seguimiento nutricional → El sistema almacena la información correspondiente. A3: El veterinario registra una comunicación con el dueño → El sistema
-registra la comunicación en el historial. A4: Información incompleta → El sistema solicita corregir los datos
-antes de guardar. \textbf{Postcondición (fallo):} La atención clínica no es registrada.
+\textbf{Flujos alternativos:} Flujo alternativo A1: El veterinario solicita sugerencias de IA → el sistema presenta recomendaciones para apoyar el diagnóstico (deriva a CU-06). Flujo alternativo A2: El veterinario registra un seguimiento nutricional → el sistema almacena la información correspondiente (deriva a CU-07). Flujo alternativo A3: El veterinario registra una comunicación con el dueño → el sistema registra la comunicación en el historial (deriva a CU-08).
+\textbf{Excepciones:} Excepción E1: Condición de disparo: la información clínica ingresada es incompleta o inconsistente al intentar guardar. Conducta del sistema: rechaza el guardado y señala los campos faltantes o inválidos. Poscondición: la atención clínica no se registra y el historial del paciente permanece sin modificar.
+\textbf{Postcondición (fallo):} La atención clínica no es registrada.
 \end{minipage} \\
 \hline
 \endhead
@@ -3730,9 +3727,9 @@ correctamente. \textbf{Flujo principal:}
   El veterinario revisa la información médica registrada.
 \end{enumerate}
 
-\textbf{Flujos alternativos:} A1: El paciente no existe → El sistema informa que no se encontraron
-registros. A2: El veterinario exporta el historial → El sistema genera
-el reporte clínico. \textbf{Postcondición (fallo):} No se muestra información del historial.
+\textbf{Flujos alternativos:} Flujo alternativo A1: El veterinario exporta el historial → el sistema genera el reporte clínico en formato descargable, sin alterar el historial original.
+\textbf{Excepciones:} Excepción E1: Condición de disparo: la búsqueda no encuentra un paciente registrado con los criterios ingresados. Conducta del sistema: informa que no se encontraron registros y no muestra información parcial ni de otro paciente. Poscondición: no se muestra ningún historial clínico.
+\textbf{Postcondición (fallo):} No se muestra información del historial.
 \end{minipage} \\
 \hline
 \endhead
@@ -3766,8 +3763,9 @@ Sistema de Notificaciones \textbf{Precondiciones:} El personal administrativo ha
   El sistema guarda los cambios realizados.
 \end{enumerate}
 
-\textbf{Flujos alternativos:} A1: Stock insuficiente → El sistema rechaza la operación. A2: Stock mínimo alcanzado → El sistema genera una alerta de
-abastecimiento. \textbf{Postcondición (fallo):} El inventario permanece sin cambios.
+\textbf{Flujos alternativos:} Flujo alternativo A1: Stock mínimo alcanzado tras una salida válida → el sistema registra el movimiento y además genera una alerta de abastecimiento (deriva a CU-09), sin interrumpir la operación.
+\textbf{Excepciones:} Excepción E1: Condición de disparo: se intenta registrar una salida de producto por una cantidad mayor al stock disponible. Conducta del sistema: rechaza la operación antes de descontar el stock. Poscondición: el inventario permanece sin cambios y la salida queda sin registrar.
+\textbf{Postcondición (fallo):} El inventario permanece sin cambios.
 \end{minipage} \\
 \hline
 \endhead
@@ -3804,10 +3802,9 @@ actualizada correctamente. \textbf{Flujo principal:}
   El sistema guarda los cambios realizados.
 \end{enumerate}
 
-\textbf{Flujos alternativos:} A1: El personal administrativo asigna permisos al empleado → El sistema actualiza
-el rol y los permisos correspondientes. A2: El personal administrativo restablece la contraseña del empleado → El sistema
-genera una nueva contraseña o solicita definir una nueva. A3: Información inválida → El sistema informa los errores encontrados y
-solicita corregirlos. \textbf{Postcondición (fallo):} Los cambios no son almacenados.
+\textbf{Flujos alternativos:} Flujo alternativo A1: El personal administrativo asigna permisos al empleado → el sistema actualiza el rol y los permisos correspondientes. Flujo alternativo A2: El personal administrativo restablece la contraseña del empleado → el sistema genera una nueva contraseña temporal o solicita definir una nueva en el siguiente inicio de sesión.
+\textbf{Excepciones:} Excepción E1: Condición de disparo: la información ingresada al modificar el empleado es inválida (formato incorrecto, campo obligatorio vacío, rol inexistente). Conducta del sistema: informa los errores encontrados y no guarda ningún campo hasta que se corrijan. Poscondición: los datos del empleado quedan sin modificar.
+\textbf{Postcondición (fallo):} Los cambios no son almacenados.
 \end{minipage} \\
 \hline
 \endhead
@@ -3852,11 +3849,9 @@ formalmente rechazada por el veterinario. \textbf{Flujo principal}
   sugerencia validada al historial clínico.
 \end{enumerate}
 
-\textbf{Flujos alternativos} A1: El servicio de IA no responde → El sistema notifica la
-indisponibilidad y permite continuar la consulta sin sugerencia
-(RNF-10). A2: El veterinario rechaza la sugerencia → El sistema registra el
-rechazo sin incorporar la sugerencia al historial. \textbf{Postcondición (fallo):} Ninguna sugerencia queda registrada sin
-una acción explícita del veterinario.
+\textbf{Flujos alternativos:} Flujo alternativo A1: El veterinario rechaza la sugerencia → el sistema registra el rechazo sin incorporar la sugerencia al historial, dejando constancia de que fue evaluada y descartada.
+\textbf{Excepciones:} Excepción E1: Condición de disparo: el motor de IA externo no responde dentro del tiempo límite establecido o el servicio está caído. Conducta del sistema: notifica la indisponibilidad y permite continuar la consulta sin sugerencia (RNF-10). Poscondición: la atención clínica puede completarse sin componente de IA; no se registra ninguna sugerencia. Excepción E2: Condición de disparo: el motor de IA responde, pero el nivel de confianza de la sugerencia está por debajo del umbral mínimo definido para el sistema (RNF-09). Conducta del sistema: no presenta la sugerencia como recomendación aplicable, informa al veterinario que el nivel de confianza es insuficiente, y deriva la decisión diagnóstica exclusivamente al criterio del veterinario. Poscondición: no se registra ninguna sugerencia de IA en el historial; la decisión queda documentada como responsabilidad exclusiva del profesional humano.
+\textbf{Postcondición (fallo):} Ninguna sugerencia queda registrada sin una acción explícita del veterinario.
 \end{minipage} \\
 \hline
 \endhead
@@ -3892,8 +3887,9 @@ historial de seguimiento y la recomendación nutricional se actualiza. \textbf{F
   El veterinario revisa y comunica la recomendación al propietario.
 \end{enumerate}
 
-\textbf{Flujos alternativos} A1: Datos insuficientes para generar recomendación → El sistema solicita
-completar raza, edad o peso antes de continuar. \textbf{Postcondición (fallo):} El registro de seguimiento no se guarda.
+\textbf{Flujos alternativos:} Flujo alternativo A1: Datos insuficientes para generar recomendación → el sistema solicita completar raza, edad o peso antes de continuar, sin descartar los datos ya ingresados.
+\textbf{Excepciones:} Excepción E1: Condición de disparo: el módulo de cálculo de recomendaciones nutricionales falla o no está disponible al momento de generar la recomendación. Conducta del sistema: registra el dato de peso, edad y condición corporal en el historial de seguimiento, pero marca la recomendación nutricional como pendiente de generación automática. Poscondición: el seguimiento queda registrado sin recomendación nutricional asociada, disponible para revisión manual posterior.
+\textbf{Postcondición (fallo):} El registro de seguimiento no se guarda.
 \end{minipage} \\
 \hline
 \endhead
@@ -3930,9 +3926,9 @@ historial del paciente con fecha y resumen. \textbf{Flujo principal}
   El sistema registra fecha, tipo y resumen en la ficha del paciente.
 \end{enumerate}
 
-\textbf{Flujos alternativos} A1: Falla el servicio de mensajería externo → El sistema notifica el
-error y permite reintentar el envío. \textbf{Postcondición (fallo):} La comunicación no queda registrada como
-enviada.
+\textbf{Flujos alternativos:} Flujo alternativo A1: Falla transitoria del servicio de mensajería externo → el sistema notifica el error y permite reintentar el envío manualmente, sin perder el mensaje redactado.
+\textbf{Excepciones:} Excepción E1: Condición de disparo: el servicio de mensajería externo (WhatsApp) permanece no disponible tras los reintentos permitidos. Conducta del sistema: marca la comunicación como no entregada y la deja visible en la ficha del paciente para seguimiento manual por otro medio. Poscondición: la comunicación no queda registrada como enviada, pero sí como intento fallido trazable.
+\textbf{Postcondición (fallo):} La comunicación no queda registrada como enviada.
 \end{minipage} \\
 \hline
 \endhead
@@ -3969,9 +3965,9 @@ atendidas. \textbf{Flujo principal}
   El usuario marca una alerta como atendida.
 \end{enumerate}
 
-\textbf{Flujos alternativos} A1: No hay alertas activas → El sistema muestra el centro de
-notificaciones vacío. \textbf{Postcondición (fallo):} La alerta permanece activa si no es
-marcada como atendida.
+\textbf{Flujos alternativos:} Flujo alternativo A1: No hay alertas activas → el sistema muestra el centro de notificaciones vacío, sin generar error.
+\textbf{Excepciones:} Excepción E1: Condición de disparo: un producto del inventario no tiene fecha de vencimiento registrada, impidiendo calcular su alerta de caducidad. Conducta del sistema: excluye el producto del cálculo automático de alertas y lo marca en el catálogo como pendiente de revisión manual de datos. Poscondición: el producto no genera alertas hasta que se complete su información.
+\textbf{Postcondición (fallo):} La alerta permanece activa si no es marcada como atendida.
 \end{minipage} \\
 \hline
 \endhead
@@ -4007,9 +4003,9 @@ cobro registrado. \textbf{Flujo principal}
   RNF-02).
 \end{enumerate}
 
-\textbf{Flujos alternativos} A1: Monto incorrecto → El personal ajusta manualmente los ítems antes de
-confirmar. \textbf{Postcondición (fallo):} No se emite comprobante y la consulta
-queda pendiente de cobro.
+\textbf{Flujos alternativos:} Flujo alternativo A1: Monto incorrecto calculado automáticamente → el personal ajusta manualmente los ítems antes de confirmar, sin reiniciar el proceso de cobro.
+\textbf{Excepciones:} Excepción E1: Condición de disparo: el sistema no logra generar el comprobante debido a un error interno tras la confirmación del cobro. Conducta del sistema: registra el cobro como confirmado pero pendiente de comprobante, y notifica al personal administrativo para reintentar la emisión. Poscondición: el cobro queda registrado sin comprobante emitido, trazable para reintento posterior.
+\textbf{Postcondición (fallo):} No se emite comprobante y la consulta queda pendiente de cobro.
 \end{minipage} \\
 \hline
 \endhead
@@ -4478,6 +4474,7 @@ ya no ocupa una fila de RF; RF-24 y RF-26 corresponden a los requisitos
 legales derivados de la LOPDP (Sección 3.4), RF-27 corresponde al
 portal de seguimiento de derechos ARCO derivado de la misma norma, y
 RNF-18 corresponde al requisito de explicabilidad de la IA.
+\end{quote}
 
 {\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{|
