@@ -44,7 +44,7 @@ abierto y acumulado 210 respuestas. No hubo una decisión deliberada de truncar 
 simplemente no se regeneró la exportación de datos crudos a tiempo para reflejar las respuestas
 que ya se habían recolectado.
 
-**Consecuencia:** el tamaño muestral final (n=210) supera con holgura el mínimo exigido por la guía (n≥60) y el margen de error alcanzado (~6.8%) es adecuado para un nivel de confianza del 95%. Los resultados y tablas de `07_Datos/resultados/` fueron regenerados con `run_all.R` sobre el conjunto completo de 210 respuestas el 11 de septiembre de 2026, por lo que el manuscrito y el README reportan la cifra real (n=210) y no la cifra original de la propuesta (n=60).
+**Consecuencia:** el tamaño muestral final (n=210) supera con holgura el mínimo exigido por la guía (n≥60) y el margen de error alcanzado (~6.8%) es adecuado para un nivel de confianza del 95%. Los resultados y tablas de `07_Datos/resultados/` fueron regenerados con `run_all.R` sobre el conjunto completo de 210 respuestas el 11 de septiembre de 2026, por lo que `README.md` y `07_Datos/README_datos.md` reportan la cifra real (n=210) y no la cifra original de la propuesta (n=60). El manuscrito académico de `09_Publicacion/` no reporta esta cifra porque su alcance se limita al componente cualitativo (16 entrevistas, P01–P16); la encuesta no forma parte de ese estudio.
 
 **Fecha de identificación de la desviación:** 11 de septiembre de 2026.
 
