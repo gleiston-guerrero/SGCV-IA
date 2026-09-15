@@ -8,7 +8,7 @@ evidencia de autoría. El detalle de cada elemento:
 | A1 | Bitácora de sesiones de trabajo | `bitacora_sesiones.csv` |
 | A2 | Capturas de pantalla por integrante | `capturas/` |
 | A3 | **Fuentes editables de los diagramas** | *Ver nota más abajo — viven en `03_Modelado/`* |
-| A4 | Grabaciones de sesión de trabajo | `grabaciones/Sesiones.md` (enlaces externos por límite de tamaño de GitHub) |
+| A4 | Grabaciones de sesión de trabajo | `grabaciones/` (`Sesion_1.mp4`, `Sesion_2.mp4` — depositadas directamente, ambas bajo el límite de 25 MB de GitHub) |
 | A5 | Notas de campo | `notas_campo/` |
 | A6 | Fotos del equipo en la organización | `fotos_equipo/` |
 | A7 | Doble codificación | `doble_codificacion/` |
