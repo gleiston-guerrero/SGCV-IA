@@ -123,7 +123,7 @@ Debido a la reescritura del historial realizada el **27/08/2026**, se recomienda
 ### Clonar
 
 ```bash
-git clone https://github.com/ramaguas-ship-it/SGCV-IA.git
+git clone https://github.com/gleiston-guerrero/SGCV-IA.git
 cd SGCV-IA
 ```
 
@@ -144,7 +144,7 @@ Los commits anteriores al **27/08/2026** conservan sus fechas y autores original
 Si ya se tenía una copia local anterior a esa fecha, se recomienda eliminarla y clonar nuevamente:
 
 ```bash
-git clone https://github.com/ramaguas-ship-it/SGCV-IA.git
+git clone https://github.com/gleiston-guerrero/SGCV-IA.git
 ```
 
 Un `git pull` sobre una copia antigua puede producir errores debido al cambio de historial.
@@ -349,7 +349,7 @@ encuesta, 16 transcripciones, 167 códigos abiertos → 50 axiales, saturación 
 umbral del 5%).
 
 ```bash
-git clone https://github.com/ramaguas-ship-it/SGCV-IA.git
+git clone https://github.com/gleiston-guerrero/SGCV-IA.git
 cd SGCV-IA
 Rscript 07_Datos/scripts/run_all.R
 ```
@@ -416,12 +416,11 @@ La carpeta `10_Autoria/` documenta que los artefactos entregados fueron producid
 
 **Completa (12 de 12):** `bitacora_sesiones.csv`, `declaracion_uso_ia.md`,
 `aporte_individual.md`, `exif_inventario.csv`, `doble_codificacion/`, `fotos_equipo/`,
-`correspondencia/`, `.mailmap` (raíz), `capturas/` (19 imágenes, los 5 integrantes con 3 o
+`correspondencia/`, `.mailmap` (raíz), `capturas/` (20 imágenes, los 5 integrantes con 3 o
 más cada uno), `notas_campo/` (16 notas de campo, una por participante), las fuentes
-editables de los diagramas ya referenciadas explícitamente desde el `README.md` de esta
-carpeta (viven en `03_Modelado/Diagramas_UML/` y `03_Modelado/Organizacional_iStar/`),
-`grabaciones/` (con los videos de sesión de trabajo ya incorporados) y
-`verificacion_previa.pdf` (Sección 11 de la guía).
+editables de los diagramas (`fuentes_editables/`, 53 archivos: `.drawio`/`.py` junto a su
+imagen exportada), y `grabaciones/` (con los videos de sesión de trabajo depositados y
+tabla de SHA-256).
 
 No quedan elementos pendientes en esta carpeta.
 
