@@ -1,64 +1,88 @@
-ID_Trazabilidad,Ley,Articulo,Objetivo,Interesado,EV,RF_RNF_RD,CU,HU,CA,Componente,Mockup
-TR-01,—,—,OE-01,Médico veterinario,EV-01,RF-01,CU-01,HU-01,CA-01,Frontend Web/Móvil,Transversal
-TR-02,LOPDP,Art. 14,OE-01,Médico veterinario,EV-01,RF-02,CU-03,HU-02,CA-02,Backend Historiales Clínicos,MU-005_Ficha_Paciente
-TR-03,LOPDP,Art. 14,OE-01,Médico veterinario,EV-02,RF-02,CU-03,HU-02,CA-02,Backend Historiales Clínicos,MU-005_Ficha_Paciente
-TR-04,—,—,OE-03,Personal administrativo,EV-01,RF-03,CU-03,HU-03,CA-03,Backend Historiales Clínicos,MU-003_Buscar_Paciente
-TR-05,LOPDP,Art. 4,OE-01,Médico veterinario,EV-01,RF-04,CU-02,HU-04,CA-04,Backend Historiales Clínicos,MU-006_Registrar_Consulta
-TR-06,—,—,OE-03,Personal administrativo,EV-02,RF-05,CU-04,HU-05,CA-05,Backend Inventario,MU-015_Alerta_De_Inventario
-TR-07,—,—,OE-03,Personal administrativo,EV-01,RF-06,CU-04,HU-06,CA-06,Backend Inventario,MU-024_Gestion_Stock
-TR-08,—,—,OE-03,Personal administrativo,EV-02,RF-06,CU-04,HU-06,CA-06,Backend Inventario,MU-024_Gestion_Stock
-TR-09,LOPDP,Art. 10 lit. e),OE-03,Personal administrativo,EV-02,RF-07,CU-10,HU-07,CA-07,Backend Facturación,MU-026_Registro_De_Cobro
-TR-10,—,—,OE-03,Personal administrativo,EV-02,RF-08,CU-10,HU-08,CA-08,Backend Facturación,"MU-027_Facturacion_Datos_Del_Receptor,MU-028_Facturacion_Servicios_Montos,MU-029_Confirmar_Emitir,MU-030_Facturacion_Emitida"
-TR-11,LOPDP,Art. 4,OE-03,Propietario de la mascota,EV-01,RF-09,CU-08,HU-09,CA-09,Módulo Comunicaciones,MU-016_Comunicaciones
-TR-12,LOPDP,Art. 4,OE-03,Propietario de la mascota,EV-02,RF-10,CU-08,HU-10,CA-10,Módulo Comunicaciones,MU-018_Envio_Por_WhatsApp
-TR-13,—,—,OE-03,Personal administrativo,EV-01,RF-11,CU-09,HU-11,CA-11,Módulo Citas y Recordatorios,MU-013_Registrar_Citas
-TR-14,—,—,OE-03,Personal administrativo,EV-02,RF-11,CU-09,HU-11,CA-11,Módulo Citas y Recordatorios,MU-013_Registrar_Citas
-TR-15,—,—,OE-03,Personal administrativo,EV-02,RF-12,CU-09,"HU-22 — Como propietario de la mascota, quiero recibir un recordatorio automático 24 horas antes de mi cita, para no olvidar la consulta programada.","El recordatorio se envía automáticamente 24 horas antes de la cita, sin intervención manual.",Módulo Citas y Recordatorios,MU-031_Recordatorios_De_Citas
-TR-16,—,—,OE-01,Médico veterinario,EV-01,RF-13,CU-07,HU-12,CA-12,Backend Seguimiento Nutricional,MU-011_Seguimiento_De_Peso
-TR-17,—,—,OE-01,Médico veterinario,EV-01,RF-14,CU-07,"HU-23 — Como médico veterinario, quiero recibir recomendaciones nutricionales automáticas basadas en el peso y condición del paciente, para orientar mejor al propietario sobre su alimentación.",La recomendación se actualiza automáticamente al registrarse un nuevo dato de peso o condición corporal (RF-13).,Backend Seguimiento Nutricional,MU-019_Recomendaciones_Nutricionales
-TR-18,—,—,OE-01,Médico veterinario,EV-02,RF-15,CU-09,"HU-24 — Como médico veterinario, quiero programar recordatorios de seguimiento de indicaciones médicas, para verificar que el propietario cumpla con el tratamiento indicado.",El veterinario puede programar un recordatorio con fecha y descripción el sistema notifica al personal en la fecha establecida.,Módulo Citas y Recordatorios,MU-020_Recordatorios_Medicos
-TR-19,LOPDP,Art. 17,OE-01,Médico veterinario,EV-01,RF-16,CU-03,"HU-25 — Como médico veterinario, quiero exportar el historial clínico del paciente en PDF, para remitirlo a clínicas con mayor equipamiento cuando sea necesario.","El sistema genera un PDF con el historial clínico completo del paciente, descargable en menos de 5 segundos.",Backend Historiales Clínicos,MU-021_Exportar_Reportes
-TR-20,LOPDP,"Art. 20, Art. 25/26/30/31",OE-02,Médico veterinario,EV-01,RF-17,CU-06,HU-13,CA-13,Módulo IA Diagnóstico,MU-010_Sugerencia_IA
-TR-21,LOPDP,"Art. 20, Art. 25/26/30/31",OE-02,Médico veterinario,EV-02,RF-17,CU-06,HU-13,CA-13,Módulo IA Diagnóstico,MU-010_Sugerencia_IA
-TR-22,LOPDP,Art. 20,OE-02,Médico veterinario,EV-01,RF-18,CU-06,HU-16,CA-16,Módulo IA Diagnóstico,MU-010_Sugerencia_IA
-TR-23,LOPDP,Art. 20,OE-02,Médico veterinario,EV-02,RF-18,CU-06,HU-16,CA-16,Módulo IA Diagnóstico,MU-010_Sugerencia_IA
-TR-24,LOPDP,Art. 20,OE-02,Médico veterinario,"EV-01,EV-02",RF-19,CU-06,HU-17,CA-17,Módulo IA Diagnóstico,MU-010_Sugerencia_IA
-TR-25,—,—,Transversal (OE-01/02/03),Equipo de desarrollo,"EV-01,EV-02",RF-20,Transversal,HU-18,CA-18,Frontend Web/Móvil,Transversal
-TR-26,—,—,Transversal (OE-01/02/03),Equipo de desarrollo,"EV-01,EV-02",RF-21,Transversal,"HU-26 — Como médico veterinario, quiero seguir registrando y consultando historiales clínicos aunque no haya conexión a internet, para no interrumpir la atención durante cortes de conectividad.",El registro y consulta permanecen disponibles sin conexión la sincronización se completa según RNF-04 al restablecerse la conectividad.,Infraestructura/Backend,Transversal
-TR-27,LOPDP,Art. 4,Transversal (OE-01/02/03),Equipo de desarrollo,"EV-01,EV-02",RF-22,CU-01,HU-19,CA-19,Módulo Autenticación/Usuarios,MU-001_Login
-TR-28,LOPDP,Art. 4 (auditoría),OE-01,Médico veterinario,EV-02,RF-23,CU-03,"HU-27 — Como administrador del sistema, quiero que cada modificación a un historial clínico quede registrada con usuario, fecha y descripción, para auditar cambios y cumplir con la trazabilidad exigida por la LOPDP.","Toda modificación genera un registro de auditoría (usuario, fecha, descripción) que no puede editarse ni eliminarse retroactivamente, conforme a RNF-06.",Backend Historiales Clínicos,MU-032_Log_De_Auditoria
-TR-29,—,—,Transversal (OE-01/02/03),Equipo de desarrollo,EV-04,RF-24,CU-01,HU-20,CA-20,Módulo Autenticación/Usuarios,MU-001_Login
-TR-30,—,—,OE-03,Propietario o administrador de la clínica,—,RF-25,Transversal,HU-21,CA-21,Backend Reportes,MU-033_Reportes_Gerenciales
-TR-31,LOPDP,"Art. 7, 8",Transversal (LOPDP),Propietario de la mascota,EV-04,RF-26,Transversal,HU-14,CA-14,Módulo Legal/Consentimiento,Falta crear (no existe en el catálogo de 33 MU)
-TR-32,LOPDP,Art. 12-15,Transversal (LOPDP),Propietario de la mascota,EV-04,RF-27,Transversal,HU-15,CA-15,Módulo Legal/Consentimiento,Falta crear (no existe en el catálogo de 33 MU)
-TR-33,ISO/IEC 25010,—,Transversal (OE-01/02/03),Equipo de desarrollo,EV-02,RNF-01,CU-03,HU-03,CA-03,Backend Historiales Clínicos,MU-003_Buscar_Paciente
-TR-34,ISO/IEC 25010,—,OE-03,Personal administrativo,EV-02,RNF-02,CU-10,HU-08,CA-08,Backend Facturación,"MU-027_Facturacion_Datos_Del_Receptor,MU-028_Facturacion_Servicios_Montos,MU-029_Confirmar_Emitir,MU-030_Facturacion_Emitida"
-TR-35,ISO/IEC 25010,—,OE-03,Personal administrativo,"EV-01,EV-02",RNF-03,CU-04,HU-05,CA-05,Backend Inventario,MU-015_Alerta_De_Inventario
-TR-36,ISO/IEC 25010,—,OE-01,Médico veterinario,"EV-01,EV-02",RNF-04,CU-03,HU-26,CA-26,Backend Historiales Clínicos,Transversal
-TR-37,LOPDP + ISO/IEC 25010,Art. 4,Transversal (OE-01/02/03),Equipo de desarrollo,"EV-01,EV-02",RNF-05,CU-01,HU-20,CA-20,Módulo Autenticación/Usuarios,MU-001_Login
-TR-38,LOPDP,Art. 4,OE-01,Médico veterinario,"EV-01,EV-02",RNF-06,CU-03,HU-27,CA-27,Backend Historiales Clínicos,MU-032_Log_De_Auditoria
-TR-39,ISO/IEC 25010,—,Transversal (OE-01/02/03),Personal administrativo,"EV-01,EV-02",RNF-07,Transversal,HU-18,CA-18,Frontend Web/Móvil,Transversal
-TR-40,ISO/IEC 25010,—,Transversal (OE-01/02/03),Equipo de desarrollo,"EV-01,EV-02",RNF-08,Transversal,HU-01,CA-01,Frontend Web/Móvil,Transversal
-TR-41,ISO/IEC 25010 + LOPDP,Art. 25/26/30/31,OE-02,Médico veterinario,"EV-01,EV-02",RNF-09,CU-06,HU-13,CA-13,Módulo IA Diagnóstico,MU-010_Sugerencia_IA
-TR-42,ISO/IEC 25010 + LOPDP,Art. 33/34/35,Transversal (OE-01/02/03),Equipo de desarrollo,—,RNF-10,CU-06,—,—,Módulo IA Diagnóstico,No aplica
-TR-43,ISO/IEC 25010,—,Transversal (OE-01/02/03),Equipo de desarrollo,—,RNF-11,Transversal,—,—,Infraestructura/Backend,No aplica
-TR-44,ISO/IEC 25010 + LOPDP,"Art. 25/26/30/31, Art. 37/39",Transversal (OE-01/02/03),Equipo de desarrollo,EV-02,RNF-12,Transversal,—,—,Infraestructura/Backend,No aplica
-TR-45,ISO/IEC 25010,—,Transversal (OE-01/02/03),Equipo de desarrollo,"EV-14,EV-16",RNF-13,Transversal,—,—,Infraestructura/Backend,No aplica
-TR-46,ISO/IEC 25010,—,Transversal (OE-01/02/03),Equipo de desarrollo,—,RNF-14,Transversal,—,—,Infraestructura/Backend,No aplica
-TR-47,ISO/IEC 25010,—,Transversal (OE-01/02/03),Personal administrativo,"EV-07,EV-13,EV-18",RNF-15,Transversal,HU-18,CA-18,Frontend Web/Móvil,Transversal
-TR-48,LOPDP,Art. 10 lit. i),Transversal (LOPDP),Comité de ética / protección de datos (LOPDP),—,RNF-16,Transversal,—,—,Infraestructura/Backend,No aplica
-TR-49,LOPDP,"Art. 43, 46",Transversal (LOPDP),Comité de ética / protección de datos (LOPDP),—,RNF-17,Transversal,—,—,Infraestructura/Backend,No aplica
-TR-50,LOPDP,Art. 20,OE-02,Médico veterinario,"EV-01,EV-02",RNF-18,CU-06,HU-16,CA-16,Módulo IA Diagnóstico,MU-010_Sugerencia_IA
-TR-51,—,—,Transversal,Equipo de desarrollo,EV-01,RST-01,Transversal,—,—,Infraestructura/Backend,No aplica
-TR-52,—,—,Transversal,Equipo de desarrollo,"EV-05,EV-18",RST-02,CU-01,HU-01,CA-01,Módulo Autenticación/Usuarios,Transversal
-TR-53,—,—,Transversal,Equipo de desarrollo,"EV-15,EV-16",RST-03,Transversal,HU-26,CA-26,Infraestructura/Backend,No aplica
-TR-54,—,—,OE-02,Equipo de desarrollo,—,RST-04,CU-06,—,—,Módulo IA Diagnóstico,No aplica
-TR-55,LOPDP,Art. 20,OE-02,Equipo de desarrollo,"EV-01,EV-14,EV-17",RST-05,CU-06,HU-13,CA-13,Módulo IA Diagnóstico,MU-010_Sugerencia_IA
-TR-56,—,—,Transversal,Equipo de desarrollo,"EV-14,EV-16",RST-06,CU-01,HU-19,CA-19,Módulo Autenticación/Usuarios,MU-001_Login
-TR-57,LOPDP,Art. 4,OE-01,Equipo de desarrollo,EV-12,RST-07,CU-03,HU-27,CA-27,Backend Historiales Clínicos,MU-032_Log_De_Auditoria
-TR-58,LOPDP,Art. 20,OE-02,Equipo de desarrollo,"EV-01,EV-02,EV-13",RST-08,CU-06,HU-17,CA-17,Módulo IA Diagnóstico,MU-010_Sugerencia_IA
-TR-59,—,Sec. 1.2,Transversal,Equipo de desarrollo,—,RST-09,Transversal,—,—,Infraestructura/Backend,No aplica
-TR-60,LOPDP,"Art. 47, 48",Transversal (LOPDP),Comité de ética / protección de datos (LOPDP),—,RST-10,Transversal,—,—,Infraestructura/Backend,No aplica
-TR-61,—,—,OE-02,Equipo de desarrollo,—,RNF-19,CU-06,HU-28,CA-28,Módulo IA Diagnóstico,MU-010_Sugerencia_IA
-TR-62,—,—,OE-02,Equipo de desarrollo,—,RNF-20,CU-06,HU-29,CA-29,Módulo IA Diagnóstico,MU-010_Sugerencia_IA
-TR-63,—,"RST-05, RST-08 (supervisión humana)",OE-02,Médico veterinario,"EV-01,EV-02",RNF-21,CU-06,HU-17,CA-17,Módulo IA Diagnóstico,MU-010_Sugerencia_IA
+ID_Trazabilidad,Ley,Articulo,Objetivo,Interesado,EV,RF_RNF_RD,CU,HU,CA,Componente,Mockup,ID_Flujo,Descripcion_Flujo
+TR-01,—,—,OE-01,Médico veterinario,EV-01,RF-01,CU-01,HU-01,CA-01,Frontend Web/Móvil,Transversal,Principal,Flujo principal / requisito base
+TR-02,LOPDP,Art. 14,OE-01,Médico veterinario,EV-01,RF-02,CU-03,HU-02,CA-02,Backend Historiales Clínicos,MU-005_Ficha_Paciente,Principal,Flujo principal / requisito base
+TR-03,LOPDP,Art. 14,OE-01,Médico veterinario,EV-02,RF-02,CU-03,HU-02,CA-02,Backend Historiales Clínicos,MU-005_Ficha_Paciente,Principal,Flujo principal / requisito base
+TR-04,—,—,OE-03,Personal administrativo,EV-01,RF-03,CU-03,HU-03,CA-03,Backend Historiales Clínicos,MU-003_Buscar_Paciente,Principal,Flujo principal / requisito base
+TR-05,LOPDP,Art. 4,OE-01,Médico veterinario,EV-01,RF-04,CU-02,HU-04,CA-04,Backend Historiales Clínicos,MU-006_Registrar_Consulta,Principal,Flujo principal / requisito base
+TR-06,—,—,OE-03,Personal administrativo,EV-02,RF-05,CU-04,HU-05,CA-05,Backend Inventario,MU-015_Alerta_De_Inventario,Principal,Flujo principal / requisito base
+TR-07,—,—,OE-03,Personal administrativo,EV-01,RF-06,CU-04,HU-06,CA-06,Backend Inventario,MU-024_Gestion_Stock,Principal,Flujo principal / requisito base
+TR-08,—,—,OE-03,Personal administrativo,EV-02,RF-06,CU-04,HU-06,CA-06,Backend Inventario,MU-024_Gestion_Stock,Principal,Flujo principal / requisito base
+TR-09,LOPDP,Art. 10 lit. e),OE-03,Personal administrativo,EV-02,RF-07,CU-10,HU-07,CA-07,Backend Facturación,MU-026_Registro_De_Cobro,Principal,Flujo principal / requisito base
+TR-10,—,—,OE-03,Personal administrativo,EV-02,RF-08,CU-10,HU-08,CA-08,Backend Facturación,"MU-027_Facturacion_Datos_Del_Receptor,MU-028_Facturacion_Servicios_Montos,MU-029_Confirmar_Emitir,MU-030_Facturacion_Emitida",Principal,Flujo principal / requisito base
+TR-11,LOPDP,Art. 4,OE-03,Propietario de la mascota,EV-01,RF-09,CU-08,HU-09,CA-09,Módulo Comunicaciones,MU-016_Comunicaciones,Principal,Flujo principal / requisito base
+TR-12,LOPDP,Art. 4,OE-03,Propietario de la mascota,EV-02,RF-10,CU-08,HU-10,CA-10,Módulo Comunicaciones,MU-018_Envio_Por_WhatsApp,Principal,Flujo principal / requisito base
+TR-13,—,—,OE-03,Personal administrativo,EV-01,RF-11,CU-09,HU-11,CA-11,Módulo Citas y Recordatorios,MU-013_Registrar_Citas,Principal,Flujo principal / requisito base
+TR-14,—,—,OE-03,Personal administrativo,EV-02,RF-11,CU-09,HU-11,CA-11,Módulo Citas y Recordatorios,MU-013_Registrar_Citas,Principal,Flujo principal / requisito base
+TR-15,—,—,OE-03,Personal administrativo,EV-02,RF-12,CU-09,"HU-22 — Como propietario de la mascota, quiero recibir un recordatorio automático 24 horas antes de mi cita, para no olvidar la consulta programada.","El recordatorio se envía automáticamente 24 horas antes de la cita, sin intervención manual.",Módulo Citas y Recordatorios,MU-031_Recordatorios_De_Citas,Principal,Flujo principal / requisito base
+TR-16,—,—,OE-01,Médico veterinario,EV-01,RF-13,CU-07,HU-12,CA-12,Backend Seguimiento Nutricional,MU-011_Seguimiento_De_Peso,Principal,Flujo principal / requisito base
+TR-17,—,—,OE-01,Médico veterinario,EV-01,RF-14,CU-07,"HU-23 — Como médico veterinario, quiero recibir recomendaciones nutricionales automáticas basadas en el peso y condición del paciente, para orientar mejor al propietario sobre su alimentación.",La recomendación se actualiza automáticamente al registrarse un nuevo dato de peso o condición corporal (RF-13).,Backend Seguimiento Nutricional,MU-019_Recomendaciones_Nutricionales,Principal,Flujo principal / requisito base
+TR-18,—,—,OE-01,Médico veterinario,EV-02,RF-15,CU-09,"HU-24 — Como médico veterinario, quiero programar recordatorios de seguimiento de indicaciones médicas, para verificar que el propietario cumpla con el tratamiento indicado.",El veterinario puede programar un recordatorio con fecha y descripción el sistema notifica al personal en la fecha establecida.,Módulo Citas y Recordatorios,MU-020_Recordatorios_Medicos,Principal,Flujo principal / requisito base
+TR-19,LOPDP,Art. 17,OE-01,Médico veterinario,EV-01,RF-16,CU-03,"HU-25 — Como médico veterinario, quiero exportar el historial clínico del paciente en PDF, para remitirlo a clínicas con mayor equipamiento cuando sea necesario.","El sistema genera un PDF con el historial clínico completo del paciente, descargable en menos de 5 segundos.",Backend Historiales Clínicos,MU-021_Exportar_Reportes,Principal,Flujo principal / requisito base
+TR-20,LOPDP,"Art. 20, Art. 25/26/30/31",OE-02,Médico veterinario,EV-01,RF-17,CU-06,HU-13,CA-13,Módulo IA Diagnóstico,MU-010_Sugerencia_IA,Principal,Flujo principal / requisito base
+TR-21,LOPDP,"Art. 20, Art. 25/26/30/31",OE-02,Médico veterinario,EV-02,RF-17,CU-06,HU-13,CA-13,Módulo IA Diagnóstico,MU-010_Sugerencia_IA,Principal,Flujo principal / requisito base
+TR-22,LOPDP,Art. 20,OE-02,Médico veterinario,EV-01,RF-18,CU-06,HU-16,CA-16,Módulo IA Diagnóstico,MU-010_Sugerencia_IA,Principal,Flujo principal / requisito base
+TR-23,LOPDP,Art. 20,OE-02,Médico veterinario,EV-02,RF-18,CU-06,HU-16,CA-16,Módulo IA Diagnóstico,MU-010_Sugerencia_IA,Principal,Flujo principal / requisito base
+TR-24,LOPDP,Art. 20,OE-02,Médico veterinario,"EV-01,EV-02",RF-19,CU-06,HU-17,CA-17,Módulo IA Diagnóstico,MU-010_Sugerencia_IA,Principal,Flujo principal / requisito base
+TR-25,—,—,Transversal (OE-01/02/03),Equipo de desarrollo,"EV-01,EV-02",RF-20,Transversal,HU-18,CA-18,Frontend Web/Móvil,Transversal,Principal,Flujo principal / requisito base
+TR-26,—,—,Transversal (OE-01/02/03),Equipo de desarrollo,"EV-01,EV-02",RF-21,Transversal,"HU-26 — Como médico veterinario, quiero seguir registrando y consultando historiales clínicos aunque no haya conexión a internet, para no interrumpir la atención durante cortes de conectividad.",El registro y consulta permanecen disponibles sin conexión la sincronización se completa según RNF-04 al restablecerse la conectividad.,Infraestructura/Backend,Transversal,Principal,Flujo principal / requisito base
+TR-27,LOPDP,Art. 4,Transversal (OE-01/02/03),Equipo de desarrollo,"EV-01,EV-02",RF-22,CU-01,HU-19,CA-19,Módulo Autenticación/Usuarios,MU-001_Login,Principal,Flujo principal / requisito base
+TR-28,LOPDP,Art. 4 (auditoría),OE-01,Médico veterinario,EV-02,RF-23,CU-03,"HU-27 — Como administrador del sistema, quiero que cada modificación a un historial clínico quede registrada con usuario, fecha y descripción, para auditar cambios y cumplir con la trazabilidad exigida por la LOPDP.","Toda modificación genera un registro de auditoría (usuario, fecha, descripción) que no puede editarse ni eliminarse retroactivamente, conforme a RNF-06.",Backend Historiales Clínicos,MU-032_Log_De_Auditoria,Principal,Flujo principal / requisito base
+TR-29,—,—,Transversal (OE-01/02/03),Equipo de desarrollo,EV-04,RF-24,CU-01,HU-20,CA-20,Módulo Autenticación/Usuarios,MU-001_Login,Principal,Flujo principal / requisito base
+TR-30,—,—,OE-03,Propietario o administrador de la clínica,—,RF-25,Transversal,HU-21,CA-21,Backend Reportes,MU-033_Reportes_Gerenciales,Principal,Flujo principal / requisito base
+TR-31,LOPDP,"Art. 7, 8",Transversal (LOPDP),Propietario de la mascota,EV-04,RF-26,Transversal,HU-14,CA-14,Módulo Legal/Consentimiento,Falta crear (no existe en el catálogo de 33 MU),Principal,Flujo principal / requisito base
+TR-32,LOPDP,Art. 12-15,Transversal (LOPDP),Propietario de la mascota,EV-04,RF-27,Transversal,HU-15,CA-15,Módulo Legal/Consentimiento,Falta crear (no existe en el catálogo de 33 MU),Principal,Flujo principal / requisito base
+TR-33,ISO/IEC 25010,—,Transversal (OE-01/02/03),Equipo de desarrollo,EV-02,RNF-01,CU-03,HU-03,CA-03,Backend Historiales Clínicos,MU-003_Buscar_Paciente,Principal,Flujo principal / requisito base
+TR-34,ISO/IEC 25010,—,OE-03,Personal administrativo,EV-02,RNF-02,CU-10,HU-08,CA-08,Backend Facturación,"MU-027_Facturacion_Datos_Del_Receptor,MU-028_Facturacion_Servicios_Montos,MU-029_Confirmar_Emitir,MU-030_Facturacion_Emitida",Principal,Flujo principal / requisito base
+TR-35,ISO/IEC 25010,—,OE-03,Personal administrativo,"EV-01,EV-02",RNF-03,CU-04,HU-05,CA-05,Backend Inventario,MU-015_Alerta_De_Inventario,Principal,Flujo principal / requisito base
+TR-36,ISO/IEC 25010,—,OE-01,Médico veterinario,"EV-01,EV-02",RNF-04,CU-03,HU-26,CA-26,Backend Historiales Clínicos,Transversal,Principal,Flujo principal / requisito base
+TR-37,LOPDP + ISO/IEC 25010,Art. 4,Transversal (OE-01/02/03),Equipo de desarrollo,"EV-01,EV-02",RNF-05,CU-01,HU-20,CA-20,Módulo Autenticación/Usuarios,MU-001_Login,Principal,Flujo principal / requisito base
+TR-38,LOPDP,Art. 4,OE-01,Médico veterinario,"EV-01,EV-02",RNF-06,CU-03,HU-27,CA-27,Backend Historiales Clínicos,MU-032_Log_De_Auditoria,Principal,Flujo principal / requisito base
+TR-39,ISO/IEC 25010,—,Transversal (OE-01/02/03),Personal administrativo,"EV-01,EV-02",RNF-07,Transversal,HU-18,CA-18,Frontend Web/Móvil,Transversal,Principal,Flujo principal / requisito base
+TR-40,ISO/IEC 25010,—,Transversal (OE-01/02/03),Equipo de desarrollo,"EV-01,EV-02",RNF-08,Transversal,HU-01,CA-01,Frontend Web/Móvil,Transversal,Principal,Flujo principal / requisito base
+TR-41,ISO/IEC 25010 + LOPDP,Art. 25/26/30/31,OE-02,Médico veterinario,"EV-01,EV-02",RNF-09,CU-06,HU-13,CA-13,Módulo IA Diagnóstico,MU-010_Sugerencia_IA,E2,Confianza de la sugerencia de IA por debajo del umbral (RNF-09) — deriva la decisión al veterinario
+TR-42,ISO/IEC 25010 + LOPDP,Art. 33/34/35,Transversal (OE-01/02/03),Equipo de desarrollo,—,RNF-10,CU-06,—,—,Módulo IA Diagnóstico,No aplica,E1,Motor de IA externo no responde o servicio caído (RNF-10) — continúa la consulta sin sugerencia
+TR-43,ISO/IEC 25010,—,Transversal (OE-01/02/03),Equipo de desarrollo,—,RNF-11,Transversal,—,—,Infraestructura/Backend,No aplica,Principal,Flujo principal / requisito base
+TR-44,ISO/IEC 25010 + LOPDP,"Art. 25/26/30/31, Art. 37/39",Transversal (OE-01/02/03),Equipo de desarrollo,EV-02,RNF-12,Transversal,—,—,Infraestructura/Backend,No aplica,Principal,Flujo principal / requisito base
+TR-45,ISO/IEC 25010,—,Transversal (OE-01/02/03),Equipo de desarrollo,"EV-14,EV-16",RNF-13,Transversal,—,—,Infraestructura/Backend,No aplica,Principal,Flujo principal / requisito base
+TR-46,ISO/IEC 25010,—,Transversal (OE-01/02/03),Equipo de desarrollo,—,RNF-14,Transversal,—,—,Infraestructura/Backend,No aplica,Principal,Flujo principal / requisito base
+TR-47,ISO/IEC 25010,—,Transversal (OE-01/02/03),Personal administrativo,"EV-07,EV-13,EV-18",RNF-15,Transversal,HU-18,CA-18,Frontend Web/Móvil,Transversal,Principal,Flujo principal / requisito base
+TR-48,LOPDP,Art. 10 lit. i),Transversal (LOPDP),Comité de ética / protección de datos (LOPDP),—,RNF-16,Transversal,—,—,Infraestructura/Backend,No aplica,Principal,Flujo principal / requisito base
+TR-49,LOPDP,"Art. 43, 46",Transversal (LOPDP),Comité de ética / protección de datos (LOPDP),—,RNF-17,Transversal,—,—,Infraestructura/Backend,No aplica,Principal,Flujo principal / requisito base
+TR-50,LOPDP,Art. 20,OE-02,Médico veterinario,"EV-01,EV-02",RNF-18,CU-06,HU-16,CA-16,Módulo IA Diagnóstico,MU-010_Sugerencia_IA,Principal,Flujo principal / requisito base
+TR-51,—,—,Transversal,Equipo de desarrollo,EV-01,RST-01,Transversal,—,—,Infraestructura/Backend,No aplica,Principal,Flujo principal / requisito base
+TR-52,—,—,Transversal,Equipo de desarrollo,"EV-05,EV-18",RST-02,CU-01,HU-01,CA-01,Módulo Autenticación/Usuarios,Transversal,Principal,Flujo principal / requisito base
+TR-53,—,—,Transversal,Equipo de desarrollo,"EV-15,EV-16",RST-03,Transversal,HU-26,CA-26,Infraestructura/Backend,No aplica,Principal,Flujo principal / requisito base
+TR-54,—,—,OE-02,Equipo de desarrollo,—,RST-04,CU-06,—,—,Módulo IA Diagnóstico,No aplica,Principal,Flujo principal / requisito base
+TR-55,LOPDP,Art. 20,OE-02,Equipo de desarrollo,"EV-01,EV-14,EV-17",RST-05,CU-06,HU-13,CA-13,Módulo IA Diagnóstico,MU-010_Sugerencia_IA,Principal,Flujo principal / requisito base
+TR-56,—,—,Transversal,Equipo de desarrollo,"EV-14,EV-16",RST-06,CU-01,HU-19,CA-19,Módulo Autenticación/Usuarios,MU-001_Login,Principal,Flujo principal / requisito base
+TR-57,LOPDP,Art. 4,OE-01,Equipo de desarrollo,EV-12,RST-07,CU-03,HU-27,CA-27,Backend Historiales Clínicos,MU-032_Log_De_Auditoria,Principal,Flujo principal / requisito base
+TR-58,LOPDP,Art. 20,OE-02,Equipo de desarrollo,"EV-01,EV-02,EV-13",RST-08,CU-06,HU-17,CA-17,Módulo IA Diagnóstico,MU-010_Sugerencia_IA,Principal,Flujo principal / requisito base
+TR-59,—,Sec. 1.2,Transversal,Equipo de desarrollo,—,RST-09,Transversal,—,—,Infraestructura/Backend,No aplica,Principal,Flujo principal / requisito base
+TR-60,LOPDP,"Art. 47, 48",Transversal (LOPDP),Comité de ética / protección de datos (LOPDP),—,RST-10,Transversal,—,—,Infraestructura/Backend,No aplica,Principal,Flujo principal / requisito base
+TR-61,—,—,OE-02,Equipo de desarrollo,—,RNF-19,CU-06,HU-28,CA-28,Módulo IA Diagnóstico,MU-010_Sugerencia_IA,Principal,Flujo principal / requisito base
+TR-62,—,—,OE-02,Equipo de desarrollo,—,RNF-20,CU-06,HU-29,CA-29,Módulo IA Diagnóstico,MU-010_Sugerencia_IA,Principal,Flujo principal / requisito base
+TR-63,—,"RST-05, RST-08 (supervisión humana)",OE-02,Médico veterinario,"EV-01,EV-02",RNF-21,CU-06,HU-17,CA-17,Módulo IA Diagnóstico,MU-010_Sugerencia_IA,Principal,Flujo principal / requisito base
+TR-64,—,—,Transversal (OE-01/02/03),Personal administrativo / Veterinario / Propietario,—,N/A (evento de flujo),CU-01,—,—,Módulo Autenticación/Usuarios,—,A1,Credenciales incorrectas — nuevo intento sin bloquear cuenta
+TR-65,—,—,Transversal (OE-01/02/03),Personal administrativo / Veterinario / Propietario,—,N/A (evento de flujo),CU-01,—,—,Módulo Autenticación/Usuarios,—,A2,Campos obligatorios vacíos — solicita completar antes de reintentar
+TR-66,—,—,Transversal (OE-01/02/03),Personal administrativo / Veterinario / Propietario,—,N/A (evento de flujo),CU-01,—,—,Módulo Autenticación/Usuarios,—,E1,Cuenta inactiva o suspendida — deniega el acceso
+TR-67,—,—,OE-01,Médico veterinario,—,RF-04,CU-02,—,—,Backend Historiales Clínicos,—,A1,Solicita sugerencia de IA — deriva a CU-06
+TR-68,—,—,OE-01,Médico veterinario,—,RF-04,CU-02,—,—,Backend Historiales Clínicos,—,A2,Registra seguimiento nutricional — deriva a CU-07
+TR-69,—,—,OE-01,Médico veterinario,—,RF-04,CU-02,—,—,Backend Historiales Clínicos,—,A3,Registra comunicación con el dueño — deriva a CU-08
+TR-70,—,—,OE-01,Médico veterinario,—,RF-04,CU-02,—,—,Backend Historiales Clínicos,—,E1,Información clínica incompleta/inconsistente — rechaza el guardado
+TR-71,—,—,OE-01,Médico veterinario,—,RF-16,CU-03,—,—,Backend Historiales Clínicos,—,A1,Exporta historial clínico en PDF
+TR-72,—,—,OE-01,Médico veterinario,—,RF-02,CU-03,—,—,Backend Historiales Clínicos,—,E1,Paciente no encontrado con los criterios de búsqueda
+TR-73,—,—,OE-03,Personal administrativo,—,RF-05,CU-04,—,—,Backend Inventario,—,A1,Stock mínimo alcanzado tras salida válida — deriva a CU-09 (alerta)
+TR-74,—,—,OE-03,Personal administrativo,—,RF-06,CU-04,—,—,Backend Inventario,—,E1,Salida solicitada mayor al stock disponible — rechaza la operación
+TR-75,—,—,Por definir — sin RF/RNF asociado en la matriz,Personal administrativo,—,SIN RF ASOCIADO,CU-05,—,—,Sin componente asociado en la matriz,—,Principal,CU-05 completo no tenía ninguna fila previa en la matriz — revisar con el equipo
+TR-76,—,—,Por definir — sin RF/RNF asociado en la matriz,Personal administrativo,—,SIN RF ASOCIADO,CU-05,—,—,Sin componente asociado en la matriz,—,A1,Asigna permisos al empleado
+TR-77,—,—,Por definir — sin RF/RNF asociado en la matriz,Personal administrativo,—,SIN RF ASOCIADO,CU-05,—,—,Sin componente asociado en la matriz,—,A2,Restablece contraseña del empleado
+TR-78,—,—,Por definir — sin RF/RNF asociado en la matriz,Personal administrativo,—,SIN RF ASOCIADO,CU-05,—,—,Sin componente asociado en la matriz,—,E1,Información inválida al modificar — no guarda hasta corregir
+TR-79,—,—,OE-02,Médico veterinario,—,RF-17,CU-06,—,—,Módulo IA Diagnóstico,—,A1,Veterinario rechaza la sugerencia — se registra el rechazo
+TR-80,—,—,OE-01,Médico veterinario,—,RF-13,CU-07,—,—,Backend Seguimiento Nutricional,—,A1,Datos insuficientes — solicita completar raza/edad/peso
+TR-81,—,—,OE-01,Médico veterinario,—,RF-14,CU-07,—,—,Backend Seguimiento Nutricional,—,E1,Módulo de recomendación falla — queda pendiente de generación
+TR-82,—,—,OE-03,Propietario de la mascota,—,RF-09,CU-08,—,—,Módulo Comunicaciones,—,A1,Falla transitoria del servicio de mensajería — permite reintentar
+TR-83,—,—,OE-03,Propietario de la mascota,—,RF-10,CU-08,—,—,Módulo Comunicaciones,—,E1,Servicio de mensajería no disponible tras reintentos — marca como no entregada
+TR-84,—,—,OE-03,Personal administrativo / Bodeguero,—,RF-06,CU-09,—,—,Backend Inventario,—,A1,No hay alertas activas — muestra centro vacío sin error [ver nota CU-09 abajo]
+TR-85,—,—,OE-03,Personal administrativo / Bodeguero,—,RF-05,CU-09,—,—,Backend Inventario,—,E1,Producto sin fecha de vencimiento registrada — excluye del cálculo automático [ver nota CU-09 abajo]
+TR-86,—,—,OE-03,Personal administrativo,—,RF-08,CU-10,—,—,Backend Facturación,—,A1,Monto incorrecto calculado — ajuste manual antes de confirmar
+TR-87,—,—,OE-03,Personal administrativo,—,RF-08,CU-10,—,—,Backend Facturación,—,E1,Error interno al generar comprobante — cobro queda pendiente de reintento
