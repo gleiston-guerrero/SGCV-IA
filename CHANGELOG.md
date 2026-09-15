@@ -11,17 +11,39 @@ Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
   de autoría del modelado (§15a).
 - Actualizado `10_Autoria/README.md` para reflejar el depósito físico
   de las fuentes editables en `fuentes_editables/`.
+- `10_Autoria/grabaciones/Sesion_1.mp4` y `Sesion_2.mp4`: grabaciones
+  de sesión de trabajo depositadas directamente en el repositorio
+  (23,7 MB y 24,2 MB respectivamente, bajo el límite de 25 MB de
+  GitHub), sustituyendo los enlaces externos previos (§15c).
+- `10_Autoria/grabaciones/README.md`: tabla de inventario con fecha,
+  participantes, duración, tamaño y hash SHA-256 de ambas grabaciones.
 
 ### Corregido
 - Renombradas 3 capturas de Mesías con fecha de captura errónea
   (2026-10-09, posterior al corte) a su fecha real; eliminado el
   espacio en el nombre del archivo de actualización de `.mailmap`
   que rompía los scripts de conteo (§15b).
+- Renombradas 9 capturas de Barrionuevo y Marcillo en
+  `10_Autoria/capturas/` para eliminar espacios y guiones medios,
+  ajustándose al patrón `AAAA-MM-DD_Integrante_Actividad.ext` (§15b).
 - Unificados nombres de fuente/imagen en `10_Autoria/fuentes_editables`
   para CU03 y CU04
   (`CU03_Clinical_History.drawio` → `CU03_Medical_History.drawio`;
   `CU04_Inventory_Control.drawio` → `CU04_Control_Inventory.drawio`),
   evitando ambigüedad entre fuente e imagen exportada.
+- `CITATION.cff`: `repository-code` y el `origin=` del identificador
+  SWHID actualizados de `ramaguas-ship-it/SGCV-IA` a
+  `gleiston-guerrero/SGCV-IA` tras la transferencia de propiedad del
+  repositorio (§1).
+- `README.md` (raíz): las 3 instrucciones `git clone` actualizadas al
+  nuevo propietario del repositorio; corregido el conteo de
+  `10_Autoria/capturas/` de 19 a 20 imágenes; reincorporada la mención
+  a `verificacion_previa.pdf` en el listado de evidencia de autoría.
+
+### Eliminado
+- `10_Autoria/grabaciones/Sesiones.md`, `Sesion_1.md` y `Sesion_2.md`:
+  reemplazados por los archivos de video depositados directamente y
+  su nuevo `README.md` de inventario.
 
 ## [2B] - 2026-09-01
 
