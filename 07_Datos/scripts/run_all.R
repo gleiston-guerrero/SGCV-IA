@@ -1,4 +1,3 @@
-
 # ==============================================================================
 # 07_Datos/scripts/run_all.R
 # ------------------------------------------------------------------------------
@@ -87,6 +86,72 @@ for (script in pipeline) {
     cat("Pipeline detenido: hubo un error en el script anterior.\n")
     cat("Corrígelo y vuelve a correr run_all.R desde el inicio.\n")
     break
+  }
+}
+
+# ------------------------------------------------------------------------------
+# Pipeline del componente empírico (06_Experimento/scripts_analisis)
+# ------------------------------------------------------------------------------
+# El paquete de datos de 07_Datos/ y el análisis estadístico del componente
+# empírico vivían como dos pipelines separados y no conectados: este último
+# generaba las tablas que cita el manuscrito (descriptivos, supuestos,
+# pruebas de hipótesis, tamaño del efecto) directo en 09_Publicacion/tablas/,
+# sin que 07_Datos/resultados/ -el paquete de datos reproducible oficial-
+# incluyera nunca esas tablas. Desde aquí se ejecuta ese segundo pipeline y
+# se copian sus tablas finales a 07_Datos/resultados/, para que "una sola
+# orden" (Rscript 07_Datos/scripts/run_all.R) reproduzca de verdad todo lo
+# que el manuscrito cita, no solo la parte cualitativa.
+if (!any(registro_pipeline$estado == "ERROR")) {
+
+  ruta_analisis_empirico <- "06_Experimento/scripts_analisis/run_all.R"
+
+  if (file.exists(ruta_analisis_empirico)) {
+    cat("== Ejecutando 06_Experimento/scripts_analisis/run_all.R (componente empírico) ==\n")
+
+    hubo_advertencias <- FALSE
+
+    estado <- tryCatch({
+      withCallingHandlers({
+        source(ruta_analisis_empirico, encoding = "UTF-8", echo = FALSE)
+      }, warning = function(w) {
+        cat(sprintf("ADVERTENCIA en %s: %s\n", ruta_analisis_empirico, conditionMessage(w)))
+        hubo_advertencias <<- TRUE
+        invokeRestart("muffleWarning")
+      })
+      if (hubo_advertencias) "OK (con advertencias)" else "OK"
+    }, error = function(e) {
+      cat(sprintf("ERROR en %s: %s\n", ruta_analisis_empirico, conditionMessage(e)))
+      "ERROR"
+    })
+
+    registro_pipeline <- rbind(
+      registro_pipeline,
+      data.frame(script = "06_Experimento/scripts_analisis/run_all.R", estado = estado)
+    )
+    cat("\n")
+
+    # Copiar las tablas finales del manuscrito también a 07_Datos/resultados/,
+    # para que el paquete de datos quede autocontenido (09_tablas.R ya las
+    # dejó consolidadas y con nombres estables en 09_Publicacion/tablas/).
+    if (estado != "ERROR") {
+      ruta_tablas_publicacion <- "09_Publicacion/tablas"
+      ruta_resultados_datos   <- "07_Datos/resultados"
+
+      if (dir.exists(ruta_tablas_publicacion)) {
+        tablas_manuscrito <- list.files(ruta_tablas_publicacion, pattern = "\\.csv$", full.names = TRUE)
+        copiadas_ok <- file.copy(tablas_manuscrito, ruta_resultados_datos, overwrite = TRUE)
+        cat(sprintf(
+          "Copiadas %d de %d tablas del manuscrito a %s/\n\n",
+          sum(copiadas_ok), length(tablas_manuscrito), ruta_resultados_datos
+        ))
+      }
+    }
+  } else {
+    cat(sprintf("[OMITIDO] %s todavía no existe — se salta.\n\n", ruta_analisis_empirico))
+    registro_pipeline <- rbind(
+      registro_pipeline,
+      data.frame(script = "06_Experimento/scripts_analisis/run_all.R", estado = "omitido (no existe todavía)")
+    )
   }
 }
 
