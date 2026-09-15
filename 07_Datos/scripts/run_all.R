@@ -22,6 +22,14 @@
 # puede usarse desde ahora, aunque falten scripts por crear.
 # ==============================================================================
 
+# Semilla global de reproducibilidad: cualquier remuestreo o bootstrap en
+# este pipeline (por ejemplo el bootstrap del tamaño del efecto en
+# 06_Experimento/scripts_analisis/07_tamano_efecto.R) debe partir de esta
+# misma semilla, declarada aquí al inicio del orquestador y documentada en
+# 07_Datos/README_datos.md, para que dos ejecuciones consecutivas de este
+# script produzcan siempre los mismos resultados y los mismos hashes.
+set.seed(2026)
+
 ruta_scripts <- "07_Datos/scripts"
 
 if (!dir.exists(ruta_scripts)) {
