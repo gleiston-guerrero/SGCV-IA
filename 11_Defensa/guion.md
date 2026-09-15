@@ -69,7 +69,7 @@ En cuanto al manejo de la evidencia, los consentimientos, transcripciones y la c
 
 Quiero ser transparente sobre el rigor metodológico aplicado: recontamos íntegramente la codificación axial antes de esta entrega, y el total pasó de 47 a 50 códigos verificados. Además, corregimos una frecuencia que en un borrador previo del manuscrito se había reportado como 6 de 16, y que tras revisar participante por participante quedó correctamente establecida en 4 de 16.
 
-Declaramos también, con honestidad, dos pendientes: el cuestionario cuantitativo todavía no alcanza una n mayor o igual a 60 por perfil dominante, y las actas de member checking están en trámite de carga al repositorio.
+El cuestionario cuantitativo cerró finalmente con 210 respuestas, ampliamente por encima de la meta mínima de 60 por perfil dominante, y las actas de member checking con los participantes P03, P09 y P15 ya están cargadas en el repositorio.
 
 ---
 
@@ -124,15 +124,15 @@ Es importante delimitar el alcance: estas conclusiones se restringen al módulo 
 ## Diapositiva 11 — Amenazas a la validez
 **Habla: Mesías Quijije**
 
-Como equipo, identificamos y documentamos de forma proactiva cuatro amenazas a la validez de este estudio.
+Como equipo, identificamos y documentamos de forma proactiva cinco amenazas a la validez de este estudio.
 
 En validez interna, la codificación abierta inicial fue realizada por el equipo sin una doble codificación independiente completa. Como mitigación, recontamos la codificación axial en su totalidad antes de esta entrega, corrigiendo el conteo de 47 a 50 códigos.
 
 En validez externa, el estudio se realizó en una sola clínica veterinaria ecuatoriana, con un número acotado de participantes. Por ello, restringimos los hallazgos a ese contexto específico y proponemos réplicas en otras clínicas como trabajo futuro.
 
-En validez de constructo, operacionalizamos "explicabilidad" únicamente como factores de peso más nivel de confianza, lo cual es un subconjunto del marco teórico de Chazette et al. Documentamos explícitamente qué dimensiones de ese marco no fueron cubiertas.
+En validez de constructo, operacionalizamos "explicabilidad" únicamente como factores de peso más nivel de confianza, lo cual es un subconjunto del marco teórico de Chazette et al. Documentamos explícitamente qué dimensiones de ese marco no fueron cubiertas. En el cuestionario cuantitativo, además, la variable "frecuencia de uso" no estaba disponible tal como se había registrado en el protocolo, por lo que la sustituimos por la pregunta sobre frecuencia de inconvenientes en la clínica; declaramos esta sustitución explícitamente porque cambia el constructo medido.
 
-Y en validez de conclusión, habíamos diseñado una validación cuantitativa de dos rondas, registrada en el protocolo OSF, pero no llegamos a ejecutarla dentro del plazo del proyecto. Por eso, restringimos nuestras conclusiones a las 16 entrevistas cualitativas ya completadas, dejando la validación cuantitativa como trabajo futuro.
+En validez de conclusión, habíamos diseñado una validación cuantitativa de dos rondas, registrada en el protocolo OSF, pero no llegamos a ejecutarla dentro del plazo del proyecto; nuestras conclusiones principales se restringen a las 16 entrevistas cualitativas. Adicionalmente, el cuestionario sí permitió comparar los cuatro perfiles de usuario mediante Wilcoxon con corrección de Holm, pero dos de esos subgrupos son pequeños —cinco participantes en el perfil administrador, comparado contra once y contra veintiséis en otros perfiles—, lo que produce intervalos de efecto demasiado amplios para sostener una conclusión sobre la magnitud real de la diferencia. Reportamos esos resultados con fines de transparencia, no como hallazgo concluyente.
 
 ---
 
@@ -141,7 +141,7 @@ Y en validez de conclusión, habíamos diseñado una validación cuantitativa de
 
 Respondiendo directamente a nuestra pregunta de investigación: sí es posible derivar, a partir de trabajo de campo real, requisitos de explicabilidad verificables. Concretamente, el RNF-18 establece que basta con mostrar los factores de mayor peso y un nivel de confianza antes de que el veterinario decida sobre una sugerencia de IA.
 
-En cuanto a trabajos pendientes, podemos afirmar que ningún trabajo quedó pendiente: todo se realizó con éxito dentro del alcance planteado para esta entrega.
+En cuanto a trabajos pendientes, el alcance planteado para esta entrega se cumplió en su totalidad; la única salvedad honesta es la ya mencionada sobre los subgrupos pequeños del cuestionario, que dejamos como línea de trabajo futuro con una muestra ampliada.
 
 Nuestras contribuciones quedan así consolidadas: un requisito no funcional de explicabilidad trazado en el ERS, un MVP con el flujo completo de Aceptar, Modificar y Rechazar, y un paquete de datos con DOI en Zenodo y registro en OSF.
 
@@ -150,9 +150,9 @@ Nuestras contribuciones quedan así consolidadas: un requisito no funcional de e
 ## Diapositiva 13 — Estado declarado de los artefactos
 **Habla: Marcillo Ponce**
 
-Para cerrar con total transparencia, presentamos el estado de cada artefacto del proyecto. Está completo el ERS/SRS versión 2.0, la evidencia de campo con las 16 entrevistas, el modelado y la trazabilidad, el MVP funcional, el registro en OSF, el DOI en Zenodo y el identificador de Software Heritage. También está completa la carga de datos crudos depositados, el manuscrito final y las actas de member checking en el repositorio.
+Para cerrar con total transparencia, presentamos el estado de cada artefacto del proyecto. Está completo el ERS/SRS versión 2.0, la evidencia de campo con las 16 entrevistas, el modelado y la trazabilidad, el MVP funcional, el registro en OSF, el DOI en Zenodo y el identificador de Software Heritage. También está completa la carga de datos crudos y procesados, el manuscrito final y las actas de member checking en el repositorio.
 
-Declaramos honestamente que los scripts de análisis existen como esqueleto, aún no reproducible en su totalidad, lo cual coincide con los pendientes que ya mencionamos en la sección de metodología: completar el cuestionario cuantitativo y finalizar la carga de las actas de member checking.
+Los scripts de análisis están completos y son reproducibles en su totalidad: la cadena en R —importación, limpieza, curva de saturación, descriptivos, contraste de hipótesis y tamaño del efecto— corre con una sola orden desde un clon limpio del repositorio y reproduce exactamente los resultados ya publicados. La única reserva honesta que mantenemos es la ya declarada en validez de conclusión: los subgrupos pequeños del cuestionario deben leerse como exploratorios, no como evidencia concluyente.
 
 ---
 
@@ -174,7 +174,7 @@ Con este prototipo cubrimos los requisitos funcionales de prioridad Must-have: l
 ## Diapositiva 15 — Cierre
 **Habla: Marcillo Ponce**
 
-Con esto concluye la presentación de nuestro proyecto SGCV-IA. Todos los artefactos del estudio son públicos y verificables: el repositorio en GitHub, en github.com/ramaguas-ship-it/SGCV-IA; el conjunto de datos con DOI en Zenodo, 10.5281/zenodo.22558095; y el protocolo de registro previo en el Open Science Framework, en osf.io/r5p8d.
+Con esto concluye la presentación de nuestro proyecto SGCV-IA. Todos los artefactos del estudio son públicos y verificables: el repositorio en GitHub, en github.com/gleiston-guerrero/SGCV-IA; el conjunto de datos con DOI en Zenodo, 10.5281/zenodo.22558095; y el protocolo de registro previo en el Open Science Framework, en osf.io/r5p8d.
 
 Agradecemos al tribunal por su tiempo y atención, y quedamos atentos a sus observaciones.
 
