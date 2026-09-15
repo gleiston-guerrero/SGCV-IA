@@ -1,16 +1,16 @@
-# 09_Defensa/
+# 11_Defensa/
 
 Esta carpeta contiene los materiales correspondientes a la presentación oral de la **Entrega 4 (2B)** del proyecto **SGCV-IA — Sistema de Gestión para Clínicas Veterinarias con Inteligencia Artificial**.
 
-## Estado: EN PREPARACIÓN
+## Estado: FINALIZADO
 
-La estructura de la defensa y la distribución de responsabilidades ya se encuentran definidas. Los materiales finales de presentación, grabación y apoyo visual se encuentran en proceso de preparación.
+Los materiales finales de presentación, grabación y apoyo visual ya se encuentran completos.
 
 | **Archivo**            | **Contenido esperado**                                       | **Responsable** | **Estado**     |
 | ---------------------- | ------------------------------------------------------------ | --------------- | -------------- |
 | `presentacion.pdf`     | Diapositivas finales en formato PDF                          | Equipo          | Finalizado     |
 | `presentacion.pptx`    | Versión editable de las diapositivas                         | Equipo          | Finalizado     |
-| `guion.md`             | Guion de exposición con tiempos por diapositiva e integrante | Equipo          | finalizado     |
+| `guion.md`             | Guion de exposición con tiempos por diapositiva e integrante | Equipo          | Finalizado     |
 | `video_defensa.mp4`    | Grabación de la defensa                                      | Equipo          | Finalizado     |
 | `folleto_defensa_SGCV-IA.pdf` | Resumen estructurado para el tribunal                 | Equipo          | Finalizado     |
 
