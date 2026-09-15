@@ -162,17 +162,18 @@ Con los mismos supuestos, se habrían requerido aproximadamente 97 respuestas pa
 
 `diccionario_datos.csv`
 
-Documenta las variables de la encuesta y las transcripciones, incluyendo:
+Documenta **una fila por cada columna de cada archivo** de `datos_crudos/` y `datos_procesados/` (62 filas en total: 19 columnas × 3 archivos de la encuesta + 5 columnas de `transcripciones_metadata.csv`), con:
 
-- nombre de la variable;
-- tipo de dato;
-- unidad o escala;
-- valores posibles;
-- tratamiento de datos faltantes;
-- procedencia;
-- observaciones metodológicas.
+- `archivo`: archivo al que pertenece la columna;
+- `columna`: nombre exacto de la columna;
+- `tipo`: tipo de dato;
+- `unidad`: unidad o escala;
+- `rango_admisible`: valores o rango posibles;
+- `valores_perdidos`: cantidad de valores faltantes encontrados;
+- `procedencia`: de dónde viene el valor de esa columna;
+- `descripcion`: qué mide o representa la columna.
 
-Este archivo debe consultarse antes de interpretar o transformar una variable.
+Este archivo debe consultarse antes de interpretar o transformar una variable, y debe tener tantas filas como columnas sumen los archivos de `datos_crudos/` y `datos_procesados/` — si se agrega o quita una columna en esos archivos, hay que actualizar `diccionario_datos.csv` en el mismo commit.
 
 ---
 
@@ -187,6 +188,8 @@ Desde la raíz del repositorio:
 ```bash
 Rscript 07_Datos/scripts/run_all.R
 ```
+
+**Semilla de reproducibilidad:** `set.seed(2026)`, declarada al inicio de `run_all.R`. Cualquier remuestreo o bootstrap del pipeline (incluido el bootstrap del tamaño del efecto en `06_Experimento/scripts_analisis/07_tamano_efecto.R`) parte de esta misma semilla, por lo que dos ejecuciones consecutivas de `run_all.R` producen resultados y hashes idénticos.
 
 El pipeline ejecuta, en orden:
 
