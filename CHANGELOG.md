@@ -2,41 +2,26 @@
 
 Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
-## [2B-cierre] - 2026-09-15
-
-### Corregido
-- 3 capturas de Mesías en `10_Autoria/capturas/` con fecha imposible
-  (`2026-10-09`, posterior al corte) renombradas a la fecha real de
-  captura (`2026-07-09`); eliminados los espacios en el nombre del
-  archivo `..._actualizacionmailmap mailmap.png` que rompían los
-  scripts de conteo.
-- 9 capturas de Barrionuevo y Marcillo en `10_Autoria/capturas/`
-  renombradas para eliminar espacios y guiones medios, ajustándose al
-  patrón `AAAA-MM-DD_Integrante_Actividad.ext`.
-- `CITATION.cff`: `repository-code` y el `origin=` del identificador
-  SWHID actualizados de `ramaguas-ship-it/SGCV-IA` a
-  `gleiston-guerrero/SGCV-IA` tras la transferencia de propiedad del
-  repositorio.
-- `README.md` (raíz): las 3 instrucciones `git clone` actualizadas al
-  nuevo propietario del repositorio; corregido el conteo de
-  `10_Autoria/capturas/` de 19 a 20 imágenes.
+## [Examen Suspenso] - 2026-09-14
 
 ### Añadido
-- `10_Autoria/grabaciones/Sesion_1.mp4` y `Sesion_2.mp4`: grabaciones
-  de sesión de trabajo depositadas directamente en el repositorio
-  (23,7 MB y 24,2 MB respectivamente, bajo el límite de 25 MB de
-  GitHub), sustituyendo los enlaces externos previos.
-- `10_Autoria/grabaciones/README.md`: tabla de inventario con fecha,
-  participantes, duración, tamaño y hash SHA-256 de ambas grabaciones.
-- `10_Autoria/fuentes_editables/`: 53 archivos (22 `.drawio`, 4 `.py`,
-  26 `.png` exportados y 1 `README.md`) con las fuentes editables de
-  los diagramas UML y del modelado organizacional i*, como evidencia
-  de autoría del modelado (elemento A3).
+- Depositadas en `10_Autoria/fuentes_editables/` las fuentes editables
+  (`.drawio`, `.py`) de los diagramas UML y del modelado organizacional
+  i*, cada una junto a la imagen exportada que genera, como evidencia
+  de autoría del modelado (§15a).
+- Actualizado `10_Autoria/README.md` para reflejar el depósito físico
+  de las fuentes editables en `fuentes_editables/`.
 
-### Eliminado
-- `10_Autoria/grabaciones/Sesiones.md`, `Sesion_1.md` y `Sesion_2.md`:
-  reemplazados por los archivos de video depositados directamente y
-  su nuevo `README.md` de inventario.
+### Corregido
+- Renombradas 3 capturas de Mesías con fecha de captura errónea
+  (2026-10-09, posterior al corte) a su fecha real; eliminado el
+  espacio en el nombre del archivo de actualización de `.mailmap`
+  que rompía los scripts de conteo (§15b).
+- Unificados nombres de fuente/imagen en `10_Autoria/fuentes_editables`
+  para CU03 y CU04
+  (`CU03_Clinical_History.drawio` → `CU03_Medical_History.drawio`;
+  `CU04_Inventory_Control.drawio` → `CU04_Control_Inventory.drawio`),
+  evitando ambigüedad entre fuente e imagen exportada.
 
 ## [2B] - 2026-09-01
 
