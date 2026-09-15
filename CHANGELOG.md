@@ -17,6 +17,13 @@ Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
   GitHub), sustituyendo los enlaces externos previos (§15c).
 - `10_Autoria/grabaciones/README.md`: tabla de inventario con fecha,
   participantes, duración, tamaño y hash SHA-256 de ambas grabaciones.
+- `07_Datos/scripts/run_all.R` ampliado para ejecutar también
+  `06_Experimento/scripts_analisis/run_all.R` (9 de 9 scripts ya
+  implementados) y copiar sus tablas resultantes a
+  `07_Datos/resultados/`, de modo que una sola orden reproduzca
+  también las tablas de descriptivos, supuestos, pruebas de hipótesis
+  y tamaño del efecto que antes se generaban fuera del paquete de
+  datos (B1).
 
 ### Corregido
 - Renombradas 3 capturas de Mesías con fecha de captura errónea
@@ -39,6 +46,12 @@ Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
   nuevo propietario del repositorio; corregido el conteo de
   `10_Autoria/capturas/` de 19 a 20 imágenes; reincorporada la mención
   a `verificacion_previa.pdf` en el listado de evidencia de autoría.
+- `02_Evidencias/00_Restringido/Readme.md`: agregada nota aclarando
+  que las 57 entradas de los manifiestos `checksums_*.sha256` listan
+  archivos originales empaquetados dentro de los volúmenes `.7z`
+  cifrados, no archivos sueltos en el árbol; se completó además la
+  tabla de contenido con los archivos de walkthrough que faltaban
+  documentar (B1).
 
 ### Eliminado
 - `10_Autoria/grabaciones/Sesiones.md`, `Sesion_1.md` y `Sesion_2.md`:
