@@ -73,10 +73,10 @@ TR-71,—,—,OE-01,Médico veterinario,—,RF-16,CU-03,—,—,Backend Historia
 TR-72,—,—,OE-01,Médico veterinario,—,RF-02,CU-03,—,—,Backend Historiales Clínicos,—,E1,Paciente no encontrado con los criterios de búsqueda
 TR-73,—,—,OE-03,Personal administrativo,—,RF-05,CU-04,—,—,Backend Inventario,—,A1,Stock mínimo alcanzado tras salida válida — deriva a CU-09 (alerta)
 TR-74,—,—,OE-03,Personal administrativo,—,RF-06,CU-04,—,—,Backend Inventario,—,E1,Salida solicitada mayor al stock disponible — rechaza la operación
-TR-75,—,—,Por definir — sin RF/RNF asociado en la matriz,Personal administrativo,—,SIN RF ASOCIADO,CU-05,—,—,Sin componente asociado en la matriz,—,Principal,CU-05 completo no tenía ninguna fila previa en la matriz — revisar con el equipo
-TR-76,—,—,Por definir — sin RF/RNF asociado en la matriz,Personal administrativo,—,SIN RF ASOCIADO,CU-05,—,—,Sin componente asociado en la matriz,—,A1,Asigna permisos al empleado
-TR-77,—,—,Por definir — sin RF/RNF asociado en la matriz,Personal administrativo,—,SIN RF ASOCIADO,CU-05,—,—,Sin componente asociado en la matriz,—,A2,Restablece contraseña del empleado
-TR-78,—,—,Por definir — sin RF/RNF asociado en la matriz,Personal administrativo,—,SIN RF ASOCIADO,CU-05,—,—,Sin componente asociado en la matriz,—,E1,Información inválida al modificar — no guarda hasta corregir
+TR-75,—,—,OE-03,Personal administrativo,—,RF-28,CU-05,HU-30,CA-30,Backend Gestión de Personal,—,Principal,CU-05 completo no tenía ninguna fila previa en la matriz — revisar con el equipo
+TR-76,—,—,OE-03,Personal administrativo,—,RF-28,CU-05,HU-30,CA-30,Backend Gestión de Personal,—,A1,Asigna permisos al empleado
+TR-77,—,—,OE-03,Personal administrativo,—,RF-28,CU-05,HU-30,CA-30,Backend Gestión de Personal,—,A2,Restablece contraseña del empleado
+TR-78,—,—,OE-03,Personal administrativo,—,RF-28,CU-05,HU-30,CA-30,Backend Gestión de Personal,—,E1,Información inválida al modificar — no guarda hasta corregir
 TR-79,—,—,OE-02,Médico veterinario,—,RF-17,CU-06,—,—,Módulo IA Diagnóstico,—,A1,Veterinario rechaza la sugerencia — se registra el rechazo
 TR-80,—,—,OE-01,Médico veterinario,—,RF-13,CU-07,—,—,Backend Seguimiento Nutricional,—,A1,Datos insuficientes — solicita completar raza/edad/peso
 TR-81,—,—,OE-01,Médico veterinario,—,RF-14,CU-07,—,—,Backend Seguimiento Nutricional,—,E1,Módulo de recomendación falla — queda pendiente de generación
