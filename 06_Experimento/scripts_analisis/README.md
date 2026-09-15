@@ -1,26 +1,26 @@
 # scripts_analisis
 
-## Estado: EN CONSTRUCCIÓN — 1 de 9 scripts implementado (creado 27/08/2026, actualizado con datos reales)
+## Estado: COMPLETO — 9 de 9 scripts implementados, integrados a `07_Datos/scripts/run_all.R`
 
 Según la Sección 4 de la guía, todo análisis debe ejecutarse con scripts
 versionados que reproduzcan exactamente cada tabla y figura del manuscrito.
 No se aceptan tablas producidas manualmente en hojas de cálculo ni figuras
 pegadas sin script que las genere.
 
-## Estructura esperada
+## Estructura
 
 | Script | Función | Estado |
 |---|---|---|
-| 01_importar_datos.R | Carga datos_crudos/ (transcripciones, respuestas, corpus RF/RNF) | Pendiente |
-| 02_limpieza.R | Limpieza básica, detección de duplicados y valores faltantes | Pendiente |
-| 03_curva_saturacion_codigos_abiertos.R | Curva de saturación de códigos por entrevista | **Existe** |
-| 04_descriptivos.R | Estadísticos descriptivos por grupo (mediana, media, DE, mín, máx, IQR) | Pendiente |
-| 05_supuestos.R | Shapiro-Wilk (normalidad), Levene (homogeneidad de varianzas) | Pendiente |
-| 06_pruebas_hipotesis.R | t pareada / Wilcoxon según corresponda, corrección Holm-Bonferroni | Pendiente |
-| 07_tamano_efecto.R | d de Cohen / delta de Cliff con bootstrap (10.000 réplicas) | Pendiente |
-| 08_figuras.R | Genera todas las figuras del manuscrito hacia 09_Publicacion/figuras/ | Pendiente |
-| 09_tablas.R | Genera todas las tablas del manuscrito hacia 09_Publicacion/tablas/ | Pendiente |
-| run_all.R | Ejecuta los scripts anteriores en orden, de principio a fin | Pendiente |
+| 01_importar_datos.R | Carga datos_crudos/ (transcripciones, respuestas, corpus RF/RNF) | **Completo** |
+| 02_limpieza.R | Limpieza básica, detección de duplicados y valores faltantes | **Completo** |
+| 03_curva_saturacion_codigos_abiertos.R | Curva de saturación de códigos por entrevista | **Completo** |
+| 04_descriptivos.R | Estadísticos descriptivos por grupo (mediana, media, DE, mín, máx, IQR) | **Completo** |
+| 05_supuestos.R | Shapiro-Wilk (normalidad), Levene (homogeneidad de varianzas) | **Completo** |
+| 06_pruebas_hipotesis.R | t pareada / Wilcoxon según corresponda, corrección Holm-Bonferroni | **Completo** |
+| 07_tamano_efecto.R | d de Cohen / delta de Cliff con bootstrap (10.000 réplicas) | **Completo** |
+| 08_figuras.R | Genera todas las figuras del manuscrito hacia 09_Publicacion/figuras/ | **Completo** |
+| 09_tablas.R | Genera todas las tablas del manuscrito hacia 09_Publicacion/tablas/ | **Completo** |
+| run_all.R | Ejecuta los scripts anteriores en orden, de principio a fin | **Completo** |
 
 ## Regla de reproducibilidad (checklist de aceptación, Sección 9.3)
 
@@ -28,22 +28,32 @@ El requisito de cierre es que `run_all.R` (o `make all`) reproduzca
 exactamente las cifras del manuscrito partiendo de `datos_crudos/`.
 Ningún script debe contener resultados o cifras escritas a mano.
 
+`07_Datos/scripts/run_all.R` ejecuta este pipeline como parte del
+orquestador general y copia sus tablas finales a `07_Datos/resultados/`,
+de modo que una sola orden (`Rscript 07_Datos/scripts/run_all.R`)
+reproduce también el componente cuantitativo, no solo el cualitativo.
+
 ## Estado real de los datos de entrada (verificado sobre el repositorio)
 
 - **Transcripciones:** 16 de 16 mínimas — **completas** (`07_Datos/datos_crudos/Entrevistas/`).
-- **Respuestas de cuestionario:** 60 respuestas totales en `07_Datos/datos_crudos/encuesta_respuestas_crudas.csv`, repartidas en 4 perfiles:
+- **Respuestas de cuestionario:** el cuestionario cerró con **n = 210** respuestas
+  totales (`07_Datos/resultados/justificacion_muestra.md`), repartidas en 4 perfiles:
   - Dueño(a) de mascota: 26
   - Médico veterinario(a): 18
   - Auxiliar o técnico veterinario: 11
   - Administrador(a) de clínica veterinaria: 5
 
-  El mínimo exigido es **n ≥ 60 por perfil dominante** (o justificación explícita con cálculo de potencia estadística, Cohen d = 0,5, α = 0,05, 1−β = 0,80). Ningún perfil individual alcanza ese umbral todavía; el perfil dominante (dueño de mascota) está en 26/60.
-- **Codificación temática:** cerrada y verificada (50 códigos axiales en 7 categorías; ver `02_Evidencias/Codificacion_Tematica/`).
+  El tamaño total de n=210 supera ampliamente el margen de error objetivo
+  del estudio (~6,8%, ver justificación de muestra). Los subgrupos por
+  perfil individual siguen siendo desiguales; el subgrupo administrador
+  (n=5) se reporta como exploratorio en las comparaciones entre perfiles
+  por su tamaño reducido.
+- **Codificación temática:** cerrada y verificada (50 códigos axiales en 7 categorías;
+  ver `02_Evidencias/Codificacion_Tematica/`).
 
-## Dependencia
+## Nota histórica
 
-Los scripts pendientes (01, 02, 04–09, run_all.R) no pueden producir resultados reales del componente cuantitativo hasta que:
-1. Se complete la recolección de cuestionario hasta n ≥ 60 por perfil dominante, o se documente por escrito la justificación del tamaño de muestra actual mediante cálculo de potencia.
-2. Se implementen y versionen los 8 scripts faltantes.
-
-El análisis cualitativo (codificación temática y curva de saturación) ya tiene datos de entrada completos y solo depende de completar la implementación de los scripts restantes.
+Este pipeline se implementó completamente después de la evaluación que
+documentó su estado inicial ("1 de 9 scripts", n=60). Esa etapa quedó
+superada; ver `CHANGELOG.md` para el detalle de cuándo se integró al
+orquestador general del paquete de datos.
