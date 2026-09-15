@@ -419,8 +419,8 @@ La carpeta `10_Autoria/` documenta que los artefactos entregados fueron producid
 `correspondencia/`, `.mailmap` (raíz), `capturas/` (20 imágenes, los 5 integrantes con 3 o
 más cada uno), `notas_campo/` (16 notas de campo, una por participante), las fuentes
 editables de los diagramas (`fuentes_editables/`, 53 archivos: `.drawio`/`.py` junto a su
-imagen exportada), y `grabaciones/` (con los videos de sesión de trabajo depositados y
-tabla de SHA-256).
+imagen exportada), `grabaciones/` (con los videos de sesión de trabajo depositados y
+tabla de SHA-256), y `verificacion_previa.pdf` (Sección 11 de la guía).
 
 No quedan elementos pendientes en esta carpeta.
 
