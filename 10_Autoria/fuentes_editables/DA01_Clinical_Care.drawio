@@ -1,0 +1,214 @@
+<mxfile host="app.diagrams.net" scale="1" border="0">
+  <diagram name="Página-1" id="inKpdviz2wVtSvzMglQk">
+    <mxGraphModel dx="860" dy="483" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-2" edge="1" parent="1" source="_GLZT-UThaCbsx5X2kOW-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_GLZT-UThaCbsx5X2kOW-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;rotation=-180;strokeColor=#000000;gradientColor=#000000;fillColor=#000000;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="280" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-4" edge="1" parent="1" source="_GLZT-UThaCbsx5X2kOW-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_GLZT-UThaCbsx5X2kOW-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Search Patient by Name/Owner" vertex="1">
+          <mxGeometry height="60" width="120" x="240" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-6" edge="1" parent="1" source="_GLZT-UThaCbsx5X2kOW-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_GLZT-UThaCbsx5X2kOW-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-46" connectable="0" parent="_GLZT-UThaCbsx5X2kOW-6" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="-0.06" as="geometry">
+            <mxPoint x="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-8" edge="1" parent="1" source="_GLZT-UThaCbsx5X2kOW-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_GLZT-UThaCbsx5X2kOW-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-45" connectable="0" parent="_GLZT-UThaCbsx5X2kOW-8" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="-0.1882" y="3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-5" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Registered patient?" vertex="1">
+          <mxGeometry height="80" width="80" x="260" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-14" edge="1" parent="1" source="_GLZT-UThaCbsx5X2kOW-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_GLZT-UThaCbsx5X2kOW-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Review Medical History" vertex="1">
+          <mxGeometry height="60" width="120" x="240" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-10" edge="1" parent="1" source="_GLZT-UThaCbsx5X2kOW-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="_GLZT-UThaCbsx5X2kOW-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="140" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Register New Patient" vertex="1">
+          <mxGeometry height="60" width="120" x="80" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-16" edge="1" parent="1" source="_GLZT-UThaCbsx5X2kOW-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_GLZT-UThaCbsx5X2kOW-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Register Reason for Consultation and Clinical Data" vertex="1">
+          <mxGeometry height="60" width="120" x="240" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-18" edge="1" parent="1" source="_GLZT-UThaCbsx5X2kOW-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_GLZT-UThaCbsx5X2kOW-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-47" connectable="0" parent="_GLZT-UThaCbsx5X2kOW-18" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Yes" vertex="1">
+          <mxGeometry relative="1" x="0.6333" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-27" edge="1" parent="1" source="_GLZT-UThaCbsx5X2kOW-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="_GLZT-UThaCbsx5X2kOW-25">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="180" y="570" />
+              <mxPoint x="180" y="880" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-48" connectable="0" parent="_GLZT-UThaCbsx5X2kOW-27" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="No" vertex="1">
+          <mxGeometry relative="1" x="-0.1762" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-17" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Do you require AI diagnostic support?" vertex="1">
+          <mxGeometry height="100" width="140" x="230" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-20" edge="1" parent="1" source="_GLZT-UThaCbsx5X2kOW-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_GLZT-UThaCbsx5X2kOW-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Consult AI suggestion with Bibliographic Reference" vertex="1">
+          <mxGeometry height="60" width="120" x="240" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-22" edge="1" parent="1" source="_GLZT-UThaCbsx5X2kOW-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_GLZT-UThaCbsx5X2kOW-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-49" connectable="0" parent="_GLZT-UThaCbsx5X2kOW-22" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Modify" vertex="1">
+          <mxGeometry relative="1" x="0.04" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-24" edge="1" parent="1" source="_GLZT-UThaCbsx5X2kOW-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_GLZT-UThaCbsx5X2kOW-25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-50" connectable="0" parent="_GLZT-UThaCbsx5X2kOW-24" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Decline" vertex="1">
+          <mxGeometry relative="1" x="-0.12" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-21" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Veterinarian decides" vertex="1">
+          <mxGeometry height="80" width="80" x="260" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-26" edge="1" parent="1" source="_GLZT-UThaCbsx5X2kOW-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" target="_GLZT-UThaCbsx5X2kOW-25">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="500" y="895" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Edit Suggestion" vertex="1">
+          <mxGeometry height="60" width="120" x="440" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-29" edge="1" parent="1" source="_GLZT-UThaCbsx5X2kOW-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_GLZT-UThaCbsx5X2kOW-30">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="940" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-25" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Register Diagnosis and Treatment" vertex="1">
+          <mxGeometry height="60" width="120" x="240" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-31" edge="1" parent="1" source="_GLZT-UThaCbsx5X2kOW-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_GLZT-UThaCbsx5X2kOW-32">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-33" edge="1" parent="1" source="_GLZT-UThaCbsx5X2kOW-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_GLZT-UThaCbsx5X2kOW-34">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="990" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-30" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#000000;" value="" vertex="1">
+          <mxGeometry height="10" width="120" x="240" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-39" edge="1" parent="1" source="_GLZT-UThaCbsx5X2kOW-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="_GLZT-UThaCbsx5X2kOW-38">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="1125" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Register Communication with client" vertex="1">
+          <mxGeometry height="60" width="120" x="380" y="970" as="geometry" />
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-35" edge="1" parent="1" source="_GLZT-UThaCbsx5X2kOW-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_GLZT-UThaCbsx5X2kOW-36">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="1070" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-34" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Record Weight and Body Condition" vertex="1">
+          <mxGeometry height="60" width="120" x="90" y="970" as="geometry" />
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-37" edge="1" parent="1" source="_GLZT-UThaCbsx5X2kOW-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_GLZT-UThaCbsx5X2kOW-38">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="1120" />
+            </Array>
+            <mxPoint x="210" y="1120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-36" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Generate Nutritional Recommendation" vertex="1">
+          <mxGeometry height="60" width="120" x="90" y="1040" as="geometry" />
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-40" edge="1" parent="1" source="_GLZT-UThaCbsx5X2kOW-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_GLZT-UThaCbsx5X2kOW-41">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="1160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-38" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#000000;" value="" vertex="1">
+          <mxGeometry height="10" width="120" x="240" y="1120" as="geometry" />
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-42" edge="1" parent="1" source="_GLZT-UThaCbsx5X2kOW-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_GLZT-UThaCbsx5X2kOW-43">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="1230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-41" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="40" width="120" x="240" y="1150" as="geometry" />
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-43" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="280" y="1230" as="geometry" />
+        </mxCell>
+        <mxCell id="_GLZT-UThaCbsx5X2kOW-44" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="290" y="1240" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

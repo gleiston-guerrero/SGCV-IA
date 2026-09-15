@@ -1,0 +1,46 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="CU02_Registrar_Atencion_Clinica" id="cu02rce">
+    <mxGraphModel dx="1414" dy="743" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="597" pageHeight="397" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c2" parent="1" style="shape=actor;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="Veterinarian" vertex="1">
+          <mxGeometry height="60" width="30" x="20" y="169" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;verticalAlign=top;align=center;fontSize=12;" value="Record Clinical Encounter" vertex="1">
+          <mxGeometry height="357" width="430" x="147" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="Record clinical encounter  **extension points** Check IA Suggestion Log nutritional tracking Log Communication" vertex="1">
+          <mxGeometry height="89" width="209" x="190" y="154" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="Check IA Suggestion" vertex="1">
+          <mxGeometry height="40" width="80" x="420" y="101" as="geometry" />
+        </mxCell>
+        <mxCell id="c6" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="Log Communication" vertex="1">
+          <mxGeometry height="49" width="87" x="470" y="174" as="geometry" />
+        </mxCell>
+        <mxCell id="c7" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="Log nutritional tracking" vertex="1">
+          <mxGeometry height="53" width="87" x="416" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="c8" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="View Medical History" vertex="1">
+          <mxGeometry height="40" width="80" x="216" y="291" as="geometry" />
+        </mxCell>
+        <mxCell id="c9" edge="1" parent="1" source="c2" style="endArrow=open;html=1;dashed=0;fontSize=10;" target="c4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c10" edge="1" parent="1" source="c4" style="endArrow=open;html=1;dashed=1;fontSize=10;" target="c5" value="&amp;lt;extend&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c11" edge="1" parent="1" source="c4" style="endArrow=open;html=1;dashed=1;fontSize=10;" target="c7" value="&amp;lt;extend&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c12" edge="1" parent="1" source="c4" style="endArrow=open;html=1;dashed=1;fontSize=10;" target="c6" value="&amp;lt;extend&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c13" edge="1" parent="1" source="c4" style="endArrow=open;html=1;dashed=1;fontSize=10;" target="c8" value="&amp;lt;include&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
