@@ -73,7 +73,7 @@ TR-71,—,—,OE-01,Médico veterinario,—,RF-16,CU-03,—,—,Backend Historia
 TR-72,—,—,OE-01,Médico veterinario,—,RF-02,CU-03,—,—,Backend Historiales Clínicos,—,E1,Paciente no encontrado con los criterios de búsqueda
 TR-73,—,—,OE-03,Personal administrativo,—,RF-05,CU-04,—,—,Backend Inventario,—,A1,Stock mínimo alcanzado tras salida válida — deriva a CU-09 (alerta)
 TR-74,—,—,OE-03,Personal administrativo,—,RF-06,CU-04,—,—,Backend Inventario,—,E1,Salida solicitada mayor al stock disponible — rechaza la operación
-TR-75,—,—,OE-03,Personal administrativo,—,RF-28,CU-05,HU-30,CA-30,Backend Gestión de Personal,—,Principal,CU-05 completo no tenía ninguna fila previa en la matriz — revisar con el equipo
+TR-75,—,—,OE-03,Personal administrativo,—,RF-28,CU-05,HU-30,CA-30,Backend Gestión de Personal,—,Principal,Flujo principal de gestion de empleados; CU-05 quedo con trazabilidad completa al agregar RF-28 (resuelto)
 TR-76,—,—,OE-03,Personal administrativo,—,RF-28,CU-05,HU-30,CA-30,Backend Gestión de Personal,—,A1,Asigna permisos al empleado
 TR-77,—,—,OE-03,Personal administrativo,—,RF-28,CU-05,HU-30,CA-30,Backend Gestión de Personal,—,A2,Restablece contraseña del empleado
 TR-78,—,—,OE-03,Personal administrativo,—,RF-28,CU-05,HU-30,CA-30,Backend Gestión de Personal,—,E1,Información inválida al modificar — no guarda hasta corregir
