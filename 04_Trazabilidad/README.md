@@ -13,11 +13,11 @@ La cadena de trazabilidad completa del proyecto: desde los objetivos estratégic
 
 ## matriz_trazabilidad.csv
 
-**63 filas de datos** (cumple el mínimo de 60 filas exigido por el criterio C2 de la rúbrica). Columnas:
+**87 filas de datos** (cumple el mínimo de 60 filas exigido por el criterio C2 de la rúbrica). Columnas:
 
 | Columna | Contenido |
 |---|---|
-| `ID_Trazabilidad` | Identificador único de la fila (`TR-01`...`TR-63`) |
+| `ID_Trazabilidad` | Identificador único de la fila (`TR-01`...`TR-87`) |
 | `Ley` / `Articulo` | Base legal cuando aplica (LOPDP y artículo específico; `—` si no aplica) |
 | `Objetivo` | Objetivo Estratégico que atiende (`OE-01`, `OE-02`, `OE-03` o `Transversal`) |
 | `Interesado` | Stakeholder relacionado (debe coincidir con `Mapa_de_stakeholders.csv`) |
@@ -29,7 +29,7 @@ La cadena de trazabilidad completa del proyecto: desde los objetivos estratégic
 | `Componente` | Módulo de software que lo implementa |
 | `Mockup` | Mockup de `03_Modelado/Mockups/` que lo ilustra (o "Transversal"/"No aplica") |
 
-**Cobertura verificada** (contando identificadores distintos, no solo apariciones): **27 RF**, **21 RNF**, **10 RST** (requisitos de sistema/infraestructura transversales), **10 CU** y **29 HU** quedan referenciados al menos una vez en la matriz.
+**Cobertura verificada** (contando identificadores distintos, no solo apariciones): **28 RF**, **21 RNF**, **10 RST** (requisitos de sistema/infraestructura transversales), **10 CU** y **29 HU** quedan referenciados al menos una vez en la matriz.
 
 ## Mapa_de_stakeholders.csv
 
@@ -37,7 +37,7 @@ La cadena de trazabilidad completa del proyecto: desde los objetivos estratégic
 
 ## priorizacion_moscow_kano_valor.csv
 
-48 filas: los **27 RF y 21 RNF** priorizados (no incluye los 10 RST — ver nota abajo). Columnas: `ID, MoSCoW, Kano, Valor_de_Negocio, Estado, Criticidad_temporal, Reduccion_riesgo, Tamano, WSJF, Justificacion`. Distribución MoSCoW: 35 Must, 10 Should, 3 Could (ningún Won't).
+49 filas: los **28 RF y 21 RNF** priorizados (no incluye los 10 RST — ver nota abajo). Columnas: `ID, MoSCoW, Kano, Valor_de_Negocio, Estado, Criticidad_temporal, Reduccion_riesgo, Tamano, WSJF, Justificacion`. Distribución MoSCoW: 36 Must, 10 Should, 3 Could (ningún Won't).
 
 ## Por confirmar
 
