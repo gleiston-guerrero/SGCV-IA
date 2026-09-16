@@ -8,7 +8,7 @@ Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 - Depositadas en `10_Autoria/fuentes_editables/` las fuentes editables
   (`.drawio`, `.py`) de los diagramas UML y del modelado organizacional
   i*, cada una junto a la imagen exportada que genera, como evidencia
-  de autoría del modelado (§15a).
+  de autoría del modelado (§15a). *Realizado por: Marcillo Ponce.*
 - Actualizado `10_Autoria/README.md` para reflejar el depósito físico
   de las fuentes editables en `fuentes_editables/`.
 - `10_Autoria/grabaciones/Sesion_1.mp4` y `Sesion_2.mp4`: grabaciones
@@ -52,6 +52,11 @@ Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
   cifrados, no archivos sueltos en el árbol; se completó además la
   tabla de contenido con los archivos de walkthrough que faltaban
   documentar (B1).
+- Reemplazados los consentimientos de entrevista P11 a P16 (antes
+  documentos Word/PDF con texto editable y firma pegada) por
+  escaneos/fotografías del ejemplar físico firmado, en formato imagen
+  sin texto extraíble, nombrados con fecha, rol y código de
+  participante (§7). *Realizado por: Marcillo Ponce.*
 
 ### Eliminado
 - `10_Autoria/grabaciones/Sesiones.md`, `Sesion_1.md` y `Sesion_2.md`:
