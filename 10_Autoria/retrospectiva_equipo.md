@@ -1,4 +1,3 @@
-
 # Retrospectiva del equipo — SGCV-IA
 
 Equipo ABMMV — Entrega 4 (2B), examen suspenso. Fecha: 15/09/2026, posterior a la última
@@ -28,14 +27,19 @@ identificación del repositorio, y al final la etiqueta de cierre.
    `06_Experimento/scripts_analisis/` para que una sola orden reproduzca también las tablas
    de hipótesis y tamaño del efecto.
 6. **Etiqueta de cierre (§3).** Creamos `v2B-cierre` sobre el commit final.
+7. **Consentimientos (§7).** Reemplazamos los consentimientos de entrevista P11 a P16
+   (documentos Word/PDF con texto editable y firma pegada) por escaneos/fotografías del
+   ejemplar físico firmado, en formato imagen sin texto extraíble, nombrados con fecha,
+   rol y código de participante.
 
 ## 2. Quién hizo qué
 
 - **Mesías Quijije** ejecutó la mayor parte de las correcciones técnicas de este cierre:
-  git/GitHub (capturas, grabaciones, fuentes editables, CHANGELOG, tag `v2B-cierre`) y la
-  corrección de `11_Defensa/`.
-- **Marcillo Ponce y Barrionuevo Fuentes** son los autores de las capturas y nombres de
-  archivo corregidos en el punto 1.
+  git/GitHub (capturas, grabaciones, tag `v2B-cierre`) y la corrección de `11_Defensa/`.
+- **Marcillo Ponce** depositó las fuentes editables en `10_Autoria/fuentes_editables/`
+  (punto 2), reemplazó los consentimientos P11 a P16 (punto 7), actualizó las entradas
+  correspondientes del `CHANGELOG.md`, y junto con Barrionuevo Fuentes es autor de las
+  capturas y nombres de archivo corregidos en el punto 1.
 - **Barrionuevo Fuentes** construyó el pipeline de `06_Experimento/scripts_analisis/` y de
   `07_Datos/` que resuelve el punto 5.
 - El detalle línea por línea de quién hizo cada artefacto, con hashes de commit, está en
