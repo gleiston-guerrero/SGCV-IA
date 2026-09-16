@@ -12,7 +12,6 @@
 \usepackage{booktabs}
 \usepackage{manyfoot}
 \usepackage{xcolor}
-\usepackage{orcidlink}
 \usepackage{array}
 \usepackage{microtype}
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
@@ -31,12 +30,12 @@
 %%=============================================================
 %% Autoria -- ORCID confirmados por el equipo
 %%=============================================================
-\author*[1]{\fnm{Alberto Jeanpool} \sur{Marcillo Ponce}}\email{amarcillop@uteq.edu.ec} \orcidlink{0009-0003-7886-3957}
-\author[1]{\fnm{Robyn Willian} \sur{Amagua Sacón}}\email{ramaguas@uteq.edu.ec} \orcidlink{0009-0006-7363-4276}
-\author[1]{\fnm{Anthony Alfredo} \sur{Vera Gómez}}\email{averag10@uteq.edu.ec} \orcidlink{0009-0007-8198-6199}
-\author[1]{\fnm{Jhon Alexander} \sur{Mesías Quijije}}\email{jmesiasq@uteq.edu.ec} \orcidlink{0009-0001-6929-7514}
-\author[1]{\fnm{Carlos Daniel} \sur{Barrionuevo Fuentes}}\email{cbarrionuevof@uteq.edu.ec} \orcidlink{0009-0003-3415-3208}
-\author[1]{\fnm{Gleiston Ciceron} \sur{Guerrero Ulloa}}\email{gguerrero@uteq.edu.ec} \orcidlink{0000-0001-5990-2357} % Docente supervisor
+\author*[1]{\fnm{Alberto Jeanpool} \sur{Marcillo Ponce}}\email{amarcillop@uteq.edu.ec}
+\author[1]{\fnm{Robyn Willian} \sur{Amagua Sacón}}\email{ramaguas@uteq.edu.ec}
+\author[1]{\fnm{Anthony Alfredo} \sur{Vera Gómez}}\email{averag10@uteq.edu.ec}
+\author[1]{\fnm{Jhon Alexander} \sur{Mesías Quijije}}\email{jmesiasq@uteq.edu.ec}
+\author[1]{\fnm{Carlos Daniel} \sur{Barrionuevo Fuentes}}\email{cbarrionuevof@uteq.edu.ec}
+\author[1]{\fnm{Gleiston Ciceron} \sur{Guerrero Ulloa}}\email{gguerrero@uteq.edu.ec} % Docente supervisor
 
 \affil*[1]{\orgdiv{Facultad de Ciencias de la Computación}, \orgname{Universidad Técnica Estatal de Quevedo (UTEQ)}, \orgaddress{\city{Quevedo}, \country{Ecuador}}}
 
@@ -55,6 +54,8 @@
 \keywords{Explainability, Non-functional requirements, AI-assisted diagnosis, Veterinary informatics, User studies}
 
 \maketitle
+
+\noindent\textbf{ORCID iDs:} Alberto Jeanpool Marcillo Ponce \href{https://orcid.org/0009-0003-7886-3957}{0009-0003-7886-3957}; Robyn Willian Amagua Sacón \href{https://orcid.org/0009-0006-7363-4276}{0009-0006-7363-4276}; Anthony Alfredo Vera Gómez \href{https://orcid.org/0009-0007-8198-6199}{0009-0007-8198-6199}; Jhon Alexander Mesías Quijije \href{https://orcid.org/0009-0001-6929-7514}{0009-0001-6929-7514}; Carlos Daniel Barrionuevo Fuentes \href{https://orcid.org/0009-0003-3415-3208}{0009-0003-3415-3208}; Gleiston Ciceron Guerrero Ulloa \href{https://orcid.org/0000-0001-5990-2357}{0000-0001-5990-2357}.
 
 % ============================================================
 % 1. INTRODUCCION
@@ -189,7 +190,7 @@ The principal data-collection techniques documented in the final ERS were semi-s
 
 \textbf{Documentary evidence.} Organizational documents and other project artefacts were reviewed when necessary to understand processes and support requirements specification. These materials complement, rather than replace, the primary field evidence.
 
-No questionnaire or survey is treated as a requirements-elicitation instrument in this stage of the study. The final ERS explicitly states that requirements information for this stage was obtained through semi-structured interviews and observation.
+The primary requirements-elicitation instruments for this stage were semi-structured interviews and direct observation; no questionnaire or survey was used to elicit new functional or non-functional requirements. A complementary quantitative questionnaire (n=210 respondents across four stakeholder profiles) was administered separately to explore whether perceptions of system-related constructs differed across profiles; its results are reported independently in Section~\ref{res:survey}.
 
 \subsection{Requirements analysis}\label{subsec5}
 
@@ -217,7 +218,7 @@ No personally identifying participant information is reproduced in this manuscri
 
 The qualitative analysis is supported by interview transcripts, observation evidence, documentary material, and thematic coding. The project repository contains anonymized transcripts, coding materials, requirements artefacts, and traceability information. The final ERS documents the organization of these materials and distinguishes restricted evidence from materials intended for dissemination.
 
-The qualitative thematic-coding results derived from the 16 interviews, including thematic saturation (\emph{saturación} temática), are reported in Section~\ref{sec4}. Any additional terminal quantitative or statistical validation (e.g., statistical tests, effect sizes, confidence intervals) is not reported in this manuscript version and will be incorporated only after the corresponding experimental evidence and analysis scripts have been completed and verified.
+The qualitative thematic-coding results derived from the 16 interviews, including thematic saturation (\emph{saturación} temática), are reported in Section~\ref{sec4}. Statistical tests, effect sizes, and confidence intervals for the supplementary profile-based survey are reported in Section~\ref{res:survey}.
 
 \subsection{Deviations from the pre-registered protocol}\label{subsec8b}
 
@@ -239,7 +240,7 @@ The single-case design provides detailed contextual evidence but does not by its
 
 \subsection{Thematic saturation}\label{res:saturation}
 
-Open coding was applied line-by-line to the 16 anonymized interview transcripts (P01--P16), yielding 167 open codes. These were consolidated through axial coding into 50 codes across 7 categories: clinical records and patient management, administrative and financial management, inventory, appointments and communication with owners, perception of artificial intelligence, usability and performance, and security. Coding followed the collection order (P01$\rightarrow$P16) to track the rate at which additional interviews contributed new codes, separately at the open-coding level and at the level of the closed (axial) coding scheme, following the code-saturation approach of Hennink et al.~\cite{hennink2017}.
+Open coding was applied line-by-line to the 16 anonymized interview transcripts (P01--P16), yielding 167 open codes. These were consolidated through axial coding into 50 codes across 7 categories: clinical records and patient management (10 codes), administrative and financial management (5 codes), inventory (4 codes), appointments and communication with owners (10 codes), perception of artificial intelligence (8 codes), usability and performance (10 codes), and security (3 codes). Coding followed the collection order (P01$\rightarrow$P16) to track the rate at which additional interviews contributed new codes, separately at the open-coding level and at the level of the closed (axial) coding scheme, following the code-saturation approach of Hennink et al.~\cite{hennink2017}.
 
 At the open-coding level, new codes continued to appear throughout the corpus (16 new codes at P01, falling to a range of 7--16 per subsequent interview, with 10, 11, and 12 new open codes in the final three interviews, P14--P16 respectively); this pattern is expected, since open coding preserves each participant's own wording before consolidation and is not itself the unit on which saturation is assessed. At the level of the closed axial scheme, new-category emergence declined sharply: the first two interviews contributed 15 and 6 new axial codes respectively, and the final three interviews (P14--P16) contributed only 1, 1, and 2 new axial codes, an average of 1.33 new codes, corresponding to 2.67\% of the final cumulative total of 50 --- below the 5\% threshold adopted for closed-coding saturation. Figure~\ref{fig:saturacion} reports both curves. The 16-interview sample therefore supports closed-coding saturation of the categorical scheme, while individual open-coded expressions of these categories continued to vary in wording up to the final interview.
 
@@ -286,6 +287,19 @@ The explainability concerns identified in Section~\ref{res:rq1} were operational
 \subsection{Low-frequency and emergent codes}\label{res:emergent}
 
 Several low-frequency codes are reported as negative or atypical cases rather than omitted, following standard qualitative-analysis practice. Skepticism toward unvalidated internet sources such as search engines or chatbots used by pet owners (IA-5, 1/16) and interest in AI as a means of reducing administrative and record-keeping workload (IA-6, 1/16) indicate that the perception of AI extended beyond the core diagnostic-trust pattern reported in Section~\ref{res:rq1}, without displacing it. Outside the perception-of-AI category, the request for photographic documentation of clinical evolution (wounds, lesions) linked to the patient record, raised by a single participant (P13), was among the last new axial codes to appear in the corpus and is noted here as a candidate requirement for future iterations rather than as a validated finding.
+
+\subsection{Secondary quantitative evidence: profile-based survey comparisons}\label{res:survey}
+
+In addition to the qualitative elicitation reported above, a supplementary questionnaire (n=210 respondents across four stakeholder profiles: clinic administrators, n=5; veterinary technicians/assistants, n=11; pet owners, n=26; and veterinarians, n=18) was analyzed to explore whether perceptions of information management, system importance, digital reminders, and AI acceptance differed across profiles. Pairwise comparisons were conducted using the Wilcoxon--Mann--Whitney test with Holm correction for multiple comparisons (24 tests across four survey items and six profile pairs). After correction, only one comparison reached significance at $\alpha=0.05$: pet owners rated system importance higher than veterinarians did ($p_{\text{Holm}}=0.018$).
+
+Cliff's delta and Cohen's $d$ effect sizes with 95\% confidence intervals were computed for all pairwise comparisons and are reported in full in the replication package (Table~\texttt{tabla\_06\_tamano\_efecto.csv}, Figure~\ref{fig:effectsize}). We highlight a methodological caveat rather than a substantive finding: comparisons involving the administrator profile ($n=5$) yield effect-size confidence intervals too wide to support any claim about the true magnitude of the difference (e.g., Cohen's $d=1.15$, 95\% CI $[0.41, 3.57]$, for the administrator--technician comparison on the information-management item). These comparisons are reported for completeness and transparency, but should be read as exploratory: with a subgroup as small as five respondents, the interval is uninformative about effect magnitude, and no conclusion is drawn from it in this study.
+
+\begin{figure}[tp]
+\centering
+\includegraphics[width=0.85\textwidth]{figuras/fig_tamano_efecto_delta_cliff.png}
+\caption{Cliff's delta and Cohen's $d$ effect sizes with 95\% confidence intervals for the six pairwise profile comparisons across four survey items. Intervals for comparisons involving the administrator subgroup ($n=5$) are markedly wider and should not be interpreted as precise effect-size estimates.}
+\label{fig:effectsize}
+\end{figure}
 
 % ============================================================
 % 5. DISCUSION
@@ -335,7 +349,7 @@ A second threat is the potential conflation of explainability with related const
 
 \subsection{Conclusion validity}\label{tv:conclusion}
 
-The principal threat to conclusion validity at the present stage is the qualitative and contextual nature of the available evidence. The conclusions that can be supported by this part of the study concern the identification, specification, and traceability of explainability requirements; they do not establish population-level effects or statistically significant differences between user groups. This threat is mitigated by restricting claims to the documented evidence and by preserving traceability from stakeholder material to the resulting requirements. Accordingly, no statistical inference is reported in this manuscript version.
+The principal threat to conclusion validity at the present stage is the qualitative and contextual nature of the available evidence. The conclusions that can be supported by this part of the study concern the identification, specification, and traceability of explainability requirements; they do not establish population-level effects or statistically significant differences between user groups. This threat is mitigated by restricting claims to the documented evidence and by preserving traceability from stakeholder material to the resulting requirements. Accordingly, statistical inference in this manuscript is limited to the supplementary profile-based survey comparisons (Section~\ref{res:survey}), reported with explicit caution regarding subgroup size, and does not extend to the core qualitative RQ1/RQ2 findings.
 
 A second threat concerns the incompleteness of the terminal empirical validation at the time of this manuscript version: as documented in Section~\ref{subsec8b}, the two-round quantitative validation component registered in the OSF protocol was designed but not executed within the project timeline. Statistical tests, effect sizes, confidence intervals, and conclusions dependent on that dataset are consequently absent from this manuscript version, rather than staged for a later section. This prevents unsupported quantitative conclusions, but it also means that the present study cannot yet make claims about the measured effectiveness, satisfaction, or comparative performance of the operationalized explainability requirements. Those claims remain outside the scope of the current manuscript version and are carried forward as future work (Section~\ref{sec7}).
 
