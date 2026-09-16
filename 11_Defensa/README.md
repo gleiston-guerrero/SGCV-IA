@@ -1,57 +1,44 @@
-# 11_Defensa/
+# 04_Trazabilidad/
 
-Esta carpeta contiene los materiales correspondientes a la presentación oral de la **Entrega 4 (2B)** del proyecto **SGCV-IA — Sistema de Gestión para Clínicas Veterinarias con Inteligencia Artificial**.
+## Qué contiene esta carpeta
 
-## Estado: FINALIZADO
+La cadena de trazabilidad completa del proyecto: desde los objetivos estratégicos y la base legal (LOPDP), pasando por interesados, requisitos, casos de uso, historias de usuario y criterios de aceptación, hasta el componente de software y el mockup que los implementa. Es el artefacto que la Sección 9.3 de la Guía de Entrega 4 usa para comprobar que "todo requisito del componente inteligente tiene métrica, unidad, umbral y método de verificación" y que "cada requisito... aparece en la matriz de trazabilidad, vinculado al elemento de diseño que lo realiza y al caso de prueba que lo verifica".
 
-Los materiales finales de presentación, grabación y apoyo visual ya se encuentran completos.
+```text
+04_Trazabilidad/
+├── matriz_trazabilidad.csv           — cadena completa OE→Ley→Interesado→Requisito→CU→HU→CA→Componente→Mockup
+├── Mapa_de_stakeholders.csv          — poder/interés de cada stakeholder (base de Organizacional_iStar/Matriz_Poder_Interes)
+└── priorizacion_moscow_kano_valor.csv — priorización de RF/RNF (MoSCoW, Kano, valor de negocio, WSJF)
+```
 
-| **Archivo**            | **Contenido esperado**                                       | **Responsable** | **Estado**     |
-| ---------------------- | ------------------------------------------------------------ | --------------- | -------------- |
-| `presentacion.pdf`     | Diapositivas finales en formato PDF                          | Equipo          | Finalizado     |
-| `presentacion.pptx`    | Versión editable de las diapositivas                         | Equipo          | Finalizado     |
-| `guion.md`             | Guion de exposición con tiempos por diapositiva e integrante | Equipo          | Finalizado     |
-| `video_defensa.mp4`    | Grabación de la defensa                                      | Equipo          | Finalizado     |
-| `folleto_defensa_SGCV-IA.pdf` | Resumen estructurado para el tribunal                 | Equipo          | Finalizado     |
+## matriz_trazabilidad.csv
 
-### Requisitos de la defensa
+**87 filas de datos** (cumple el mínimo de 60 filas exigido por el criterio C2 de la rúbrica). Columnas:
 
-De acuerdo con la **Guía de Entrega 4 (2B), Sección 8**, la defensa contempla:
+| Columna | Contenido |
+|---|---|
+| `ID_Trazabilidad` | Identificador único de la fila (`TR-01`...`TR-87`) |
+| `Ley` / `Articulo` | Base legal cuando aplica (LOPDP y artículo específico; `—` si no aplica) |
+| `Objetivo` | Objetivo Estratégico que atiende (`OE-01`, `OE-02`, `OE-03` o `Transversal`) |
+| `Interesado` | Stakeholder relacionado (debe coincidir con `Mapa_de_stakeholders.csv`) |
+| `EV` | Evidencia de campo que sustenta el requisito (`EV-01`...) |
+| `RF_RNF_RD` | Requisito(s) involucrados: funcional (RF-), no funcional (RNF-) o de sistema/infraestructura (RST-) |
+| `CU` | Caso de uso relacionado |
+| `HU` | Historia de usuario relacionada |
+| `CA` | Criterio de aceptación |
+| `Componente` | Módulo de software que lo implementa |
+| `Mockup` | Mockup de `03_Modelado/Mockups/` que lo ilustra (o "Transversal"/"No aplica") |
 
-* **25 minutos** para la presentación.
-* **10 minutos** para preguntas del tribunal.
-* **Cronómetro visible** durante la presentación.
-* **Participación equitativa** de todos los integrantes.
-* **Mínimo 4 minutos hablados por integrante**.
-* Distribución de diapositivas y responsabilidades definida en el guion.
-* Guion de exposición organizado por bloques y tiempos.
-* Preparación de preguntas y respuestas para el tribunal.
-* Material visual de apoyo para la presentación.
-* Grabación de la defensa como evidencia.
+**Cobertura verificada** (contando identificadores distintos, no solo apariciones): **28 RF**, **21 RNF**, **10 RST** (requisitos de sistema/infraestructura transversales), **10 CU** y **30 HU** quedan referenciados al menos una vez en la matriz.
 
-### Distribución de la exposición
+## Mapa_de_stakeholders.csv
 
-La presentación se organiza entre los cinco integrantes del equipo:
+8 stakeholders con columnas `Stakeholder, Poder, Interés, Clasificación, Estrategia de gestión`. Esta tabla es la fuente de datos del diagrama `03_Modelado/Organizacional_iStar/Matriz_Poder_Interes` — si se actualiza un stakeholder aquí, hay que regenerar también ese diagrama para que no queden desincronizados.
 
-| **Integrante**                    | **Responsabilidad en la defensa** | **Tiempo aproximado** |
-| --------------------------------- | --------------------------------- | --------------------: |
-| Marcillo Ponce Alberto Jeanpool   | Analista líder                    |                 6 min |
-| Barrionuevo Fuentes Carlos Daniel | Apoyo · Modelador                 |                 6 min |
-| Amagua Sacón Robyn Willian        | Documentador                      |                 4 min |
-| Vera Gómez Anthony Alfredo        | Modelador                         |                 5 min |
-| Mesías Quijije Jhon Alexander     | Verificador                       |                 4 min |
-| **Total**                         |                                   |            **25 min** |
+## priorizacion_moscow_kano_valor.csv
 
-### Organización de la presentación
+49 filas: los **28 RF y 21 RNF** priorizados (no incluye los 10 RST — ver nota abajo). Columnas: `ID, MoSCoW, Kano, Valor_de_Negocio, Estado, Criticidad_temporal, Reduccion_riesgo, Tamano, WSJF, Justificacion`. Distribución MoSCoW: 36 Must, 10 Should, 3 Could (ningún Won't).
 
-La defensa aborda los principales resultados del proyecto y el componente empírico desarrollado durante la Entrega 4 (2B), incluyendo:
+## Por confirmar
 
-* Contexto y propósito del proyecto.
-* Metodología utilizada.
-* Trabajo de campo y evidencias obtenidas.
-* Codificación y análisis de la información.
-* Saturación temática.
-* Requisitos relacionados con inteligencia artificial.
-* Calidad, trazabilidad y validación de los resultados.
-* Estado de los artefactos y evidencias.
-* Conclusiones y aspectos pendientes.
+Los **10 identificadores `RST-`** que aparecen en `matriz_trazabilidad.csv` (por ejemplo `RST-01`, ligado a "Infraestructura/Backend", interesado "Equipo de desarrollo") **no están priorizados** en `priorizacion_moscow_kano_valor.csv`, que solo cubre RF y RNF. Si `RST-` corresponde a requisitos puramente técnicos/de infraestructura que el equipo decidió no pasar por MoSCoW/Kano (porque no tienen valor de negocio directo para un stakeholder externo), conviene dejarlo dicho explícitamente aquí; si fue un olvido, hay que agregarlos a la priorización.
