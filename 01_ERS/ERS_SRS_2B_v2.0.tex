@@ -359,9 +359,9 @@ Historial de cambios}}
 
 \hyperref[_bookmarkC7]{Tabla C.1. Matriz de riesgos éticos, técnicos y operativos identificados (Anexo A.11)}
 
-\hyperref[_bookmarkD1]{Tabla D.1. Matriz de Trazabilidad Extendida --- Identificación normativa y objetivo (63 filas)}
+\hyperref[_bookmarkD1]{Tabla D.1. Matriz de Trazabilidad Extendida --- Identificación normativa y objetivo (87 filas)}
 
-\hyperref[_bookmarkD2]{Tabla D.2. Matriz de Trazabilidad Extendida --- Diseño, historias de usuario y mockup asociado (63 filas)}
+\hyperref[_bookmarkD2]{Tabla D.2. Matriz de Trazabilidad Extendida --- Diseño, historias de usuario y mockup asociado (87 filas)}
 
 \textbf{Índice de imágenes}
 
@@ -3285,7 +3285,7 @@ CU-05
 \end{minipage} \\
 \hline
 \textbf{Fuente} & \begin{minipage}[t]{\linewidth}\raggedright
-[PENDIENTE — completar con la entrevista/RC real del equipo que sustenta este requisito. No coloquen una cita inventada; si no encuentran una entrevista que lo respalde directamente, indíquenlo como "necesidad operativa identificada por el equipo de desarrollo" en vez de atribuirlo a un participante que no lo mencionó.]
+Necesidad operativa identificada por el equipo de desarrollo: ningún requisito del catálogo original (Entrega 1B) ni del análisis de cumplimiento legal (Criterio C4) respaldaba a CU-05 (Gestionar Empleados), pese a que el caso de uso ya estaba modelado desde la Sección 4.1. No se elicitó de una entrevista de campo específica.
 \end{minipage} \\
 \hline
 \textbf{Entradas / Salidas} & \begin{minipage}[t]{\linewidth}\raggedright
@@ -4253,9 +4253,9 @@ requisitos}\label{clasificaciuxf3n-de-requisitos}
 
 \begin{quote}
 Se clasifican los cuatro tipos de artefactos de requisitos identificados
-en el documento: 27 Requisitos Funcionales (RF), 21 Requisitos No
+en el documento: 28 Requisitos Funcionales (RF), 21 Requisitos No
 Funcionales (RNF), 10 Restricciones (RST) y 14 Requisitos Legales (RL),
-para un total de 72 elementos clasificados.
+para un total de 73 elementos clasificados.
 \end{quote}
 
 {\def\LTcaptype{none} % do not increment counter
@@ -4275,7 +4275,7 @@ para un total de 72 elementos clasificados.
 \endhead
 \hline
 \endlastfoot
-Requisito Funcional (RF) & 27 & RF-01 a RF-27 \\
+Requisito Funcional (RF) & 28 & RF-01 a RF-28 \\
 \hline
 Requisito No Funcional (RNF) & 21 & RNF-01 a RNF-21 \\
 \hline
@@ -4425,7 +4425,7 @@ clasificadas.
 Must have & \begin{minipage}[t]{\linewidth}\raggedright
 RF-01, RF-02, RF-03, RF-04, RF-05, RF-06, RF-07, RF-08, RF-10, RF-11,
 RF-13, RF-16, RF-17, RF-18, RF-19, RF-20, RF-22, RF-23, RF-24, RF-26,
-RF-27 (21 RF)
+RF-27, RF-28 (22 RF)
 \end{minipage} &
 \begin{minipage}[t]{\linewidth}\raggedright
 RNF-01, RNF-02, RNF-04, RNF-05, RNF-08, RNF-09, RNF-12, RNF-13,
@@ -4510,7 +4510,7 @@ e-commerce --- Sección 1.2) ya se filtraron en la fase de planificación
 \protect\phantomsection\label{_bookmark64}{}Tabla 14. Priorización de
 requisitos mediante la técnica MoSCoW.
 
-\textbf{Resumen cuantitativo (RF):} 21 Must (78\%), 5 Should (18\%), 1
+\textbf{Resumen cuantitativo (RF):} 22 Must (79\%), 5 Should (18\%), 1
 Could (4\%), 0 Won\textquotesingle t --- sobre el 60\% recomendado por
 la regla general de MoSCoW en Must have; se justifica por el peso de
 los requisitos legales (LOPDP) y del componente de IA, que son de
@@ -4737,6 +4737,14 @@ LOPDP Art. 12--15\strut
 \end{minipage} & CU-01 & \begin{minipage}[t]{\linewidth}\raggedright
 Portal de\\
 Derechos ARCO\strut
+\end{minipage} \\
+\hline
+RF-28 & RF & Must & Básico & Alto &
+\begin{minipage}[t]{\linewidth}\raggedright
+---\strut
+\end{minipage} & CU-05 & \begin{minipage}[t]{\linewidth}\raggedright
+Gestión de\\
+Personal\strut
 \end{minipage} \\
 \hline
 RNF-01 & RNF & Must & Desempeño & Alto & ISO/IEC 25010 & Transversal &
@@ -5369,8 +5377,8 @@ Los ítems marcados \emph{Transversal} condicionan a los tres objetivos por
 igual (por ejemplo, requisitos de seguridad, portabilidad o cumplimiento
 LOPDP aplicables a todo el sistema). Se presenta dividida en tres tablas
 correlacionadas por el identificador de requisito (ID-RF) para preservar la
-legibilidad, cubriendo el total de 63 filas de trazabilidad (TR-01 a
-TR-63), correspondientes a 27 RF, 21 RNF y 10 RST, sobre el
+legibilidad, cubriendo el total de 87 filas de trazabilidad (TR-01 a
+TR-87), correspondientes a 28 RF, 21 RNF y 10 RST, sobre el
 mínimo de 40 exigido.
 \end{quote}
 
@@ -5460,9 +5468,7 @@ TR-28 (RF-23) & RF & LOPDP & Art. 4 (auditoría) & OE-01 & Médico veterinario \
 \hline
 TR-29 (RF-24) & RF & — & — & Transversal (OE-01/02/03) & Equipo de desarrollo \\
 \hline
-TR-30 (RF-25) & RF & — & — & OE-03 & \begin{minipage}[t]{\linewidth}\raggedright
-Propietario o administrador de la clínica
-\end{minipage} \\
+TR-30 (RF-25) & RF & — & — & OE-03 & Propietario o administrador de la clínica \\
 \hline
 TR-31 (RF-26) & RF & LOPDP & Art. 7, 8 & Transversal (LOPDP) & Propietario de la mascota \\
 \hline
@@ -5498,13 +5504,9 @@ TR-46 (RNF-14) & RNF & ISO/IEC 25010 & — & Transversal (OE-01/02/03) & Equipo 
 \hline
 TR-47 (RNF-15) & RNF & ISO/IEC 25010 & — & Transversal (OE-01/02/03) & Personal administrativo \\
 \hline
-TR-48 (RNF-16) & RNF & LOPDP & Art. 10 lit. i) & Transversal (LOPDP) & \begin{minipage}[t]{\linewidth}\raggedright
-Comité de ética / protección de datos (LOPDP)
-\end{minipage} \\
+TR-48 (RNF-16) & RNF & LOPDP & Art. 10 lit. i) & Transversal (LOPDP) & Comité de ética / protección de datos (LOPDP) \\
 \hline
-TR-49 (RNF-17) & RNF & LOPDP & Art. 43, 46 & Transversal (LOPDP) & \begin{minipage}[t]{\linewidth}\raggedright
-Comité de ética / protección de datos (LOPDP)
-\end{minipage} \\
+TR-49 (RNF-17) & RNF & LOPDP & Art. 43, 46 & Transversal (LOPDP) & Comité de ética / protección de datos (LOPDP) \\
 \hline
 TR-50 (RNF-18) & RNF & LOPDP & Art. 20 & OE-02 & Médico veterinario \\
 \hline
@@ -5526,17 +5528,61 @@ TR-58 (RST-08) & RST & LOPDP & Art. 20 & OE-02 & Equipo de desarrollo \\
 \hline
 TR-59 (RST-09) & RST & — & Sec. 1.2 & Transversal & Equipo de desarrollo \\
 \hline
-TR-60 (RST-10) & RST & LOPDP & Art. 47, 48 & Transversal (LOPDP) & \begin{minipage}[t]{\linewidth}\raggedright
-Comité de ética / protección de datos (LOPDP)
-\end{minipage} \\
+TR-60 (RST-10) & RST & LOPDP & Art. 47, 48 & Transversal (LOPDP) & Comité de ética / protección de datos (LOPDP) \\
 \hline
-TR-61 (RNF-19) & RNF & — & — & OE-02 & Médico veterinario \\
+TR-61 (RNF-19) & RNF & — & — & OE-02 & Equipo de desarrollo \\
 \hline
 TR-62 (RNF-20) & RNF & — & — & OE-02 & Equipo de desarrollo \\
 \hline
-TR-63 (RNF-21) & RNF & — & \begin{minipage}[t]{\linewidth}\raggedright
-RST-05, RST-08 (supervisión humana)
-\end{minipage} & OE-02 & Médico veterinario \\
+TR-63 (RNF-21) & RNF & — & RST-05, RST-08 (supervisión humana) & OE-02 & Médico veterinario \\
+\hline
+TR-64 (N/A (evento de flujo)) & — & — & — & Transversal (OE-01/02/03) & Personal administrativo / Veterinario / Propietario \\
+\hline
+TR-65 (N/A (evento de flujo)) & — & — & — & Transversal (OE-01/02/03) & Personal administrativo / Veterinario / Propietario \\
+\hline
+TR-66 (N/A (evento de flujo)) & — & — & — & Transversal (OE-01/02/03) & Personal administrativo / Veterinario / Propietario \\
+\hline
+TR-67 (RF-04) & RF & — & — & OE-01 & Médico veterinario \\
+\hline
+TR-68 (RF-04) & RF & — & — & OE-01 & Médico veterinario \\
+\hline
+TR-69 (RF-04) & RF & — & — & OE-01 & Médico veterinario \\
+\hline
+TR-70 (RF-04) & RF & — & — & OE-01 & Médico veterinario \\
+\hline
+TR-71 (RF-16) & RF & — & — & OE-01 & Médico veterinario \\
+\hline
+TR-72 (RF-02) & RF & — & — & OE-01 & Médico veterinario \\
+\hline
+TR-73 (RF-05) & RF & — & — & OE-03 & Personal administrativo \\
+\hline
+TR-74 (RF-06) & RF & — & — & OE-03 & Personal administrativo \\
+\hline
+TR-75 (RF-28) & RF & — & — & OE-03 & Personal administrativo \\
+\hline
+TR-76 (RF-28) & RF & — & — & OE-03 & Personal administrativo \\
+\hline
+TR-77 (RF-28) & RF & — & — & OE-03 & Personal administrativo \\
+\hline
+TR-78 (RF-28) & RF & — & — & OE-03 & Personal administrativo \\
+\hline
+TR-79 (RF-17) & RF & — & — & OE-02 & Médico veterinario \\
+\hline
+TR-80 (RF-13) & RF & — & — & OE-01 & Médico veterinario \\
+\hline
+TR-81 (RF-14) & RF & — & — & OE-01 & Médico veterinario \\
+\hline
+TR-82 (RF-09) & RF & — & — & OE-03 & Propietario de la mascota \\
+\hline
+TR-83 (RF-10) & RF & — & — & OE-03 & Propietario de la mascota \\
+\hline
+TR-84 (RF-06) & RF & — & — & OE-03 & Personal administrativo / Bodeguero \\
+\hline
+TR-85 (RF-05) & RF & — & — & OE-03 & Personal administrativo / Bodeguero \\
+\hline
+TR-86 (RF-08) & RF & — & — & OE-03 & Personal administrativo \\
+\hline
+TR-87 (RF-08) & RF & — & — & OE-03 & Personal administrativo \\
 \hline
 \end{longtable}
 }
@@ -5602,35 +5648,15 @@ TR-13 (RF-11) & EV-01 & CU-09 & HU-11 & CA-11 & Módulo Citas y Recordatorios \\
 \hline
 TR-14 (RF-11) & EV-02 & CU-09 & HU-11 & CA-11 & Módulo Citas y Recordatorios \\
 \hline
-TR-15 (RF-12) & EV-02 & CU-09 & \begin{minipage}[t]{\linewidth}\raggedright
-HU-22 — Como propietario de la mascota, quiero recibir un recordatorio automático 24 horas antes de mi cita, para no olvidar la consulta programada.
-\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
-El recordatorio se envía automáticamente 24 horas antes de la cita, sin intervención manual.
-\end{minipage} & Módulo Citas y Recordatorios \\
+TR-15 (RF-12) & EV-02 & CU-09 & HU-22 — Como propietario de la mascota, quiero recibir un recordatorio automático 24 horas antes de mi cita, para no olvidar la consulta programada. & El recordatorio se envía automáticamente 24 horas antes de la cita, sin intervención manual. & Módulo Citas y Recordatorios \\
 \hline
-TR-16 (RF-13) & EV-01 & CU-07 & HU-12 & CA-12 & \begin{minipage}[t]{\linewidth}\raggedright
-Backend Seguimiento Nutricional
-\end{minipage} \\
+TR-16 (RF-13) & EV-01 & CU-07 & HU-12 & CA-12 & Backend Seguimiento Nutricional \\
 \hline
-TR-17 (RF-14) & EV-01 & CU-07 & \begin{minipage}[t]{\linewidth}\raggedright
-HU-23 — Como médico veterinario, quiero recibir recomendaciones nutricionales automáticas basadas en el peso y condición del paciente, para orientar mejor al propietario sobre su alimentación.
-\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
-La recomendación se actualiza automáticamente al registrarse un nuevo dato de peso o condición corporal (RF-13).
-\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
-Backend Seguimiento Nutricional
-\end{minipage} \\
+TR-17 (RF-14) & EV-01 & CU-07 & HU-23 — Como médico veterinario, quiero recibir recomendaciones nutricionales automáticas basadas en el peso y condición del paciente, para orientar mejor al propietario sobre su alimentación. & La recomendación se actualiza automáticamente al registrarse un nuevo dato de peso o condición corporal (RF-13). & Backend Seguimiento Nutricional \\
 \hline
-TR-18 (RF-15) & EV-02 & CU-09 & \begin{minipage}[t]{\linewidth}\raggedright
-HU-24 — Como médico veterinario, quiero programar recordatorios de seguimiento de indicaciones médicas, para verificar que el propietario cumpla con el tratamiento indicado.
-\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
-El veterinario puede programar un recordatorio con fecha y descripción el sistema notifica al personal en la fecha establecida.
-\end{minipage} & Módulo Citas y Recordatorios \\
+TR-18 (RF-15) & EV-02 & CU-09 & HU-24 — Como médico veterinario, quiero programar recordatorios de seguimiento de indicaciones médicas, para verificar que el propietario cumpla con el tratamiento indicado. & El veterinario puede programar un recordatorio con fecha y descripción el sistema notifica al personal en la fecha establecida. & Módulo Citas y Recordatorios \\
 \hline
-TR-19 (RF-16) & EV-01 & CU-03 & \begin{minipage}[t]{\linewidth}\raggedright
-HU-25 — Como médico veterinario, quiero exportar el historial clínico del paciente en PDF, para remitirlo a clínicas con mayor equipamiento cuando sea necesario.
-\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
-El sistema genera un PDF con el historial clínico completo del paciente, descargable en menos de 5 segundos.
-\end{minipage} & Backend Historiales Clínicos \\
+TR-19 (RF-16) & EV-01 & CU-03 & HU-25 — Como médico veterinario, quiero exportar el historial clínico del paciente en PDF, para remitirlo a clínicas con mayor equipamiento cuando sea necesario. & El sistema genera un PDF con el historial clínico completo del paciente, descargable en menos de 5 segundos. & Backend Historiales Clínicos \\
 \hline
 TR-20 (RF-17) & EV-01 & CU-06 & HU-13 & CA-13 & Módulo IA Diagnóstico \\
 \hline
@@ -5644,25 +5670,13 @@ TR-24 (RF-19) & EV-01,EV-02 & CU-06 & HU-17 & CA-17 & Módulo IA Diagnóstico \\
 \hline
 TR-25 (RF-20) & EV-01,EV-02 & Transversal & HU-18 & CA-18 & Frontend Web/Móvil \\
 \hline
-TR-26 (RF-21) & EV-01,EV-02 & Transversal & \begin{minipage}[t]{\linewidth}\raggedright
-HU-26 — Como médico veterinario, quiero seguir registrando y consultando historiales clínicos aunque no haya conexión a internet, para no interrumpir la atención durante cortes de conectividad.
-\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
-El registro y consulta permanecen disponibles sin conexión la sincronización se completa según RNF-04 al restablecerse la conectividad.
-\end{minipage} & Infraestructura/Backend \\
+TR-26 (RF-21) & EV-01,EV-02 & Transversal & HU-26 — Como médico veterinario, quiero seguir registrando y consultando historiales clínicos aunque no haya conexión a internet, para no interrumpir la atención durante cortes de conectividad. & El registro y consulta permanecen disponibles sin conexión la sincronización se completa según RNF-04 al restablecerse la conectividad. & Infraestructura/Backend \\
 \hline
-TR-27 (RF-22) & EV-01,EV-02 & CU-01 & HU-19 & CA-19 & \begin{minipage}[t]{\linewidth}\raggedright
-Módulo Autenticación/Usuarios
-\end{minipage} \\
+TR-27 (RF-22) & EV-01,EV-02 & CU-01 & HU-19 & CA-19 & Módulo Autenticación/Usuarios \\
 \hline
-TR-28 (RF-23) & EV-02 & CU-03 & \begin{minipage}[t]{\linewidth}\raggedright
-HU-27 — Como administrador del sistema, quiero que cada modificación a un historial clínico quede registrada con usuario, fecha y descripción, para auditar cambios y cumplir con la trazabilidad exigida por la LOPDP.
-\end{minipage} & \begin{minipage}[t]{\linewidth}\raggedright
-Toda modificación genera un registro de auditoría (usuario, fecha, descripción) que no puede editarse ni eliminarse retroactivamente, conforme a RNF-06.
-\end{minipage} & Backend Historiales Clínicos \\
+TR-28 (RF-23) & EV-02 & CU-03 & HU-27 — Como administrador del sistema, quiero que cada modificación a un historial clínico quede registrada con usuario, fecha y descripción, para auditar cambios y cumplir con la trazabilidad exigida por la LOPDP. & Toda modificación genera un registro de auditoría (usuario, fecha, descripción) que no puede editarse ni eliminarse retroactivamente, conforme a RNF-06. & Backend Historiales Clínicos \\
 \hline
-TR-29 (RF-24) & EV-04 & CU-01 & HU-20 & CA-20 & \begin{minipage}[t]{\linewidth}\raggedright
-Módulo Autenticación/Usuarios
-\end{minipage} \\
+TR-29 (RF-24) & EV-04 & CU-01 & HU-20 & CA-20 & Módulo Autenticación/Usuarios \\
 \hline
 TR-30 (RF-25) & — & Transversal & HU-21 & CA-21 & Backend Reportes \\
 \hline
@@ -5678,9 +5692,7 @@ TR-35 (RNF-03) & EV-01,EV-02 & CU-04 & HU-05 & CA-05 & Backend Inventario \\
 \hline
 TR-36 (RNF-04) & EV-01,EV-02 & CU-03 & HU-26 & CA-26 & Backend Historiales Clínicos \\
 \hline
-TR-37 (RNF-05) & EV-01,EV-02 & CU-01 & HU-20 & CA-20 & \begin{minipage}[t]{\linewidth}\raggedright
-Módulo Autenticación/Usuarios
-\end{minipage} \\
+TR-37 (RNF-05) & EV-01,EV-02 & CU-01 & HU-20 & CA-20 & Módulo Autenticación/Usuarios \\
 \hline
 TR-38 (RNF-06) & EV-01,EV-02 & CU-03 & HU-27 & CA-27 & Backend Historiales Clínicos \\
 \hline
@@ -5710,9 +5722,7 @@ TR-50 (RNF-18) & EV-01,EV-02 & CU-06 & HU-16 & CA-16 & Módulo IA Diagnóstico \
 \hline
 TR-51 (RST-01) & EV-01 & Transversal & — & — & Infraestructura/Backend \\
 \hline
-TR-52 (RST-02) & EV-05,EV-18 & CU-01 & HU-01 & CA-01 & \begin{minipage}[t]{\linewidth}\raggedright
-Módulo Autenticación/Usuarios
-\end{minipage} \\
+TR-52 (RST-02) & EV-05,EV-18 & CU-01 & HU-01 & CA-01 & Módulo Autenticación/Usuarios \\
 \hline
 TR-53 (RST-03) & EV-15,EV-16 & Transversal & HU-26 & CA-26 & Infraestructura/Backend \\
 \hline
@@ -5720,9 +5730,7 @@ TR-54 (RST-04) & — & CU-06 & — & — & Módulo IA Diagnóstico \\
 \hline
 TR-55 (RST-05) & EV-01,EV-14,EV-17 & CU-06 & HU-13 & CA-13 & Módulo IA Diagnóstico \\
 \hline
-TR-56 (RST-06) & EV-14,EV-16 & CU-01 & HU-19 & CA-19 & \begin{minipage}[t]{\linewidth}\raggedright
-Módulo Autenticación/Usuarios
-\end{minipage} \\
+TR-56 (RST-06) & EV-14,EV-16 & CU-01 & HU-19 & CA-19 & Módulo Autenticación/Usuarios \\
 \hline
 TR-57 (RST-07) & EV-12 & CU-03 & HU-27 & CA-27 & Backend Historiales Clínicos \\
 \hline
@@ -5737,6 +5745,54 @@ TR-61 (RNF-19) & — & CU-06 & HU-28 & CA-28 & Módulo IA Diagnóstico \\
 TR-62 (RNF-20) & — & CU-06 & HU-29 & CA-29 & Módulo IA Diagnóstico \\
 \hline
 TR-63 (RNF-21) & EV-01,EV-02 & CU-06 & HU-17 & CA-17 & Módulo IA Diagnóstico \\
+\hline
+TR-64 (N/A (evento de flujo)) & — & CU-01 & — & — & Módulo Autenticación/Usuarios \\
+\hline
+TR-65 (N/A (evento de flujo)) & — & CU-01 & — & — & Módulo Autenticación/Usuarios \\
+\hline
+TR-66 (N/A (evento de flujo)) & — & CU-01 & — & — & Módulo Autenticación/Usuarios \\
+\hline
+TR-67 (RF-04) & — & CU-02 & — & — & Backend Historiales Clínicos \\
+\hline
+TR-68 (RF-04) & — & CU-02 & — & — & Backend Historiales Clínicos \\
+\hline
+TR-69 (RF-04) & — & CU-02 & — & — & Backend Historiales Clínicos \\
+\hline
+TR-70 (RF-04) & — & CU-02 & — & — & Backend Historiales Clínicos \\
+\hline
+TR-71 (RF-16) & — & CU-03 & — & — & Backend Historiales Clínicos \\
+\hline
+TR-72 (RF-02) & — & CU-03 & — & — & Backend Historiales Clínicos \\
+\hline
+TR-73 (RF-05) & — & CU-04 & — & — & Backend Inventario \\
+\hline
+TR-74 (RF-06) & — & CU-04 & — & — & Backend Inventario \\
+\hline
+TR-75 (RF-28) & — & CU-05 & HU-30 & CA-30 & Backend Gestión de Personal \\
+\hline
+TR-76 (RF-28) & — & CU-05 & HU-30 & CA-30 & Backend Gestión de Personal \\
+\hline
+TR-77 (RF-28) & — & CU-05 & HU-30 & CA-30 & Backend Gestión de Personal \\
+\hline
+TR-78 (RF-28) & — & CU-05 & HU-30 & CA-30 & Backend Gestión de Personal \\
+\hline
+TR-79 (RF-17) & — & CU-06 & — & — & Módulo IA Diagnóstico \\
+\hline
+TR-80 (RF-13) & — & CU-07 & — & — & Backend Seguimiento Nutricional \\
+\hline
+TR-81 (RF-14) & — & CU-07 & — & — & Backend Seguimiento Nutricional \\
+\hline
+TR-82 (RF-09) & — & CU-08 & — & — & Módulo Comunicaciones \\
+\hline
+TR-83 (RF-10) & — & CU-08 & — & — & Módulo Comunicaciones \\
+\hline
+TR-84 (RF-06) & — & CU-09 & — & — & Backend Inventario \\
+\hline
+TR-85 (RF-05) & — & CU-09 & — & — & Backend Inventario \\
+\hline
+TR-86 (RF-08) & — & CU-10 & — & — & Backend Facturación \\
+\hline
+TR-87 (RF-08) & — & CU-10 & — & — & Backend Facturación \\
 \hline
 \end{longtable}
 }
@@ -5771,58 +5827,35 @@ TR-03 (RF-02) & MU-005\_Ficha\_Paciente \\
 \hline
 TR-04 (RF-03) & MU-003\_Buscar\_Paciente \\
 \hline
-TR-05 (RF-04) & \begin{minipage}[t]{\linewidth}\raggedright
-MU-006\_Registrar\_Consulta
-\end{minipage} \\
+TR-05 (RF-04) & MU-006\_Registrar\_Consulta \\
 \hline
-TR-06 (RF-05) & \begin{minipage}[t]{\linewidth}\raggedright
-MU-015\_Alerta\_De\_Inventario
-\end{minipage} \\
+TR-06 (RF-05) & MU-015\_Alerta\_De\_Inventario \\
 \hline
 TR-07 (RF-06) & MU-024\_Gestion\_Stock \\
 \hline
 TR-08 (RF-06) & MU-024\_Gestion\_Stock \\
 \hline
-TR-09 (RF-07) & \begin{minipage}[t]{\linewidth}\raggedright
-MU-026\_Registro\_De\_Cobro
-\end{minipage} \\
+TR-09 (RF-07) & MU-026\_Registro\_De\_Cobro \\
 \hline
-TR-10 (RF-08) & \begin{minipage}[t]{\linewidth}\raggedright
-MU-027\_Facturacion\_Datos\_Del\_Receptor,\\
-MU-028\_Facturacion\_Servicios\_Montos,\\
-MU-029\_Confirmar\_Emitir,\\
-MU-030\_Facturacion\_Emitida
-\end{minipage} \\
+TR-10 (RF-08) & MU-027\_Facturacion\_Datos\_Del\_Receptor,MU-028\_Facturacion\_Servicios\_Montos,MU-029\_Confirmar\_Emitir,MU-030\_Facturacion\_Emitida \\
 \hline
 TR-11 (RF-09) & MU-016\_Comunicaciones \\
 \hline
-TR-12 (RF-10) & \begin{minipage}[t]{\linewidth}\raggedright
-MU-018\_Envio\_Por\_WhatsApp
-\end{minipage} \\
+TR-12 (RF-10) & MU-018\_Envio\_Por\_WhatsApp \\
 \hline
 TR-13 (RF-11) & MU-013\_Registrar\_Citas \\
 \hline
 TR-14 (RF-11) & MU-013\_Registrar\_Citas \\
 \hline
-TR-15 (RF-12) & \begin{minipage}[t]{\linewidth}\raggedright
-MU-031\_Recordatorios\_De\_Citas
-\end{minipage} \\
+TR-15 (RF-12) & MU-031\_Recordatorios\_De\_Citas \\
 \hline
-TR-16 (RF-13) & \begin{minipage}[t]{\linewidth}\raggedright
-MU-011\_Seguimiento\_De\_Peso
-\end{minipage} \\
+TR-16 (RF-13) & MU-011\_Seguimiento\_De\_Peso \\
 \hline
-TR-17 (RF-14) & \begin{minipage}[t]{\linewidth}\raggedright
-MU-019\_Recomendaciones\_Nutricionales
-\end{minipage} \\
+TR-17 (RF-14) & MU-019\_Recomendaciones\_Nutricionales \\
 \hline
-TR-18 (RF-15) & \begin{minipage}[t]{\linewidth}\raggedright
-MU-020\_Recordatorios\_Medicos
-\end{minipage} \\
+TR-18 (RF-15) & MU-020\_Recordatorios\_Medicos \\
 \hline
-TR-19 (RF-16) & \begin{minipage}[t]{\linewidth}\raggedright
-MU-021\_Exportar\_Reportes
-\end{minipage} \\
+TR-19 (RF-16) & MU-021\_Exportar\_Reportes \\
 \hline
 TR-20 (RF-17) & MU-010\_Sugerencia\_IA \\
 \hline
@@ -5840,44 +5873,27 @@ TR-26 (RF-21) & Transversal \\
 \hline
 TR-27 (RF-22) & MU-001\_Login \\
 \hline
-TR-28 (RF-23) & \begin{minipage}[t]{\linewidth}\raggedright
-MU-032\_Log\_De\_Auditoria
-\end{minipage} \\
+TR-28 (RF-23) & MU-032\_Log\_De\_Auditoria \\
 \hline
 TR-29 (RF-24) & MU-001\_Login \\
 \hline
-TR-30 (RF-25) & \begin{minipage}[t]{\linewidth}\raggedright
-MU-033\_Reportes\_Gerenciales
-\end{minipage} \\
+TR-30 (RF-25) & MU-033\_Reportes\_Gerenciales \\
 \hline
-TR-31 (RF-26) & \begin{minipage}[t]{\linewidth}\raggedright
-Falta crear (no existe en el catálogo de 33 MU)
-\end{minipage} \\
+TR-31 (RF-26) & Falta crear (no existe en el catálogo de 33 MU) \\
 \hline
-TR-32 (RF-27) & \begin{minipage}[t]{\linewidth}\raggedright
-Falta crear (no existe en el catálogo de 33 MU)
-\end{minipage} \\
+TR-32 (RF-27) & Falta crear (no existe en el catálogo de 33 MU) \\
 \hline
 TR-33 (RNF-01) & MU-003\_Buscar\_Paciente \\
 \hline
-TR-34 (RNF-02) & \begin{minipage}[t]{\linewidth}\raggedright
-MU-027\_Facturacion\_Datos\_Del\_Receptor,\\
-MU-028\_Facturacion\_Servicios\_Montos,\\
-MU-029\_Confirmar\_Emitir,\\
-MU-030\_Facturacion\_Emitida
-\end{minipage} \\
+TR-34 (RNF-02) & MU-027\_Facturacion\_Datos\_Del\_Receptor,MU-028\_Facturacion\_Servicios\_Montos,MU-029\_Confirmar\_Emitir,MU-030\_Facturacion\_Emitida \\
 \hline
-TR-35 (RNF-03) & \begin{minipage}[t]{\linewidth}\raggedright
-MU-015\_Alerta\_De\_Inventario
-\end{minipage} \\
+TR-35 (RNF-03) & MU-015\_Alerta\_De\_Inventario \\
 \hline
 TR-36 (RNF-04) & Transversal \\
 \hline
 TR-37 (RNF-05) & MU-001\_Login \\
 \hline
-TR-38 (RNF-06) & \begin{minipage}[t]{\linewidth}\raggedright
-MU-032\_Log\_De\_Auditoria
-\end{minipage} \\
+TR-38 (RNF-06) & MU-032\_Log\_De\_Auditoria \\
 \hline
 TR-39 (RNF-07) & Transversal \\
 \hline
@@ -5915,9 +5931,7 @@ TR-55 (RST-05) & MU-010\_Sugerencia\_IA \\
 \hline
 TR-56 (RST-06) & MU-001\_Login \\
 \hline
-TR-57 (RST-07) & \begin{minipage}[t]{\linewidth}\raggedright
-MU-032\_Log\_De\_Auditoria
-\end{minipage} \\
+TR-57 (RST-07) & MU-032\_Log\_De\_Auditoria \\
 \hline
 TR-58 (RST-08) & MU-010\_Sugerencia\_IA \\
 \hline
@@ -5930,6 +5944,54 @@ TR-61 (RNF-19) & MU-010\_Sugerencia\_IA \\
 TR-62 (RNF-20) & MU-010\_Sugerencia\_IA \\
 \hline
 TR-63 (RNF-21) & MU-010\_Sugerencia\_IA \\
+\hline
+TR-64 (N/A (evento de flujo)) & — \\
+\hline
+TR-65 (N/A (evento de flujo)) & — \\
+\hline
+TR-66 (N/A (evento de flujo)) & — \\
+\hline
+TR-67 (RF-04) & — \\
+\hline
+TR-68 (RF-04) & — \\
+\hline
+TR-69 (RF-04) & — \\
+\hline
+TR-70 (RF-04) & — \\
+\hline
+TR-71 (RF-16) & — \\
+\hline
+TR-72 (RF-02) & — \\
+\hline
+TR-73 (RF-05) & — \\
+\hline
+TR-74 (RF-06) & — \\
+\hline
+TR-75 (RF-28) & — \\
+\hline
+TR-76 (RF-28) & — \\
+\hline
+TR-77 (RF-28) & — \\
+\hline
+TR-78 (RF-28) & — \\
+\hline
+TR-79 (RF-17) & — \\
+\hline
+TR-80 (RF-13) & — \\
+\hline
+TR-81 (RF-14) & — \\
+\hline
+TR-82 (RF-09) & — \\
+\hline
+TR-83 (RF-10) & — \\
+\hline
+TR-84 (RF-06) & — \\
+\hline
+TR-85 (RF-05) & — \\
+\hline
+TR-86 (RF-08) & — \\
+\hline
+TR-87 (RF-08) & — \\
 \hline
 \end{longtable}
 }
@@ -6050,6 +6112,8 @@ RF-26 & Must & Básico & 3 & 4.5 & Derechos ARCO; obligación legal directa (LOP
 \hline
 RF-27 & Must & Básico & 3 & 4.5 & Portal de derechos ARCO; obligación legal directa (LOPDP Art. 12-15), plazo de 15 días. \\
 \hline
+RF-28 & Must & Básico & 3 & 4.0 & Gestión de empleados y permisos; soporta CU-05, sin el cual el personal administrativo no puede administrar cuentas del equipo. \\
+\hline
 \end{longtable}
 }
 
@@ -6058,7 +6122,7 @@ RF-27 & Must & Básico & 3 & 4.5 & Portal de derechos ARCO; obligación legal di
 combinada MoSCoW + Kano + WSJF (MoSCoW y Kano verificados contra la ficha
 oficial de cada RF en la Sección 3.2; Valor de negocio y WSJF calculados y
 registrados en \texttt{04\_Trazabilidad/priorizacion\_moscow\_kano\_valor.csv}).
-RF-01 a RF-19: estimación confirmada por el equipo. RF-20 a RF-27:
+RF-01 a RF-19: estimación confirmada por el equipo. RF-20 a RF-28:
 estimación propuesta, pendiente de validación final del equipo antes del
 cierre de la entrega. Fuente: elaboración propia (Criterio C6).}}
 \end{quote}
@@ -6213,11 +6277,11 @@ Inventario, Facturación, IA Diagnóstica, Reportes, Configuración).
 \subsection{7.1. Logros de la entrega}\label{s7-1-logros-de-la-entrega}
 \begin{quote}
 Al cierre de la Entrega 4 (2B), el proyecto SGCV-IA consolidó un
-catálogo de \textbf{27 requisitos funcionales} (RF-01 a RF-27),
+catálogo de \textbf{28 requisitos funcionales} (RF-01 a RF-28),
 \textbf{21 requisitos no funcionales} cuantificados sobre ISO/IEC
 25010:2023 (RNF-01 a RNF-21) y \textbf{10 restricciones de diseño}
 (RST-01 a RST-10). La matriz de trazabilidad extendida alcanzó
-\textbf{63 filas} (TR-01 a TR-63), enlazando Ley/Objetivo/Interesado/EV
+\textbf{87 filas} (TR-01 a TR-87), enlazando Ley/Objetivo/Interesado/EV
 hasta CU/HU/CA/Componente/Mockup, y la priorización combinó MoSCoW
 \cite{vijayakumar2024}, Kano \cite{binder2023} y WSJF
 \cite{reinertsen2009,leffingwell2016}. La arquitectura offline-first
@@ -6290,8 +6354,12 @@ la realización de nuevas entrevistas.
   evidencia asociada y se registra como \texttt{EV: ---} en la matriz
   de trazabilidad. Los cuatro son de origen documental (Entrega 1B y
   análisis de cumplimiento legal, Criterio C4).
-  \item CU-05 (Administrar Empleados) no tiene ningún requisito
-  funcional del catálogo vigente que lo respalde; RF-25 (panel de
+  \item CU-05 (Administrar Empleados) fue respaldado por RF-28
+  (Gestión de empleados y permisos del personal), incorporado en esta
+  entrega tras detectarse que el caso de uso, ya modelado desde la
+  Sección 4.1, carecía de requisito funcional propio. RF-28 es también
+  de origen documental (necesidad operativa identificada por el equipo
+  de desarrollo), sin evidencia de entrevista asociada. RF-25 (panel de
   reportes gerenciales) no corresponde a ninguno de los 10 casos de uso
   existentes y quedó marcado como transversal.
   \item El texto de RST-10 (Delegado de Protección de Datos) fue
@@ -10167,7 +10235,7 @@ y Restricciones (RST), para un total de 40 elementos.
 \endlastfoot
 \begin{minipage}[t]{\linewidth}\raggedright
 Requisito Funcional (RF)
-\end{minipage} & 27 & RF-01 a RF-27 & Sección 3.2 \\
+\end{minipage} & 28 & RF-01 a RF-28 & Sección 3.2 \\
 \hline
 \begin{minipage}[t]{\linewidth}\raggedright
 Requisito No Funcional (RNF)
@@ -10945,7 +11013,7 @@ Esta matriz traza cada requisito (RF, RNF o restricción de diseño --- RST) hac
 fundamento normativo (cuando aplica LOPDP u otra ley), objetivo estratégico,
 interesado principal, evidencia de elicitación, caso de uso, historia de usuario,
 criterio de aceptación, componente de arquitectura y \emph{mockup} asociado. La matriz
-completa (63 filas) reside también como archivo fuente en
+completa (87 filas) reside también como archivo fuente en
 \texttt{04\_Trazabilidad/} del repositorio.
 \end{quote}
 
@@ -11086,14 +11154,62 @@ TR-59 & — & Sec. 1.2 & Transversal & Equipo de desarrollo & — \\
 \hline
 TR-60 & LOPDP & Art. 47, 48 & Transversal (LOPDP) & Comité de ética / protección de datos (LOPDP) & — \\
 \hline
-TR-61 & --- & --- & OE-02 & Médico veterinario & --- \\
+TR-61 & — & — & OE-02 & Equipo de desarrollo & — \\
 \hline
-TR-62 & --- & --- & OE-02 & Equipo de desarrollo & --- \\
+TR-62 & — & — & OE-02 & Equipo de desarrollo & — \\
 \hline
-TR-63 & --- & RST-05, RST-08 (supervisión humana) & OE-02 & Médico veterinario & EV-01,EV-02 \\\end{longtable}
+TR-63 & — & RST-05, RST-08 (supervisión humana) & OE-02 & Médico veterinario & EV-01,EV-02 \\
+\hline
+TR-64 & — & — & Transversal (OE-01/02/03) & Personal administrativo / Veterinario / Propietario & — \\
+\hline
+TR-65 & — & — & Transversal (OE-01/02/03) & Personal administrativo / Veterinario / Propietario & — \\
+\hline
+TR-66 & — & — & Transversal (OE-01/02/03) & Personal administrativo / Veterinario / Propietario & — \\
+\hline
+TR-67 & — & — & OE-01 & Médico veterinario & — \\
+\hline
+TR-68 & — & — & OE-01 & Médico veterinario & — \\
+\hline
+TR-69 & — & — & OE-01 & Médico veterinario & — \\
+\hline
+TR-70 & — & — & OE-01 & Médico veterinario & — \\
+\hline
+TR-71 & — & — & OE-01 & Médico veterinario & — \\
+\hline
+TR-72 & — & — & OE-01 & Médico veterinario & — \\
+\hline
+TR-73 & — & — & OE-03 & Personal administrativo & — \\
+\hline
+TR-74 & — & — & OE-03 & Personal administrativo & — \\
+\hline
+TR-75 & — & — & OE-03 & Personal administrativo & — \\
+\hline
+TR-76 & — & — & OE-03 & Personal administrativo & — \\
+\hline
+TR-77 & — & — & OE-03 & Personal administrativo & — \\
+\hline
+TR-78 & — & — & OE-03 & Personal administrativo & — \\
+\hline
+TR-79 & — & — & OE-02 & Médico veterinario & — \\
+\hline
+TR-80 & — & — & OE-01 & Médico veterinario & — \\
+\hline
+TR-81 & — & — & OE-01 & Médico veterinario & — \\
+\hline
+TR-82 & — & — & OE-03 & Propietario de la mascota & — \\
+\hline
+TR-83 & — & — & OE-03 & Propietario de la mascota & — \\
+\hline
+TR-84 & — & — & OE-03 & Personal administrativo / Bodeguero & — \\
+\hline
+TR-85 & — & — & OE-03 & Personal administrativo / Bodeguero & — \\
+\hline
+TR-86 & — & — & OE-03 & Personal administrativo & — \\
+\hline
+TR-87 & — & — & OE-03 & Personal administrativo & — \\\end{longtable}
 }
 
-\protect\phantomsection\label{_bookmarkD1}{}\emph{\textbf{Tabla D.1. Matriz de Trazabilidad Extendida --- Identificación normativa y objetivo (63 filas)}}
+\protect\phantomsection\label{_bookmarkD1}{}\emph{\textbf{Tabla D.1. Matriz de Trazabilidad Extendida --- Identificación normativa y objetivo (87 filas)}}
 
 \subsubsection{D.2 Trazabilidad de diseño, historias de usuario y mockup asociado}\label{d2-trazabilidad-diseno}
 
@@ -11113,140 +11229,188 @@ TR-63 & --- & RST-05, RST-08 (supervisión humana) & OE-02 & Médico veterinario
 \endhead
 \hline
 \endlastfoot
-TR-01 & RF-01 & CU-01 & HU-01 & CA-01 & Frontend Web/Móvil & Todas las pantallas (responsive) \\
+TR-01 & RF-01 & CU-01 & HU-01 & CA-01 & Frontend Web/Móvil & Transversal \\
 \hline
-TR-02 & RF-02 & CU-03 & HU-02 & CA-02 & Backend Historiales Clínicos & Gestión de Historiales Clínicos \\
+TR-02 & RF-02 & CU-03 & HU-02 & CA-02 & Backend Historiales Clínicos & MU-005\_Ficha\_Paciente \\
 \hline
-TR-03 & RF-02 & CU-03 & HU-02 & CA-02 & Backend Historiales Clínicos & Gestión de Historiales Clínicos \\
+TR-03 & RF-02 & CU-03 & HU-02 & CA-02 & Backend Historiales Clínicos & MU-005\_Ficha\_Paciente \\
 \hline
-TR-04 & RF-03 & CU-03 & HU-03 & CA-03 & Backend Historiales Clínicos & Gestión de Historiales Clínicos (búsqueda) \\
+TR-04 & RF-03 & CU-03 & HU-03 & CA-03 & Backend Historiales Clínicos & MU-003\_Buscar\_Paciente \\
 \hline
-TR-05 & RF-04 & CU-02 & HU-04 & CA-04 & Backend Historiales Clínicos & Registro de Consulta \\
+TR-05 & RF-04 & CU-02 & HU-04 & CA-04 & Backend Historiales Clínicos & MU-006\_Registrar\_Consulta \\
 \hline
-TR-06 & RF-05 & CU-04 & HU-05 & CA-05 & Backend Inventario & Inventario de Bodega \\
+TR-06 & RF-05 & CU-04 & HU-05 & CA-05 & Backend Inventario & MU-015\_Alerta\_De\_Inventario \\
 \hline
-TR-07 & RF-06 & CU-04 & HU-06 & CA-06 & Backend Inventario & Inventario de Bodega \\
+TR-07 & RF-06 & CU-04 & HU-06 & CA-06 & Backend Inventario & MU-024\_Gestion\_Stock \\
 \hline
-TR-08 & RF-06 & CU-04 & HU-06 & CA-06 & Backend Inventario & Inventario de Bodega \\
+TR-08 & RF-06 & CU-04 & HU-06 & CA-06 & Backend Inventario & MU-024\_Gestion\_Stock \\
 \hline
-TR-09 & RF-07 & CU-10 & HU-07 & CA-07 & Backend Facturación & Facturación y Cobro \\
+TR-09 & RF-07 & CU-10 & HU-07 & CA-07 & Backend Facturación & MU-026\_Registro\_De\_Cobro \\
 \hline
-TR-10 & RF-08 & CU-10 & HU-08 & CA-08 & Backend Facturación & Facturación y Cobro (flujo rápido) \\
+TR-10 & RF-08 & CU-10 & HU-08 & CA-08 & Backend Facturación & MU-027\_Facturacion\_Datos\_Del\_Receptor,MU-028\_Facturacion\_Servicios\_Montos,MU-029\_Confirmar\_Emitir,MU-030\_Facturacion\_Emitida \\
 \hline
-TR-11 & RF-09 & CU-08 & HU-09 & CA-09 & Módulo Comunicaciones & Comunicación con Dueños \\
+TR-11 & RF-09 & CU-08 & HU-09 & CA-09 & Módulo Comunicaciones & MU-016\_Comunicaciones \\
 \hline
-TR-12 & RF-10 & CU-08 & HU-10 & CA-10 & Módulo Comunicaciones & Comunicación con Dueños (envío) \\
+TR-12 & RF-10 & CU-08 & HU-10 & CA-10 & Módulo Comunicaciones & MU-018\_Envio\_Por\_WhatsApp \\
 \hline
-TR-13 & RF-11 & CU-09 & HU-11 & CA-11 & Módulo Citas y Recordatorios & Gestión de Citas \\
+TR-13 & RF-11 & CU-09 & HU-11 & CA-11 & Módulo Citas y Recordatorios & MU-013\_Registrar\_Citas \\
 \hline
-TR-14 & RF-11 & CU-09 & HU-11 & CA-11 & Módulo Citas y Recordatorios & Gestión de Citas \\
+TR-14 & RF-11 & CU-09 & HU-11 & CA-11 & Módulo Citas y Recordatorios & MU-013\_Registrar\_Citas \\
 \hline
-TR-15 & RF-12 & CU-09 & HU-22 & CA-22 & Módulo Citas y Recordatorios & Gestión de Citas (recordatorios) \\
+TR-15 & RF-12 & CU-09 & HU-22 — Como propietario de la mascota, quiero recibir un recordatorio automático 24 horas antes de mi cita, para no olvidar la consulta programada. & El recordatorio se envía automáticamente 24 horas antes de la cita, sin intervención manual. & Módulo Citas y Recordatorios & MU-031\_Recordatorios\_De\_Citas \\
 \hline
-TR-16 & RF-13 & CU-07 & HU-12 & CA-12 & Backend Seguimiento Nutricional & Seguimiento Nutricional \\
+TR-16 & RF-13 & CU-07 & HU-12 & CA-12 & Backend Seguimiento Nutricional & MU-011\_Seguimiento\_De\_Peso \\
 \hline
-TR-17 & RF-14 & CU-07 & HU-23 & CA-23 & Backend Seguimiento Nutricional & Seguimiento Nutricional (gráfico) \\
+TR-17 & RF-14 & CU-07 & HU-23 — Como médico veterinario, quiero recibir recomendaciones nutricionales automáticas basadas en el peso y condición del paciente, para orientar mejor al propietario sobre su alimentación. & La recomendación se actualiza automáticamente al registrarse un nuevo dato de peso o condición corporal (RF-13). & Backend Seguimiento Nutricional & MU-019\_Recomendaciones\_Nutricionales \\
 \hline
-TR-18 & RF-15 & CU-09 & HU-24 & CA-24 & Módulo Citas y Recordatorios & Gestión de Citas (indicaciones) \\
+TR-18 & RF-15 & CU-09 & HU-24 — Como médico veterinario, quiero programar recordatorios de seguimiento de indicaciones médicas, para verificar que el propietario cumpla con el tratamiento indicado. & El veterinario puede programar un recordatorio con fecha y descripción el sistema notifica al personal en la fecha establecida. & Módulo Citas y Recordatorios & MU-020\_Recordatorios\_Medicos \\
 \hline
-TR-19 & RF-16 & CU-03 & HU-25 & CA-25 & Backend Historiales Clínicos & Reportes y Exportación \\
+TR-19 & RF-16 & CU-03 & HU-25 — Como médico veterinario, quiero exportar el historial clínico del paciente en PDF, para remitirlo a clínicas con mayor equipamiento cuando sea necesario. & El sistema genera un PDF con el historial clínico completo del paciente, descargable en menos de 5 segundos. & Backend Historiales Clínicos & MU-021\_Exportar\_Reportes \\
 \hline
-TR-20 & RF-17 & CU-06 & HU-13 & CA-13 & Módulo IA Diagnóstico & Panel de Diagnóstico IA \\
+TR-20 & RF-17 & CU-06 & HU-13 & CA-13 & Módulo IA Diagnóstico & MU-010\_Sugerencia\_IA \\
 \hline
-TR-21 & RF-17 & CU-06 & HU-13 & CA-13 & Módulo IA Diagnóstico & Panel de Diagnóstico IA \\
+TR-21 & RF-17 & CU-06 & HU-13 & CA-13 & Módulo IA Diagnóstico & MU-010\_Sugerencia\_IA \\
 \hline
-TR-22 & RF-18 & CU-06 & HU-16 & CA-16 & Módulo IA Diagnóstico & Panel de Diagnóstico IA (referencias) \\
+TR-22 & RF-18 & CU-06 & HU-16 & CA-16 & Módulo IA Diagnóstico & MU-010\_Sugerencia\_IA \\
 \hline
-TR-23 & RF-18 & CU-06 & HU-16 & CA-16 & Módulo IA Diagnóstico & Panel de Diagnóstico IA (referencias) \\
+TR-23 & RF-18 & CU-06 & HU-16 & CA-16 & Módulo IA Diagnóstico & MU-010\_Sugerencia\_IA \\
 \hline
-TR-24 & RF-19 & CU-06 & HU-17 & CA-17 & Módulo IA Diagnóstico & Panel de Diagnóstico IA (edición) \\
+TR-24 & RF-19 & CU-06 & HU-17 & CA-17 & Módulo IA Diagnóstico & MU-010\_Sugerencia\_IA \\
 \hline
-TR-25 & RF-20 & Transversal & HU-18 & CA-18 & Frontend Web/Móvil & Todas las pantallas \\
+TR-25 & RF-20 & Transversal & HU-18 & CA-18 & Frontend Web/Móvil & Transversal \\
 \hline
-TR-26 & RF-21 & Transversal & HU-26 & CA-26 & Infraestructura / Backend & Todas las pantallas (offline) \\
+TR-26 & RF-21 & Transversal & HU-26 — Como médico veterinario, quiero seguir registrando y consultando historiales clínicos aunque no haya conexión a internet, para no interrumpir la atención durante cortes de conectividad. & El registro y consulta permanecen disponibles sin conexión la sincronización se completa según RNF-04 al restablecerse la conectividad. & Infraestructura/Backend & Transversal \\
 \hline
-TR-27 & RF-22 & CU-01 & HU-19 & CA-19 & Módulo Autenticación/Usuarios & Login / Gestión de Roles \\
+TR-27 & RF-22 & CU-01 & HU-19 & CA-19 & Módulo Autenticación/Usuarios & MU-001\_Login \\
 \hline
-TR-28 & RF-23 & CU-03 & HU-27 & CA-27 & Backend Historiales Clínicos & Gestión de Historiales Clínicos (auditoría) \\
+TR-28 & RF-23 & CU-03 & HU-27 — Como administrador del sistema, quiero que cada modificación a un historial clínico quede registrada con usuario, fecha y descripción, para auditar cambios y cumplir con la trazabilidad exigida por la LOPDP. & Toda modificación genera un registro de auditoría (usuario, fecha, descripción) que no puede editarse ni eliminarse retroactivamente, conforme a RNF-06. & Backend Historiales Clínicos & MU-032\_Log\_De\_Auditoria \\
 \hline
-TR-29 & RF-24 & CU-01 & HU-20 & CA-20 & Módulo Autenticación/Usuarios & Login / Autenticación \\
+TR-29 & RF-24 & CU-01 & HU-20 & CA-20 & Módulo Autenticación/Usuarios & MU-001\_Login \\
 \hline
-TR-30 & RF-25 & Transversal & HU-21 & CA-21 & Backend Reportes & Panel de Reportes Gerenciales \\
+TR-30 & RF-25 & Transversal & HU-21 & CA-21 & Backend Reportes & MU-033\_Reportes\_Gerenciales \\
 \hline
-TR-31 & RF-26 & Transversal & HU-14 & CA-14 & Módulo Legal / Consentimiento & Consentimiento Informado \\
+TR-31 & RF-26 & Transversal & HU-14 & CA-14 & Módulo Legal/Consentimiento & Falta crear (no existe en el catálogo de 33 MU) \\
 \hline
-TR-32 & RF-27 & Transversal & HU-15 & CA-15 & Módulo Legal / Consentimiento & Portal de Derechos ARCO \\
+TR-32 & RF-27 & Transversal & HU-15 & CA-15 & Módulo Legal/Consentimiento & Falta crear (no existe en el catálogo de 33 MU) \\
 \hline
-TR-33 & RNF-01 & CU-03 & HU-03 & CA-03 & Backend Historiales Clínicos & — \\
+TR-33 & RNF-01 & CU-03 & HU-03 & CA-03 & Backend Historiales Clínicos & MU-003\_Buscar\_Paciente \\
 \hline
-TR-34 & RNF-02 & CU-10 & HU-08 & CA-08 & Backend Facturación & — \\
+TR-34 & RNF-02 & CU-10 & HU-08 & CA-08 & Backend Facturación & MU-027\_Facturacion\_Datos\_Del\_Receptor,MU-028\_Facturacion\_Servicios\_Montos,MU-029\_Confirmar\_Emitir,MU-030\_Facturacion\_Emitida \\
 \hline
-TR-35 & RNF-03 & CU-04 & HU-05 & CA-05 & Backend Inventario & — \\
+TR-35 & RNF-03 & CU-04 & HU-05 & CA-05 & Backend Inventario & MU-015\_Alerta\_De\_Inventario \\
 \hline
-TR-36 & RNF-04 & CU-03 & HU-26 & CA-26 & Backend Historiales Clínicos & — \\
+TR-36 & RNF-04 & CU-03 & HU-26 & CA-26 & Backend Historiales Clínicos & Transversal \\
 \hline
-TR-37 & RNF-05 & CU-01 & HU-20 & CA-20 & Módulo Autenticación/Usuarios & — \\
+TR-37 & RNF-05 & CU-01 & HU-20 & CA-20 & Módulo Autenticación/Usuarios & MU-001\_Login \\
 \hline
-TR-38 & RNF-06 & CU-03 & HU-27 & CA-27 & Backend Historiales Clínicos & — \\
+TR-38 & RNF-06 & CU-03 & HU-27 & CA-27 & Backend Historiales Clínicos & MU-032\_Log\_De\_Auditoria \\
 \hline
-TR-39 & RNF-07 & Transversal & HU-18 & CA-18 & Frontend Web/Móvil & — \\
+TR-39 & RNF-07 & Transversal & HU-18 & CA-18 & Frontend Web/Móvil & Transversal \\
 \hline
-TR-40 & RNF-08 & Transversal & HU-01 & CA-01 & Frontend Web/Móvil & — \\
+TR-40 & RNF-08 & Transversal & HU-01 & CA-01 & Frontend Web/Móvil & Transversal \\
 \hline
-TR-41 & RNF-09 & CU-06 & HU-13 & CA-13 & Módulo IA Diagnóstico & — \\
+TR-41 & RNF-09 & CU-06 & HU-13 & CA-13 & Módulo IA Diagnóstico & MU-010\_Sugerencia\_IA \\
 \hline
-TR-42 & RNF-10 & CU-06 & — & — & Módulo IA Diagnóstico & — \\
+TR-42 & RNF-10 & CU-06 & — & — & Módulo IA Diagnóstico & No aplica \\
 \hline
-TR-43 & RNF-11 & Transversal & — & — & Infraestructura / Backend & — \\
+TR-43 & RNF-11 & Transversal & — & — & Infraestructura/Backend & No aplica \\
 \hline
-TR-44 & RNF-12 & Transversal & — & — & Infraestructura / Backend & — \\
+TR-44 & RNF-12 & Transversal & — & — & Infraestructura/Backend & No aplica \\
 \hline
-TR-45 & RNF-13 & Transversal & — & — & Infraestructura / Backend & — \\
+TR-45 & RNF-13 & Transversal & — & — & Infraestructura/Backend & No aplica \\
 \hline
-TR-46 & RNF-14 & Transversal & — & — & Infraestructura / Backend & — \\
+TR-46 & RNF-14 & Transversal & — & — & Infraestructura/Backend & No aplica \\
 \hline
-TR-47 & RNF-15 & Transversal & HU-18 & CA-18 & Frontend Web/Móvil & — \\
+TR-47 & RNF-15 & Transversal & HU-18 & CA-18 & Frontend Web/Móvil & Transversal \\
 \hline
-TR-48 & RNF-16 & Transversal & — & — & Infraestructura / Backend & — \\
+TR-48 & RNF-16 & Transversal & — & — & Infraestructura/Backend & No aplica \\
 \hline
-TR-49 & RNF-17 & Transversal & — & — & Infraestructura / Backend & — \\
+TR-49 & RNF-17 & Transversal & — & — & Infraestructura/Backend & No aplica \\
 \hline
-TR-50 & RNF-18 & CU-06 & HU-16 & CA-16 & Módulo IA Diagnóstico & — \\
+TR-50 & RNF-18 & CU-06 & HU-16 & CA-16 & Módulo IA Diagnóstico & MU-010\_Sugerencia\_IA \\
 \hline
-TR-51 & RST-01 & Transversal & — & — & Infraestructura / Backend & — \\
+TR-51 & RST-01 & Transversal & — & — & Infraestructura/Backend & No aplica \\
 \hline
-TR-52 & RST-02 & CU-01 & HU-01 & CA-01 & Módulo Autenticación/Usuarios & — \\
+TR-52 & RST-02 & CU-01 & HU-01 & CA-01 & Módulo Autenticación/Usuarios & Transversal \\
 \hline
-TR-53 & RST-03 & Transversal & HU-26 & CA-26 & Infraestructura / Backend & — \\
+TR-53 & RST-03 & Transversal & HU-26 & CA-26 & Infraestructura/Backend & No aplica \\
 \hline
-TR-54 & RST-04 & CU-06 & — & — & Módulo IA Diagnóstico & — \\
+TR-54 & RST-04 & CU-06 & — & — & Módulo IA Diagnóstico & No aplica \\
 \hline
-TR-55 & RST-05 & CU-06 & HU-13 & CA-13 & Módulo IA Diagnóstico & — \\
+TR-55 & RST-05 & CU-06 & HU-13 & CA-13 & Módulo IA Diagnóstico & MU-010\_Sugerencia\_IA \\
 \hline
-TR-56 & RST-06 & CU-01 & HU-19 & CA-19 & Módulo Autenticación/Usuarios & — \\
+TR-56 & RST-06 & CU-01 & HU-19 & CA-19 & Módulo Autenticación/Usuarios & MU-001\_Login \\
 \hline
-TR-57 & RST-07 & CU-03 & HU-27 & CA-27 & Backend Historiales Clínicos & — \\
+TR-57 & RST-07 & CU-03 & HU-27 & CA-27 & Backend Historiales Clínicos & MU-032\_Log\_De\_Auditoria \\
 \hline
-TR-58 & RST-08 & CU-06 & HU-17 & CA-17 & Módulo IA Diagnóstico & — \\
+TR-58 & RST-08 & CU-06 & HU-17 & CA-17 & Módulo IA Diagnóstico & MU-010\_Sugerencia\_IA \\
 \hline
-TR-59 & RST-09 & Transversal & — & — & Infraestructura / Backend & — \\
+TR-59 & RST-09 & Transversal & — & — & Infraestructura/Backend & No aplica \\
 \hline
-TR-60 & RST-10 & Transversal & — & — & Infraestructura / Backend & — \\
+TR-60 & RST-10 & Transversal & — & — & Infraestructura/Backend & No aplica \\
 \hline
-TR-61 & RNF-19 & CU-06 & HU-28 & CA-28 & Módulo IA Diagnóstico & Panel de Diagnóstico IA \\
+TR-61 & RNF-19 & CU-06 & HU-28 & CA-28 & Módulo IA Diagnóstico & MU-010\_Sugerencia\_IA \\
 \hline
-TR-62 & RNF-20 & CU-06 & HU-29 & CA-29 & Módulo IA Diagnóstico & Panel de Diagnóstico IA \\
+TR-62 & RNF-20 & CU-06 & HU-29 & CA-29 & Módulo IA Diagnóstico & MU-010\_Sugerencia\_IA \\
 \hline
-TR-63 & RNF-21 & CU-06 & HU-17 & CA-17 & Módulo IA Diagnóstico & Panel de Diagnóstico IA \\\end{longtable}
+TR-63 & RNF-21 & CU-06 & HU-17 & CA-17 & Módulo IA Diagnóstico & MU-010\_Sugerencia\_IA \\
+\hline
+TR-64 & N/A (evento de flujo) & CU-01 & — & — & Módulo Autenticación/Usuarios & — \\
+\hline
+TR-65 & N/A (evento de flujo) & CU-01 & — & — & Módulo Autenticación/Usuarios & — \\
+\hline
+TR-66 & N/A (evento de flujo) & CU-01 & — & — & Módulo Autenticación/Usuarios & — \\
+\hline
+TR-67 & RF-04 & CU-02 & — & — & Backend Historiales Clínicos & — \\
+\hline
+TR-68 & RF-04 & CU-02 & — & — & Backend Historiales Clínicos & — \\
+\hline
+TR-69 & RF-04 & CU-02 & — & — & Backend Historiales Clínicos & — \\
+\hline
+TR-70 & RF-04 & CU-02 & — & — & Backend Historiales Clínicos & — \\
+\hline
+TR-71 & RF-16 & CU-03 & — & — & Backend Historiales Clínicos & — \\
+\hline
+TR-72 & RF-02 & CU-03 & — & — & Backend Historiales Clínicos & — \\
+\hline
+TR-73 & RF-05 & CU-04 & — & — & Backend Inventario & — \\
+\hline
+TR-74 & RF-06 & CU-04 & — & — & Backend Inventario & — \\
+\hline
+TR-75 & RF-28 & CU-05 & HU-30 & CA-30 & Backend Gestión de Personal & — \\
+\hline
+TR-76 & RF-28 & CU-05 & HU-30 & CA-30 & Backend Gestión de Personal & — \\
+\hline
+TR-77 & RF-28 & CU-05 & HU-30 & CA-30 & Backend Gestión de Personal & — \\
+\hline
+TR-78 & RF-28 & CU-05 & HU-30 & CA-30 & Backend Gestión de Personal & — \\
+\hline
+TR-79 & RF-17 & CU-06 & — & — & Módulo IA Diagnóstico & — \\
+\hline
+TR-80 & RF-13 & CU-07 & — & — & Backend Seguimiento Nutricional & — \\
+\hline
+TR-81 & RF-14 & CU-07 & — & — & Backend Seguimiento Nutricional & — \\
+\hline
+TR-82 & RF-09 & CU-08 & — & — & Módulo Comunicaciones & — \\
+\hline
+TR-83 & RF-10 & CU-08 & — & — & Módulo Comunicaciones & — \\
+\hline
+TR-84 & RF-06 & CU-09 & — & — & Backend Inventario & — \\
+\hline
+TR-85 & RF-05 & CU-09 & — & — & Backend Inventario & — \\
+\hline
+TR-86 & RF-08 & CU-10 & — & — & Backend Facturación & — \\
+\hline
+TR-87 & RF-08 & CU-10 & — & — & Backend Facturación & — \\\end{longtable}
 }
 
-\protect\phantomsection\label{_bookmarkD2}{}\emph{\textbf{Tabla D.2. Matriz de Trazabilidad Extendida --- Diseño, historias de usuario y mockup asociado (63 filas)}}
+\protect\phantomsection\label{_bookmarkD2}{}\emph{\textbf{Tabla D.2. Matriz de Trazabilidad Extendida --- Diseño, historias de usuario y mockup asociado (87 filas)}}
 
 \subsubsection{D.3 Resumen de cobertura}\label{d3-resumen-cobertura}
 
 \begin{itemize}
-  \item \textbf{Total de filas cerradas:} 63 (TR-01 a TR-63), cumpliendo el mínimo exigido por la guía de Entrega 4 (2B).
-  \item \textbf{Requisitos funcionales trazados:} RF-01 a RF-27.
+  \item \textbf{Total de filas cerradas:} 87 (TR-01 a TR-87), cumpliendo el mínimo exigido por la guía de Entrega 4 (2B).
+  \item \textbf{Requisitos funcionales trazados:} RF-01 a RF-28.
   \item \textbf{Requisitos no funcionales trazados:} RNF-01 a RNF-21 (ISO/IEC 25010:2023).
   \item \textbf{Restricciones de diseño trazadas:} RST-01 a RST-10.
   \item \textbf{Módulo con mayor densidad normativa (LOPDP):} Módulo IA Diagnóstico (RF-17, RF-18, RF-19, RNF-09, RNF-10, RNF-18, RNF-19, RNF-20, RNF-21, RST-04, RST-05, RST-08), consistente con el Enfoque 3 (explicabilidad) del componente empírico del proyecto.
