@@ -26,6 +26,7 @@ RF-24,Must,Básico,Alto,Propuesto,Alto,Alto,2,4.5,Autenticación es bloqueante p
 RF-25,Could,Atractivo,Medio,Propuesto,Bajo,Bajo,2,2.0,"Panel gerencial, valor complementario, no bloqueante"
 RF-26,Must,Básico,Alto,Propuesto,Alto,Alto,2,4.5,"Obligación legal directa (LOPDP Art. 7,8), bloquea otros módulos"
 RF-27,Must,Básico,Alto,Propuesto,Alto,Alto,2,4.5,"Obligación legal directa (LOPDP Art. 12-15), plazo de 15 días"
+RF-28,Must,Básico,Alto,Propuesto,Medio,Alto,2,4.0,"Gestión de empleados y permisos; soporta CU-05, sin el cual el personal administrativo no puede administrar cuentas del equipo"
 RNF-01,Must,Desempeño,Alto,Confirmado,Medio,Medio,2,3.5,Sin justificación específica registrada
 RNF-02,Must,Desempeño,Alto,Confirmado,Medio,Medio,2,3.5,Sin justificación específica registrada
 RNF-03,Should,Desempeño,Medio,Confirmado,Medio,Medio,2,3.0,Sin justificación específica registrada
