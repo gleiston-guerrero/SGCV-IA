@@ -29,7 +29,7 @@ La cadena de trazabilidad completa del proyecto: desde los objetivos estratégic
 | `Componente` | Módulo de software que lo implementa |
 | `Mockup` | Mockup de `03_Modelado/Mockups/` que lo ilustra (o "Transversal"/"No aplica") |
 
-**Cobertura verificada** (contando identificadores distintos, no solo apariciones): **28 RF**, **21 RNF**, **10 RST** (requisitos de sistema/infraestructura transversales), **10 CU** y **29 HU** quedan referenciados al menos una vez en la matriz.
+**Cobertura verificada** (contando identificadores distintos, no solo apariciones): **28 RF**, **21 RNF**, **10 RST** (requisitos de sistema/infraestructura transversales), **10 CU** y **30 HU** quedan referenciados al menos una vez en la matriz.
 
 ## Mapa_de_stakeholders.csv
 
