@@ -238,9 +238,11 @@ lo que se documenta sobre su propio aporte y el del equipo.
 |---|---|
 | Amagua Sacón Robyn Willian | 16-09-2026 |
 | Barrionuevo Fuentes Carlos Daniel | 16-09-2026 |
-| Marcillo Ponce Alberto Jeanpool | 16-09-2026 | Despues de aplicar correciones
+| Marcillo Ponce Alberto Jeanpool | 16-09-2026 | 
 | Mesías Quijije Jhon Alexander | 16-09-2026 |
 | Vera Gómez Anthony Alfredo | 16-09-2026 |
+
+Despues de aplicar correciones
 
 **Nota sobre la Sección 5.** Mesías Quijije confirma haber leído y estar de acuerdo con
 la Sección 5 (agregada el 16/09/2026) al momento de redactarla. Los demás integrantes
