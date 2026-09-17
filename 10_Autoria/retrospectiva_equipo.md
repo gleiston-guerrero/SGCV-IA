@@ -279,7 +279,7 @@ lo que se documenta sobre su propio aporte y el del equipo.
 | Integrante | Fecha |
 |---|---|
 | Amagua Sacón Robyn Willian | 16-09-2026 |
-| Barrionuevo Fuentes Carlos Daniel | 16-09-2026 |
+| Barrionuevo Fuentes Carlos Daniel | 17-09-2026 |
 | Marcillo Ponce Alberto Jeanpool | 17-09-2026 | 
 | Mesías Quijije Jhon Alexander | 16-09-2026 |
 | Vera Gómez Anthony Alfredo | 16-09-2026 |
