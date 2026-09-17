@@ -161,9 +161,9 @@ para no perder el registro de lo que ya se había cerrado.
   como un intento de simular evidencia, no como una carencia documentada. Quedó
   corregido antes del cierre.
 
-## 5. Cierre final (17/09/2026) — corrección de la retrospectiva, §9, §16, P2 y §3
+## 5. Cierre final (16/09/2026) — corrección de la retrospectiva, §9, §16, P2 y §3
 
-Esta sección documenta el trabajo posterior a la evaluación del docente del 17/09/2026
+Esta sección documenta el trabajo posterior a la evaluación del docente del 16/09/2026
 sobre la etiqueta `v2B-cierre` (commit `e3cda49`), que dejó pendientes §9, §16, el
 criterio de piso P2 y tres partes de §3. Se agrega, como las secciones anteriores, sin
 reescribir lo ya cerrado.
@@ -239,11 +239,11 @@ lo que se documenta sobre su propio aporte y el del equipo.
 | Amagua Sacón Robyn Willian | 16-09-2026 |
 | Barrionuevo Fuentes Carlos Daniel | 16-09-2026 |
 | Marcillo Ponce Alberto Jeanpool | 16-09-2026 |
-| Mesías Quijije Jhon Alexander | 17-09-2026 |
+| Mesías Quijije Jhon Alexander | 16-09-2026 |
 | Vera Gómez Anthony Alfredo | 16-09-2026 |
 
 **Nota sobre la Sección 5.** Mesías Quijije confirma haber leído y estar de acuerdo con
-la Sección 5 (agregada el 17/09/2026) al momento de redactarla. Los demás integrantes
+la Sección 5 (agregada el 16/09/2026) al momento de redactarla. Los demás integrantes
 firmaron sobre las Secciones 1 a 4; su conformidad con la Sección 5 queda pendiente de
 que cada uno la revise y actualice su fecha en esta misma tabla.
 
