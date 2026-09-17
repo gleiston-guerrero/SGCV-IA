@@ -281,7 +281,7 @@ lo que se documenta sobre su propio aporte y el del equipo.
 | Amagua Sacón Robyn Willian | 16-09-2026 |
 | Barrionuevo Fuentes Carlos Daniel | 17-09-2026 |
 | Marcillo Ponce Alberto Jeanpool | 17-09-2026 | 
-| Mesías Quijije Jhon Alexander | 16-09-2026 |
+| Mesías Quijije Jhon Alexander | 17-09-2026 |
 | Vera Gómez Anthony Alfredo | 17-09-2026 |
 
 Despues de aplicar correciones
