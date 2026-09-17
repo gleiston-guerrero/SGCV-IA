@@ -1,6 +1,6 @@
 # Retrospectiva del equipo — SGCV-IA
 
-Equipo ABMMV — Entrega 4 (2B), examen suspenso. Redactada originalmente el 15/09/2026,
+Equipo SGCV-IA — Entrega 4 (2B), examen suspenso. Redactada originalmente el 15/09/2026,
 posterior a la corrección de ese cierre (commit `4eeab52`, etiqueta de línea base
 `v2B-cierre`); actualizada el 16/09/2026 con el trabajo sobre RF-28, member-checking y
 recuperación de evidencia descrito en la Sección 4.
@@ -114,8 +114,13 @@ para no perder el registro de lo que ya se había cerrado.
    (`7e5d70c`, "Agregar metadatos EXIF (fecha 02/08/2026)", y los siguientes con el mismo
    patrón). Esa fecha no correspondía a ninguna captura real: era un dato creado para
    simular la evidencia que pide §9. El equipo lo detectó y Mesías Quijije restauró las
-   13 fotografías originales sin modificar, desde el commit `9e011c8` (02/08/2026), antes
-   de la etiqueta de cierre — el estado entregado no contiene los metadatos falsos.
+   13 fotografías desde el commit `9e011c8` (02/08/2026), antes de la etiqueta de cierre
+   — el estado entregado no contiene los metadatos falsos. Las 13 imágenes restauradas
+   son idénticas píxel a píxel a las originales de ese commit, pero no byte a byte: el
+   proceso de restauración las volvió a guardar, lo que cambia su hash SHA-256 aunque el
+   contenido visual sea el mismo. `10_Autoria/exif_inventario.csv` se actualizó con los
+   hashes reales de los archivos tal como quedaron subidos, no con los del commit
+   `9e011c8` original.
 
 ### 4.2. Quién hizo qué
 
@@ -205,11 +210,12 @@ reescribir lo ya cerrado.
 
 ### 5.2. Quién hizo qué
 
-- **Mesías Quijije** aplicó las correcciones de esta sección: la Sección 4 de esta
-  retrospectiva, `exif_inventario.csv` y `10_Autoria/README.md` (punto 2), la
-  justificación de muestra en el manuscrito y su recompilación (punto 3), las secciones
-  de compilación en el `README.md` raíz (punto 4), y la declaración de etiquetas y
-  regeneración del manifiesto (punto 5).
+- **Mesías Quijije** aplicó la corrección de la Sección 4 de esta retrospectiva (punto 1)
+  y la declaración de etiquetas y regeneración del manifiesto (punto 5).
+- **Marcillo Ponce** aplicó el punto 2 (`exif_inventario.csv` y la nota en
+  `10_Autoria/README.md` sobre `SIN_EXIF`), el punto 3 (justificación del tamaño de
+  muestra en el manuscrito y su recompilación) y el punto 4 (secciones de compilación del
+  ERS y el manuscrito en el `README.md` raíz).
 
 ### 5.3. Qué corregimos y qué aprendimos
 
@@ -228,7 +234,43 @@ reescribir lo ya cerrado.
   piso P2 no se cumplía hasta que el procedimiento quedó escrito — la reproducibilidad
   no verificada por otra persona no cuenta como documentada.
 
-## 6. Firmas de conformidad
+## 6. Corrección posterior (17/09/2026) — nombre del equipo, hashes de §9 y precisión de la
+Sección 4
+
+Esta sección documenta el trabajo posterior a la Sección 5, tras revisar el segundo
+informe de evaluación del docente sobre la etiqueta `v2B-cierre` (commit `e3cda49`).
+
+### 6.1. Qué hicimos y en qué orden
+
+1. **Corrección de dos hashes en `10_Autoria/exif_inventario.csv` (§9/§3).** El docente
+   detectó que los hashes SHA-256 registrados para `Cuestionario_Aceptacion_IA.png` y
+   `Figura_A05_Cuestionario_FrecuenciaAtencion.png` no correspondían a los archivos ni a
+   ninguna versión del historial de git. Por dependencia, esto dejaba también §3 en "Por
+   modificar", ya que el manifiesto raíz no podía verificarse mientras el inventario
+   tuviera hashes incorrectos. Se recalculó el hash real de ambos archivos y se
+   corrigieron las dos filas del CSV.
+2. **Precisión sobre la restauración de las 13 fotografías (Sección 4.1, punto 5).** La
+   frase "recuperó las 13 fotografías originales sin modificar" fue corregida: el proceso
+   de restauración volvió a guardar los archivos, por lo que son idénticos píxel a píxel
+   a los del commit `9e011c8` pero no byte a byte, y su hash SHA-256 difiere en
+   consecuencia. Se documentó esta distinción en la Sección 4.1 y se agregó una lección
+   correspondiente a la Sección 4.3.
+
+### 6.2. Quién hizo qué
+
+- **Marcillo Ponce** aplicó los dos puntos de esta sección: la corrección de los dos
+  hashes en `exif_inventario.csv` (punto 1) y la precisión sobre la restauración
+  píxel/byte en la Sección 4.1 (punto 2).
+
+### 6.3. Qué corregimos y qué aprendimos
+
+- **Aprendimos que un hash incorrecto en el inventario bloquea otros ítems por
+  dependencia**, no solo el propio §9: como §3 exige que el manifiesto raíz verifique sin
+  errores, dos filas mal calculadas en un CSV auxiliar impidieron cerrar la línea base
+  aunque la etiqueta en sí estuviera bien creada. La lección: verificar los hashes contra
+  los archivos reales antes de darlos por buenos, no solo contra lo que "debería" ser.
+
+## 7. Firmas de conformidad
 
 Cada integrante confirma con la fecha, en la fila de su propio nombre, que leyó esta
 retrospectiva hasta la sección vigente al momento de firmar, y que está de acuerdo con
@@ -243,11 +285,6 @@ lo que se documenta sobre su propio aporte y el del equipo.
 | Vera Gómez Anthony Alfredo | 16-09-2026 |
 
 Despues de aplicar correciones
-
-**Nota sobre la Sección 5.** Mesías Quijije confirma haber leído y estar de acuerdo con
-la Sección 5 (agregada el 16/09/2026) al momento de redactarla. Los demás integrantes
-firmaron sobre las Secciones 1 a 4; su conformidad con la Sección 5 queda pendiente de
-que cada uno la revise y actualice su fecha en esta misma tabla.
 
 **Nota aclaratoria sobre la firma de Amagua Sacón.** Amagua Sacón Robyn Willian firma
 esta retrospectiva únicamente en calidad de integrante del equipo, dejando constancia
