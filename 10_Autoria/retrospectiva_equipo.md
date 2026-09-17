@@ -174,3 +174,10 @@ sobre su propio aporte y el del equipo.
 | Marcillo Ponce Alberto Jeanpool | 16-09-2026 |
 | Mesías Quijije Jhon Alexander |16-09-2026 |
 | Vera Gómez Anthony Alfredo |16-09-2026|
+
+**Nota aclaratoria sobre la firma de Amagua Sacón.** Amagua Sacón Robyn Willian firma
+esta retrospectiva únicamente en calidad de integrante del equipo, dejando constancia
+de que la leyó. Su situación académica ya quedó resuelta en la entrega anterior (examen
+final aprobado), por lo que no tuvo participación en el desarrollo del examen suspenso
+descrito en las Secciones 1 y 4 de este documento. Su firma no debe interpretarse como
+aporte de trabajo a este cierre.
