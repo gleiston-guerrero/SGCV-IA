@@ -170,6 +170,20 @@ El documento principal de requisitos se encuentra en:
 
 El ERS/SRS documenta los requisitos del sistema, las necesidades identificadas durante el trabajo de campo y los elementos necesarios para especificar la solución.
 
+### Compilar el ERS
+
+```bash
+cd 01_ERS
+pdflatex -interaction=nonstopmode ERS_SRS_2B_v2.0.tex
+bibtex ERS_SRS_2B_v2.0
+pdflatex -interaction=nonstopmode ERS_SRS_2B_v2.0.tex
+pdflatex -interaction=nonstopmode ERS_SRS_2B_v2.0.tex
+```
+
+Compilador: `pdflatex` (TeX Live), con `bibtex` para resolver la bibliografía. Se requieren
+dos pasadas de `pdflatex` después de `bibtex` para resolver referencias cruzadas y citas.
+Requiere `referencias.bib` en el mismo directorio que `ERS_SRS_2B_v2.0.tex`.
+
 La documentación de requisitos constituye la base para el modelado, trazabilidad, implementación y verificación del proyecto.
 
 ---
@@ -398,6 +412,22 @@ El material destinado a la publicación se encuentra en:
 ```
 
 El manuscrito cuenta con contenido sustantivo (Abstract, Introduction, Related Work, Methodology, Results, Discussion, Threats to Validity, Conclusions), redactado con la plantilla oficial de Springer Nature (`sn-jnl.cls`) y compila sin errores.
+
+### Compilar el manuscrito
+
+```bash
+cd 09_Publicacion
+pdflatex -interaction=nonstopmode manuscrito_final.tex
+bibtex manuscrito_final
+pdflatex -interaction=nonstopmode manuscrito_final.tex
+pdflatex -interaction=nonstopmode manuscrito_final.tex
+```
+
+Compilador: `pdflatex` (TeX Live), con `bibtex` para resolver la bibliografía. Se requieren
+dos pasadas de `pdflatex` después de `bibtex` para resolver referencias cruzadas y citas.
+Requiere `referencias.bib` y la carpeta `figuras/` en el mismo directorio que
+`manuscrito_final.tex`. La clase `sn-jnl.cls` y el estilo `sn-mathphys-num.bst` están
+incluidos en `09_Publicacion/`.
 
 Pendiente antes del envío:
 
