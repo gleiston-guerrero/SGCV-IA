@@ -32,3 +32,16 @@ directa de autoría del modelado.
 Cada archivo fuente en `fuentes_editables/` está acompañado de la imagen exportada
 correspondiente (`.svg`/`.png`) del mismo diagrama. El detalle completo se encuentra en
 `fuentes_editables/README.md`.
+
+## Nota sobre A11 — Inventario EXIF
+
+Las 13 filas de `exif_inventario.csv` correspondientes a
+`02_Evidencias/Cuestionario/Fotos_Aplicacion/` están marcadas como `SIN_EXIF` en las columnas
+de fecha de captura y dispositivo. Esto declara, sin ambigüedad, que **no existe evidencia
+fotográfica de la aplicación del cuestionario**: las 13 imágenes de esa carpeta son capturas de
+pantalla de los resúmenes del formulario (Google Forms), no fotografías tomadas con la cámara
+de un dispositivo, y por diseño ningún sistema operativo escribe metadatos EXIF de cámara
+(`DateTimeOriginal`, `Model`) en una captura de pantalla — no es un dato que se haya perdido,
+sino uno que nunca existió para este tipo de archivo. El detalle completo de por qué una captura
+de pantalla no lleva EXIF de cámara está en
+`02_Evidencias/Cuestionario/Fotos_Aplicacion/README.md`.
