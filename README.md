@@ -544,7 +544,7 @@ Actualmente:
 | Materiales de defensa | ✅ Completo (5 de 5 archivos) |
 | Zenodo                | ✅ DOI disponible           |
 | Software Heritage     | ✅ Identificador disponible |
-| Etiquetas de línea base | ✅ `v1.0-mvp-demo` y `v2B` anotadas |
+| Etiqueta de línea base vigente | ✅ `v2B-cierre` (anotada) — línea base del cierre del examen suspenso |
 | Identidades de autoría | ✅ Unificadas con `.mailmap` |
 
 ---
@@ -554,6 +554,22 @@ Actualmente:
 El historial del repositorio fue reescrito el **27/08/2026** como medida de protección de la evidencia audiovisual identificable.
 
 Los identificadores de los commits anteriores cambiaron como consecuencia de esta operación, aunque se conservaron sus fechas y autores originales.
+
+### Etiquetas del repositorio
+
+| Etiqueta | Tipo | Qué es |
+|---|---|---|
+| `v2B-cierre` | Anotada | **Línea base vigente** — commit final entregado del examen suspenso |
+| `v1.0-mvp-demo` | Anotada | Línea base histórica del MVP, anterior al examen suspenso |
+| `v2B` | Anotada | Línea base histórica de la Entrega 2B, anterior al examen suspenso |
+| `Defensa` | Ligera | No es línea base — publica el asset `Defensa.SGCV.mp4` (video de defensa) como release de evidencia |
+| `Secion_1` | Ligera | No es línea base — publica el asset `Secion_1.2026-09-06.124311.mp4` (grabación de sesión 1) como release de evidencia |
+| `Sesion_2` | Ligera | No es línea base — publica el asset `Sesion.2.mp4` (grabación de sesión 2) como release de evidencia |
+
+Las tres etiquetas ligeras existen únicamente como mecanismo de GitHub Releases para
+alojar archivos de video que superan el límite de tamaño para commits directos; no
+representan puntos de congelación del código ni deben usarse como referencia de línea
+base.
 
 Las modificaciones posteriores se registran mediante el historial de Git y el archivo:
 
