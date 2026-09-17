@@ -171,6 +171,6 @@ sobre su propio aporte y el del equipo.
 |---|---|
 | Amagua Sacón Robyn Willian | |
 | Barrionuevo Fuentes Carlos Daniel | |
-| Marcillo Ponce Alberto Jeanpool | |
+| Marcillo Ponce Alberto Jeanpool | 16-09-2026 |
 | Mesías Quijije Jhon Alexander |16-09-2026 |
 | Vera Gómez Anthony Alfredo | |
