@@ -21,8 +21,12 @@ captura (`DateTimeOriginal`, `Model`):
 Esta situación está documentada por archivo en
 [`10_Autoria/exif_inventario.csv`](../../../10_Autoria/exif_inventario.csv), donde
 cada una de estas 13 imágenes aparece con `fecha_captura` y `dispositivo` marcados
-como "No disponible (EXIF no preservado en el archivo)", junto a su hash SHA-256
-para verificación de integridad.
+como `SIN_EXIF`, junto a su hash SHA-256 para verificación de integridad.
+
+**No existe evidencia fotográfica de la aplicación del cuestionario** con
+metadatos de cámara verificables. Las 13 imágenes de esta carpeta documentan el
+contenido del instrumento (los resúmenes del formulario), no el momento ni el
+contexto en que se aplicó.
 
 ## Evidencia alternativa de autenticidad
 
