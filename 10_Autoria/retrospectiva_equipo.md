@@ -161,19 +161,91 @@ para no perder el registro de lo que ya se había cerrado.
   como un intento de simular evidencia, no como una carencia documentada. Quedó
   corregido antes del cierre.
 
-## 5. Firmas de conformidad
+## 5. Cierre final (17/09/2026) — corrección de la retrospectiva, §9, §16, P2 y §3
+
+Esta sección documenta el trabajo posterior a la evaluación del docente del 17/09/2026
+sobre la etiqueta `v2B-cierre` (commit `e3cda49`), que dejó pendientes §9, §16, el
+criterio de piso P2 y tres partes de §3. Se agrega, como las secciones anteriores, sin
+reescribir lo ya cerrado.
+
+### 5.1. Qué hicimos y en qué orden
+
+1. **Corrección de la Sección 4 de esta misma retrospectiva.** El docente detectó que
+   el punto 5 de la Sección 4.1 decía que la fabricación de metadatos EXIF afectó a "2"
+   fotografías y que se "elimina la atribución individual", cuando el historial de git
+   muestra que fueron las 13 y que el autor queda identificado (`7e5d70c` y commits
+   siguientes, Barrionuevo Fuentes Carlos Daniel). Se corrigieron ambas frases para que
+   coincidan con el historial real, antes de continuar con el resto de los pendientes.
+2. **§9 — Marca `SIN_EXIF` literal y explicación en el README del inventario.** El
+   docente pidió la marca textual `SIN_EXIF` (no una paráfrasis) y una explicación en
+   el README que documenta `exif_inventario.csv`, no solo en el README de la carpeta de
+   fotos. Se actualizaron las 13 filas de `10_Autoria/exif_inventario.csv` a `SIN_EXIF`
+   en `fecha_captura` y `dispositivo`, y se agregó una nota en `10_Autoria/README.md`
+   (sección "Nota sobre A11") que explica por qué una captura de pantalla no lleva EXIF
+   de cámara y declara explícitamente que no existe evidencia fotográfica de la
+   aplicación del cuestionario.
+3. **§16 — Justificación del tamaño de muestra en el manuscrito.** El manuscrito
+   mencionaba `n = 210` pero no incorporaba el cálculo que la sustenta. Se agregó, en la
+   subsección `res:survey`, el nivel de confianza (95 %, Z = 1,96), el supuesto de
+   variabilidad máxima (p = 0,5) y el margen de error resultante (~6,8 %), tomados
+   directamente de `07_Datos/resultados/justificacion_muestra.md`, y se recompiló
+   `manuscrito_final.pdf` después de este cambio.
+4. **P2 (criterio de piso) — Documentar la compilación del ERS y el manuscrito.** El
+   `README.md` raíz no explicaba cómo compilar ninguno de los dos documentos. Se
+   agregaron las secciones "Compilar el ERS" y "Compilar el manuscrito", cada una con el
+   compilador (`pdflatex`), el orden exacto de las órdenes (`pdflatex → bibtex →
+   pdflatex → pdflatex`) y el archivo principal, verificado compilando ambos documentos
+   sin errores antes de documentarlo.
+5. **§3 — Etiqueta vigente, etiquetas ligeras y manifiesto completo.** Se corrigió
+   `README.md` para declarar `v2B-cierre` como la etiqueta de línea base vigente (en vez
+   de `v1.0-mvp-demo` y `v2B`), se agregó una tabla nueva documentando `Defensa`,
+   `Secion_1` y `Sesion_2` como etiquetas ligeras de publicación de evidencia (no de
+   línea base), y se regeneró `checksums.sha256` sobre los 572 archivos versionados del
+   repositorio (antes solo cubría 159), con `git ls-files | xargs sha256sum`.
+
+### 5.2. Quién hizo qué
+
+- **Mesías Quijije** aplicó las correcciones de esta sección: la Sección 4 de esta
+  retrospectiva, `exif_inventario.csv` y `10_Autoria/README.md` (punto 2), la
+  justificación de muestra en el manuscrito y su recompilación (punto 3), las secciones
+  de compilación en el `README.md` raíz (punto 4), y la declaración de etiquetas y
+  regeneración del manifiesto (punto 5).
+
+### 5.3. Qué corregimos y qué aprendimos
+
+- **Aprendimos que una retrospectiva también se audita, no solo el código.** El
+  docente comparó nuestra propia descripción del incidente de metadatos contra el
+  historial de git y encontró que no coincidía. Un documento que existe para dar cuenta
+  de lo ocurrido tiene que ser tan verificable como cualquier otro artefacto del
+  repositorio.
+- **Aprendimos que "declarar la ausencia de un dato" tiene una forma exacta que hay
+  que respetar.** Cuando la guía especifica una marca literal (`SIN_EXIF`), una
+  paráfrasis equivalente en significado ("no disponible") no cumple el criterio —
+  aunque comunique lo mismo a una persona, no es lo que un script de verificación
+  automática busca.
+- **Aprendimos que documentar "qué es reproducible" es tan necesario como que lo sea.**
+  Los dos documentos LaTeX ya compilaban sin errores desde hace días, pero el criterio de
+  piso P2 no se cumplía hasta que el procedimiento quedó escrito — la reproducibilidad
+  no verificada por otra persona no cuenta como documentada.
+
+## 6. Firmas de conformidad
 
 Cada integrante confirma con la fecha, en la fila de su propio nombre, que leyó esta
-retrospectiva completa (secciones 1 a 4) y que está de acuerdo con lo que se documenta
-sobre su propio aporte y el del equipo.
+retrospectiva hasta la sección vigente al momento de firmar, y que está de acuerdo con
+lo que se documenta sobre su propio aporte y el del equipo.
 
 | Integrante | Fecha |
 |---|---|
 | Amagua Sacón Robyn Willian | 16-09-2026 |
 | Barrionuevo Fuentes Carlos Daniel | 16-09-2026 |
 | Marcillo Ponce Alberto Jeanpool | 16-09-2026 |
-| Mesías Quijije Jhon Alexander |16-09-2026 |
-| Vera Gómez Anthony Alfredo |16-09-2026|
+| Mesías Quijije Jhon Alexander | 17-09-2026 |
+| Vera Gómez Anthony Alfredo | 16-09-2026 |
+
+**Nota sobre la Sección 5.** Mesías Quijije confirma haber leído y estar de acuerdo con
+la Sección 5 (agregada el 17/09/2026) al momento de redactarla. Los demás integrantes
+firmaron sobre las Secciones 1 a 4; su conformidad con la Sección 5 queda pendiente de
+que cada uno la revise y actualice su fecha en esta misma tabla.
 
 **Nota aclaratoria sobre la firma de Amagua Sacón.** Amagua Sacón Robyn Willian firma
 esta retrospectiva únicamente en calidad de integrante del equipo, dejando constancia
