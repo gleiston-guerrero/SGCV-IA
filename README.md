@@ -574,7 +574,7 @@ Actualmente:
 | Materiales de defensa | ✅ Completo (5 de 5 archivos) |
 | Zenodo                | ✅ DOI disponible           |
 | Software Heritage     | ✅ Identificador disponible |
-| Etiqueta de línea base vigente | ✅ `v2B-cierre` (anotada) — línea base del cierre del examen suspenso |
+| Etiqueta de línea base vigente | ✅ `v2B-cierre-final` (anotada) — línea base del cierre del examen suspenso |
 | Identidades de autoría | ✅ Unificadas con `.mailmap` |
 
 ---
@@ -589,7 +589,8 @@ Los identificadores de los commits anteriores cambiaron como consecuencia de est
 
 | Etiqueta | Tipo | Qué es |
 |---|---|---|
-| `v2B-cierre` | Anotada | **Línea base vigente** — commit final entregado del examen suspenso |
+| `v2B-cierre-final` | Anotada | **Línea base vigente** — commit final entregado del examen suspenso, tras corregir §9 y regenerar el manifiesto |
+| `v2B-cierre` | Anotada | Línea base histórica — primera versión del cierre, evaluada por el docente el 17/09 a las 02:54 y 07:23 (Ecuador); no se movió, conforme a su indicación |
 | `v1.0-mvp-demo` | Anotada | Línea base histórica del MVP, anterior al examen suspenso |
 | `v2B` | Anotada | Línea base histórica de la Entrega 2B, anterior al examen suspenso |
 | `Defensa` | Ligera | No es línea base — publica el asset `Defensa.SGCV.mp4` (video de defensa) como release de evidencia |
