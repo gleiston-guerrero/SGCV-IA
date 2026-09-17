@@ -163,14 +163,14 @@ para no perder el registro de lo que ya se había cerrado.
 
 ## 5. Firmas de conformidad
 
-Cada integrante firma con su nombre y la fecha, confirmando que leyó esta retrospectiva
-completa (secciones 1 a 4) y que está de acuerdo con lo que se documenta sobre su propio
-aporte y el del equipo.
+Cada integrante confirma con la fecha, en la fila de su propio nombre, que leyó esta
+retrospectiva completa (secciones 1 a 4) y que está de acuerdo con lo que se documenta
+sobre su propio aporte y el del equipo.
 
-| Integrante | Firma (nombre completo) | Fecha |
-|---|---|---|
-| Amagua Sacón Robyn Willian | | |
-| Barrionuevo Fuentes Carlos Daniel | | |
-| Marcillo Ponce Alberto Jeanpool | | |
-| Mesías Quijije Jhon Alexander | | |
-| Vera Gómez Anthony Alfredo | | |
+| Integrante | Fecha |
+|---|---|
+| Amagua Sacón Robyn Willian | |
+| Barrionuevo Fuentes Carlos Daniel | |
+| Marcillo Ponce Alberto Jeanpool | |
+| Mesías Quijije Jhon Alexander | |
+| Vera Gómez Anthony Alfredo | |
