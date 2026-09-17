@@ -173,4 +173,4 @@ sobre su propio aporte y el del equipo.
 | Barrionuevo Fuentes Carlos Daniel | |
 | Marcillo Ponce Alberto Jeanpool | 16-09-2026 |
 | Mesías Quijije Jhon Alexander |16-09-2026 |
-| Vera Gómez Anthony Alfredo | |
+| Vera Gómez Anthony Alfredo |16-09-2026|
