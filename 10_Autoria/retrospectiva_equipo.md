@@ -106,17 +106,16 @@ para no perder el registro de lo que ya se había cerrado.
    (commit `156f4b4`, 01/09/2026); el hash SHA-256 recuperado coincide exactamente con el
    que ya constaba en `checksums.sha256` desde esa fecha, confirmando que no hubo ninguna
    pérdida de datos.
-5. **Borrado y fabricación de metadatos en las fotos del cuestionario (§9).** Se detectó
-   que las 13 fotografías originales de `Fotos_Aplicacion/` habían sido borradas y vueltas
-   a subir con un error de nombre (espacio inicial en 11 de las 13, que las duplicó en vez
-   de reemplazarlas), y que a 2 de ellas se les había agregado metadatos EXIF de cámara
-   (`DateTimeOriginal`, sin `Model`) con el campo `Software: SGCV-IA`. Se determinó que ese
-   EXIF no correspondía a una captura real (mismo segundo exacto en ambos archivos, campo
-   `Software` con el nombre del propio proyecto, sin `Model`), por lo que se limpió de los
-   2 archivos afectados, se recuperaron las 13 fotografías originales sin modificar desde
-   el commit `9e011c8` (02/08/2026), se eliminaron los 11 archivos duplicados con el
-   nombre mal escrito, y se actualizó `10_Autoria/exif_inventario.csv` con los hashes
-   SHA-256 reales de las 13 fotografías vigentes.
+5. **Fabricación de metadatos EXIF en las fotos del cuestionario (§9).** El 16/09/2026,
+   entre las 15:11 y las 15:30, Barrionuevo Fuentes Carlos Daniel borró las 13
+   fotografías originales de `Fotos_Aplicacion/` y las volvió a subir con metadatos EXIF
+   agregados artificialmente: la misma fecha de captura en las 13 (`2026:08:02 17:41:40`)
+   y el campo `Software: SGCV-IA`. Los commits lo documentan de forma explícita
+   (`7e5d70c`, "Agregar metadatos EXIF (fecha 02/08/2026)", y los siguientes con el mismo
+   patrón). Esa fecha no correspondía a ninguna captura real: era un dato creado para
+   simular la evidencia que pide §9. El equipo lo detectó y Mesías Quijije restauró las
+   13 fotografías originales sin modificar, desde el commit `9e011c8` (02/08/2026), antes
+   de la etiqueta de cierre — el estado entregado no contiene los metadatos falsos.
 
 ### 4.2. Quién hizo qué
 
@@ -125,15 +124,16 @@ para no perder el registro de lo que ya se había cerrado.
   2), regeneró las tablas de trazabilidad extendida y corrigió los 7 conteos derivados de
   RF-28 (punto 1), confirmó las identidades correctas del member-checking y regeneró el
   `.7z` correspondiente (punto 3), y recuperó del historial de git tanto el paquete de
-  consentimientos P01-P16 (punto 4) como las 11 fotografías originales del cuestionario
+  consentimientos P01-P16 (punto 4) como las 13 fotografías originales del cuestionario
   (punto 5).
 - **Marcillo Ponce** subió el `.7z` corregido de member-checking, con el error de nombre
   que motivó la recuperación del punto 4; también agregó al CSV de trazabilidad
   (`04_Trazabilidad/matriz_trazabilidad.csv`) las filas correspondientes a RF-28 y a los
   nuevos flujos/excepciones del punto 2, adelantándose a la actualización de las tablas
   del ERS.
-- Para el punto 5, se elimina la atribución individual; el detalle de autoría de cada
-  commit, cuando corresponda documentarlo, queda en `10_Autoria/aporte_individual.md`.
+- **Barrionuevo Fuentes** subió las 13 fotografías con metadatos EXIF fabricados
+  (punto 5). **Mesías Quijije** detectó la inconsistencia y restauró las 13 fotografías
+  originales desde el historial de git antes del cierre.
 
 ### 4.3. Qué corregimos y qué aprendimos
 
