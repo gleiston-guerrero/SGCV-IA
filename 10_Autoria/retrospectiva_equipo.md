@@ -306,7 +306,13 @@ que el docente exige: incluyendo lo que no salió como estaba previsto.
 ### 7.2. Quién hizo qué
 
 - **Mesías Quijije** movió `v2B-cierre` a `bd85c55` (punto 1), creó `v2B-cierre-final`
-  (punto 2), y corrigió el `README.md` y regeneró el manifiesto (puntos 3 y 4).
+  (punto 2), y corrigió el `README.md` para declarar `v2B-cierre-final` vigente,
+  subiendo el manifiesto ya regenerado en el mismo commit (punto 3).
+- **Corrección de atribución (18/09/2026):** el punto 4 —la corrección de la afirmación
+  falsa "no se movió, conforme a su indicación"— no lo hizo Mesías Quijije. Lo hizo
+  **Marcillo Ponce**, en el commit `499ef4a` (18/09, 11:37), tal como señaló el tercer
+  informe del docente. Esta sección atribuía el punto 4 a la persona equivocada; queda
+  corregido aquí.
 
 ### 7.3. Qué corregimos y qué aprendimos
 
@@ -324,7 +330,52 @@ que el docente exige: incluyendo lo que no salió como estaba previsto.
   verificación contra el árbol real tiene que aplicarse a todo documento que describa el
   estado del repositorio, no solo a la retrospectiva.
 
-## 8. Firmas de conformidad
+## 8. Ronda del 18/09/2026 — atribución del README, etiqueta `v2.0-cierre` y firmas propias
+
+Esta sección documenta la ronda del 18/09 que el informe del docente del 18/09/2026
+(hash `23c72c9`) señaló como ausente de esta retrospectiva.
+
+### 8.1. Qué se hizo y quién lo hizo
+
+1. **Marcillo Ponce** corrigió la afirmación falsa de la Sección 7.1, punto 4, sobre
+   `v2B-cierre` (commit `499ef4a`, 11:37). Este punto había quedado atribuido por error a
+   Mesías Quijije en la Sección 7.2; queda corregido ahí mismo.
+2. **Marcillo Ponce** declaró `v2.0-cierre` como etiqueta vigente en el `README.md`
+   (commit `487b39d`, 11:58) y creó esa etiqueta sobre ese mismo commit, sin mover
+   `v2B-cierre-final` ni `v2B-cierre`.
+3. **Marcillo Ponce** corrigió un hash mal citado en esa misma declaración —`487b39d`
+   en vez de `e57b26d`— (commit `1d16c90`, 12:08) y regeneró `checksums.sha256`
+   (commit `23c72c9`, 12:25).
+4. **Vera Gómez** actualizó su propia fila en la tabla de firmas (Sección 9) a
+   18-09-2026, en su propio commit (`4063e72`, 14:10).
+5. **Barrionuevo Fuentes** actualizó su propia fila en la tabla de firmas a 18-09-2026,
+   en su propio commit (`a23f7ec`, 14:11).
+
+Los puntos 4 y 5 corrigen, de manera correcta, el problema que ese informe señaló: en la
+ronda anterior, Marcillo Ponce había modificado las fechas de
+Barrionuevo Fuentes y de Vera Gómez sin su autorización. Aquí cada quien modificó
+únicamente su propia fila, en su propio commit — que es la regla del docente aplicada
+correctamente.
+
+### 8.2. Consecuencia sobre `v2.0-cierre` (pendiente)
+
+Los puntos 2 y 3 dejaron `v2.0-cierre` apuntando a `487b39d`, que quedó desactualizado
+en el mismo momento en que se creó: los commits `1d16c90` y `23c72c9` (posteriores a
+`487b39d`) ya no están cubiertos por esa etiqueta, y el manifiesto no verifica sobre
+ese commit porque `README.md` cambió después. Esto se documenta aquí en vez de
+corregirse todavía, porque corregirlo implica crear una cuarta etiqueta nueva — y esa
+etiqueta solo debe crearse una vez que no queden más cambios pendientes en el
+repositorio (ver Sección 8.3).
+
+### 8.3. Qué falta para que `v2.0-cierre` no quede repitiendo el mismo problema
+
+1. No editar ningún archivo más una vez iniciado este paso.
+2. Regenerar `checksums.sha256` como último cambio, sobre el commit final.
+3. Crear una etiqueta anotada nueva sobre ese commit final, sin mover `v2B-cierre`,
+   `v2B-cierre-final` ni `v2.0-cierre`.
+4. Declarar esa etiqueta nueva como vigente en el `README.md`.
+
+## 9. Firmas de conformidad
 
 Cada integrante confirma con la fecha, en la fila de su propio nombre, que leyó esta
 retrospectiva hasta la sección vigente al momento de firmar, y que está de acuerdo con
@@ -339,10 +390,12 @@ lo que se documenta sobre su propio aporte y el del equipo.
 | Vera Gómez Anthony Alfredo | 18-09-2026 |
 
 **Nota sobre el alcance de cada firma.** Mesías Quijije confirma hasta la Sección 7
-(incluida), al momento de redactarla. Los demás integrantes firmaron sobre las Secciones
-1 a 4; su conformidad con las Secciones 5 a 7 —incluidas las correcciones de atribución
-de la Sección 5.2, que involucran directamente el trabajo de Marcillo Ponce— queda
-pendiente de que cada uno las revise y actualice su propia fila.
+(incluida), al momento de redactarla. Barrionuevo Fuentes y Vera Gómez actualizaron su
+propia fila el 18/09 (commits `a23f7ec` y `4063e72`), sobre el estado del documento hasta
+la Sección 7 inclusive; la Sección 8 se agregó después de esas dos firmas. Amagua Sacón
+y Marcillo Ponce firmaron sobre las Secciones 1 a 4. La conformidad de cada quien con las
+secciones posteriores a la que tenía a la vista al firmar —incluida esta Sección 8— queda
+pendiente de que cada uno la revise y actualice su propia fila cuando corresponda.
 
 **Nota aclaratoria sobre la firma de Amagua Sacón.** Amagua Sacón Robyn Willian firma
 esta retrospectiva únicamente en calidad de integrante del equipo, dejando constancia
