@@ -335,7 +335,7 @@ lo que se documenta sobre su propio aporte y el del equipo.
 | Amagua Sacón Robyn Willian | 16-09-2026 |
 | Barrionuevo Fuentes Carlos Daniel | 16-09-2026 |
 | Marcillo Ponce Alberto Jeanpool | 18-09-2026 |
-| Mesías Quijije Jhon Alexander | 17-09-2026 |
+| Mesías Quijije Jhon Alexander | 18-09-2026 |
 | Vera Gómez Anthony Alfredo | 16-09-2026 |
 
 **Nota sobre el alcance de cada firma.** Mesías Quijije confirma hasta la Sección 7
