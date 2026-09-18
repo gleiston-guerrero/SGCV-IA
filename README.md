@@ -590,7 +590,7 @@ Los identificadores de los commits anteriores cambiaron como consecuencia de est
 | Etiqueta | Tipo | Qué es |
 |---|---|---|
 | `v2B-cierre-final` | Anotada | **Línea base vigente** — commit final entregado del examen suspenso, tras corregir §9 y regenerar el manifiesto |
-| `v2B-cierre` | Anotada | Línea base histórica — primera versión del cierre, evaluada por el docente el 17/09 a las 02:54 y 07:23 (Ecuador); no se movió, conforme a su indicación |
+| `v2B-cierre` | Anotada | Etiqueta de cierre con historial de publicación irregular: se publicó sobre `e3cda49`, se recreó sobre `bd85c55`, luego sobre `35e2b8c`, y de nuevo sobre `bd85c55` (17/09, 18:22), donde queda actualmente. El docente señaló que una etiqueta de línea base publicada no debe moverse; se documenta aquí con exactitud en vez de declararla erróneamente estable. No se le hará ningún movimiento adicional. |
 | `v1.0-mvp-demo` | Anotada | Línea base histórica del MVP, anterior al examen suspenso |
 | `v2B` | Anotada | Línea base histórica de la Entrega 2B, anterior al examen suspenso |
 | `Defensa` | Ligera | No es línea base — publica el asset `Defensa.SGCV.mp4` (video de defensa) como release de evidencia |
