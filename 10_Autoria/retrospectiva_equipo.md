@@ -210,12 +210,16 @@ reescribir lo ya cerrado.
 
 ### 5.2. Quién hizo qué
 
-- **Mesías Quijije** aplicó la corrección de la Sección 4 de esta retrospectiva (punto 1)
-  y la declaración de etiquetas y regeneración del manifiesto (punto 5).
-- **Marcillo Ponce** aplicó el punto 2 (`exif_inventario.csv` y la nota en
-  `10_Autoria/README.md` sobre `SIN_EXIF`), el punto 3 (justificación del tamaño de
-  muestra en el manuscrito y su recompilación) y el punto 4 (secciones de compilación del
-  ERS y el manuscrito en el `README.md` raíz).
+- **Mesías Quijije** aplicó la corrección de la Sección 4 de esta retrospectiva (punto 1),
+  el punto 2 (marca `SIN_EXIF` en `exif_inventario.csv`, commit `a1b059e`, y la nota en
+  `10_Autoria/README.md`, commit `a23d701`), y la declaración de etiquetas y regeneración
+  del manifiesto (punto 5).
+- **Marcillo Ponce** aplicó el punto 3 (justificación del tamaño de muestra en el
+  manuscrito y su recompilación), el punto 4 (secciones de compilación del ERS y el
+  manuscrito en el `README.md` raíz), y además corrigió el README de
+  `02_Evidencias/Cuestionario/Fotos_Aplicacion/` (commit `832de96`), explicando ahí la
+  ausencia de EXIF a nivel de esa carpeta específica, en paralelo a la nota de
+  `10_Autoria/README.md` que agregó Mesías.
 
 ### 5.3. Qué corregimos y qué aprendimos
 
@@ -238,23 +242,26 @@ reescribir lo ya cerrado.
 Sección 4
 
 Esta sección documenta el trabajo posterior a la Sección 5, tras revisar el segundo
-informe de evaluación del docente sobre la etiqueta `v2B-cierre` (commit `e3cda49`).
+informe de evaluación del docente, emitido sobre el commit `bd85c55` (identificado en ese
+momento por la etiqueta `v2B-cierre`, antes de que esta se volviera a mover).
 
 ### 6.1. Qué hicimos y en qué orden
 
-1. **Corrección de dos hashes en `10_Autoria/exif_inventario.csv` (§9/§3).** El docente
+1. **Corrección de dos hashes en `10_Autoria/exif_inventario.csv` (§9).** El docente
    detectó que los hashes SHA-256 registrados para `Cuestionario_Aceptacion_IA.png` y
    `Figura_A05_Cuestionario_FrecuenciaAtencion.png` no correspondían a los archivos ni a
-   ninguna versión del historial de git. Por dependencia, esto dejaba también §3 en "Por
-   modificar", ya que el manifiesto raíz no podía verificarse mientras el inventario
-   tuviera hashes incorrectos. Se recalculó el hash real de ambos archivos y se
-   corrigieron las dos filas del CSV.
+   ninguna versión del historial de git. Se recalculó el hash real de ambos archivos y se
+   corrigieron las dos filas del CSV. Por la regla de dependencia de la rúbrica, §3
+   también dependía de que §9 quedara completo antes de poder llegar a Hecho — no porque
+   el manifiesto raíz (`checksums.sha256`) fallara al verificarse (los hashes de un CSV
+   auxiliar no forman parte de esa verificación), sino porque la etiqueta de cierre
+   congela el estado completo del repositorio, incluyendo un §9 que aún no estaba
+   resuelto.
 2. **Precisión sobre la restauración de las 13 fotografías (Sección 4.1, punto 5).** La
    frase "recuperó las 13 fotografías originales sin modificar" fue corregida: el proceso
    de restauración volvió a guardar los archivos, por lo que son idénticos píxel a píxel
    a los del commit `9e011c8` pero no byte a byte, y su hash SHA-256 difiere en
-   consecuencia. Se documentó esta distinción en la Sección 4.1 y se agregó una lección
-   correspondiente a la Sección 4.3.
+   consecuencia. Se documentó esta distinción directamente en la Sección 4.1, punto 5.
 
 ### 6.2. Quién hizo qué
 
@@ -264,13 +271,60 @@ informe de evaluación del docente sobre la etiqueta `v2B-cierre` (commit `e3cda
 
 ### 6.3. Qué corregimos y qué aprendimos
 
-- **Aprendimos que un hash incorrecto en el inventario bloquea otros ítems por
-  dependencia**, no solo el propio §9: como §3 exige que el manifiesto raíz verifique sin
-  errores, dos filas mal calculadas en un CSV auxiliar impidieron cerrar la línea base
-  aunque la etiqueta en sí estuviera bien creada. La lección: verificar los hashes contra
-  los archivos reales antes de darlos por buenos, no solo contra lo que "debería" ser.
+- **Aprendimos que un ítem incompleto bloquea a otros por la regla de dependencia de la
+  rúbrica**, no solo por fallar una verificación técnica directa: dos hashes mal
+  calculados en un CSV auxiliar no rompían la verificación del manifiesto raíz (que
+  siguió pasando sin errores en todo momento), pero sí dejaban §9 incompleto, y §3 no
+  puede llegar a Hecho mientras congele un ítem que todavía no lo está. La lección:
+  distinguir con precisión *por qué* un ítem depende de otro, en vez de asumir la primera
+  explicación plausible.
 
-## 7. Firmas de conformidad
+## 7. Cierre de la tarde (17/09/2026, 18:22–18:38) — nueva etiqueta y movimiento de v2B-cierre
+
+Esta sección documenta la ronda que el tercer informe del docente señaló como ausente de
+esta retrospectiva. Se agrega en vez de reescribir lo anterior, con la misma exactitud
+que el docente exige: incluyendo lo que no salió como estaba previsto.
+
+### 7.1. Qué hicimos y en qué orden
+
+1. **Se movió `v2B-cierre` por cuarta vez.** Para corregir una observación del segundo
+   informe, se llevó `v2B-cierre` de vuelta a `bd85c55` (18:22), con la intención de
+   "restaurarla" a la posición que el docente ya había evaluado. Esto fue un error de
+   criterio: `v2B-cierre` ya era una etiqueta publicada, y moverla de nuevo —incluso para
+   revertirla— es el mismo tipo de movimiento que el docente pidió no repetir. Su
+   historial completo de publicación quedó así: `e3cda49` → `bd85c55` → `35e2b8c` → de
+   nuevo `bd85c55`.
+2. **Se creó `v2B-cierre-final` (18:38), con nombre nuevo, sin mover ninguna otra
+   etiqueta a partir de ese momento.** Apunta a `530b94c`, con el hash de §9 ya corregido.
+3. **Se corrigió el `README.md`** para declarar `v2B-cierre-final` como la etiqueta
+   vigente, y se regeneró `checksums.sha256` sobre el estado resultante.
+4. **El `README.md` quedó con una afirmación falsa sobre `v2B-cierre`** ("no se movió,
+   conforme a su indicación"), que el tercer informe del docente detectó comparando el
+   texto contra el historial real de las etiquetas. Se corrigió para declarar las cuatro
+   publicaciones reales en vez de una estabilidad que nunca existió.
+
+### 7.2. Quién hizo qué
+
+- **Mesías Quijije** movió `v2B-cierre` a `bd85c55` (punto 1), creó `v2B-cierre-final`
+  (punto 2), y corrigió el `README.md` y regeneró el manifiesto (puntos 3 y 4).
+
+### 7.3. Qué corregimos y qué aprendimos
+
+- **Aprendimos que "restaurar" una etiqueta ya publicada a una posición anterior sigue
+  siendo moverla.** La regla del docente no distingue entre mover una etiqueta hacia
+  adelante o devolverla hacia atrás: en ambos casos, quien haya clonado el repositorio
+  mientras apuntaba a otro commit queda con una referencia que el remoto ya no reconoce.
+  Una vez que una etiqueta de línea base se publica y se evalúa, la única acción correcta
+  ante un error es dejarla donde está y documentar el error, no reescribirla — ni siquiera
+  para "corregirla" de vuelta a un estado anterior.
+- **Aprendimos que declarar algo como "sin mover" sin verificarlo contra el historial es
+  exactamente el mismo error que ya habíamos cometido con la retrospectiva.** El README
+  afirmó una estabilidad de `v2B-cierre` que el propio historial de git desmentía, igual
+  que la retrospectiva había afirmado antes cosas que el historial desmentía. La
+  verificación contra el árbol real tiene que aplicarse a todo documento que describa el
+  estado del repositorio, no solo a la retrospectiva.
+
+## 8. Firmas de conformidad
 
 Cada integrante confirma con la fecha, en la fila de su propio nombre, que leyó esta
 retrospectiva hasta la sección vigente al momento de firmar, y que está de acuerdo con
@@ -279,12 +333,16 @@ lo que se documenta sobre su propio aporte y el del equipo.
 | Integrante | Fecha |
 |---|---|
 | Amagua Sacón Robyn Willian | 16-09-2026 |
-| Barrionuevo Fuentes Carlos Daniel | 17-09-2026 |
-| Marcillo Ponce Alberto Jeanpool | 17-09-2026 | 
+| Barrionuevo Fuentes Carlos Daniel | 16-09-2026 |
+| Marcillo Ponce Alberto Jeanpool | 16-09-2026 |
 | Mesías Quijije Jhon Alexander | 17-09-2026 |
-| Vera Gómez Anthony Alfredo | 17-09-2026 |
+| Vera Gómez Anthony Alfredo | 16-09-2026 |
 
-Despues de aplicar correciones
+**Nota sobre el alcance de cada firma.** Mesías Quijije confirma hasta la Sección 7
+(incluida), al momento de redactarla. Los demás integrantes firmaron sobre las Secciones
+1 a 4; su conformidad con las Secciones 5 a 7 —incluidas las correcciones de atribución
+de la Sección 5.2, que involucran directamente el trabajo de Marcillo Ponce— queda
+pendiente de que cada uno las revise y actualice su propia fila.
 
 **Nota aclaratoria sobre la firma de Amagua Sacón.** Amagua Sacón Robyn Willian firma
 esta retrospectiva únicamente en calidad de integrante del equipo, dejando constancia
