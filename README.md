@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/32394876/README.4.md)
 # SGCV-IA — Sistema de Gestión para Clínicas Veterinarias con Inteligencia Artificial
 
 Especificación de Requisitos de Software (ERS/SRS) conforme a **ISO/IEC/IEEE 29148:2018**.
