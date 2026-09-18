@@ -1,3 +1,4 @@
+[README.md](https://github.com/user-attachments/files/32394876/README.4.md)
 # SGCV-IA — Sistema de Gestión para Clínicas Veterinarias con Inteligencia Artificial
 
 Especificación de Requisitos de Software (ERS/SRS) conforme a **ISO/IEC/IEEE 29148:2018**.
@@ -574,7 +575,7 @@ Actualmente:
 | Materiales de defensa | ✅ Completo (5 de 5 archivos) |
 | Zenodo                | ✅ DOI disponible           |
 | Software Heritage     | ✅ Identificador disponible |
-| Etiqueta de línea base vigente | ✅ `v2.0-cierre` (anotada) — línea base final del cierre del examen suspenso |
+| Etiqueta de línea base vigente | ✅ `v3.0-cierre` (anotada) — línea base final del cierre del examen suspenso |
 | Identidades de autoría | ✅ Unificadas con `.mailmap` |
 
 ---
@@ -589,8 +590,9 @@ Los identificadores de los commits anteriores cambiaron como consecuencia de est
 
 | Etiqueta | Tipo | Qué es |
 |---|---|---|
-| `v2.0-cierre` | Anotada | **Línea base vigente** — commit final entregado del examen suspenso, sobre `487b39d`, tras corregir el README (historial real de `v2B-cierre`) y la retrospectiva (§16), y regenerar el manifiesto raíz |
-| `v2B-cierre-final` | Anotada | Línea base histórica — vigente hasta la corrección del README y la retrospectiva; reemplazada por `v2.0-cierre` |
+| `v3.0-cierre` | Anotada | **Línea base vigente** — commit final entregado del examen suspenso; se creó después de subir la retrospectiva corregida (atribución del §7.2, ronda del 18/09) y de regenerar `checksums.sha256` como último cambio, sin mover ninguna etiqueta anterior |
+| `v2.0-cierre` | Anotada | Línea base histórica — quedó desactualizada en el mismo momento en que se creó (17/09→18/09), sobre `487b39d`, porque después de crearla aún se subió una corrección de hash citado y una regeneración del manifiesto; reemplazada por `v3.0-cierre` |
+| `v2B-cierre-final` | Anotada | Línea base histórica — vigente hasta la corrección del README y la retrospectiva; reemplazada por `v2.0-cierre` y luego por `v3.0-cierre` |
 | `v2B-cierre` | Anotada | Etiqueta de cierre con historial de publicación irregular: se publicó sobre `e3cda49`, se recreó sobre `bd85c55`, luego sobre `35e2b8c`, y de nuevo sobre `bd85c55` (17/09, 18:22), donde queda actualmente. El docente señaló que una etiqueta de línea base publicada no debe moverse; se documenta aquí con exactitud en vez de declararla erróneamente estable. No se le hará ningún movimiento adicional. |
 | `v1.0-mvp-demo` | Anotada | Línea base histórica del MVP, anterior al examen suspenso |
 | `v2B` | Anotada | Línea base histórica de la Entrega 2B, anterior al examen suspenso |
