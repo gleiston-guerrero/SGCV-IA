@@ -44,10 +44,28 @@ abierto y acumulado 210 respuestas. No hubo una decisión deliberada de truncar 
 simplemente no se regeneró la exportación de datos crudos a tiempo para reflejar las respuestas
 que ya se habían recolectado.
 
-**Consecuencia:** el tamaño muestral final (n=210) supera con holgura el mínimo exigido por la guía (n≥60) y el margen de error alcanzado (~6.8%) es adecuado para un nivel de confianza del 95%. Los resultados y tablas de `07_Datos/resultados/` fueron regenerados con `run_all.R` sobre el conjunto completo de 210 respuestas el 11 de septiembre de 2026, por lo que `README.md` y `07_Datos/README_datos.md` reportan la cifra real (n=210) y no la cifra original de la propuesta (n=60). El manuscrito académico de `09_Publicacion/` no reporta esta cifra porque su alcance se limita al componente cualitativo (16 entrevistas, P01–P16); la encuesta no forma parte de ese estudio.
+**Consecuencia:** el tamaño muestral final (n=210) supera con holgura el mínimo exigido por la guía (n≥60) y el margen de error alcanzado (~6.8%) es adecuado para un nivel de confianza del 95%. Los resultados y tablas de `07_Datos/resultados/` fueron regenerados con `run_all.R` sobre el conjunto completo de 210 respuestas el 11 de septiembre de 2026, por lo que el manuscrito y el README reportan la cifra real (n=210) y no la cifra original de la propuesta (n=60).
 
 **Fecha de identificación de la desviación:** 11 de septiembre de 2026.
 
 **Confirmado por:** Carlos Daniel Barrionuevo Fuentes, por escrito.
 
 **Verificado por:** Carlos Daniel Barrionuevo Fuentes, contrastando el historial de Git (`git log --follow` sobre `encuesta_respuestas_crudas.csv`) contra la fecha de generación de `justificacion_muestra.md`.
+
+## Desviación 3 — P04 no cubre la visita mencionada como anterior
+
+**Qué establecía el protocolo:** cada participante debía contar con una transcripción y grabación completas de su sesión de entrevista.
+
+**Qué se ejecutó en su lugar:** P04 menciona, dentro de la entrevista grabada del 25/07/2026 (audio: 2026-07-25_Audio_P04_Entrevista.mp3, 879.70 s), una visita anterior a la clínica que no fue grabada ni transcrita. Solo existe registro de la sesión del 25/07.
+
+**Motivo de la desviación:** la visita anterior mencionada por el participante ocurrió antes de que se coordinara la recolección de datos con consentimiento informado; no se cuenta con grabación de ese evento.
+
+**Consecuencia:** cualquier información de P04 sobre esa visita anterior queda excluida del análisis por no tener respaldo de recolección documentada (regla 2 del plan de mejora de datos: no se crean datos).
+
+**Fecha de identificación de la desviación:** 19 de septiembre de 2026.
+
+**Confirmado por:** Robyn Willian Amagua Sacón (documentador del equipo).
+
+**Verificado por:** pendiente de confirmación por el resto del equipo.
+
+**Nota de actualización (19/09/2026):** esta desviación se identificó sobre el archivo `P04_revisada.md`, que en ese momento se creía correspondiente a P04. La verificación de cotejo completo (ver `registro_correcciones.md`, sección "Cotejo completo P01–P16") determinó que ese archivo en realidad corresponde a **P01**, no a P04. El contenido real de P04 (recuperado del archivo que estaba mal etiquetado como P03) es una entrevista completa que **no** menciona ninguna visita anterior no grabada. **Esta desviación queda retractada: no ocurrió tal como se describió.** Se mantiene el registro original sin borrar, conforme a la nota de formato de este archivo. No se identificaron, hasta la fecha, entrevistas incompletas entre las 16 verificadas.
