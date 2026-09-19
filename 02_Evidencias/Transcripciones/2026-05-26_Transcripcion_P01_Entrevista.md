@@ -1,69 +1,88 @@
 # Transcripción de entrevista — P01
 
+**Código del participante:** P01
+**Rol:** Veterinario
 **Fecha de la sesión:** 2026-05-26
 **Técnica:** Entrevista semiestructurada
 
 ---
 
-ENTREVISTA P01
-ID de evidencia: P01
-Código del participante: P01
-Rol: Veterinario
-Transcripción
-Entrevistador: Buenas tardes, primeramente voy a leer un poco sobre lo que voy a tratar de entrevistar. Esto forma parte de una investigación institucional orientada a diseño y desarrollo de un sistema de estafar una clínica veterinaria con un soporte de inteligencia artificial. Su participación es completamente voluntaria, los datos obtenidos serán tratados de forma confidencial, utilizados únicamente con fines académicos e investigativos, y no serán compartidos con terceros sin su autorización especial. Asimismo, solicitamos su consentimiento para realizar la grabación de audio o video durante la entrevista con el único propósito de facilitar el análisis de la información recopilada. Dichas grabaciones serán manejadas de manera confidencial y utilizadas exclusivamente para esta investigación. A continuación con la entrevista, ¿usted confirma que ha leído y comprendido el propósito de esta investigación?
-P01: Sí.
-Entrevistador: ¿Participa de forma voluntaria y puede retirarse en cualquier momento sin consecuencia alguna?
-P01: Sí.
-Entrevistador: ¿Autoriza el uso de su propuesta con fines académicos e investigativos?
-P01: Sí.
-Entrevistador: ¿Autoriza la grabación de audio de las preguntas abiertas con fines exclusivos del análisis investigativo?
-P01: Sí.
-Entrevistador: Vamos a comenzar con las preguntas de la sección A, Gestión Operativa Actual. ¿Cómo agrega usted actualmente la información clínica de los pacientes, historiales, diagnósticos y tratamientos?
-P01: Por medio de hojas de historial clínico, tanto físicos, ¿sí? Se usa un pequeño software veterinario, pero es como para lo básico, ingresar el paciente, paciente, motivo de consulta y todo eso. Solo los datos del paciente.
-Entrevistador: Exactamente. ¿Qué dificultades enfrenta cuando necesita consultar el historial un paciente rápidamente, por ejemplo, en una oficina o en un control de seguimiento?
-P01: Bueno, realmente no mucho, porque por lo general en estado físico hay carpetas. Entonces, en las carpetas se le empretan las esquinas. Entonces, ya tú buscas. Claro que te demora más buscando el nombre del paciente, lógicamente, ¿no? Con cuestiones de software suele ser un poquito más rápido, pero te digo, el software solamente es básico. Entonces, le permite solamente ver el nombre de edad y razones anteriores de consulta. Más los tratamientos completos cuando están en las carpetas físicas. Como tal, las carpetas están aparte del software. Exactamente. Físicas, sí, correctamente.
-Entrevistador: ¿Cómo maneja el proceso de cobre y facturación tras una consulta? ¿Dónde se generan errores o demoran con mayor frecuencia?
-P01: En lo que es el despacho de productos se demora más. Se usa, claro, que se factura todo lo que sale de la veterinaria por un dólar, no se factura. Se usa un sistema de facturación. Entonces, cuando no está la secretaria, suelo demorarme más porque tengo yo que hacer el trabajo de la secretaria, de despachar, coger datos para facturación. Entonces, por lo general, suelo demorarme más en eso que en la consulta.
-Entrevistador: ¿Cómo controla el inventario de medicamentos y insumos? ¿Ha tenido problemas con faltantes o por productos vencidos?
-P01: No, no he tenido problemas con faltantes y por consumo se hace el inventario una vez a la semana, todos los sábados. Se lleva un control físico y también por el sistema de bancaridad.
-Entrevistador: ¿Con qué frecuencia los clientes no se presentan o cancelan su cita a último momento? ¿Qué impacto tiene eso en el inventario?
-P01: Bueno, de todo esto es que por lo general no se hace con cita previa. O sea, sí es rara vez que el doctor haga día de mañana, 8 de la mañana, yo ya le hago una cita, pero vamos a suponer de 10 pacientes, unos 12. Pero por lo general llegan y es cita previa. Llegan, esperan, si yo tengo un aviste de temprano, yo termino y ahí es el tiempo.
-Entrevistador: ¿Cómo adiciona la comunicación con los dueños de la mascota? ¿Después de una consulta, seguimiento, el procedimiento del examen, la próxima cita?
-P01: Por vía WhatsApp y por próxima citación. Entonces yo igual hago el seguimiento de mis pacientes. Salen de aquí, si no tienen cita previa, cuidando el seguimiento por vía WhatsApp.
-Entrevistador: Continuamos con la sección B, seguimiento público y nutricional de las mascotas. ¿Cómo se realiza el seguimiento de peso, crecimiento y estado de nutrición de sus pacientes a lo largo del tiempo?
-P01: O sea, desde que llegan a consulta, todo ese tiempo. Bueno, eso varía dependiendo de la razón del motivo de consulta principalmente. Si es solamente por mantenimiento que le decimos nosotros, es decir, por prevención, llega por vacunación, solamente por control. Entonces yo hago controles una vez al mes, depende de la necesidad del paciente. Si son controles de vacunación, cada 22, cada 28 días. Si son controles solo de mantenimiento, que sea un paciente que pasa solo en casa, que no presenta ningún tipo de enfermedad, se hacen cada dos meses, cada tres meses. Lo mismo, seguimiento de examen. Es distinto cuando son pacientes que tienen una patología. Por ejemplo, muy común en nuestro medio, enfermedades de hierro patos. Esos son pacientes que tienen seguimiento pasando un día. Tanto por tratamiento inyectable, depende, repito, de la gravedad del paciente, pasando un día o mínimo dos meses a la semana. Entonces cambia dependiendo de la patología que le presente el paciente. Por ejemplo, enfermedades renales, que están complicadas dos veces a la semana. Cuando son menos complicadas, una vez a la semana. Entonces, son ejemplos que tengo.
-Entrevistador: ¿Con qué frecuencia los niños les consultan sobre la alimentación de su mascota? ¿Cómo preparan esas conversaciones actualmente? ¿Con qué frecuencia nos preguntan sobre la alimentación del perro?
-P01: Es muy común que se llegue con su mamá, por ejemplo, cuando son cachorritos por primera vez o que están dentro para completar sistemas de vacunación. Es una pregunta de cada día. El doctor, ¿el perro puede comer esto? Sí, realmente es algo que es diario y es muy común. Ahora, que siguen las condiciones que yo les pongo, es un poco más complicado.
-Entrevistador: Cuando un paciente sale con indicaciones médicas, medicación, dieta, reposo, ¿qué tan frecuente es que los niños cumplan esas indicaciones? ¿Cómo se entera si no las cumplen?
-P01: Te cuento que eso es muy poco. Por eso yo le hago ese seguimiento a mis pacientes. Porque ocurre que, por ejemplo, vamos a darles la redundancia de la enfermedad de la carota. Eso es una enfermedad que tienen que llevar un control y una medicación de entre 28 y 30 días. Entonces, es muy común que ya a los 15 días de tratamiento o a los 8 días, el propietario de mi paciente lo vea bien, no va más porque lo vio bien. Entonces, a futuro sí vienen más problemas porque por responsabilidad de los propietarios, los pacientes llegan peor de cuando llegaron la primera vez. Entonces, por ahí ya va quedando la idea. Entonces, que si yo doy recomendaciones de un 100%, que los propietarios la sigan, porque el perro no hace las cosas sin los propietarios, obviamente. Entonces, creo que será en un 30 o un 40%. Lamentablemente.
-Entrevistador: ¿Qué hace usted cuando un niño le dice que su macota no ha mejorado con la dieta o el tratamiento indicado? ¿Cómo ajusta las indicaciones y vela físicamente?
-P01: No lo hago sin verlo físicamente. Tengo que verle al paciente primero. Entonces, si está en un tratamiento por una pancreatitis, por una astiometra, o por una enfermedad de las patas, o por un proceso de envenenamiento, si hay algo, un tratamiento que yo inicialmente tenga un espacio en blanco, es decir, que el paciente no me mejora, es un paciente que no es porque, por ejemplo, tú eres dueño de Juan. Entonces, si tú me dices, doctora, Juan no ha mejorado sin buen vómito, yo no voy a decir que por vía telefónica sabes que es mejor indicarle esto. No, es un paciente, te voy a decir, tráiganme al paciente, yo chequeo, reviso, a ver qué es lo que está pasando. Reajustamos, o dosis, o medicamentos. ¿Sí? Eso.
-Entrevistador: Bueno, continuamos con la sección C, percepción sobre inteligencia artificial para aplicar el tratamiento. ¿Qué tratamiento realizado está actualmente con el uso de herramientas digitales en su práctica veterinarias? Tenemos las opciones que dicen, no utilicen ningún software de herramientas digitales especializadas, con uso de herramientas básicas como aplicar con algún tipo de serenidad o agenda limitar, uso de algún software veterinario, aunque con funciones limitadas, o uso de software veterinario completo con la vida.
-P01: Bueno, uso de software veterinario con funciones limitadas, pero sí uso otro tipo de aplicaciones, como por ejemplo, ahorita te facilita mucho realmente la tecnología, pones el medicamento y te reajusta dosis con el peso, sin yo necesitar hacer todo el cálculo físico de sus herramientas, multiplicación y división. Pero lo hace, digamos, así, separado, que no está en un solo... No, no, está separado. Separado. Bueno.
-Entrevistador: ¿Qué tan de acuerdo está con que un sistema inteligente analice los datos mínimos del paciente para sugerir posibles diagnósticos al veterinario?
-P01: Medianamente de acuerdo.
-Entrevistador: ¿Medianamente?
-P01: Sí, porque por ejemplo, yo no me confiaría, pasa mucho, es algo que pasa en consulta frecuentemente, que me dice, doctora, le pregunté el chachiquití, y el chachiquití me dijo eso. Entonces, en estas cosas de medicina yo siempre digo que es importantísimo valorar al paciente. Por algo no estudiamos tanto tiempo, y en mi caso nos especializamos cierta cantidad de tiempo, y nos informamos, y nos seguimos interactuando. Ya, entonces, sí puede ser una inteligencia artificial, o cierta plataforma optal, de un preámbulo, o una idea. Una idea para dar como una encuesta de diagnóstico. Yo incluso he usado el chachiquití para ciertos casos, en específico que me dieron una idea, porque no sé, algo más, un poquito más avanzado que tener en un horario. Pero eso es para ver. Pero sin embargo, por eso te digo, medianamente de acuerdo, porque hay que saber trabajar. Sí, me parece bien.
-Entrevistador: Pensando en eso, don Nadia, ¿qué tarea o proceso le llené la más carga del trabajo, y si es que podía apoyarse con alguna herramienta de soporte?
-P01: Ay, la ley administrativa. La ley administrativa, todo lo que es facturación. Todo lo que es facturación, metas, inventario. Para mí eso es tedioso. Por eso tengo una secretaria que empeza en la semana. Ya no la puedo tener todos los días porque no puede, pero sí, realmente es algo tedioso. Es lo que más me lleva tiempo, más me lleva estrés. Tómicamente, como dueña y propietaria, no puedo estar de la partida para tanta acción.
-Entrevistador: ¿Qué nivel de confianza le generaría el sistema agarro de recomendaciones clínicas como juega a su juicio profesional? ¿Alta confianza, confianza no generada, baja confianza o no usaría, no lo sé cómo? El que algún tipo de soporte. Sí, digamos, un sistema agarro de recomendaciones clínicas.
-P01: Medianamente confiable. Sí, cualquier sorte de paridad. Recordemos que al final es una inteligencia artificial que nos ve, que nos palpa y que nos escucha. Entonces, es la diferencia entre, por ejemplo, yo hago tonterías en darme porque me dolió la cabeza, buscando el chate y pedirme, por favor, ¿qué puedo tomar? Porque me duele aquí, aquí, aquí, aquí. Entonces, sin embargo, si tú lees, y te gusta la referencia que dice que es parte informática, ¿qué te dice al final? Que los datos generados...
-Entrevistador: Y que consultes a un médico.
-P01: Consulte a un médico profesional. Exacto, eso me dice.
-Entrevistador: A ver. ¿Qué condición considera más importante para confiar en un sistema con inteligencia artificial y una información clínica? Que la recomendación intente estar en literatura científica veterinaria validada, que el veterinario pueda analizar y proteger todas las sugerencias antes de practicarlas, que sea fácil de usar sin necesidad de capacitación prolongada, que los datos de los pacientes estén protegidos y no se compartan con utensilios, o que exista el soporte técnico sin disponibilidad de actualizaciones primeras clases.
-P01: Si antes de yo hacer cualquier cosa no me confía. Tengo que, primero, vaya respaldado, realizado en un periodo con un médico veterinario, antes de yo realizar una sugerencia que me da la inteligencia artificial.
-Entrevistador: Última sección. Sección de interior a de adopción. Si tuviera disponible de mañana una herramienta que le ayude con la gestión de su clínica, ¿cuál sería el primer programa completo que necesitaría resolver para que usted la use desde el primer día?
-P01: No se vuelve criterio completo. Que, por ejemplo, yo a medida que ingrese, por ejemplo, Manito, mi perro, ¿listo?, me salga todas las veces que llegó a consulta, ¿qué razón?, ¿qué alimentación tiene?, o sea, más completo. Que no me permita solo abrir una ventana, ver todo lo que yo le he puesto, que si le dí en retrasor, que si le dí en constipina, que si le dí en terogramina. Esos son los propósitos.
-Entrevistador: ¿Cuáles son las características que son indispensables para que usted y su equipo adopten una nueva herramienta de trabajo sin resistencia?
-P01: Así que todo el equipo de experticia que equipaba una secretaria, también utilice la herramienta.
-Entrevistador: ¿En este caso sería para la secretaria de aparte administrativa, como usted decía, que la ayudara en esa parte?
-P01: La secretaria de aparte administrativa, bueno, en lo que es administración. En lo que yo ya explico, ahí sí sería un detalle más. Sería de trabajar con dos cosas diferentes.
-Entrevistador: Sí, pero en ese caso ya no sería para la administración, y ya no sería para la Secretaría. ¿En qué disposición se debería prevenir? Previamente la herramienta durante la jornada laboral. Podría ser de teléfono, tablet o una tablet.
-P01: No, una tablet sería lo más útil. Una tablet.
-Entrevistador: ¿En su clínica con qué frecuencia enfrenta un problema de conectividad o corte de internet, digamos?
-P01: Rarísimo. Raramente. No, por eso he tratado de concretar alguna situación.
-Entrevistador: ¿Existe algún proceso de situación o necesidad específica de su clínica que no hayamos abordado en esta entrevista y consiguiera que levante para el diseño de una herramienta de gestión?
-P01: No, no puede ser que no. Porque si le hablamos de adopción por veterinario, es probablemente algo así.
-Entrevistador: Bueno, eso sería todo por la entrevista. Muchas gracias.
-P01: De nada.
- 
+## Transcripción
+
+Entrevistador: ¿Cómo se obtiene actualmente la información clínica de los pacientes como historiales, diagnósticos y tratamientos?
+P01: El historial clínico y todo lo que contiene el historial clínico lo tenemos en la aplicación de Microsoft. Ahí estamos revisando todo.
+Entrevistador: ¿Qué dificultades enfrenta cuando necesita obtener el historial de un paciente, por ejemplo en una urgencia o un control de seguimiento, considerando el tiempo que se demora en acceder a esa información?
+P01: Más que nada el hecho de que no está bien... No está bien hecho el tema de buscar por nombre, por... por doing y todo eso. No está bien organizado.
+Entrevistador: ¿Cómo maneja el proceso del cobro y facturación después de una consulta? ¿En qué parte del proceso se presenta más demora o inconveniente con mayor frecuencia?
+P01: En la parte de la facturación, ya que se hace por un programa en línea, pero demora en abrirse, ingresar al cliente, ingresar el producto, ingresar lo que se ha hecho y todo eso. Es la parte más demorada.
+Entrevistador: ¿Cómo controla el inventario de medicamentos e insumos? ¿Ha tenido problema por faltante o por productos vencidos?
+P01: Por productos vencidos. Tenemos un programa de facturación donde está todo el producto, pero la parte del vencimiento no se puede iniciar. Solamente el número, el precio y todo eso.
+Entrevistador: Ahí usted manualmente mira si el producto ya está cerca de vencer.
+P01: Tengo que manualmente estar revisando uno a uno y más o menos tener la idea.
+Entrevistador: ¿Con qué frecuencia los clientes no se presentan o cancelan su cita a último momento? ¿Qué impacto tiene eso en la clínica?
+P01: Sí, más o menos. Sí hay una frecuencia moderada de inasistencias. Más que impacto en la clínica, porque ya las consultas después, primera consulta, no tienen costo, más en el paciente. No se sabe cuál es la evolución del paciente y no se sabe cómo va, porque o suspenden el tratamiento o dejan de venir a los controles. Muchas veces se recuperan, pero muchas veces no sabemos qué pasó con el paciente.
+Entrevistador: ¿Cómo gestiona la comunicación con los dueños de la mascota después de una consulta, seguimiento, resultado de exámenes o próxima cita?
+P01: El seguimiento y el resultado de próxima cita la agregamos directamente a la receta que se la hace. Pero los resultados de exámenes se los enviamos directamente por whatsapp.
+Entrevistador: ¿Cómo realiza el seguimiento del peso, crecimiento y estado nutricional de su paciente a lo largo del tiempo?
+P01: Mediante o a uno, como se indicó anteriormente. Ahí tenemos el registro del paciente, lo buscamos, pero sí es un poco libre a veces encontrar uno en específico.
+Entrevistador: ¿Y usted qué mira, digamos, la razón?
+P01: No sé, tiene todos los detalles como está, por qué lleva de jornada.
+Entrevistador: ¿Con qué frecuencia los dueños le consultan sobre la alimentación de su mascota? ¿Cómo preparan esas recomendaciones actualmente?
+P01: La verdad para la alimentación casi no preguntan. Hay algunos que preguntan y en ese caso se les realiza una receta, se les explica todo.
+Entrevistador: ¿Cuándo un paciente sale con indicaciones médicas, medicación, dieta, reposo, qué tan frecuente es que los dueños cumplan esas indicaciones? ¿Cómo se entera si no las cumplan?
+P01: Para eso son las citas post, las primeras citas. Realmente esperando a que llegue. Hay veces donde sepa.
+Entrevistador: ¿Qué hace usted cuando un dueño le dice que es su mascota?
+P01: Se lo cita igualmente.
+Entrevistador: ¿Qué tan familiarizado está actualmente con el uso? ¿Qué tan de acuerdo está con lo que el sistema inteligente analiza? ¿Es cada uno totalmente en desacuerdo?
+P01: Al estado del paciente, a la edad, a la raza y todo eso. Y aunque la máquina te pueda decir diagnóstico, hay que ver también si es realmente ese o no.
+Entrevistador: Pensando en su jornada diaria, ¿qué tareas o procesos le generan más carga de trabajo y se siente que puede apoyarse con alguna? ¿Qué nivel de confianza le generaría que el sistema haga recomendaciones?
+P01: Revisar el texto recomendacional. Un área pueda revisar y corregir las sugerencias antes.
+Entrevistador: Para contestar las preguntas. De la primera pregunta, ¿cuál sería el primer problema concreto que necesitaría resolver?
+P01: Sería lo alimentario. Intentar hacer alimentar lo antes posible y hacerlo de la forma más cómoda en sí.
+Entrevistador: De la segunda, ¿cuáles características son indispensables para adoptar el nuevo sistema? Una nueva herramienta.
+P01: Sería la facilidad de utilizarla, que sea portable, que pueda utilizar tanto el teléfono como la computadora. Bien, son la sencillez y la parte de que sea útil como tal.
+Entrevistador: ¿Desde qué dispositivo accedería a una herramienta así?
+P01: Desde la computadora o el teléfono móvil. En cualquiera de los dos, más que nada el teléfono móvil.
+Entrevistador: De ahí la pregunta cuatro, ¿con qué frecuencia hay problemas de internet?
+P01: Rara vez, no diría que nunca, pero sí rara vez.
+Entrevistador: Y de la pregunta cinco, ¿si existe algún proceso, situación, necesidad específica que no se haya abordado?
+P01: No, se abordó todo en la anterior visita que hicieron. Eso.
+
+
+---
+
+## Transcripción automática (TurboScribe, sin editar)
+
+> Salida original de TurboScribe, conservada sin ediciones conforme a B1 del plan de mejora de datos. El contenido revisado de arriba corresponde a este mismo audio tras cotejo palabra por palabra (ver `07_Datos/registro_correcciones.md`).
+
+(Transcrito por TurboScribe. Actualizar a Ilimitado para eliminar este mensaje.)
+
+¿Cómo se obtiene actualmente la información clínica de los pacientes como historiales, diagnósticos y tratamientos? El historial clínico y todo lo que contiene el historial clínico lo tenemos en la aplicación de Microsoft. Ahí estamos revisando todo. ¿Qué dificultades enfrenta cuando necesita obtener el historial de un paciente, por ejemplo en una urgencia o un control de seguimiento, considerando el tiempo que se demora en acceder a esa información? Más que nada el hecho de que no está bien... No está bien hecho el tema de buscar por nombre, por domain y todo eso. 
+
+No está bien organizado. ¿Cómo maneja el proceso del cobro y facturación después de una consulta? ¿En qué parte del proceso se presenta más demora o inconveniente con mayor frecuencia? En la parte de la facturación, ya que se hace por un programa en línea, pero demora en abrirse, ingresar el cliente, ingresar el producto, ingresar lo que se ha hecho y todo eso. Es la parte más demorada.
+
+¿Cómo controla el inventario de medicamentos e insumos? ¿Ha tenido problema por faltante o por productos vencidos? Por productos vencidos. Tenemos un programa de facturación donde está todo el producto, pero la parte del vencimiento no se puede iniciar. Solamente el número, el precio y todo eso.
+
+Ahí usted manualmente mira si el producto ya está cerca de vencer. Creo que manualmente está revisando uno en uno y más o menos tiene la idea. ¿Con qué frecuencia los clientes no se presentan o cancelan su cita a último momento? ¿Qué impacto tiene eso en la clínica? Sí, más o menos. 
+
+Sí hay una frecuencia moderada en asistencias. Más que impacto en la clínica, porque ya las consultas después, primera consulta, no tienen costo, más en el paciente. No se sabe cuál es la evolución del paciente y no se sabe cómo va, porque o suspenden el tratamiento o dejan de venir a los controles.
+
+Muchas veces se recuperan, pero muchas veces no sabemos qué pasó con el paciente. ¿Cómo gestiona la comunicación con los dueños de la mascota después de una consulta, seguimiento, resultado de exámenes o próxima cita? El seguimiento, resultado y próxima cita la agregamos directamente a la receta que se le hace. Pero los resultados de exámenes se los enviamos directamente por WhatsApp.
+
+¿Cómo realiza el seguimiento del peso, crecimiento y estado nutricional de su paciente a lo largo del tiempo? Mediante o a uno, como se le indicó anteriormente. Ahí tenemos el registro del paciente, lo buscamos, pero sí es un poco lioso encontrar uno en específico. ¿Hay usted que mira, digamos, la raza o algún tipo de animal? No sé, tiene todos los detalles como tal. 
+
+Por qué va de primera consulta. ¿Con qué frecuencia los dueños le consultan sobre la alimentación de su mascota? ¿Cómo preparan esas recomendaciones actualmente? La verdad por la alimentación casi no preguntan. Hay algunos que preguntan y en ese caso se les realiza una receta o se les explica oralmente.
+
+¿Cuándo un paciente sale con indicaciones médicas, medicación, dieta, reposo, qué tan frecuente es que los dueños cumplan esas indicaciones? ¿Cómo se entera si no las cumplan? Para eso son las citas post, las primeras citas. Realmente, esperando a que llegue. Hay veces donde sepa.
+
+¿Qué hace usted cuando un dueño le dice que su mascota se lo cita igualmente para él? Familializado, está actualmente con el uso de horno automático. ¿Qué tal de acuerdo está con que el sistema inteligente analice? Al final el diagnóstico tiene que ser in situ, al estado del paciente, a la edad, la raza y todo eso. Y aunque la máquina te pueda hacer diagnósticos presuntivos, hay que ver también si es realmente ese o si no.
+
+Pensando en su jornada diaria, ¿qué tareas o procesos le generan más carga de trabajo y se siente que podría apoyarse con alguna? ¿Qué nivel de confianza le generaría que el sistema haga recomendaciones? Revisar el texto de recomendación. La segunda también, que el veterinario pueda revisar y corregir las sugerencias antes. Ya, para contestar las preguntas. 
+
+De la primera pregunta, ¿cuál sería el primer problema concreto que necesitaría resolver? Sería lo alimentario. Intentar hacer alimentar lo antes posible y hacerlo de la forma más cómoda en sí. De ahí de la segunda, ¿cuáles características son indispensables para adoptar una nueva herramienta? Sería la facilidad de utilizarla, que sea portable, que pueda utilizar tanto el teléfono como la computadora.
+
+Son la sencillez y la parte de que sea útil como tal. ¿Desde qué dispositivo accedería a una herramienta así? ¿Desde la computadora o el teléfono móvil? En cualquiera de los dos, más que nada el teléfono móvil. De ahí de la pregunta cuatro, ¿con qué frecuencia hay problemas de Internet? Rara vez, no diría que nunca, pero sí rara vez.
+
+De la pregunta cinco, ¿existe algún proceso, situación, necesidad específica que no se haya abordado? No, se abordó todo en la anterior visita que hicieron.
+
+(Transcrito por TurboScribe. Actualizar a Ilimitado para eliminar este mensaje.)
