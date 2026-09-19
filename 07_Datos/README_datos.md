@@ -84,6 +84,18 @@ YYYY-MM-DD_Transcripcion_PXX_Entrevista.md
 
 Las transcripciones constituyen material cualitativo crudo y deben revisarse para detectar posibles nombres u otros datos identificables antes de una publicación.
 
+### Herramienta y procedimiento de transcripción (declaración de uso de IA)
+
+Las 16 entrevistas (P01–P16) se transcribieron con **TurboScribe** (turboscribe.ai), una herramienta de transcripción automática basada en reconocimiento de voz por IA. El audio o vídeo original de cada entrevista se subió a la plataforma y se descargó la transcripción generada en formato de texto.
+
+Sobre la salida automática de TurboScribe, el equipo aplicó los siguientes ajustes manuales antes de guardar la versión final en `02_Evidencias/Transcripciones/`:
+
+- Etiquetado de turnos de hablante (`Entrevistador:` / `P0X:`), no incluido tal cual por la herramienta.
+- Revisión ortográfica y de puntuación del texto generado automáticamente.
+
+**Pendiente de completar por el equipo:** declarar si además se removieron muletillas, pausas, repeticiones u otras ediciones de contenido, y si se conservó una copia de la transcripción automática sin editar junto a la versión revisada (requerido por la tarea B1 del plan de mejora de datos). A la fecha de este README, **no se ha verificado que exista una copia sin editar de la salida original de TurboScribe** para cada participante — esto debe resolverse antes de dar por cumplida la tarea B1.
+
+
 ---
 
 ## 4. Datos procesados y resultados
@@ -162,18 +174,17 @@ Con los mismos supuestos, se habrían requerido aproximadamente 97 respuestas pa
 
 `diccionario_datos.csv`
 
-Documenta **una fila por cada columna de cada archivo** de `datos_crudos/` y `datos_procesados/` (62 filas en total: 19 columnas × 3 archivos de la encuesta + 5 columnas de `transcripciones_metadata.csv`), con:
+Documenta las variables de la encuesta y las transcripciones, incluyendo:
 
-- `archivo`: archivo al que pertenece la columna;
-- `columna`: nombre exacto de la columna;
-- `tipo`: tipo de dato;
-- `unidad`: unidad o escala;
-- `rango_admisible`: valores o rango posibles;
-- `valores_perdidos`: cantidad de valores faltantes encontrados;
-- `procedencia`: de dónde viene el valor de esa columna;
-- `descripcion`: qué mide o representa la columna.
+- nombre de la variable;
+- tipo de dato;
+- unidad o escala;
+- valores posibles;
+- tratamiento de datos faltantes;
+- procedencia;
+- observaciones metodológicas.
 
-Este archivo debe consultarse antes de interpretar o transformar una variable, y debe tener tantas filas como columnas sumen los archivos de `datos_crudos/` y `datos_procesados/` — si se agrega o quita una columna en esos archivos, hay que actualizar `diccionario_datos.csv` en el mismo commit.
+Este archivo debe consultarse antes de interpretar o transformar una variable.
 
 ---
 
@@ -188,8 +199,6 @@ Desde la raíz del repositorio:
 ```bash
 Rscript 07_Datos/scripts/run_all.R
 ```
-
-**Semilla de reproducibilidad:** `set.seed(2026)`, declarada al inicio de `run_all.R`. Cualquier remuestreo o bootstrap del pipeline (incluido el bootstrap del tamaño del efecto en `06_Experimento/scripts_analisis/07_tamano_efecto.R`) parte de esta misma semilla, por lo que dos ejecuciones consecutivas de `run_all.R` producen resultados y hashes idénticos.
 
 El pipeline ejecuta, en orden:
 
