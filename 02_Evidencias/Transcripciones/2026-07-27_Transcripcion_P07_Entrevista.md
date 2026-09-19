@@ -1,78 +1,97 @@
 # Transcripción de entrevista — P07
 
+**Código del participante:** P07
+**Rol:** Veterinario
 **Fecha de la sesión:** 2026-07-27
 **Técnica:** Entrevista semiestructurada
 
 ---
 
-ENTREVISTA P07
-ID de evidencia: P07
-Código del participante: P07
-Rol: Veterinaria
-Transcripción
-Entrevistador: Muy buenas, nos encontramos aquí con la doctora P07 y vamos a comenzar con la entrevista. Antes que todo vamos a comenzar a decir un poco sobre el consentimiento y de lo que se va a tratar esta entrevista. Primeramente tenemos que en esta entrevista, como forma parte de una investigación institucional orientada para el diseño y desarrollo de un sistema de gestión para la clínica veterinaria con soporte a la inteligencia artificial, su participación es completamente voluntaria.
-Entrevistador: Los datos que obtendremos serán tratados de forma confidencial, utilizadas únicamente con fines académicos e investigativos y no serán compartidos con terceros sin su autorización expresa. Asimismo se le solicitó que sus consentimientos para realizar la grabación de audio o vídeo durante la entrevista, con el único propósito de facilitar el análisis de la información recopilada. Dichas grabaciones serán manejadas de manera confidencial y utilizadas exclusivamente para esta investigación.
-Entrevistador: A continuación con la entrevista usted confirma que ha leído y comprendido el propósito de esta investigación, participa de forma voluntaria y puede retirarse en cualquier momento sin consecuencia alguna, autoriza el uso de sus respuestas con fines académicos e investigativos y autoriza la grabación de audio de las preguntas abiertas con fines exclusivos y análisis investigativos. Bien, vamos a comenzar con la gestión operativa actual de la clínica veterinaria. La primera pregunta sería, ¿cómo se registra actualmente la información clínica de los pacientes? ¿Históricos, historiales, diagnóstico y tratamientos?
-P07: Fichas críticas que están impresas y las llenamos, esa es la pregunta 2, porque está hecha.
-Entrevistador: ¿Y estas fichas las suben, digamos, a algún tipo de, las suben en, digamos, así, en una nube o algo?
-P07: No.
-Entrevistador: ¿Todas las tienen ahí?
-P07: Sí, todas las manos guardadas en una nube.
-Entrevistador: Ah, ya. ¿Qué dificultades enfrenta cuando necesita consultar el historial de un paciente rápidamente, por ejemplo, en una urgencia o en control de seguimiento?
-P07: Que muchas veces los tutores están muy acelerados porque el animal está muy enfermo, entonces no nos responden las preguntas, hacen como que reícen, lo reícen y no nos dicen nada. No le dicen, ¿cómo está? Ni, ¿hace cuánto está así? ¿Qué comió? ¿Hace cuánto? Nada.
-Entrevistador: ¿Cómo maneja el proceso de cobre y facturación con una consulta? ¿Dónde se generan errores o demoras con mayor frecuencia?
-P07: Los cobres los hay.
-Entrevistador: En el tema de facturación, ¿usted cómo lo hace?
-P07: Sin complicación, el SRI.
-Entrevistador: El SRI, ya. ¿Cómo controla el inventario de medicamentos e insumos? ¿Ha tenido problemas por faltantes o por productos vencidos?
-P07: No, más por faltantes.
-Entrevistador: En el tema de productos vencidos, casi nunca tiene problemas.
-P07: No, porque el SRI se revisa igual cada cierto tiempo la fecha de producidad.
-Entrevistador: ¿Pero usted, digamos, lo hace por medio de qué? ¿De Excel o...?
-P07: No, los productos.
-Entrevistador: ¿Con qué frecuencia los clientes no se presentan o cancelan su cita a último momento? ¿Qué impacto tiene esto en la clínica?
-P07: Muy poco, porque normalmente llegan nomás, no piden cita.
-Entrevistador: No piden cita, solo llegan aquí y ustedes los atienden. ¿Cómo gestiona la comunicación con los dueños de la mascota después de una consulta, seguimiento, resultado de exámenes o próxima cita?
-P07: A través de WhatsApp.
-Entrevistador: Ahí todo se coordina, digamos. Vamos con la siguiente sección, sección B, seguimiento de clínica y nutrición. Primera pregunta de la sección B, ¿cómo realiza el seguimiento del peso, crecimiento y estado nutricional de los pacientes a lo largo del tiempo?
-P07: Normalmente lo anotamos en la ficha y también cuando viene la vacunación en su carnet que ha registrado.
-Entrevistador: Y digamos una pregunta, en esta ficha, ¿qué normas registran?
-P07: Nombre, peso, edad, si está sterilizado, si está vacunado, para qué vino, motivo de consulta y los datos del propietario.
+## Transcripción
+
+Entrevistador: Muy buenas, estamos aquí con el Dr. P07 el cual nos va a ayudar con el tema de la entrevista. Primeramente vamos a leer un poco sobre el consentimiento para que sepa de que se trata la entrevista. Con esta y presente entrevista vamos a formar parte de una investigación institucional orientada al diseño y desarrollo de un sistema de gestión para clínica veterinaria con soporte a inteligencia artificial. Su participación es completamente voluntaria. Los datos obtenidos serán tratados de forma confidencial, utilizados únicamente con fines académicos e investigativos y no serán compartidos con terceros sin su autorización expresa. Así mismo solicitamos un consentimiento para realizar la grabación de audio o video durante la entrevista con el único propósito de facilitar el análisis de la información recopilada, dichas grabaciones serán manejadas de manera confidencial y utilizadas especialmente para esta investigación. A continuación con la entrevista usted confirma que ha leído y comprendido el propósito de esta investigación. Participa de forma voluntaria y puede retirarse en cualquier momento sin consecuencia alguna. Autoriza el uso de su propuesta con fines académicos e investigativos y autoriza la grabación de audio de las preguntas abiertas con fines inclusivos para el análisis investigativo. Vamos a comenzar con la sección A, gestión de operaciones actuales de la veterinaria. ¿Cómo realiza actualmente la información de clínica de los pacientes historiales, diagnósticos y tratamientos? ¿Qué dificultades enfrenta cuando necesita consultar el historial de un paciente rápidamente por ejemplo en una urgencia o en un control de seguimiento?
+P07: Pongamos, si llega por el caso de abandonamiento, que no nos digan cuál fue el motivo, qué estuvo haciendo el perro, edad, a veces dicen no solo la rescate tal fecha pero según la edad aproximada o de qué alimentación lleva, o sea nos mientan en algún dato.
+Entrevistador: ¿Cómo maneja el proceso de cobro y facturación tras una consulta donde genera errores de demora con mayor frecuencia?
+P07: Los cobros, o sea cómo registramos los cobros, mediante el facturador SRE.
+Entrevistador: ¿Cómo controla el inventario de medicamentos y insumos? ¿Ha tenido problemas por faltantes o productos vencidos?
+P07: No, con productos vencidos casi no tanto porque las mismas empresas nos mandan la fecha de caducidad, entonces de ahí por faltantes a veces sí, pero es por falta de pedidos porque estamos en quevedo y casi algunos carros no entran hasta acá para dejar productos.
+Entrevistador: ¿En el control de inventario de qué manera lo hace?
+P07: Manual, o a veces sí los registramos y estamos viendo en Excel.
+Entrevistador: ¿Con qué frecuencia los clientes no se presentan o cancelan su cita a último momento? ¿Qué impacto tiene eso en la clínica?
+P07: Bueno, cuando casi no se acepta cita al menos que sea para cirugía pero ahí dependiendo la hora de llegada se lo gestiona.
+Entrevistador: ¿Cómo gestiona la comunicación con los dueños de la mascota? ¿Después de una consulta, seguimiento de resultados, exámenes o próximas citas?
+P07: Cuando vienen a consulta, bueno si es para dosis, les decimos tienen que traer pataloga o tienen que venir a la siguiente y nos manejamos por WhatsApp.
+Entrevistador: Vamos con la siguiente sección, sección B, seguimiento de clínico y nutrición. ¿Cómo realiza el seguimiento del peso, crecimiento y estado nutricional de sus pacientes a lo largo del tiempo?
+P07: Bueno, controlando el peso siempre lo dejamos en el canal y aparte en la ficha médica que nos lleva.
 Entrevistador: ¿Con qué frecuencia los dueños le consultan sobre la alimentación de su mascota? ¿Cómo preparan esas recomendaciones actualmente?
-P07: Muy poco, normalmente preguntan ya cuando el animal está enfermo, no antes de que le pueden dar ni nada de eso. Normalmente cuando le dan algo que le haga daño, como habían dicho, que hay verduras como la cebolla que le hacen daño.
-Entrevistador: Sí, ahí ya cuando ya el animal está mal, es que preguntan y recién se enteran que eso no puede comer. ¿Cuándo un paciente sale con indicaciones médicas, medicación, dieta, reposo, ¿qué tan frecuente es que los dueños cumplan esas indicaciones y cómo se enteran si no se cumplieron?
-P07: Muy poco frecuente, normalmente se les dice, llévenlos y tráiganlos mañana y no vuelven, o se les dice que los dejan hospitalizados para mantenerlos en observación, pero tampoco los dejan, también por temas de dinero, entonces es muy poco de las veces que los tutores de verdad se hacen responsables por el tratamiento de sus animales.
-Entrevistador: ¿Qué hace usted cuando el dueño le dice que su mascota no ha mejorado con la dieta o el tratamiento indicado? ¿Cómo ajusta las indicaciones sin ver a la mascota físicamente?
-P07: Lo recomendable es siempre traerlo a la veterinaria, en el caso de que ella no, se puede recomendar algún medicamento, pero siempre diciéndole que lo mejor es que lo traiga para la medición.
-Entrevistador: Sí, porque es curioso que digamos que a veces no lo traen porque a veces como no ven el diagnóstico de la mascota no saben bien qué es lo que puede tener.
-P07: Claro, a veces envían una foto y dice, doctor esto sí, pero uno no puede ver qué es lo que tiene. No puede saber y no sabe si ese medicamento le vaya a servir o le vaya a tratar en cosa.
-Entrevistador: Vamos ahora con la sección C, percepción sobre la inteligencia artificial y cómo integrarla dentro de una clínica veterinaria. ¿Qué tan familiarizado está actualmente con el uso de herramientas digitales en su práctica veterinaria? Opciones, tenemos que no utiliza ninguna herramienta o software digital especializada en clínicas veterinarias. Usa herramientas básicas como hojas de cálculo, grupos de mensajería o agendas digitales. ¿Usa algún software veterinario, aunque con funciones limitadas o usa un software veterinario completo con regularidad?
-P07: No utiliza ningún software.
-Entrevistador: Entonces, digamos aquí como no utiliza ningún software sería más que todo el uso de herramientas básicas como son hojas de cálculo, agendas, todo eso. ¿Qué tan de acuerdo está con que un sistema de inteligencia analice los datos clínicos del paciente para sugerir posibles diagnósticos al veterinario? En una escala del 1 al 5, 1 es totalmente en desacuerdo y 5 es totalmente de acuerdo.
-P07: 3.
-Entrevistador: 3, ok. Pensando en su jornada diaria, ¿qué tarea o proceso le genera más carga de trabajo y siente que podría apoyarse con alguna herramienta de soporte?
-P07: Tal vez el seguimiento de los pacientes que se consigue en la casa.
-Entrevistador: ¿Sí te preguntan? ¿Qué nivel de confianza le generaría que el sistema haga recomendaciones clínicas como apoyo a su juicio profesional? Opciones tienen alta confianza, ¿lo usaría como referencia de directa a tomar decisiones? Confianza moderada, ¿lo usaría como apoyo pero siempre con validación propia? Baja confianza, ¿prefiere no basar su decisión en sugerencias automatizadas o no lo usaría y prefiere el método clínico tradicional sin apoyo autorizado?
-P07: Confianza moderada, ¿lo usaría como apoyo pero siempre con su validación propia?
-Entrevistador: Claro.
-Entrevistador: ¿Qué condiciones considera más importantes para confiar en un sistema con inteligencia artificial dentro de su clínica? ¿Puede aquí decirme más de dos opciones? Bueno, dos opciones. ¿Qué las opciones son? ¿Que las recomendaciones estén respaldadas en literatura científica validada? ¿Que el veterinario pueda revisar y corregir todas las sugerencias antes de aplicarlas? ¿Que sea fácil de usar sin necesidad de capacitación prolongada? ¿Que los datos de los pacientes estén protegidos y no se compartan con terceros? ¿Que existan soportes técnicos disponibles y actualizaciones periódicas?
-P07: Que el veterinario pueda revisar y corregir todas las sugerencias.
-Entrevistador: Vamos ahora con la sección D. Criterios de adopción. Si usted tuviera disponible desde mañana una herramienta que le ayude con la gestión de su clínica, ¿cuál sería el primer problema concreto que necesitaría resolver para que usted la use desde el primer día?
-P07: Podría ser recordatorios a los dueños, a los tutores animales de que les toca la vacuna, la capacitación. Porque si no vienen, se olviden, regresan a los 6 meses, al año y ya con más problemas. Sería como un sistema de notificaciones que le notifica a los dueños que en tal día, a tal hora, tienen que llevar a su mascota para la vacuna.
-Entrevistador: ¿Cuáles características son indispensables para que usted y su equipo adopten una nueva herramienta de trabajo sin resistencia?
-P07: Que sea una herramienta segura.
-Entrevistador: Segura.
-P07: Podría decir que existen, más que todo, que son herramientas de luego seguras y que no tengan muchos errores, podríamos decir.
-Entrevistador: Claro.
-P07: Si no va a generar un día que, por ejemplo, no trabajamos y va a venir el tutor y lo va a enojar porque está cerrado, entonces sí.
-Entrevistador: ¿Desde qué dispositivo accedería, preferentemente a la herramienta durante su jornada laboral? ¿Tiene las opciones que son una computadora de escritorio o laptop, una tablet, teléfono móvil, o necesita acceso desde cualquier dispositivo?
-P07: La laptop o el celular. Aquí como doctor, me han dicho muchas cosas. La laptop y el celular.
-Entrevistador: Más que todo, me imagino que el celular es porque...
-P07: Se usa más.
-Entrevistador: Lo llevan a todos lados y creo que les sale mejor usarlo, sí.
-Entrevistador: En su clínica, ¿con qué frecuencia enfrenta problemas de cognitividad o cortes de internet? Tenemos una escala del 1 al 5. 1 que significa nunca, muy rara vez, y 5 con mucha frecuencia. Y última pregunta, ¿existe algún proceso o situación o necesidad específica de su clínica que no hayamos abordado en esta entrevista y que considera relevante para el diseño de esta herramienta de gestión?
-P07: No. No.
-Entrevistador: Y entonces sería todo. Muchas gracias 
- 
+P07: Casi no preguntan mucho, más ya cuando vienen curados con un problema digestivo es que nos cuentan. Le doy, qué sé yo, la sobra, que es por lo general lo que dicen les doy la sobra de lo que uno mismo come, entonces ahí vienen, fijamos, mencionando qué balanceo es apto para ellos por la raza, por la edad y si quieren preparar ya, una preparación ya la doy usando para ellos, aparte, no de sobras.
+Entrevistador: ¿Cómo que tipo de comida le pueden hacer daño también?
+P07: El uso de condimentos, sal y si es verdad tú puedes agregarles como pimientos, cebolla, eso les mandamos aparte.
+Entrevistador: ¿Algo sano?
+P07: Lechuga, zanahoria, avena.
+Entrevistador: ¿Cuándo un paciente sale con indicaciones médicas como medicación, dieta, reposo ¿Qué tan frecuente es que los dueños cumplan esas indicaciones? ¿Y cómo se entera si no las cumplieron?
+P07: Muy poco siguen las recomendaciones, por lo general también decimos que se queden aquí en observación siempre una noche o días, dependiendo por qué motivo hayan venido, cuando son por cirugía tratamos de que se queden aquí hospitalizados y cuando no desean la hospitalización y se los llevan, pues nos damos cuenta en la limpieza del herido, una herida infectada o un animal que no ha estado bien.
+Entrevistador: ¿Qué hace usted cuando un dueño le dice que su mascota no ha mejorado con la dieta o el tratamiento indicado? ¿Cómo ajusta las indicaciones y verlas físicamente a la mascota?
+P07: Bueno, si no ha mejorado tenemos que ver si es que en realidad siguieron las medicaciones que se les mandó y si no pues lo derivamos a otra clínica para que les hagan exámenes.
+Entrevistador: Vamos con la sección C, percepción sobre la inteligencia artificial, hacia digamos implementar la inteligencia artificial en una clínica. ¿Qué tan familiarizado está actualmente con el uso de herramientas digitales en sus prácticas veterinarias? ¿Tiene opciones como puede ser que no utiliza ningún software o herramienta digital? ¿Uso de herramientas básicas como hojas de cálculo, grupos de mensajería o agendas digitales? ¿Uso de algún software veterinario aunque con funciones limitadas? ¿Y uso de un software veterinario completo con regularidad?
+P07: No, no utiliza nada.
+Entrevistador: ¿Qué tan de acuerdo está con que un sistema inteligente analice los datos clínicos del paciente para sugerir posibles diagnósticos al veterinario? ¿De una escala del 1 al 5? ¿Totalmente en desacuerdo 1? ¿Totalmente de acuerdo 5?
+P07: Creo que un 3 o 4.
+Entrevistador: Pensando en su jornada diaria ¿Qué tarea o proceso le genera más carga de trabajo y siente que puede apoyarse con alguna herramienta de soporte?
+Entrevistador: Perdón. Pensando en su jornada diaria ¿Qué tarea o proceso de la clínica le genera más carga de trabajo y siente que puede apoyarse con alguna herramienta de soporte?
+P07: Tal vez médicas, recordar tareas médicas.
+Entrevistador: Siguiente pregunta ¿Qué nivel de confianza le generaría un sistema agarrando recomendaciones clínicas como apoyo de su posición profesional? ¿Le daría alta confianza? ¿Lo usaría como referencia directa de toma de decisiones? ¿Una confianza moderada? ¿Lo usaría como apoyo pero siempre con validación propia? ¿Baja confianza? ¿Prefiere basar su decisión en sugerencias automatizadas? ¿O no lo usaría y prefiere el método clínico tradicional sin apoyo automatizado?
+P07: Lo usaría como apoyo.
+Entrevistador: ¿Sería como una confianza moderada o alta?
+P07: Moderada.
+Entrevistador: ¿Qué condición considera más importante para confiar en un sistema con inteligencia artificial dentro de su clínica? Que las recomendaciones estén reparadas en literatura científica o veterinaria válida. Que el veterinario pueda revisar y corregir todas las evidencias antes de aplicarlas. Que sea fácil usar sin necesidad de capacitación prolongada. Que los datos de los pacientes estén protegidos y no se compartan junto del cero. Que existan soportes técnicos disponibles y actualizaciones periódicas. ¿Puede decirme dos de estas opciones? ¿Cuál le gustaría más?
+P07: La de que el veterinario pueda revisar y corregir.
+Entrevistador: ¿Y otra más?
+P07: Las actualizaciones periódicas.
+Entrevistador: Listo. Ahora vamos con la última sección. Que es la sección de criterios de adopción a este tipo de herramientas. Si usted tuviera disponible desde mañana una herramienta que le ayude con la gestión de su clínica ¿Cuál sería el primer problema concreto que necesitaría resolver para que usted la use desde el primer día?
+P07: Registrar al paciente. Y hablar de una manera directa con la doctora, digamos. O sea, el registro, llevar un control de vacunas. Hablaba mucho de esto de los recordatorios de vacunas. Un historiador, que ahí ya dependerá de que cuando ya esté cerca de la hora de la vacuna le mande a la doctora.
+Entrevistador: ¿Cuáles características son indispensables para que usted y su equipo adopten una nueva herramienta de trabajo sin resistencia? ¿Cuáles son características? Digamos que se le complicaría o sería una manera fácil que su equipo, o donde está en la clínica, ustedes adoptarían este tipo de herramientas. Digamos.
+P07: El precio, perdón. El precio.
+Entrevistador: ¿Se les haría complicado manejar este tipo de herramientas o no? ¿Han tenido un poco de experiencia con estas?
+P07: Sí, manejábamos antes una. O sea, manejábamos una como de un mes nomás. Porque era práctico. O sea, una muestra gratis. Para ver cómo funcionaba. Pero ahí sería el precio por ustedes. Los sistemas operativos los meterían en el sitio. Y se va a dejar la nueva.
+Entrevistador: ¿Desde qué dispositivo accedería preferentemente la herramienta durante su jornada laboral? Tenemos las opciones que podría hacer desde una computadora de escritorio o laptop. Una tablet. Un teléfono móvil. O indistinto, necesita acceso desde cualquier dispositivo.
+P07: Que cuente al laptop. Laptop.
+Entrevistador: ¿En su clínica con qué frecuencia enfrenta problemas de conectividad de cortes de internet? Tenemos de una escala de 1 al 5. Nunca o muy rara vez que es 1. Y 5 con mucha frecuencia.
+Entrevistador: Y última pregunta ¿Existe algún proceso o situación con necesidad específica de su clínica que no hayamos abordado en esta entrevista y que considere relevante para el diseño de una herramienta de gestión?
+P07: No.
+Entrevistador: ¿Todos los temas que se han abordado?
+P07: Listo.
+Entrevistador: Muchas gracias.
 
 
+---
+
+## Transcripción automática (TurboScribe, sin editar)
+
+> Salida original de TurboScribe, conservada sin ediciones conforme a B1 del plan de mejora de datos. El contenido revisado de arriba corresponde a este mismo audio tras cotejo palabra por palabra (ver `07_Datos/registro_correcciones.md`).
+
+(Transcrito por TurboScribe. Actualizar a Ilimitado para eliminar este mensaje.)
+
+Muy buenas, estamos aquí con el Dr. Brian Steven Monserrat el cual nos va a ayudar con el tema de la entrevista Primeramente vamos a leer un poco sobre el consentimiento para que sepa de que se trata la entrevista Con esta y presente entrevista vamos a formar parte de una investigación institucional orientada al diseño y desarrollo de un sistema de gestión para clínica veterinaria con soporte a inteligencia artificial Su participación es completamente voluntaria Los datos obtenidos serán tratados de forma confidencial utilizados únicamente con fines académicos e investigativos y no serán compartidos con terceros sin su autorización expresa Así mismo solicitamos un consentimiento para realizar la grabación de audio o video durante la entrevista con el único propósito de facilitar el análisis de la información recopilada, dichas grabaciones serán manejadas de manera confidencial y utilizadas especialmente para esta investigación A continuación con la entrevista usted confirma que ha leído y comprendido el propósito de esta investigación Participa de forma voluntaria y puede retirarse en cualquier momento sin consecuencia alguna Autoriza el uso de su propuesta con fines académicos e investigativos y autoriza la grabación de audio de las preguntas abiertas con fines inclusivos para el análisis investigativo Vamos a comenzar con la sección A, gestión de operaciones actuales de la veterinaria ¿Cómo realiza actualmente la información de clínica de los pacientes historiales, diagnósticos y tratamientos? ¿Qué dificultades enfrenta cuando necesita consultar el historial de un paciente rápidamente por ejemplo, en una urgencia o en un control de seguimiento? Pongamos, si llega por el caso de abandonamiento, que no nos digan cuál fue el motivo, qué estuvo haciendo el perro, edad, a veces dicen no solo lo rescate tal fecha, pero no, según la edad aproximada, o de qué alimentación lleva, o sea, nos mientan en algún dato ¿Cómo maneja el proceso de cobre y facturación tras una consulta donde genera errores de demora con mayor frecuencia? Los cobros, o sea, cómo registramos los cobros, mediante facturador SRE ¿Cómo controla el inventario de medicamentos de insumo? ¿Ha tenido problemas por faltante o producto vencido? No, con producto vencido casi no tanto, porque las mismas empresas nos mandan la fecha de caducidad Entonces, de ahí por faltante a veces sí, pero es por falta de pedido, porque, bueno, estamos en Quevedo y casi algunos perros no entran hasta acá para dejar producto ¿Pero el control alimentario de qué manera lo hace? Manual, o a veces sí lo registramos y lo estamos viendo en Excel ¿Con qué frecuencia los clientes no se presentan o cancelan su cita a último momento? ¿Qué impacto tiene eso en la clínica? Bueno, casi no se acepta cita, a menos que sea para cirugía Pero ahí dependiendo de la hora de llegada se lo hacen ¿Cómo gestiona la comunicación con los dueños de la mascota? ¿Después de una consulta, seguimiento de resultados, exámenes o próximas citas? Cuando vienen a consulta, bueno, si es para dosis, les decimos tienen que traer patalora o tienen que venir al día siguiente y nos manejamos por WhatsApp Vamos con la siguiente sección, sección B, seguimiento de clínico y nutrición ¿Cómo realiza el seguimiento del peso, crecimiento y estado nutricional de su paciente a lo largo del tiempo? Bueno, controlando el peso siempre lo dejamos en el canal y aparte en la ficha médica que nos lleva ¿Con qué frecuencia los dueños le consultan sobre la alimentación de su mascota? ¿Cómo preparan esas recomendaciones actualmente? Casi no preguntan mucho, más allá cuando vienen por algún problema digestivo es que nos cuentan le doy, qué sé yo, las sobras, por lo general qué dicen, les doy las sobras de lo que uno mismo come entonces ahí vienen, digamos, mencionando qué balanceo es apto para ellos, por la raza, por la edad y si quieren preparar ya, una preparación ya, las gozando para ellos, aparte, no de sobras ¿Cómo que tipo de comida le pueden hacer daño también? El uso de condimentos, sal y cierto tipo de vegetales como pimientos, cebolla por eso les mandamos aparte algo sano, lechuga, zanahoria, avena Cuando un paciente sale con indicaciones médicas como medicación, dieta, reposo ¿Qué tan frecuente es que los dueños cumplan esas indicaciones? ¿Y cómo se entera si no las cumplieron? Muy poco siguen las recomendaciones, por lo general también le decimos que se queden aquí en observación Siempre una noche o días, dependiendo por qué, cuando son por cirugías tratamos de que se queden aquí hospitalizados Y cuando no desean la hospitalización y se los llevan, pues nos damos cuenta en la limpieza del herido Una herida infectada o un animal que no ha estado comiendo, todo eso ¿Qué hace usted cuando un dueño le dice que su mascota no ha mejorado con la dieta o el tratamiento indicado? ¿Cómo ajusta las indicaciones y verlas físicamente a la mascota? Bueno, si no ha mejorado, tenemos que ver si es que en realidad siguieron la medicación que se les mandó Y si no, pues lo derivamos a otra clínica para que les hagan exámenes Vamos con la sección C, percepción sobre la inteligencia artificial hacia, digamos, implementar la inteligencia artificial en una clínica ¿Qué tan familiarizado está actualmente con el uso de herramientas digitales en sus prácticas veterinarias? ¿Tiene opciones como puede ser que no utiliza ningún software o herramienta digital? ¿Uso de herramientas básicas como hojas de cálculo, grupos de mensajería o agendas digitales? ¿Uso de algún software veterinario aunque con funciones limitadas? ¿Y uso de un software veterinario completo con regularidad? No, no utiliza nada ¿Qué tan de acuerdo está con que un sistema inteligente analice los datos clínicos del paciente para sugerir posibles diagnósticos al veterinario? De una escala del 1 al 5, totalmente en desacuerdo 1, totalmente de acuerdo 5 Pensando en su jornada diaria, ¿qué tarea o proceso le genera más carga de trabajo y siente que puede apoyarse con alguna herramienta de soporte? Tareas médicas, recuerdo tareas médicas Siguiente pregunta, ¿qué nivel de confianza le generaría un sistema agarrando recomendaciones clínicas como apoyo de su juicio profesional? ¿Le daría harta confianza? ¿Lo usaría como referencia directa de toma de decisiones? ¿Una confianza moderna? lo usaría como apoyo, pero siempre con validación propia, baja confianza, prefiere no basar su decisión en su herencias automatizadas, o no lo usaría y prefiere el método clínico tradicional sin apoyo automatizado. Lo usaría como apoyo. Pero sería con una confianza moderada o alta? Moderada.
+
+¿Qué condición considera más importante para confiar en un sistema con inteligencia artificial dentro de su clínica? Que las recomendaciones estén reparadas en literatura científica veterinaria válida, que el veterinario pueda revisar y corregir todas sus herencias antes de aplicarlas, que sea fácil usar sin necesidad de capacitación prolongada, que los datos de los pacientes estén protegidos y no se compartan junto del cero, que existan soportes técnicos y disponibles y que hay actualizaciones periódicas. ¿Puede decirme dos de estas opciones? ¿Cuáles gustarían más? La que el veterinario pueda revisar y corregir. ¿Y otra más? Las actualizaciones periódicas.
+
+Ahora vamos con la última sección que es la sección de criterios de adopción a este tipo de herramienta. Si usted tuviera disponible desde mañana una herramienta que le ayude con la gestión de su clínica, ¿cuál sería el primer problema concreto que necesitaría resolver para que usted la use desde el primer día? Registrar al paciente. Y hablar de una manera directa con la doctora, digamos.
+
+O sea, el registro, ya llevar un control de vacunas. Hablaba mucho de esto de los recordatorios de vacunas. Un historiador.
+
+Que ahí ya dependerá de que cuando ya esté cerca de la hora de la vacuna, ya le mandara eso. ¿Cuáles características son indispensables para que usted y su equipo adopten una nueva herramienta de trabajo sin resistencia? ¿Cuáles son características? Digamos que se le complicaría o sería una manera fácil que su equipo o donde está la clínica, ustedes adoptarían este tipo de herramientas, digamos. El precio, perdón.
+
+El precio. ¿Se les haría complicado manejar este tipo de herramientas o no? ¿Han tenido un poco de experiencia con estas? Sí, manejábamos antes una. O sea, manejábamos una como de un mes nomás.
+
+Porque era práctico. O sea, una muestra gratis. Para ver cómo funcionaba.
+
+Pero ahí sería el precio porque los sistemas operativos se meten en el sitio. Y se va a dejar la nueva. ¿Desde qué dispositivo accedería preferentemente la herramienta durante su jornada laboral? Tenemos las opciones que podría hacer desde una computadora de escritorio o laptop, una tablet, un teléfono móvil o indistinto.
+
+Necesita acceso desde cualquier dispositivo que cuente al laptop. ¿En su clínica con qué frecuencia enfrenta problemas de conectividad de cortes de internet? Tenemos de una escala de 1 al 5. Nunca o muy rara vez que es 1 y 5 con mucha frecuencia. Y última pregunta.
+
+¿Existe algún proceso de situación o necesidad específica de su clínica que no hayamos abordado en esta entrevista y que considera relevante para el diseño de una herramienta de gestión? No. ¿Todos los temas que se han abordado? Listo. Muchas gracias.
+
+De esa manera.
+
+(Transcrito por TurboScribe. Actualizar a Ilimitado para eliminar este mensaje.)
