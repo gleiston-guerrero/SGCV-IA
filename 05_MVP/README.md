@@ -1,5 +1,3 @@
-
-
 # MVP — SGCV-IA (Sistema de Gestión Clínica Veterinaria con IA)
 
 ## Descripción
@@ -11,7 +9,7 @@ Prototipo funcional del MVP de **SGCV-IA**, orientado a demostrar los módulos M
 ## Tecnologías
 
 * **Frontend**: HTML5 + CSS3 + JavaScript (React), empaquetado en un único archivo (`SGCV-IA_Prototipo_Funcional.html`).
-* **Backend real**: Node.js + Express + SQLite (`backend/`). Sustituye la persistencia únicamente-en-navegador de la versión anterior: el login se valida en el servidor (RF-24/RNF-05, con bloqueo de cuenta también server-side) y el estado de la aplicación se guarda en una base de datos SQLite que sobrevive a reinicios del contenedor (`docker compose down && up`), no solo a recargas de página.
+* **Backend**: Node.js + Express + SQLite (`backend/`), incluido en el repositorio pero **no integrado con el frontend en esta versión del prototipo**. El frontend opera de forma autónoma: el inicio de sesión se valida en el propio navegador contra credenciales fijas embebidas en el HTML, y el estado de la aplicación se guarda en el almacenamiento del navegador, no en la base de datos SQLite. La persistencia server-side queda declarada como trabajo pendiente para la siguiente iteración.
 
 ---
 
@@ -19,13 +17,13 @@ Prototipo funcional del MVP de **SGCV-IA**, orientado a demostrar los módulos M
 
 ```text
 05_MVP/
-├── SGCV-IA_Prototipo_Funcional.html   # Frontend (single-file)
+├── SGCV-IA_Prototipo_Funcional.html   # Frontend (single-file, autónomo)
 ├── backend/
-│   ├── server.js                       # API REST: login, estado persistente
+│   ├── server.js                       # API REST (no consumida por el frontend en esta versión)
 │   ├── package.json
-│   └── data/                            # Base de datos SQLite (montada como volumen)
-├── Dockerfile                          # Imagen Node que corre el backend y sirve el frontend
-├── docker-compose.yml                  # Despliegue con un solo comando + volumen persistente
+│   └── data/                            # Base de datos SQLite (no integrada al frontend)
+├── Dockerfile                          # Imagen Node que sirve el backend de forma independiente
+├── docker-compose.yml                  # Despliegue del backend con un solo comando
 └── README.md
 ```
 
@@ -33,26 +31,24 @@ Prototipo funcional del MVP de **SGCV-IA**, orientado a demostrar los módulos M
 
 ## Ejecución
 
-### Opción 1 — Despliegue con Docker (recomendado para la evaluación C3)
+### Opción 1 — Frontend directo (uso real del prototipo)
+
+Abrir `SGCV-IA_Prototipo_Funcional.html` directamente en el navegador (doble clic). Usar las credenciales de demostración fijas indicadas más abajo.
+
+### Opción 2 — Backend por separado (en desarrollo, no conectado al frontend)
 
 ```bash
 cd 05_MVP
 docker compose up
 ```
 
-Luego abrir **http://localhost:8080** en el navegador.
-
-### Opción 2 — Ejecución directa (sin Docker)
-
-Abrir `SGCV-IA_Prototipo_Funcional.html` directamente en el navegador (doble clic).
+Expone la API en **http://localhost:8080**, pero el frontend del prototipo no la consume todavía.
 
 ---
 
-## Video Demostrativo
+## Sugerencias diagnósticas por IA
 
-A continuación se presenta el video demostrativo correspondiente a la versión MVP del sistema SGCV-IA, en el cual se exponen sus principales funcionalidades y su modo de operación. 
-
-https://github.com/ramaguas-ship-it/SGCV-IA/releases/download/untagged-540381af922d29d52516/Demo.SGCV-IA.mp4
+En esta versión del MVP, las sugerencias diagnósticas (RF-17/RF-18/RF-19) muestran **valores fijos de ejemplo (68 % / 19 % / 13 %)** para ilustrar el flujo Aceptar/Modificar/Rechazar. No hay un modelo de IA real conectado ni cálculo dinámico de porcentajes.
 
 ---
 
@@ -60,14 +56,14 @@ https://github.com/ramaguas-ship-it/SGCV-IA/releases/download/untagged-540381af9
 
 | RF | Módulo | Estado |
 |---|---|---|
-| RF-24 | Login / autenticación por rol | ✅ |
+| RF-24 | Login / autenticación por rol | ✅ (validación en frontend, credenciales fijas) |
 | RF-22 | Navegación diferenciada por rol (Veterinario / Administrativo) | ✅ |
 | RF-02, RF-03 | Búsqueda y ficha centralizada de paciente | ✅ |
 | RF-04 | Registro de consulta | ✅ |
 | RF-05, RF-06 | Alertas e inventario | ✅ |
 | RF-07, RF-08 | Cobro y facturación | ✅ |
 | RF-11 | Agenda de citas | ✅ |
-| RF-17, RF-18, RF-19 | Sugerencias diagnósticas por IA (Aceptar/Modificar/Rechazar) | ✅ |
+| RF-17, RF-18, RF-19 | Sugerencias diagnósticas por IA (Aceptar/Modificar/Rechazar, valores fijos de ejemplo) | ✅ |
 | RF-25 | Reportes | ✅ (Could have, ya cubierto) |
 | RF-23 | Log de auditoría | ✅ Verificado en el código — pantalla "Log de Auditoría", registro automático de cada acción (usuario, módulo, fecha, detalle), de solo lectura |
 | RF-21 | Modo offline | ⚠️ No aplica a este prototipo web (alcance definido para escritorio) |
@@ -78,8 +74,10 @@ https://github.com/ramaguas-ship-it/SGCV-IA/releases/download/untagged-540381af9
 
 ## Limitaciones (alcance MVP)
 
-* La persistencia usa un único documento JSON en SQLite (no un esquema relacional normalizado por entidad); suficiente para demostrar cobertura funcional en esta etapa, pero no representa el modelo de datos final de producción.
-* Los videos en `Videos_Demostracion/` son material de apoyo por módulo; para la defensa (Sección 8.4 de la guía) se debe preparar un video corto adicional que cubra específicamente los 2 escenarios de la matriz de trazabilidad, y depositarlo en `09_Defensa/video_defensa.mp4`.
+* El frontend no está integrado con el backend: la autenticación se valida en el navegador y el estado no persiste en SQLite. Es una limitación declarada del alcance de esta entrega, no una capacidad demostrada.
+* Las sugerencias diagnósticas por IA son valores fijos de ejemplo (68/19/13 %), no un modelo real.
+* RNF-18 (explicabilidad de la IA: factores + indicador de confianza): ver estado actual en `04_Trazabilidad/matriz_trazabilidad.csv` — implementado en el MVP solo si consta ahí como tal; de lo contrario, se declara como no implementado.
+* Para la defensa (Sección 8.4 de la guía) se debe preparar un video corto que cubra específicamente los 2 escenarios de la matriz de trazabilidad, y depositarlo en `09_Defensa/video_defensa.mp4`.
 
 ---
 
