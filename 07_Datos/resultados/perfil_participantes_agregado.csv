@@ -1,14 +1,15 @@
 "variable","categoria","n","porcentaje"
-"Rol del participante","Administrador(a) de clínica veterinaria",56,26.7
-"Rol del participante","Auxiliar o técnico veterinario",55,26.2
-"Rol del participante","Dueño(a) de mascota",49,23.3
-"Rol del participante","Médico veterinario(a)",50,23.8
-"Años de experiencia (si trabaja en clínica)","De 2 a 5 años",85,40.5
-"Años de experiencia (si trabaja en clínica)","De 6 a 10 años",24,11.4
-"Años de experiencia (si trabaja en clínica)","Más de 10 años",13,6.2
-"Años de experiencia (si trabaja en clínica)","Menos de 1 años",49,23.3
-"Años de experiencia (si trabaja en clínica)","No aplica",39,18.6
-"Frecuencia de inconvenientes (aproximación de frecuencia de uso)","Algunas veces",135,64.3
-"Frecuencia de inconvenientes (aproximación de frecuencia de uso)","Frecuentemente",50,23.8
-"Frecuencia de inconvenientes (aproximación de frecuencia de uso)","Nunca",2,1
-"Frecuencia de inconvenientes (aproximación de frecuencia de uso)","Rara vez",23,11
+"Rol del participante","Administrador(a) de clínica veterinaria",45,21.4
+"Rol del participante","Auxiliar o técnico veterinario",42,20
+"Rol del participante","Dueño(a) de mascota",80,38.1
+"Rol del participante","Médico veterinario(a)",43,20.5
+"Años de experiencia (si trabaja en clínica)","De 2 a 5 años",77,36.7
+"Años de experiencia (si trabaja en clínica)","De 6 a 10 años",13,6.2
+"Años de experiencia (si trabaja en clínica)","Más de 10 años",3,1.4
+"Años de experiencia (si trabaja en clínica)","Menos de 1 años",50,23.8
+"Años de experiencia (si trabaja en clínica)","No aplica",67,31.9
+"Frecuencia de inconvenientes (aproximación de frecuencia de uso)","Algunas veces",85,40.5
+"Frecuencia de inconvenientes (aproximación de frecuencia de uso)","Frecuentemente",27,12.9
+"Frecuencia de inconvenientes (aproximación de frecuencia de uso)","Nunca",10,4.8
+"Frecuencia de inconvenientes (aproximación de frecuencia de uso)","Rara vez",81,38.6
+"Frecuencia de inconvenientes (aproximación de frecuencia de uso)","Siempre",7,3.3
