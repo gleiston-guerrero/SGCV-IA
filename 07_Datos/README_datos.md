@@ -190,7 +190,16 @@ Este archivo debe consultarse antes de interpretar o transformar una variable.
 
 ## 6. Scripts y reproducibilidad
 
-Los scripts utilizan **R base**, evitando dependencias externas siempre que sea posible.
+Los scripts utilizan **R base** para casi todo, con una sola excepción: `06_Experimento/scripts_analisis/05_supuestos.R` requiere el paquete `car` (para `car::leveneTest`, prueba de Levene de homogeneidad de varianzas). Si no está instalado:
+
+```bash
+# opción 1 (CRAN)
+Rscript -e 'install.packages("car")'
+# opción 2 (Debian/Ubuntu, si CRAN no es accesible por red)
+sudo apt-get install -y r-cran-car
+```
+
+El resto del pipeline (incluido todo `07_Datos/scripts/`) no tiene dependencias externas.
 
 ### Pipeline completo
 
@@ -245,7 +254,7 @@ Calcula la aparición acumulada de códigos axiales y evalúa el criterio de sat
 Rscript 07_Datos/scripts/justificacion_muestra.R
 ```
 
-Calcula el margen de error de `n = 210` y genera el perfil agregado de participantes.
+Reporta el tamaño de muestra alcanzado (`n = 210`) y genera el perfil agregado de participantes. No calcula margen de error: la encuesta es por conveniencia, no por muestreo aleatorio (ver tarea A6 del plan de mejora de datos y `06_Experimento/resultados/salidas_estadisticas/justificacion_potencia.md` para la justificación estadística válida).
 
 ### Checksums
 
