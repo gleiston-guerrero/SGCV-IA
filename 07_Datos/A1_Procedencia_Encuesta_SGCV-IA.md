@@ -65,7 +65,7 @@ la recolección. Se declara como limitación del instrumento en
 | Integrante | Firma | 
 |---|---|
 | Marcillo Ponce Alberto Jeanpool |20-09-2026 | 
-| Amagua Sacón Robyn Willian | |
+| Amagua Sacón Robyn Willian | 20-09-2026  |
 | Mesías Quijije Jhon Alexander | 20-09-2026|
 | Vera Gómez Anthony Alfredo | 20-09-2026 |
 | Barrionuevo Fuentes Carlos Daniel |20-09-2026 |
