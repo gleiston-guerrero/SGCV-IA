@@ -131,6 +131,10 @@ Responsable de C7 (Recolección de datos de campo), según `06_Experimento/READM
 | **`CHANGELOG.md`** *(nuevo)* | `c3e49ba`, `6f0334f`, `6bba567` |
 
 
+### Aclaración sobre commits que no reflejan trabajo propio (20/09/2026)
+
+Los commits `600f2d6` ("Corrige typo de fecha en nombre de archivo del acta W05"), `3aec6c5` ("Agrega video W05 regrabado, cifrado AES-256, con checksums") y `fd6bc00` (merge asociado) quedan técnicamente bajo la identidad de Git de Amagua Sacón (`ramaguas-ship-it <ramaguas@uteq.edu.ec>`), porque fue quien ejecutó `git commit`/`git push` desde su propia máquina. **El contenido de esos commits —grabación y cifrado AES-256 del video de walkthrough W05 regrabado— es trabajo de Vera Gómez**, no de Amagua Sacón; ella actuó únicamente como integradora, subiendo al repositorio el material que él produjo. Se deja esta aclaración para que estos 3 commits no se cuenten como aporte propio de Amagua Sacón en la evaluación de A10, y sí como aporte de Vera Gómez (ver su sección, más abajo).
+
 ### Firma
 
 Robyn Willian Amagua Sacón — Fecha: 12/09/2026
@@ -242,6 +246,10 @@ Extraídos y **verificados el 12/09/2026 mediante clonado directo del repositori
 | Guion de validación v2.0 (`06_Experimento/instrumentos/Guion_Validacion_v2_0.pdf`) | **[PENDIENTE — completar con el hash del commit una vez subido]**. Archivo con `CreationDate` original del 06/09/2026 (metadata verificada), subido sin modificar. |
 
 **Nota de verificación adicional:** en una revisión previa de este documento, el instrumento "Guion de validación v2.0" no aparecía bajo ninguna identidad de Vera Gómez en el historial del repositorio, porque aún no se había subido. Ver la corrección más arriba, en "Artefactos de los que es responsable".
+
+### Aclaración — video de walkthrough W05 regrabado (20/09/2026)
+
+El video de walkthrough W05 regrabado (`02_Evidencias/00_Restringido/evidencias_video_walkthrough_nuevo.7z.00X`, cifrado AES-256 con checksums SHA-256) y el acta corregida asociada (`20-09-2026_Acta_W05_Walkthrough.pdf`) son trabajo de **Vera Gómez** (grabación y cifrado), aunque los commits que los subieron al repositorio (`600f2d6`, `3aec6c5`, `fd6bc00`) quedaron bajo la identidad de Git de Amagua Sacón, quien actuó como integradora subiendo el material desde su propia máquina. Ver la aclaración recíproca en la sección de Amagua Sacón, más arriba. Pendiente: confirmación por escrito o commit propio de Vera Gómez que ratifique esta atribución, igual que con el "Guion de validación v2.0".
 
 ### Firma
 
