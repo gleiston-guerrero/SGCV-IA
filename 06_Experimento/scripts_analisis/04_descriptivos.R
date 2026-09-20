@@ -57,17 +57,31 @@ preguntas_likert <- list(
   )
 )
 
-# Si algún nombre de columna no coincide exactamente con el CSV real (por un
-# espacio o tilde distinto), este chequeo lo avisa en vez de fallar en
-# silencio calculando estadísticos de una columna vacía.
-columnas_no_encontradas <- setdiff(names(preguntas_likert), names(encuesta))
-if (length(columnas_no_encontradas) > 0) {
-  stop(
-    "Estas columnas de preguntas Likert no se encontraron exactamente en encuesta_limpia.csv:\n",
-    paste(" -", columnas_no_encontradas, collapse = "\n"),
-    "\nRevisa el nombre exacto de la columna (mayúsculas, tildes, signos de interrogación) y ajusta `preguntas_likert` en este script."
-  )
+# Resolución por PREFIJO, no por texto exacto completo: el formulario de
+# Google Forms cambió de redacción en algún punto de la recolección
+# ("clínica veterinaria" -> "veterinaria" / "centro veterinario", ver
+# 07_Datos/desviaciones.md). Se toma el número de pregunta + las primeras
+# palabras (la parte que no cambió) como prefijo de búsqueda, y se avisa
+# explícitamente si no hay exactamente una columna que calce -- en vez de
+# fallar en silencio calculando estadísticos de una columna vacía.
+prefijos_busqueda <- c(
+  "1. ¿Cómo califica la organización y gestión de la información en",
+  "3. ¿Qué tan importante considera el uso de un sistema informático para mejorar",
+  "5. ¿Qué tan útil considera recibir recordatorios de citas, vacunas, tratamientos o controles veterinarios",
+  "6. ¿Qué tan de acuerdo está con el uso de Inteligencia Artificial como apoyo para mejorar"
+)
+nombres_resueltos <- character(0)
+for (prefijo in prefijos_busqueda) {
+  encontrada <- grep(prefijo, names(encuesta), value = TRUE, fixed = TRUE)
+  if (length(encontrada) != 1) {
+    stop(sprintf(
+      "No se encontró (o se encontró más de una vez) una columna que empiece con '%s' en encuesta_limpia.csv. Columnas disponibles: %s",
+      prefijo, paste(names(encuesta), collapse = " | ")
+    ))
+  }
+  nombres_resueltos <- c(nombres_resueltos, encontrada)
 }
+names(preguntas_likert) <- nombres_resueltos
 
 calcular_descriptivos <- function(valores_numericos) {
   valores_numericos <- valores_numericos[!is.na(valores_numericos)]
