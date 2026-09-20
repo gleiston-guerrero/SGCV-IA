@@ -1,36 +1,72 @@
-Participante,Categoria,Codificador1_Marcillo,Codificador2_Mesias
-P02,Historia clínica y gestión de pacientes,1,1
-P02,Gestión administrativa y financiera,1,1
-P02,Inventario,1,1
-P02,Citas y comunicación con propietarios,1,1
-P02,Inteligencia Artificial,1,1
-P02,Usabilidad y desempeño,1,1
-P02,Seguridad,1,1
-P07,Historia clínica y gestión de pacientes,1,1
-P07,Gestión administrativa y financiera,0,1
-P07,Inventario,0,1
-P07,Citas y comunicación con propietarios,1,1
-P07,Inteligencia Artificial,1,1
-P07,Usabilidad y desempeño,1,1
-P07,Seguridad,1,1
-P13,Historia clínica y gestión de pacientes,1,1
-P13,Gestión administrativa y financiera,1,1
-P13,Inventario,1,1
-P13,Citas y comunicación con propietarios,1,1
-P13,Inteligencia Artificial,1,1
-P13,Usabilidad y desempeño,1,1
-P13,Seguridad,0,0
-P16,Historia clínica y gestión de pacientes,1,1
-P16,Gestión administrativa y financiera,1,1
-P16,Inventario,1,1
-P16,Citas y comunicación con propietarios,1,1
-P16,Inteligencia Artificial,1,1
-P16,Usabilidad y desempeño,1,1
-P16,Seguridad,0,1
-N_observaciones,28
-Acuerdo_observado_po,0.8929
-Acuerdo_esperado_azar_pe,0.8316
-Kappa_Cohen,0.3636
-Error_estandar_aprox,0.3472
-IC_95_inferior,-0.3168
-IC_95_superior,1.0441
+Participante,Codigo_axial,Marcillo,Mesias
+P02,Automatización de recordatorios de citas,1,1
+P02,Bajo cumplimiento de indicaciones médicas y seguimiento post-alta,0,1
+P02,Búsqueda lenta o poco confiable del historial,1,1
+P02,Canales informales de comunicación con propietarios (WhatsApp/teléfono),0,1
+P02,Falta de alertas automáticas de vencimiento/revisión oportuna,0,1
+P02,Impacto de inasistencias y pérdida de seguimiento,1,1
+P02,"Preferencia de acceso multiplataforma/móvil (celular, laptop, tablet)",1,1
+P02,Protección de datos del paciente/propietario,1,1
+P02,Rechazo al diagnóstico automatizado sin evaluación física,1,1
+P02,"Registro clínico no digitalizado o disperso (físico, Word, ofimática, plataformas básicas)",1,1
+P02,Registro de inventario en herramientas no integradas (plataforma externa/Excel),1,0
+P02,Registro histórico de peso y estado nutricional,1,1
+P02,Sobrecarga administrativa/operativa sin personal de apoyo,0,1
+P02,Validación de datos y automatización de la facturación (incl. integración SRI),1,1
+P02,Validación/revisión obligatoria del veterinario sobre sugerencias de IA,0,1
+P07,Aceptación variable de IA diagnóstica (de moderada a alta),0,1
+P07,Bajo cumplimiento de indicaciones médicas y seguimiento post-alta,1,1
+P07,Canales informales de comunicación con propietarios (WhatsApp/teléfono),0,1
+P07,Captura de datos del propietario/paciente incompleta o progresiva,1,1
+P07,Estabilidad y confiabilidad operativa del sistema,1,1
+P07,Ficha clínica estructurada con campos estándar y registro detallado de tratamientos,1,1
+P07,"Preferencia de acceso multiplataforma/móvil (celular, laptop, tablet)",1,1
+P07,Rechazo al diagnóstico automatizado sin evaluación física,1,1
+P07,Recordatorios de tareas médicas y vacunación,1,1
+P07,"Registro clínico no digitalizado o disperso (físico, Word, ofimática, plataformas básicas)",1,1
+P07,Sobrecarga administrativa/operativa sin personal de apoyo,0,1
+P07,Validación de datos y automatización de la facturación (incl. integración SRI),0,1
+P07,Validación/revisión obligatoria del veterinario sobre sugerencias de IA,0,1
+P13,Aceptación variable de IA diagnóstica (de moderada a alta),1,1
+P13,Ausencia de agenda formal de citas,1,1
+P13,Ausencia de control de inventario formal (manual/inexistente),1,1
+P13,Bajo cumplimiento de indicaciones médicas y seguimiento post-alta,0,1
+P13,Búsqueda lenta o poco confiable del historial,1,1
+P13,"Condiciones de confianza en IA (literatura validada, revisión, actualizaciones, protección de datos)",1,1
+P13,Errores y demoras de facturación por procesos manuales,1,1
+P13,Facilidad de uso sin experiencia digital y bajo costo,0,1
+P13,Falta de estandarización y roles indefinidos en la comunicación (auxiliar vs. veterinario),1,1
+P13,Frecuencia variable de cortes de conectividad en la clínica,1,1
+P13,"Preferencia de acceso multiplataforma/móvil (celular, laptop, tablet)",1,1
+P13,Priorización de un sistema centralizado de historial y seguimiento de citas,0,1
+P13,Rechazo al diagnóstico automatizado sin evaluación física,0,1
+P13,"Registro clínico no digitalizado o disperso (físico, Word, ofimática, plataformas básicas)",1,1
+P13,Registro fotográfico de evolución clínica vinculado a la ficha,1,1
+P13,Registro histórico de peso y estado nutricional,0,1
+P16,Aceptación variable de IA diagnóstica (de moderada a alta),1,1
+P16,Bajo cumplimiento de indicaciones médicas y seguimiento post-alta,0,1
+P16,Búsqueda lenta o poco confiable del historial,0,1
+P16,Canales informales de comunicación con propietarios (WhatsApp/teléfono),1,1
+P16,Captura de datos del propietario/paciente incompleta o progresiva,0,1
+P16,"Condiciones de confianza en IA (literatura validada, revisión, actualizaciones, protección de datos)",1,0
+P16,Control y recordatorio de vacunación,1,1
+P16,Desconfianza en fuentes de internet no validadas usadas por propietarios,1,1
+P16,Duplicación manual de datos ya existentes en fichas anteriores,1,1
+P16,Errores y demoras de facturación por procesos manuales,1,1
+P16,Falta de alertas automáticas de vencimiento/revisión oportuna,1,1
+P16,Frecuencia variable de cortes de conectividad en la clínica,0,1
+P16,Impacto de inasistencias y pérdida de seguimiento,1,1
+P16,"Preferencia de acceso multiplataforma/móvil (celular, laptop, tablet)",1,1
+P16,Protección de datos del paciente/propietario,0,1
+P16,Rechazo al diagnóstico automatizado sin evaluación física,1,1
+P16,"Registro clínico no digitalizado o disperso (físico, Word, ofimática, plataformas básicas)",1,1
+P16,Registro histórico de peso y estado nutricional,0,1
+P16,Validación/revisión obligatoria del veterinario sobre sugerencias de IA,0,1
+
+N_observaciones_(4_participantes_x_32_codigos_del_universo),128
+Codigos_axiales_en_el_universo,32
+Acuerdo_observado_po,0.8125
+Acuerdo_esperado_azar_pe,0.5084
+Kappa_Cohen,0.6186
+IC_95_inferior,0.481
+IC_95_superior,0.7561
