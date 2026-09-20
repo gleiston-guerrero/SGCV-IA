@@ -249,6 +249,129 @@ Las 16 notas ya traían, antes de esta corrección, un campo de fecha visible qu
 
 **Verificado por:** pendiente de confirmación por el resto del equipo.
 
+---
+
+## Bloque A — Encuesta y pipeline cuantitativo
+
+### A1/A3 — Reemplazo del archivo de encuesta por una exportación verificada — CORREGIDO (20/09/2026)
+
+**Hallazgo:** el archivo `07_Datos/datos_crudos/encuesta_respuestas_crudas.csv` vigente hasta el 19/09/2026 (210 filas, incorporadas en el commit `2d5d6b6`, ver Desviación 2) no pudo verificarse contra una exportación original del formulario: no había forma de confirmar que esas 210 filas correspondieran a respuestas reales del Google Forms del proyecto.
+
+**Corrección aplicada:** el equipo exportó el 20/09/2026 una copia completa y sin editar del formulario de Google Forms tal como está acumulado desde su apertura (27/07/2026) hasta la fecha de exportación (20/09/2026, 11:09 a.m. GMT-5), con 210 respuestas. Se verificó su procedencia antes de aceptarla como reemplazo:
+
+- 0 combinaciones de respuesta repetidas entre las 210 filas, incluyendo las preguntas de texto libre.
+- Distribución de perfil no artificial: Dueño(a) de mascota = 80, Administrador(a) de clínica veterinaria = 45, Médico veterinario(a) = 43, Auxiliar o técnico veterinario = 42 (total 210).
+- Marcas temporales espaciadas de forma natural a lo largo de casi dos meses, sin ráfagas de envíos que indiquen generación automatizada. 16 de las 210 filas están fechadas el propio 20/09/2026, como parte de la recolección en curso (formulario abierto de forma continua desde julio), no generadas para esta revisión.
+
+Se generaron dos versiones a partir de esta exportación:
+1. **Original sin editar** (con nombre completo y enlace de Google Drive de cada participante) — entregado al docente por correo institucional el 20/09/2026 (Amagua Sacón, `ramaguas@uteq.edu.ec` → `gguerrero@uteq.edu.ec`), con el archivo original adjunto — tarea A2 **completada**.
+2. **Anonimizada** (sin nombre ni enlace, mismas 210 filas y 19 columnas en el mismo orden que el archivo anterior) — reemplaza `07_Datos/datos_crudos/encuesta_respuestas_crudas.csv` en el repositorio público.
+
+El detalle completo de la verificación de procedencia queda documentado en `A1_Procedencia_Encuesta_SGCV-IA.md` (pendiente de firma de los 5 integrantes, ver tabla de firmas en ese documento).
+
+**Fecha de esta corrección:** 20 de septiembre de 2026.
+
+**Confirmado por:** Amagua Sacón Robyn Willian.
+
+**Verificado por:** pendiente de confirmación por el resto del equipo (firmas de `A1_Procedencia_Encuesta_SGCV-IA.md`).
+
+### A4 — Detección de duplicados por contenido (no solo por fila completa) — CORREGIDO (20/09/2026)
+
+**Hallazgo:** `06_Experimento/scripts_analisis/02_limpieza.R` solo detectaba filas duplicadas comparando la fila completa (`duplicated(encuesta)`), lo que no detecta respuestas idénticas en contenido pero con distinta marca temporal o ciudad (el patrón que hizo sospechoso al archivo retirado en A1/A3: 207 de 210 filas casi idénticas salvo fecha y ciudad).
+
+**Corrección aplicada:** se agregó una segunda verificación que excluye explícitamente `Marca temporal` y la columna de ciudad antes de buscar duplicados, y reporta el conteo por separado (sin borrar filas automáticamente — requiere revisión manual, igual que el resto del script):
+
+```r
+col_ciudad <- grep("^4\\. Ciudad", names(encuesta), value = TRUE)
+cols_contenido <- setdiff(names(encuesta), c("Marca temporal", col_ciudad))
+filas_duplicadas_contenido <- duplicated(encuesta[, cols_contenido, drop = FALSE])
+n_duplicados_contenido <- sum(filas_duplicadas_contenido)
+```
+
+Sobre el nuevo archivo de A1/A3 (210 filas verificadas), este chequeo no encuentra duplicados de contenido, consistente con la verificación de procedencia de A1.
+
+**Fecha de esta corrección:** 20 de septiembre de 2026.
+
+**Confirmado por:** Amagua Sacón Robyn Willian.
+
+**Verificado por:** pendiente de confirmación por el resto del equipo.
+
+### A5 — Cifra hardcodeada, juego de resultados duplicado/desactualizado y dependencia no declarada — CORREGIDO (20/09/2026)
+
+**Nota de corrección (20/09/2026):** la primera versión de esta entrada solo cubría el punto (1) de abajo. Al releer el texto literal del criterio A5 se confirmó que exige tres cosas, no una; los puntos (2) y (3) se agregan ahora.
+
+**(1) Cifra hardcodeada — Hallazgo:** `06_Experimento/scripts_analisis/08_figuras.R` tenía escrito a mano `"Distribución de participantes por perfil (n = 60)"` en el título de la figura, cifra que no se actualizaba si cambiaba el tamaño de la muestra.
+
+**Corrección:** el título ahora se calcula desde los datos: `sprintf("Distribución de participantes por perfil (n = %d)", sum(as.integer(conteo_perfiles)))`.
+
+**(2) Juego de resultados que contradice al otro — Hallazgo:** `06_Experimento/resultados/` tenía dos archivos huérfanos en su raíz (`curva_saturacion_codigos_abiertos.png` y `tabla_saturacion_codigos_abiertos.csv`, fuera de las subcarpetas `figuras/`/`tablas/`) que ya no genera ningún script del pipeline actual — son salida de una versión anterior de `03_curva_saturacion_codigos_abiertos.R` (con rutas previas a la reorganización), abandonada después de que el script se corrigiera para escribir en `tablas/`/`figuras/`. Además, `09_Publicacion/dataset_zenodo/03_curva_saturacion_codigos_abiertos.R` (copia empaquetada para el depósito Zenodo) seguía usando esas rutas viejas (`../resultados/...`, pensadas para ejecutarse dentro de `scripts_analisis/`), que al ejecutarse desde su ubicación real (`dataset_zenodo/`, un paquete plano) resolverían a una ruta equivocada y romperían la reproducibilidad que el propio README del paquete promete.
+
+**Corrección:** se eliminaron los 2 archivos huérfanos de `06_Experimento/resultados/` (`git rm`). Se corrigieron las rutas de `dataset_zenodo/03_curva_saturacion_codigos_abiertos.R` para ser relativas a su propia carpeta (paquete plano y autocontenido). Se verificó ejecutándolo in situ (`cd 09_Publicacion/dataset_zenodo && Rscript 03_curva_saturacion_codigos_abiertos.R`): corre sin error y su salida es idéntica byte a byte a la tabla canónica de `06_Experimento/resultados/tablas/`. Con esto, `06_Experimento/resultados/` y `07_Datos/resultados/` quedan como un único juego de resultados consistente (verificado con `diff` archivo por archivo sobre las 6 tablas compartidas: sin diferencias).
+
+**(3) Dependencia `car` no declarada — Hallazgo:** `05_supuestos.R` requiere el paquete `car` (Levene) y no estaba documentado en ningún README, pese a que `07_Datos/README_datos.md` afirmaba "R base, evitando dependencias externas siempre que sea posible" sin excepción.
+
+**Corrección:** se agregó la dependencia y su instalación (CRAN o `r-cran-car` vía apt) a `07_Datos/README_datos.md`, sección 6.
+
+**Fecha de esta corrección:** 20 de septiembre de 2026.
+
+**Confirmado por:** Amagua Sacón Robyn Willian.
+
+**Verificado por:** pendiente de confirmación por el resto del equipo.
+
+### A6 — Alcance de Holm-Bonferroni y margen de error tratado como muestreo aleatorio — CORREGIDO (20/09/2026)
+
+**Nota de corrección (20/09/2026):** la primera versión de esta entrada solo cubría el punto (1). El criterio A6 también exige el punto (2), agregado ahora.
+
+**(1) Alcance de Holm-Bonferroni — Hallazgo:** `06_Experimento/scripts_analisis/06_pruebas_hipotesis.R` aplicaba `p.adjust(..., method = "holm")` **dentro** del bucle por pregunta, es decir, corrigiendo por familias de 6 comparaciones (una por pregunta) en vez de sobre el total de 24 comparaciones del experimento (4 preguntas × 6 pares de perfiles).
+
+**Corrección:** se movió `p.adjust()` fuera del bucle, aplicándolo una sola vez sobre `tabla_final` (las 24 filas ya combinadas):
+
+```r
+tabla_final$valor_p_holm <- p.adjust(tabla_final$valor_p, method = "holm")
+```
+
+**Verificación:** se re-ejecutó `Rscript 07_Datos/scripts/run_all.R` de punta a punta (9/9 scripts OK) sobre el dataset de A1/A3. `pruebas_hipotesis_perfiles.csv` resultante tiene 24 filas. El valor p más bajo antes de corregir era 0.0245 (Dueño(a) de mascota vs. Médico veterinario(a), pregunta 6); tras la corrección Holm sobre las 24 comparaciones queda en 0.5885 — ninguna resulta significativa a α=0.05, coherente con el carácter exploratorio ya declarado en `07_tamano_efecto.R`/`justificacion_potencia.md`. Sin fallas en los scripts posteriores que consumen esta tabla.
+
+**(2) Margen de error tratado como muestreo aleatorio — Hallazgo:** `07_Datos/scripts/justificacion_muestra.R` calculaba un margen de error (`e = Z·√(p(1-p)/n)`) para n=210, fórmula válida solo bajo muestreo probabilístico de una población definida. La encuesta de este proyecto se distribuyó por conveniencia (enlace compartido, sin marco muestral), así que ese cálculo daba una precisión estadística que la recolección real no respalda.
+
+**Corrección:** se retiró por completo el cálculo de margen de error del script y de `justificacion_muestra.md` (ya no reporta ninguna cifra de margen de error ni tabla de "n mínimo requerido por margen objetivo"). En su lugar, el reporte reformulado explica por qué no aplica esa fórmula y remite al análisis de potencia real y ya existente (Cohen d=0.5, α=0.05, potencia=0.80) de `07_tamano_efecto.R` (Parte B) / `justificacion_potencia.md`, que sí es válido para un muestreo no probabilístico. Verificado regenerando el archivo con `run_all.R`: `07_Datos/resultados/justificacion_muestra.md` ya no menciona margen de error.
+
+**Fecha de esta corrección:** 20 de septiembre de 2026.
+
+**Confirmado por:** Amagua Sacón Robyn Willian.
+
+**Verificado por:** pendiente de confirmación por el resto del equipo.
+
+### A7 — Cifra de muestra (n) desactualizada o inconsistente en documentación — CORREGIDO (20/09/2026)
+
+**Hallazgo:** dos documentos tenían cifras de muestra desactualizadas o internamente inconsistentes con los datos de A1/A3:
+- `06_Experimento/README.md` declaraba "60 respuestas de cuestionario" y "ninguno [perfil] alcanza aún el mínimo n≥60", además de "1 de 10 scripts implementado" (el pipeline ya estaba completo, 9/9, según su propio `scripts_analisis/README.md`).
+- `06_Experimento/scripts_analisis/README.md` ya decía "n = 210" en el texto, pero el desglose por perfil que lo acompañaba (26/18/11/5) sumaba 60, no 210 — una inconsistencia aritmética interna.
+
+**Corrección aplicada:** ambos archivos se actualizaron con las cifras verificadas del dataset de A1/A3 (n=210; Dueño(a) de mascota 80, Administrador(a) de clínica veterinaria 45, Médico veterinario(a) 43, Auxiliar o técnico veterinario 42) y con el estado real del pipeline (9/9 scripts). `07_Datos/resultados/perfil_participantes_agregado.csv`, `README.md` raíz y `10_Autoria/retrospectiva_equipo.md` ya reportaban n=210 correctamente (el primero se regenera automáticamente con `run_all.R`) y no requirieron cambios.
+
+**Fecha de esta corrección:** 20 de septiembre de 2026.
+
+**Confirmado por:** Amagua Sacón Robyn Willian.
+
+**Verificado por:** pendiente de confirmación por el resto del equipo.
+
+### A8 — Limitaciones del instrumento no declaradas — CORREGIDO (20/09/2026)
+
+**Nota de corrección (20/09/2026):** una primera versión de este trabajo documentó, bajo la etiqueta "A8", el cambio de redacción del formulario ("clínica veterinaria" → "veterinaria"/"centro veterinario"). Ese hallazgo es real, pero al releer el texto literal del criterio A8 se confirmó que no es lo que pide: A8 exige declarar (1) que falta el tramo de experiencia "1–2 años" y (2) que el PDF del instrumento (30/07) es posterior a la primera respuesta (27/07). El hallazgo del cambio de redacción se mantiene como `desviaciones.md`, Desviación 6 (hallazgo independiente, no cuenta como A8); lo que sí cumple A8 se documentó como Desviación 7.
+
+**Hallazgo (verificado directamente, no por confianza en el texto del plan):**
+1. Las categorías reales de la pregunta de años de experiencia en `encuesta_respuestas_crudas.csv` (210 filas) son "Menos de 1 años", "De 2 a 5 años", "De 6 a 10 años", "Más de 10 años", "No aplica" — sin tramo "1–2 años".
+2. `CreationDate` de ambas copias del PDF del instrumento (`08_Etica/Encuesta_Consentimiento.pdf`, `06_Experimento/ instrumentos/Encuesta_Consentimiento_Formato_A1.pdf`) es 30/07/2026; la primera respuesta de la encuesta tiene marca temporal 27/07/2026 09:38:53 — 3 días antes.
+
+**Corrección aplicada:** ambos hallazgos quedan declarados en `07_Datos/desviaciones.md`, Desviación 7, con la evidencia y su consecuencia sobre la interpretación de los datos de experiencia y sobre cualquier afirmación de que el instrumento antecede a la recolección.
+
+**Fecha de esta corrección:** 20 de septiembre de 2026.
+
+**Confirmado por:** Amagua Sacón Robyn Willian.
+
+**Verificado por:** pendiente de confirmación por el resto del equipo.
+---
 ## Bloque C — Codificación, saturación y fiabilidad (C1–C5)
 
 **Fecha de esta corrección:** 20/09/2026
