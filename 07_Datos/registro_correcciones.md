@@ -124,3 +124,127 @@ Verificado contra fichas_tecnicas.csv y transcripciones_metadata.csv. Decisión 
 - **P09:** audio y vídeo con fecha de archivo 2026-08-27; transcripción y consentimiento fechados 2026-08-31 (fecha de procesamiento, no de sesión). **Corregido:** `Fecha de la sesión` → 2026-08-27, y el archivo se renombró de `2026-08-31_Transcripcion_P09_Entrevista.md` a `2026-08-27_Transcripcion_P09_Entrevista.md` para mantener la convención de nombre = fecha real de sesión.
 - **P04:** audio fechado 2026-07-25; vídeo (Parte1 y Parte2) fechado 2026-07-28 — la división en dos partes es indicio adicional de que el vídeo se procesó/exportó después. Se mantiene 2026-07-25 (fecha del audio) como fecha real de sesión. Sin cambios de archivo (ya usaba esa fecha).
 - **P07:** audio fechado 2026-07-27; vídeo fechado 2026-07-28. Mismo criterio: se mantiene 2026-07-27 (fecha del audio). Sin cambios de archivo (ya usaba esa fecha).
+
+---
+
+## Bloque G — Ética y protección de datos personales
+
+### G1 — Datos personales retirados del árbol actual — CORREGIDO (19/09/2026)
+
+**Hallazgo 1 (cédulas):** `08_Etica/Solicitud_Aprobacion_Etica_SGCV-IA.pdf`, página 4 ("Nómina del equipo estudiantil"), exponía las cédulas de identidad reales de los 5 integrantes del equipo.
+
+**Corrección aplicada:** se generó una versión redactada del PDF (`Solicitud_Aprobacion_Etica_SGCV-IA.pdf`, misma ruta) en la que las 5 cédulas se eliminaron del contenido del documento mediante redacción real (no un tachado visual: el texto ya no es extraíble ni buscable en el PDF resultante). Se verificó, tras la redacción, que ninguna de las 5 cadenas de cédula es recuperable con búsqueda de texto sobre el PDF. El resto del contenido del oficio (nombres, correos, roles, cuerpo normativo) no se modificó.
+
+**Hallazgo 2 (nombres de clínicas en nombres de archivo):** los 19 archivos de `02_Evidencias/Fotos_Entorno/` incluían el nombre de la clínica en el propio nombre de archivo (ej. `2026-07-27_Veterinaria911Animal_Recepcion_01.jpeg`), para 6 clínicas de las cuales solo una (Veterinaria Macay) cuenta con un principio de aval institucional (ver G3, aún sin firmar).
+
+**Corrección aplicada:** se renombraron los 19 archivos a un esquema anonimizado `Clinica01`…`Clinica06` que conserva la fecha y el tipo de foto (Exterior, Recepción, Consultorio, Atención Veterinaria) pero no el nombre de la clínica. Se actualizaron en consecuencia las 19 líneas correspondientes de `checksums.sha256` y las 19 líneas de `10_Autoria/exif_inventario.csv` (mismo hash SHA-256 por archivo; solo cambia la ruta/nombre). El mapeo real clínica↔código se mantiene **fuera del repositorio público**, en poder del equipo, y no se publica en `registro_correcciones.md` porque hacerlo anularía la anonimización.
+
+**Nota sobre el alcance de esta corrección:** conforme a la Regla 1 del plan de mejora de datos, esta corrección solo retira los datos personales del **árbol actual** (commit nuevo). Las cédulas y los nombres de clínica en los nombres de archivo originales permanecen visibles en los commits anteriores del historial de git. La limpieza de historial (`git filter-repo` o equivalente) es la única excepción permitida a "no reescribir el historial", y el plan exige coordinarla con el docente y obtener su autorización escrita antes de ejecutarla. **Pendiente:** solicitar esa autorización.
+
+**Hallazgo 3 (cédulas en otros dos documentos, no detectado en la primera revisión):** tras corregir `Solicitud_Aprobacion_Etica_SGCV-IA.pdf`, se hizo una búsqueda de las 5 cédulas sobre **todos** los PDF de `08_Etica/` (no solo ese archivo). Aparecían también en `A09_Anexo.pdf` (Nómina del Equipo Estudiantil) y dos veces dentro de `SGCV-IA_Carpeta_Etica.pdf` (documento consolidado de 38 páginas, páginas 2 y 28 — la misma tabla de nómina repetida). Se detectó además que en estos dos documentos la cédula de Robyn Amagua Sacón está escrita con un dígito de menos (`125123430`, 9 dígitos) respecto a la versión correcta (`1251323430`, 10 dígitos) — un error de tipeo preexistente, no introducido por esta corrección, que no afecta la necesidad de taparla.
+
+**Corrección aplicada:** se redactaron (texto no extraíble, no solo tachado visual) las 5 cédulas en `A09_Anexo.pdf` (5 coincidencias) y en las 2 apariciones de la tabla dentro de `SGCV-IA_Carpeta_Etica.pdf` (10 coincidencias). Verificado por búsqueda de texto tras la redacción: ninguna de las 6 variantes de cédula (las 5 correctas + la versión con el dígito faltante) es recuperable en ninguno de los dos archivos.
+
+**Verificado que `Aval_Institucional.pdf` no contiene ninguna cédula** (solo nombres, RUC de la clínica y firma) — no necesitaba corrección en G1.
+
+### G3 — Aval institucional de Veterinaria Macay — CORREGIDO (19/09/2026)
+
+**Hallazgo original:** `08_Etica/Aval_Institucional.pdf` era un formato sin fecha, cargo, RUC ni firma, y cubría una sola clínica de las 6 donde el equipo recolectó evidencia.
+
+**Corrección aplicada (en 3 entregas sucesivas del equipo, verificadas cada una):**
+1. Primera versión recibida: RUC (`0958312653001`) y firma + sello del Dr. Bryan Macay ya presentes; fecha y cargo seguían en blanco.
+2. Segunda versión: se agregó la fecha (`19 de 09 de 2026`); el cargo seguía en blanco — verificado con zoom sobre la línea "en mi calidad de ___", que no tenía nada escrito.
+3. Versión final: se agregó el cargo (**"Dueño"**) en la línea "en mi calidad de ___". Verificado con zoom: los 4 campos (fecha, cargo, RUC, firma+sello) están completos.
+
+**Documento final:** `08_Etica/Aval_Institucional.pdf` (reemplaza al original), con: Quevedo, 19 de 09 de 2026; Bryan Macay, en su calidad de Dueño de Veterinaria Macay, RUC 0958312653001; firmado y sellado (Md. Macay Macías Bryan, Médico Veterinario, Telf. 096 995 6188).
+
+**Alcance de lo que queda resuelto:** solo el aval de Veterinaria Macay. Las otras 5 clínicas donde el equipo recolectó fotos/entrevistas (ver G1) siguen sin aval institucional — declarado como limitación conocida en `desviaciones.md` ("Declaración — Cobertura real de avales institucionales por clínica"), no como algo pendiente de resolver aquí.
+
+**Fecha de esta corrección:** 19 de septiembre de 2026.
+
+**Confirmado por:** Anthony Alfredo Vera Gómez, verificando cada campo del documento por zoom antes de aceptar cada entrega como completa.
+
+### G6 — Estado real de la aprobación ética declarado — CORREGIDO (19/09/2026)
+
+**Hallazgo:** `08_Etica/Adenda_Segunda_Ronda.pdf` afirmaba que la segunda ronda se ejecuta "bajo el mismo marco ético ya aprobado", pero no existe en el repositorio ninguna comunicación oficial del Vicerrectorado Académico que apruebe el proyecto — solo la solicitud (`Solicitud_Aprobacion_Etica_SGCV-IA.pdf`), con su campo de fecha sin completar.
+
+**Corrección aplicada:** se sustituyó "ya aprobado" por "ya iniciado" en el PDF de la Adenda. Se agregó una declaración completa del estado real del trámite en `07_Datos/desviaciones.md` ("Declaración — Estado real de la aprobación ética institucional"), incluyendo qué falta (fecha de envío del oficio, respuesta oficial con número de acta/resolución).
+
+**Pendiente:** el docente responsable es quien puede confirmar si existe una respuesta del Vicerrectorado no reflejada en este repositorio.
+
+### G7 — Identificadores externos e inconsistencia de fechas — CORREGIDO (19/09/2026)
+
+**Hallazgo 1 (nota desactualizada en el README raíz):** la nota de consistencia de `README.md` (identificadores externos) afirmaba que `11_Defensa/guion.md`, `presentacion.pptx`, `06_Experimento/README.md` y `06_Experimento/prompts_llm/README.md` "todavía citan" un DOI Zenodo y un OSF distintos (`22238486` / `wkg32`). Se verificó archivo por archivo (búsqueda de texto en los `.md` y extracción de texto de cada shape del `.pptx`) y ninguno de los cuatro contiene ya esos identificadores antiguos: los cuatro usan `osf.io/r5p8d` y `10.5281/zenodo.22558095`. La nota estaba desactualizada.
+
+**Corrección aplicada:** se reescribió la nota de consistencia del `README.md` raíz para reflejar el estado real verificado, y se conservó como pendiente real lo que sí sigue sin resolver: la verificación directa de `r5p8d`/`22558095` contra los sitios de OSF y Zenodo (no solo por consistencia interna entre documentos).
+
+**Hallazgo 2 (fecha del registro OSF posterior al inicio de la recolección):** el registro en OSF (`06_Experimento/OSF_Registration.pdf`) muestra fecha de registro 01/08/2026 y estado "Currently Archiving". Se contrastó contra las fechas reales de las 16 entrevistas y la primera respuesta de la encuesta (27/07/2026): el registro es posterior a 8 de las 16 entrevistas (P01–P08) y al inicio de la encuesta, y anterior a las otras 8 (P09–P16).
+
+**Corrección aplicada:** se documentó como Desviación 4 en `07_Datos/desviaciones.md`, con el detalle de qué parte del estudio sí queda protegida por el registro previo (P09–P16) y cuál no (P01–P08 y la encuesta).
+
+### G4 — Consentimientos originales P01–P16 — NO COMPLETADO (19/09/2026)
+
+**Qué pedía la tarea:** entregar en físico al docente los consentimientos originales firmados de P01–P16; explicar la sustitución del 16/09 de los consentimientos de P11–P16 (sus hashes ya no coinciden con `fichas_tecnicas.csv`); aportar el formulario original de P02 (el archivo actual es una captura); declarar que se grabó vídeo aunque el consentimiento firmado solo cubre audio.
+
+**Por qué no se completó:** la entrega física de los 16 originales requiere verlos en persona con el docente, y el equipo no ha podido coordinar esa reunión antes del corte de este documento. Sin esa instancia presencial no se puede cotejar el original contra el escaneo, ni el equipo puede recuperar por su cuenta el formulario original de P02 (solo existe la captura) ni reconstruir por qué se sustituyeron los archivos de P11–P16 el 16/09 sin preguntarle a quien hizo ese cambio.
+
+**Estado de cada punto:**
+- Consentimientos originales P01–P16: pendiente de entrega física — sin fecha agendada.
+- Sustitución del 16/09 en P11–P16 (hashes no coinciden con `fichas_tecnicas.csv`): sin explicar, se solicitó al equipo (ver coordinación interna) y no ha habido respuesta.
+- Formulario original de P02: no localizado; solo existe la captura actual.
+- Declaración vídeo-sin-consentimiento-de-vídeo: sin confirmar por el equipo todavía.
+
+**Consecuencia:** esta tarea queda sin puntos (coeficiente "Por iniciar" según la rúbrica del plan, sección 2, salvo que se resuelva antes de la revisión). Se declara así, en vez de omitirla, para que el correo de entrega (punto 4 de la sección "Entrega" del plan) refleje la razón real por la que no se pudo cumplir.
+
+**Fecha de esta declaración:** 19 de septiembre de 2026, por Anthony Alfredo Vera Gómez.
+
+### G5 — Fecha real de redacción de las notas de campo — RESUELTO (19/09/2026)
+
+**Hallazgo original:** las 16 notas de campo (`10_Autoria/notas_campo/P01_Nota_Campo.pdf`…`P16_Nota_Campo.pdf`) se escanearon y subieron el mismo día, 12/09/2026, con formato idéntico (metadato `creationDate` del escáner: `D:20260912081606-05'00'` en las 16, productor "Epson Scan 2"). Esto por sí solo era indistinguible de una reconstrucción posterior en bloque.
+
+**Verificación realizada:** se abrió cada una de las 16 notas (no una muestra) y se leyó el campo manuscrito "Fecha" del encabezado de cada una, contrastándolo contra la fecha real de la entrevista correspondiente (`02_Evidencias/Transcripciones/`, ya verificada en B1/B7):
+
+| Participante | Fecha manuscrita en la nota | Fecha real de la entrevista | Coincide |
+|---|---|---|---|
+| P01 | 2026-05-26 | 2026-05-26 | Sí |
+| P02 | 2026-05-26 | 2026-05-26 | Sí |
+| P03 | 2026-07-21 | 2026-07-21 | Sí |
+| P04 | 2026-07-25 | 2026-07-25 | Sí |
+| P05 | 2026-07-25 | 2026-07-25 | Sí |
+| P06 | 2026-07-27 | 2026-07-27 | Sí |
+| P07 | 2026-07-27 | 2026-07-27 | Sí |
+| P08 | 2026-07-28 | 2026-07-28 | Sí |
+| P09 | 2026-08-27 | 2026-08-27 (fecha de sesión, ver B7) | Sí |
+| P10 | 2026-08-31 | 2026-08-31 | Sí |
+| P11 | 2026-08-31 | 2026-08-31 | Sí |
+| P12 | 2026-08-31 | 2026-08-31 | Sí |
+| P13 | 2026-08-31 | 2026-08-31 | Sí |
+| P14 | 2026-08-31 | 2026-08-31 | Sí |
+| P15 | 2026-08-31 | 2026-08-31 | Sí |
+| P16 | 2026-08-31 | 2026-08-31 | Sí |
+
+Las 16 notas ya traían, antes de esta corrección, un campo de fecha visible que coincide exactamente con la fecha real de cada entrevista — distinto en cada caso, no una fecha uniforme. El 12/09/2026 corresponde únicamente al metadato de escaneo (cuándo se digitalizaron los 16 papeles ya escritos), no a cuándo se redactaron.
+
+**Declaración del equipo sobre cuándo se escribieron:** confirmado por Anthony Alfredo Vera Gómez que las 16 notas se redactaron a mano el mismo día de cada entrevista (o inmediatamente después, en el sitio), y que el 12/09/2026 fue solo la fecha en que se juntaron y escanearon los 16 papeles físicos ya existentes.
+
+**Conclusión:** el criterio de aceptación ("fecha de redacción visible en cada nota") ya se cumplía en el contenido de las notas; no correspondía rotular ninguna como "reconstrucción posterior", porque según lo declarado por el equipo no hubo redacción posterior a la entrevista.
+
+**Fecha de esta corrección:** 19 de septiembre de 2026.
+
+**Confirmado por:** Anthony Alfredo Vera Gómez.
+
+**Verificado por:** pendiente de confirmación por el resto del equipo (quienes tomaron cada nota en el terreno).
+
+### G2 — Datos confidenciales retirados del árbol público — CORREGIDO (19/09/2026)
+
+**Hallazgo:** `07_Datos/LICENSE-DATA.txt` declara que `datos_crudos/encuesta_respuestas_crudas.csv` y `datos_crudos/Entrevistas/*.md` "NO se publican ni se depositan en ningún repositorio público" y que las transcripciones completas van solo en el contenedor cifrado. En la práctica estaban públicas en dos lugares: `07_Datos/datos_crudos/` (1 CSV + 16 `.md`) y duplicadas en `02_Evidencias/Transcripciones/` (16 `.md`). Se confirmó que el repositorio es público (se clona sin credenciales), por lo que esto era una exposición real de contenido literal de las 16 entrevistas, no un riesgo teórico.
+
+**Corrección aplicada:** se retiraron del árbol público los 33 archivos (`encuesta_respuestas_crudas.csv`, los 16 `.md` de `datos_crudos/Entrevistas/`, y los 16 `.md` de `02_Evidencias/Transcripciones/`). No se reescribió `LICENSE-DATA.txt`: su texto ya describía correctamente la política que debía regir; el problema era que el repositorio no la cumplía, no que el texto estuviera mal.
+
+**Consecuencia sobre otra tarea del plan (nota, no resuelta aquí):** `07_Datos/scripts/importar_datos.R` lee directamente estos mismos archivos, y la tarea A5 exige que la cadena de análisis sea "reproducible con `run_all.R` en una instalación limpia". Al retirar los archivos del árbol público, esa reproducibilidad deja de cumplirse para quien clone el repositorio sin acceso al contenedor cifrado `02_Evidencias/00_Restringido/`. Esto se deja señalado aquí y en `desviaciones.md`; resolverlo (por ejemplo, incorporando estos archivos al contenedor cifrado y ajustando el script) corresponde a cuando se trabaje el Bloque A, no a esta corrección.
+
+**Fecha de esta corrección:** 19 de septiembre de 2026.
+
+**Confirmado por:** Anthony Alfredo Vera Gómez.
+
+**Verificado por:** pendiente de confirmación por el resto del equipo.
