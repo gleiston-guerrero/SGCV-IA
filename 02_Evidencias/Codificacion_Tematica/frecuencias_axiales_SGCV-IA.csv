@@ -1,0 +1,51 @@
+Categoria_axial,Codigo_axial,N_participantes,N_total_corpus,Frecuencia,Porcentaje,Participantes
+Historia clínica y gestión de pacientes,"Registro clínico no digitalizado o disperso (físico, Word, ofimática, plataformas básicas)",13,16,13/16,81.2,"P01,P02,P03,P04,P05,P06,P09,P10,P11,P12,P13,P14,P15"
+Historia clínica y gestión de pacientes,Búsqueda lenta o poco confiable del historial,11,16,11/16,68.8,"P01,P03,P04,P05,P09,P10,P11,P12,P14,P15,P16"
+Usabilidad y desempeño,"Preferencia de acceso multiplataforma/móvil (celular, laptop, tablet)",11,16,11/16,68.8,"P01,P03,P04,P05,P06,P08,P09,P11,P12,P13,P15"
+Inteligencia Artificial,Aceptación variable de IA diagnóstica (de moderada a alta),10,16,10/16,62.5,"P02,P03,P09,P10,P11,P12,P13,P14,P15,P16"
+Citas y comunicación con propietarios,Impacto de inasistencias y pérdida de seguimiento,9,16,9/16,56.2,"P01,P05,P09,P10,P11,P12,P13,P14,P16"
+Inteligencia Artificial,Validación/revisión obligatoria del veterinario sobre sugerencias de IA,9,16,9/16,56.2,"P01,P03,P04,P06,P07,P10,P11,P13,P14"
+Gestión administrativa y financiera,Errores y demoras de facturación por procesos manuales,8,16,8/16,50.0,"P09,P10,P11,P12,P13,P14,P15,P16"
+Citas y comunicación con propietarios,Canales informales de comunicación con propietarios (WhatsApp/teléfono),7,16,7/16,43.8,"P01,P02,P03,P09,P12,P13,P14"
+Inventario,Falta de alertas automáticas de vencimiento/revisión oportuna,7,16,7/16,43.8,"P01,P08,P10,P11,P12,P13,P16"
+Inventario,Ausencia de control de inventario formal (manual/inexistente),5,16,5/16,31.2,"P02,P03,P04,P09,P15"
+Citas y comunicación con propietarios,Bajo cumplimiento de indicaciones médicas y seguimiento post-alta,4,16,4/16,25.0,"P03,P04,P06,P07"
+Inteligencia Artificial,"Condiciones de confianza en IA (literatura validada, revisión, actualizaciones, protección de datos)",4,16,4/16,25.0,"P08,P13,P15,P16"
+Historia clínica y gestión de pacientes,Registro histórico de peso y estado nutricional,4,16,4/16,25.0,"P05,P07,P09,P14"
+Citas y comunicación con propietarios,Automatización de recordatorios de citas,3,16,3/16,18.8,"P05,P08,P09"
+Historia clínica y gestión de pacientes,Captura de datos del propietario/paciente incompleta o progresiva,3,16,3/16,18.8,"P02,P06,P07"
+Citas y comunicación con propietarios,Falta de estandarización y roles indefinidos en la comunicación (auxiliar vs. veterinario),3,16,3/16,18.8,"P11,P15,P16"
+Inteligencia Artificial,Rechazo al diagnóstico automatizado sin evaluación física,3,16,3/16,18.8,"P03,P05,P09"
+Inventario,Registro de inventario en herramientas no integradas (plataforma externa/Excel),3,16,3/16,18.8,"P05,P07,P14"
+Historia clínica y gestión de pacientes,Seguimiento clínico configurable según edad/patología,3,16,3/16,18.8,"P03,P04,P08"
+Historia clínica y gestión de pacientes,Control y recordatorio de vacunación,2,16,2/16,12.5,"P07,P13"
+Historia clínica y gestión de pacientes,Ficha clínica estructurada con campos estándar y registro detallado de tratamientos,2,16,2/16,12.5,"P03,P06"
+Gestión administrativa y financiera,Necesidad de módulo contable y costo como barrera de adopción,2,16,2/16,12.5,"P02,P07"
+Usabilidad y desempeño,Necesidad de permisos diferenciados por usuario y respaldo de información,2,16,2/16,12.5,"P14,P16"
+Citas y comunicación con propietarios,Necesidad de un proceso organizado/historial de comunicaciones,2,16,2/16,12.5,"P10,P14"
+Historia clínica y gestión de pacientes,Priorización de un sistema centralizado de historial y seguimiento de citas,2,16,2/16,12.5,"P04,P10"
+Seguridad,Protección de datos del paciente/propietario,2,16,2/16,12.5,"P05,P12"
+Citas y comunicación con propietarios,Recordatorios de tareas médicas y vacunación,2,16,2/16,12.5,"P06,P07"
+Gestión administrativa y financiera,Validación de datos y automatización de la facturación (incl. integración SRI),2,16,2/16,12.5,"P05,P07"
+Usabilidad y desempeño,Adopción por todo el personal de la clínica (no solo veterinarios),1,16,1/16,6.2,P03
+Citas y comunicación con propietarios,Ausencia de agenda formal de citas,1,16,1/16,6.2,P15
+Inteligencia Artificial,Automatización de mensajería/chatbot para gestión de citas,1,16,1/16,6.2,P08
+Usabilidad y desempeño,Carga de monitoreo en pacientes hospitalizados,1,16,1/16,6.2,P04
+Inteligencia Artificial,Cálculo asistido de dosis por peso,1,16,1/16,6.2,P03
+Inteligencia Artificial,Desconfianza en fuentes de internet no validadas usadas por propietarios,1,16,1/16,6.2,P13
+Historia clínica y gestión de pacientes,Duplicación manual de datos ya existentes en fichas anteriores,1,16,1/16,6.2,P13
+Seguridad,Estabilidad y confiabilidad operativa del sistema,1,16,1/16,6.2,P06
+Usabilidad y desempeño,Experiencia previa positiva con software veterinario,1,16,1/16,6.2,P09
+Usabilidad y desempeño,Facilidad de uso sin experiencia digital y bajo costo,1,16,1/16,6.2,P02
+Inventario,Faltantes de stock por logística de pedidos,1,16,1/16,6.2,P07
+Usabilidad y desempeño,Frecuencia variable de cortes de conectividad en la clínica,1,16,1/16,6.2,P15
+Gestión administrativa y financiera,Gestión de tareas operativas del personal auxiliar,1,16,1/16,6.2,P11
+Inteligencia Artificial,Interés en IA como apoyo para reducir carga de trabajo,1,16,1/16,6.2,P12
+Usabilidad y desempeño,Lentitud del sistema de facturación actual,1,16,1/16,6.2,P01
+Citas y comunicación con propietarios,Modalidad mixta de atención (con y sin cita previa),1,16,1/16,6.2,P03
+Usabilidad y desempeño,Necesidad de sincronización de datos en modo offline,1,16,1/16,6.2,P16
+Historia clínica y gestión de pacientes,Registro fotográfico de evolución clínica vinculado a la ficha,1,16,1/16,6.2,P15
+Usabilidad y desempeño,Riesgo de abandono de la herramienta si requiere demasiados pasos,1,16,1/16,6.2,P10
+Gestión administrativa y financiera,Sobrecarga administrativa/operativa sin personal de apoyo,1,16,1/16,6.2,P03
+Seguridad,Trazabilidad de cambios (registro de quién modificó la información),1,16,1/16,6.2,P12
+Citas y comunicación con propietarios,Verificación del cumplimiento mediante evidencia,1,16,1/16,6.2,P08
