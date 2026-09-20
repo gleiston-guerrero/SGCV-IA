@@ -49,16 +49,16 @@ El documento del protocolo utilizado en el proyecto se encuentra en [`Protocolo_
 
 1. Los instrumentos aplicados (guion de entrevista, encuesta y consentimiento) se encuentran en [` instrumentos/`](./ instrumentos/).
 2. Los resultados generados hasta ahora se encuentran en [`resultados/`](./resultados/) (curva de saturación temática).
-3. Los scripts que generan las tablas y figuras se encuentran en [`scripts_analisis/`](./scripts_analisis/). Su estado y la secuencia prevista están documentadas en el `README.md` de esa subcarpeta (actualmente 1 de 10 scripts implementado).
+3. Los scripts que generan las tablas y figuras se encuentran en [`scripts_analisis/`](./scripts_analisis/). Su estado está documentado en el `README.md` de esa subcarpeta (9 de 9 scripts implementados, integrados a `07_Datos/scripts/run_all.R`).
 4. [`prompts_llm/`](./prompts_llm/) no aplica a este proyecto: corresponde a los Enfoques 1 y 2 de la guía, que involucran comparación directa con salidas de un LLM. El detalle está en el `README.md` de esa carpeta.
 
 > El paquete de datos crudos y procesados (transcripciones, respuestas de cuestionario) vive en `07_Datos/`, fuera de esta carpeta.
 
 ## Estado de la Entrega 4 (2B)
 
-* Trabajo de campo cerrado: 16 entrevistas y 60 respuestas de cuestionario (repartidas en 4 perfiles; ninguno alcanza aún el mínimo n≥60 por perfil dominante).
+* Trabajo de campo cerrado: 16 entrevistas y 210 respuestas de cuestionario (repartidas en 4 perfiles: Dueño(a) de mascota 80, Administrador(a) de clínica veterinaria 45, Médico veterinario(a) 43, Auxiliar o técnico veterinario 42; el perfil dominante ya supera el mínimo n≥60 — ver `07_Datos/resultados/justificacion_muestra.md`).
 * Codificación temática cerrada y verificada: 50 códigos axiales en 7 categorías.
-* Scripts de análisis en construcción (1 de 10 implementados).
+* Scripts de análisis completos (9 de 9 implementados).
 * Manuscrito con contenido sustantivo en `09_Publicacion/`, con pendientes puntuales antes del envío.
 
 ## Estructura del repositorio
