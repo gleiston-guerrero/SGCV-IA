@@ -48,7 +48,7 @@ TR-46,ISO/IEC 25010,—,Transversal (OE-01/02/03),Equipo de desarrollo,—,RNF-1
 TR-47,ISO/IEC 25010,—,Transversal (OE-01/02/03),Personal administrativo,"EV-07,EV-13,EV-18",RNF-15,Transversal,HU-18,CA-18,Frontend Web/Móvil,Transversal,Principal,Flujo principal / requisito base
 TR-48,LOPDP,Art. 10 lit. i),Transversal (LOPDP),Comité de ética / protección de datos (LOPDP),—,RNF-16,Transversal,—,—,Infraestructura/Backend,No aplica,Principal,Flujo principal / requisito base
 TR-49,LOPDP,"Art. 43, 46",Transversal (LOPDP),Comité de ética / protección de datos (LOPDP),—,RNF-17,Transversal,—,—,Infraestructura/Backend,No aplica,Principal,Flujo principal / requisito base
-TR-50,LOPDP,Art. 20,OE-02,Médico veterinario,"EV-01,EV-02",RNF-18,CU-06,HU-16,CA-16,Módulo IA Diagnóstico,MU-010_Sugerencia_IA,Principal,Flujo principal / requisito base
+TR-50,LOPDP,Art. 20,OE-02,Médico veterinario,"EV-01,EV-02",RNF-18,CU-06,HU-16,CA-31,Módulo IA Diagnóstico,MU-010_Sugerencia_IA,Principal,Flujo principal / requisito base
 TR-51,—,—,Transversal,Equipo de desarrollo,EV-01,RST-01,Transversal,—,—,Infraestructura/Backend,No aplica,Principal,Flujo principal / requisito base
 TR-52,—,—,Transversal,Equipo de desarrollo,"EV-05,EV-18",RST-02,CU-01,HU-01,CA-01,Módulo Autenticación/Usuarios,Transversal,Principal,Flujo principal / requisito base
 TR-53,—,—,Transversal,Equipo de desarrollo,"EV-15,EV-16",RST-03,Transversal,HU-26,CA-26,Infraestructura/Backend,No aplica,Principal,Flujo principal / requisito base
