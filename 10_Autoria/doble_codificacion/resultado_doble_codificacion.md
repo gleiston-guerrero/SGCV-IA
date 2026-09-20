@@ -1,54 +1,93 @@
-# A7 — Doble codificación independiente (resultado y coeficiente de acuerdo)
+# C5 — Doble codificación independiente a nivel de código axial
 
-Proyecto SGCV-IA — Entrega 4 (2B). Cumplimiento del ítem A7 de la Guía de Desarrollo y del ítem 1 de la Sección 5 ("doble codificación independiente de al menos el 20% de las 16 transcripciones").
+Reemplaza la versión de `resultado_doble_codificacion.md` que comparaba
+presencia/ausencia de las 7 categorías amplias (κ=0,36, IC 95% [-0,32, 1,04]).
+Esa versión no cumplía el criterio de aceptación del plan de mejora
+("κ por código, no por presencia de categorías"): con solo 7 categorías,
+que además corresponden a las 7 secciones del guion de entrevista, el
+acuerdo esperado por azar ya era altísimo (pe=0,83), lo que deprimía el
+kappa sin que aportara información real sobre fiabilidad.
 
-## 1. Diseño del ejercicio
+## Método
 
-- **Subconjunto codificado:** P02, P07, P13, P16 (4 de 16 entrevistas = 25%, por encima del mínimo del 20% exigido).
-- **Codificador 1:** Alberto Jeanpool Marcillo Ponce (codificación original del proyecto, ya integrada al corpus completo de 167 códigos).
-- **Codificador 2:** Jhon Alexander Mesías Quijije, codificación realizada de forma independiente, sin acceso previo a `codificacion_tematica_SGCV-IA.csv` ni a ningún archivo de codificación existente, usando únicamente las transcripciones y el instrumento `Guion_Entrevista_v2_0.pdf` como referencia de contexto.
-- **Unidad de comparación:** presencia/ausencia de cada una de las 7 categorías finales del proyecto, por participante (4 participantes × 7 categorías = 28 observaciones). Se eligió esta unidad, y no el fragmento individual, porque los dos codificadores segmentaron el texto de forma distinta (diferente número y límites de fragmentos por transcripción); comparar la presencia de categoría por participante es la unidad más fina que ambas codificaciones permiten comparar sin forzar un alineamiento subjetivo fragmento por fragmento.
+- **Subconjunto codificado:** P02, P07, P13, P16 (25% del corpus).
+- **Codificador 1:** Alberto Jeanpool Marcillo Ponce (codificación original,
+  43 fragmentos).
+- **Codificador 2:** Jhon Alexander Mesías Quijije (codificación
+  independiente, 77 fragmentos), sin acceso previo a la codificación de
+  Marcillo.
+- **Unidad de comparación:** presencia/ausencia de cada **código axial**
+  (el mismo codebook de 50 códigos usado en C1/C2), por participante — no
+  las 7 categorías amplias. Se evita forzar un alineamiento fragmento a
+  fragmento (los dos codificadores segmentaron distinto) clasificando cada
+  fragmento de cada codificador, por separado, contra el mismo codebook
+  fijo de 50 códigos; la comparación es sobre esa clasificación, no sobre
+  los fragmentos en bruto.
+- **Universo comparado:** 32 de los 50 códigos axiales — los que al menos
+  un codificador marcó presente para al menos uno de los 4 participantes.
+  Los 18 códigos restantes del codebook no aparecen para ninguno de los
+  dos en este subconjunto y se excluyen para no inflar el acuerdo con
+  ceros triviales.
 
-## 2. Resultado
+## Resultado
 
 | Métrica | Valor |
 |---|---|
-| N (participante × categoría) | 28 |
-| Acuerdo observado (bruto) | 89,3% (25/28) |
-| Acuerdo esperado por azar | 83,2% |
-| **Kappa de Cohen** | **0,36** |
-| IC 95% | [-0,32, 1,04] |
+| N (participante × código axial) | 128 |
+| Acuerdo observado | 81,25% (104/128) |
+| Acuerdo esperado por azar | 50,84% |
+| **Kappa de Cohen** | **0,619** |
+| IC 95% | [0,481, 0,756] |
 
-Calculado por `calcular_kappa.py` a partir de las dos hojas de codificación (`hoja_codificador1_Marcillo.csv`, `hoja_codificador2_Mesias.csv`); ningún número de esta tabla se escribió a mano.
+Nivel "moderado a sustancial" (Landis y Koch, 1977), con un intervalo de
+confianza que no cruza cero — a diferencia de la versión por categoría,
+sí permite afirmar con razonable precisión que el acuerdo es real y no
+producto del azar.
 
-## 3. Interpretación
+## Los 24 desacuerdos
 
-El acuerdo bruto entre los dos codificadores es alto (89,3%: coincidieron en 25 de 28 juicios de presencia/ausencia de categoría). Sin embargo, el coeficiente kappa resultante (0,36) corresponde a un nivel "aceptable/moderado" según las escalas estándar (Landis y Koch, 1977), no "alto" — una diferencia que puede parecer contraintuitiva frente al acuerdo bruto.
+De los 24 desacuerdos, **22 son del mismo tipo**: Mesías marcó presente un
+código que Marcillo no había extraído para ese participante (Marcillo=0,
+Mesías=1). Solo 2 van en sentido contrario (Marcillo=1, Mesías=0):
+"Registro de inventario en herramientas no integradas" (P02) y
+"Condiciones de confianza en IA" (P16).
 
-Esto se debe a un efecto estadístico conocido como la **paradoja del kappa** (Feinstein y Cicchetti, 1990): cuando la distribución de las categorías está muy desbalanceada —en este caso, 24 de las 28 observaciones son "ambos codificadores marcan la categoría como presente"—, el acuerdo esperado únicamente por azar (pe) ya es muy alto (83,2%), y el kappa "descuenta" ese acuerdo esperado, produciendo un valor más bajo del que el acuerdo bruto sugeriría. No es un error de cálculo ni indica necesariamente baja fiabilidad real; es una limitación conocida del propio coeficiente cuando la prevalencia de las categorías es muy asimétrica.
+Esto es consistente con lo ya observado en la versión anterior de este
+documento: **diferencia de cobertura/selección de fragmentos**, no de
+interpretación del contenido. Mesías extrajo más fragmentos por
+transcripción (77 vs. 43) y por lo tanto detectó más códigos; no hay
+ningún caso en el que ambos codificadores hayan visto el mismo contenido
+y lo hayan clasificado en códigos axiales incompatibles entre sí.
 
-**Los 3 desacuerdos concretos**, para trazabilidad:
+## Hallazgo adicional: cobertura del codebook
 
-| Participante | Categoría | Marcillo | Mesías |
-|---|---|---|---|
-| P07 | Gestión administrativa y financiera | Ausente | Presente |
-| P07 | Inventario | Ausente | Presente |
-| P16 | Seguridad | Ausente | Presente |
+Al clasificar los fragmentos de Mesías contra el codebook de 50 códigos,
+**16 de sus 77 fragmentos (≈21%)** no encajan con claridad en ningún
+código axial existente — por ejemplo, contenido sobre orientación
+nutricional verbal no estandarizada, ajuste remoto de medicación por
+teléfono, o menciones de ausencia de un problema (conectividad estable,
+revisión de inventario que sí funciona) que el codebook actual solo
+registra en su forma positiva (el problema existe), no en su ausencia.
+Esto no entra en el cálculo de kappa (no se fuerza a ningún código
+existente), pero es un hallazgo legítimo de C1/C5 conjuntas: **el codebook
+de 50 códigos, construido principalmente sobre la codificación de
+Marcillo, no cubre por completo lo que un segundo codificador
+independiente encuentra en las mismas transcripciones.**
 
-Revisando los fragmentos fuente, el mecanismo detrás de estos desacuerdos no es idéntico en los tres casos:
+## Limitación declarada
 
-- **P16 / Seguridad:** sí corresponde a una diferencia de granularidad en la clasificación. Marcillo registró un fragmento de P16 sobre protección de datos ("que los datos no se compartan con terceros") pero lo codificó dentro de "Inteligencia Artificial" en lugar de "Seguridad", mientras que Mesías capturó una mención equivalente como fragmento independiente bajo "Seguridad". Es decir, el contenido sí fue registrado por ambos codificadores, solo que Marcillo lo subsumió bajo otra categoría.
-- **P07 / Gestión administrativa y financiera y P07 / Inventario:** en estos dos casos no se encontró, dentro de los fragmentos de Marcillo para P07, ninguna mención a facturación o inventario clasificada bajo otra categoría. Todo indica que Marcillo simplemente no seleccionó ningún fragmento de esa transcripción sobre esos temas, mientras que Mesías sí lo hizo. Esto es una diferencia de cobertura/selección de fragmentos entre codificadores, no una reclasificación del mismo contenido, y debe leerse como tal.
+La clasificación de los fragmentos de ambos codificadores contra el
+codebook de 50 códigos la hizo una tercera persona (no Marcillo ni
+Mesías) aplicando el mismo criterio de contenido usado en C1. Es un paso
+adicional de interpretación entre "lo que cada codificador escribió" y
+"el código axial correspondiente", y por tanto una fuente de error
+independiente de la fiabilidad Marcillo–Mesías que se quiere medir. Sería
+preferible que cada codificador clasificara sus propios fragmentos
+directamente contra el codebook de 50 códigos, sin este paso intermedio,
+en una repetición futura del ejercicio.
 
-En ningún caso hay contradicción sobre el contenido de lo que dijo el participante; los tres desacuerdos reflejan variabilidad normal entre codificadores independientes al decidir qué fragmentos extraer y bajo qué categoría agruparlos.
+## Archivos
 
-## 4. Limitación reconocida
-
-El intervalo de confianza al 95% ([-0,32, 1,04]) es muy amplio y cruza el cero, reflejo del tamaño de muestra reducido (28 observaciones). Esto significa que el valor puntual de kappa (0,36) debe interpretarse con cautela: la muestra no permite afirmar con precisión estadística si el verdadero nivel de acuerdo es bajo, moderado o alto. Ampliar el subconjunto de doble codificación en estudios futuros del mismo equipo permitiría una estimación más precisa.
-
-## 5. Archivos de este directorio
-
-- `hoja_codificador1_Marcillo.csv` — codificación original de Alberto Jeanpool Marcillo Ponce (43 fragmentos, P02+P07+P13+P16).
-- `hoja_codificador2_Mesias.csv` — codificación independiente de Jhon Alexander Mesías Quijije (77 fragmentos, P02+P07+P13+P16).
-- `calcular_kappa.py` — script reproducible que genera `resultado_kappa.csv` a partir de las dos hojas anteriores.
-- `resultado_kappa.csv` — salida del script (tabla de comparación + estadísticos).
+- `kappa_codigo.py` — script reproducible: clasificación fija de ambos
+  codificadores contra el codebook de 50 códigos, cálculo de kappa e IC.
+- `resultado_kappa_codigo.csv` — tabla completa (128 filas) + estadísticos.
