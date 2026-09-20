@@ -1,0 +1,61 @@
+Fila,Participante_declarado,Fragmento,Mejor_candidato,Similitud_mejor_candidato,Posible_reatribucion
+1,P01,"Por medio de hojas de historial clínico, tanto físicos... Se usa un pequeño software veterinario, pero es como para lo básico, ingresar el paciente, motivo de consulta y todo eso. Solo los datos del paciente.",P03,0.93,SI
+4,P01,"El inventario una vez a la semana, todos los sábados. Se lleva un control físico y también por el sistema de facturación.",P03,0.88,SI
+12,P01,"La ley administrativa. Todo lo que es facturación, metas, inventario. Para mí eso es tedioso... es lo que más me lleva tiempo, más me lleva estrés.",P03,0.68,SI
+25,P02,Primero la cuestión de los datos de los pacientes que tienen que estar protegidas. Y la cuestión está de también medios de soporte.,P05,0.9,SI
+37,P03,"Yo creo que en cualquier dispositivo, porque a veces estamos pendientes del teléfono, a veces estamos pendientes del laptop.",P04,0.9,SI
+39,P04,Más que nada el hecho de que no está bien hecho el tema de buscar por nombre... No está bien organizado.,P01,0.77,SI
+53,P06,"Si llega por el caso de abandonamiento, que no nos digan cuál fue el motivo, qué estuvo haciendo el perro, edad... o sea nos mienten en algún dato.",P07,0.77,SI
+54,P06,Los cobros... mediante el facturador SRI.,P07,0.74,SI
+63,P07,"Fichas críticas que están impresas y las llenamos... no, todas las tienen ahí (no guardadas en la nube).",P06,0.59,SI
+65,P07,"Nombre, peso, edad, si está esterilizado, si está vacunado, para qué vino, motivo de consulta y los datos del propietario.",P06,0.91,SI
+66,P07,"A veces envían una foto y dice, doctor esto sí, pero uno no puede ver qué es lo que tiene. No puede saber si ese medicamento le vaya a servir.",P06,0.94,SI
+79,P09,"No tengo software, anoto en libreta y en el celular por Word",P09,0.58,NO
+81,P09,"Lo hago físico, no tengo contabilidad por software... mediante un calculador nada más",P09,0.73,NO
+82,P09,No llevo inventario para que me controle... quería ver unas aplicaciones para llevar el inventario,P09,0.7,NO
+88,P09,"[Escala 1-5] Bueno, 4",P04,0.62,SI
+89,P09,"Yo ya trabajé con algo, un software digital en una clínica anterior... sí las manejé",P09,0.83,NO
+93,P10,Los errores pueden aparecer... cuando hay que comprobar manualmente todo lo que ya ha sido incluido,P12,0.68,SI
+94,P10,Es difícil detectar con anticipación los medicamentos que están por terminarse o próximos a vencer,P12,0.87,SI
+95,P10,A veces los pacientes cancelan y está ese espacio... ahí reagendamos la agenda,P12,0.73,SI
+96,P10,"El problema es hacer el seguimiento manual con todos los pacientes, lo cual consume bastante tiempo",P12,0.91,SI
+97,P10,Sería una opción muy buena la inteligencia artificial para que nos ayude a no tardarnos tanto,P12,0.84,SI
+98,P10,Me ayudaría para comparar según mis conocimientos... comparo las dos cosas,P12,0.9,SI
+99,P10,Que los datos de los pacientes estén protegidos... que existan soportes técnicos y actualizaciones periódicas,P12,0.88,SI
+101,P10,"Que el sistema registre modificaciones realizadas, para conocer quién actualizó cada información",P12,0.9,SI
+104,P11,Los errores pueden aparecer cuando se tienen que repetir datos o se acumulan varias atenciones,P10,0.88,SI
+108,P11,[Escala] La verdad es que estoy en 4 o 5,P10,0.77,SI
+109,P11,No tomaría una decisión clínica importante solamente por la información recibida por mensaje,P10,0.91,SI
+110,P11,"Que sea fácil de aprender, que sea sencilla y rápida... si requiere demasiados pasos, probablemente dejarían de utilizarla",P10,0.58,SI
+112,P12,Cuando se acumulan pacientes se vuelve más difícil manejar todo actualizando y ordenando la información,P14,0.88,SI
+113,P12,"Si la información fue registrada por otro veterinario, la consulta se puede demorar",P14,0.74,SI
+114,P12,Los errores aparecen sobre todo cuando se transcribe datos manualmente o una factura incluye varios servicios,P14,0.88,SI
+115,P12,El inventario se lleva con... una hoja de cálculo... productos con pocas unidades o cerca de vencer sin detectarlo a tiempo,P14,0.6,SI
+116,P12,Las inasistencias... afectan bastante porque dejan horarios disponibles que ya no pueden aprovecharse,P14,0.82,SI
+118,P12,Tener gráficas o alertas de la evolución del paciente sería muy útil,P14,0.75,SI
+123,P13,Todo se anota en un solo cuaderno de consultas... no hay fichas individuales por paciente,P15,0.67,SI
+125,P13,Los montos no coinciden al final del día... toca revisar todo desde el principio,P15,0.84,SI
+127,P13,No se maneja una agenda formal... se atiende por orden de llegada,P15,0.67,SI
+128,P13,"No hay un proceso estandarizado, cada quien decide cómo comunicarse según el caso",P15,0.85,SI
+129,P13,Le puse el máximo porque veo mucho potencial... a que no se pasen por alto detalles importantes,P15,0.6,SI
+131,P13,Que las recomendaciones estén respaldadas por literatura validada y que sea fácil de usar sin capacitación prolongada,P15,0.78,SI
+133,P13,[Escala conectividad] Yo le pondría un 4,P15,0.74,SI
+134,P13,"Que la herramienta permita registrar fotos del paciente: heridas, lesiones, la evolución",P15,0.84,SI
+135,P14,En algunos casos se utiliza la computadora y en otros todavía se anotan cosas en cuadernos,P11,0.9,SI
+136,P14,"En una urgencia sería ideal tener en una sola pantalla los antecedentes, vacunas, alergias y tratamientos",P16,0.84,SI
+137,P14,Las demoras aparecen quando hay varios servicios en una misma atención y se deben comprobar uno por uno,P16,0.86,SI
+141,P14,Estoy bastante de acuerdo porque podría ayudar a ordenar antecedentes y señalar información a revisar,P16,0.9,SI
+145,P15,En algunos casos se utiliza la computadora y en otros todavía se anotan cosas en cuadernos... a veces hay información pendiente de registrar,P11,0.74,SI
+146,P15,A veces tengo que preguntarle al veterinario dónde quedó registrada determinada información,P11,0.82,SI
+148,P15,Es posible que algún producto quede cerca de vencer... también ha pasado que algún insumo se termina y nos damos cuenta tarde,P11,0.64,SI
+150,P15,"Cuando existe una enfermedad o dieta terapéutica, la recomendación debe ser revisada por el veterinario",P11,0.91,SI
+151,P15,[Escala] La opción cinco... totalmente de acuerdo,P11,0.74,SI
+155,P15,"Que el sistema también ayude a organizar las tareas del personal auxiliar, no solamente la información médica",P11,0.91,SI
+156,P16,Las historias clínicas se realizan en cuadernos físicos... en algunos casos cambiamos esto a hojas de Excel,P13,0.92,SI
+157,P16,Consultas de 10 a 15 minutos porque hay que copiar datos que ya estaban en anteriores fichas,P13,0.86,SI
+159,P16,Hemos tenido casos de medicamentos vencidos y no hay una alerta que nos avise,P13,0.66,SI
+160,P16,Nos cancelan de dos a tres a la semana... no usamos ningún recordatorio automático,P13,0.63,SI
+162,P16,Nos dicen que en el chat GPT vieron que sí podría... no es tan confiable como un veterinario físicamente,P13,0.56,SI
+163,P16,[Escala] El cuatro... siempre debe quedar la decisión final en manos del especialista,P13,0.78,SI
+165,P16,Que el veterinario pueda revisar y corregir las sugerencias... que los datos no se compartan con terceros,P09,0.7,SI
+166,P16,Necesita acceso desde cualquier dispositivo... funcione rápido... el personal cambia con mucha frecuencia,P07,0.66,SI
