@@ -146,7 +146,48 @@ Contrastando esa fecha (01/08/2026) contra las fechas reales de las 16 entrevist
 
 **Verificado por:** pendiente — a resolver cuando se trabaje el Bloque A.
 
-## Desviación 6 — Saturación temática (Bloque C, tarea C4) — no alcanzada
+## Desviación 6 — Redacción del formulario de encuesta cambió durante la recolección
+
+**Nota de corrección (20/09/2026):** esta desviación se identificó originalmente como si fuera la tarea A8 del plan de mejora de datos. Al releer el texto literal del criterio de aceptación de A8, se confirmó que A8 exige otras dos declaraciones distintas (tramo de experiencia faltante y fecha del instrumento posterior a la primera respuesta) — ver Desviación 7, más abajo, que sí las cubre. Esta Desviación 6 se mantiene como hallazgo válido por separado (afecta la comparabilidad de las respuestas Likert), pero no cuenta como el cumplimiento de A8.
+
+**Qué establecía el protocolo:** el instrumento "encuesta" debía mantenerse sin cambios de redacción durante toda la ventana de recolección (27/07/2026–20/09/2026), de modo que las respuestas de distintos participantes sean directamente comparables entre sí.
+
+**Qué muestra la evidencia:** al reemplazar `encuesta_respuestas_crudas.csv` por la exportación verificada del 20/09/2026 (ver A1/A3 en `registro_correcciones.md`), los scripts de análisis (`04_descriptivos.R`, `05_supuestos.R`, `06_pruebas_hipotesis.R`, `07_tamano_efecto.R`, `08_figuras.R`, `07_Datos/scripts/justificacion_muestra.R`) fallaron al buscar el texto exacto de 4 preguntas Likert y de las columnas de rol/experiencia/frecuencia. La causa: el formulario de Google Forms fue editado al menos una vez durante la recolección, cambiando la redacción de "clínica veterinaria" a "veterinaria" o "centro veterinario" en varias preguntas (por ejemplo, la pregunta 1 pasó de "...en las clínicas veterinarias que conoce o utiliza?" a "...en un centro veterinario que conoce o utiliza?"). El inicio de cada pregunta (número + primeras palabras) no cambió, solo la parte final.
+
+**Motivo de la desviación:** no se documentó ni versionó el cambio de redacción del formulario en el momento en que ocurrió; se detectó de forma indirecta, como efecto colateral de las fallas de los scripts al no encontrar coincidencia exacta de columna.
+
+**Corrección aplicada (no es una desviación resuelta, sino una adaptación del pipeline para tolerarla):** los 6 scripts afectados se modificaron para resolver las columnas por **prefijo** (`grep(prefijo, names(encuesta), value = TRUE, fixed = TRUE)`) en vez de por texto exacto completo, usando la parte de cada pregunta que no cambió entre versiones del formulario. Cada script sigue fallando explícitamente (`stop()`) si no encuentra exactamente una columna que calce con el prefijo, en vez de continuar en silencio con una columna vacía o incorrecta.
+
+**Consecuencia:** las respuestas a estas preguntas siguen siendo comparables en escala (1–5, mismo mapeo de categorías de texto a número), pero el enunciado exacto que leyó cada participante no fue idéntico para toda la muestra. Esto se declara como limitación del instrumento en el manuscrito (Amenazas a la Validez, validez de constructo/medición). No se identificó, además de este cambio de redacción, ningún cambio en las opciones de respuesta (escalas Likert) ni en el orden de las preguntas.
+
+**Fecha de identificación de la desviación:** 20 de septiembre de 2026.
+
+**Confirmado por:** Amagua Sacón Robyn Willian, a partir de los errores de coincidencia de columna al ejecutar `run_all.R` sobre el dataset de A1/A3 y el contraste manual de los nombres de columna antes/después.
+
+**Verificado por:** pendiente de confirmación por el resto del equipo.
+
+## Desviación 7 — Tramo de experiencia faltante y formulario posterior a la primera respuesta (tarea A8 del plan de mejora de datos)
+
+**Qué establecía el protocolo:** el instrumento (formulario de encuesta) debía estar finalizado y cubrir de forma completa las categorías de respuesta esperadas antes de abrir la recolección.
+
+**Qué muestra la evidencia (dos hallazgos independientes, verificados directamente sobre el repositorio):**
+
+1. **Tramo de experiencia "1–2 años" ausente.** La pregunta sobre años de experiencia (columna `5. En caso de trabajar en una clínica veterinaria, ¿cuántos años de experiencia tiene?`) solo ofrece las categorías "Menos de 1 años", "De 2 a 5 años", "De 6 a 10 años", "Más de 10 años" y "No aplica" — verificado contra las 210 filas de `07_Datos/datos_crudos/encuesta_respuestas_crudas.csv` (dataset de A1/A3). No existe una opción "1–2 años": cualquier participante con exactamente 1 o 2 años de experiencia no tiene una categoría que lo represente con precisión y debe forzar su respuesta a "Menos de 1 años" o "De 2 a 5 años".
+2. **El instrumento es posterior a la primera respuesta.** Los dos PDF del instrumento de encuesta/consentimiento (`08_Etica/Encuesta_Consentimiento.pdf` y `06_Experimento/ instrumentos/Encuesta_Consentimiento_Formato_A1.pdf`) tienen `CreationDate` del **30/07/2026** (verificado en la metadata del PDF: `D:20260730205629-05'00'` y `D:20260730084816-05'00'`). La primera respuesta registrada en `encuesta_respuestas_crudas.csv` tiene marca temporal **27/07/2026 09:38:53**, es decir, 3 días **antes** de la fecha de creación del PDF del instrumento.
+
+**Motivo de la desviación:** el formulario de Google Forms se abrió y empezó a recibir respuestas antes de que el documento PDF del instrumento (usado para consentimiento/registro formal) quedara finalizado y fechado. No se investigó si el formulario en línea sufrió cambios de categorías entre el 27/07 y el 30/07 además del cambio de redacción ya declarado en la Desviación 6.
+
+**Consecuencia:** (1) los datos de años de experiencia no permiten distinguir con precisión a los participantes con 1–2 años de experiencia; esto se declara como limitación del instrumento, no se fuerza ni se reclasifica ninguna respuesta existente. (2) La fecha de finalización formal del instrumento no puede usarse como fecha de inicio de la recolección — la recolección real empezó antes de que el documento del instrumento quedara fechado, lo cual debe matizarse en cualquier afirmación del manuscrito o los materiales de defensa que presenten el instrumento como anterior al inicio de la recolección.
+
+**Fecha de identificación de la desviación:** 20 de septiembre de 2026.
+
+**Confirmado por:** Amagua Sacón Robyn Willian, mediante conteo directo de categorías sobre `encuesta_respuestas_crudas.csv` y verificación de metadata PDF (`CreationDate`) de ambas copias del instrumento.
+
+**Verificado por:** pendiente de confirmación por el resto del equipo.
+
+## Desviación 8 — Saturación temática (Bloque C, tarea C4) — no alcanzada
+
+**Nota de fusión (20/09/2026):** esta entrada llegó numerada "Desviación 6" en el commit original de Bloque C; se renumera a 8 aquí para no chocar con las Desviaciones 6 y 7 de Bloque A, agregadas en paralelo. Sin cambios de contenido.
 
 **Esta es la versión corregida y definitiva.** Una versión anterior
 declaró saturación basándose en un tramo final de una sola entrevista
