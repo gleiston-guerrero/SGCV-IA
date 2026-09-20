@@ -3329,7 +3329,19 @@ formalizaron 21 RNF (RNF-01 a RNF-21):
 15 de la base técnica (Entrega 1B), RNF-16 y RNF-17 incorporados por el
 análisis de cumplimiento legal (criterio C4), RNF-18 correspondiente
 a la explicabilidad de las sugerencias del módulo de Inteligencia
-Artificial, exigida por la rúbrica (criterio C3). El diseño de RNF-18
+Artificial, exigida por la rúbrica (criterio C3). \textbf{Declaración de
+origen de RNF-18:} este requisito se incorporó el 01/09/2026, después
+de concluida la última entrevista del componente empírico (P16,
+31/08/2026); no fue elicitado de forma primaria a partir de las
+entrevistas, sino derivado directamente de la exigencia de
+explicabilidad del criterio C3 de la rúbrica de evaluación. Los
+códigos RC-17, RC-18 y RC-19 que se citan como \emph{Fuente} en su
+ficha de requisito (Tabla siguiente) documentan una correspondencia
+retrospectiva entre RNF-18 y contenido ya presente en las
+transcripciones (percepción de confianza en IA y condiciones para
+aceptar una sugerencia), no el origen elicitado del requisito. RNF-18
+se clasifica en este documento como \textbf{requisito derivado
+(no elicitado)}. El diseño de RNF-18
 se fundamenta en la literatura sobre inteligencia artificial
 explicable en contextos clínicos~\cite{mienye2024,jung2023,rosenbacke2024,vanvoorst2024,tun2025,ahmed2023,he2023,bulletti2024}.
 RNF-19 (equidad), RNF-20 (monitoreo posterior al despliegue) y RNF-21
@@ -3404,7 +3416,7 @@ exigidos en la Sección 8 de la guía de desarrollo de la Entrega 4 (2B).
 \hline
 \textbf{RNF-20} & Fiabilidad (Monitoreo posterior al despliegue) & El sistema debe registrar indicadores operativos del módulo de IA una vez desplegado en producción, permitiendo detectar degradación del servicio o del desempeño del modelo. & Tasa de rechazo de sugerencias, tiempo de respuesta y disponibilidad del proveedor externo, revisados semanalmente por el responsable técnico; alerta automática si la tasa de rechazo supera 40\% en una semana calendario. & CU-06 & RNF-09, RNF-10 \\
 \hline
-\textbf{RNF-21} & Adecuación funcional (Supervisión humana / revocabilidad) & Toda sugerencia del módulo de IA debe poder ser anulada por el médico veterinario en cualquier momento antes de su aplicación clínica, quedando la anulación registrada de forma trazable. & 100\% de las anulaciones registradas con usuario, fecha/hora y motivo, en un plazo máximo de anulación de 24 horas desde que la sugerencia fue emitida; registro no editable ni eliminable (RNF-06). & CU-06 & RST-05, RST-08 \\
+\textbf{RNF-21} & Adecuación funcional (Supervisión humana / revocabilidad) & Toda sugerencia del módulo de IA debe poder ser anulada por el médico veterinario antes de su aplicación clínica y dentro de un plazo máximo de 24 horas desde su emisión, lo que ocurra primero, quedando la anulación registrada de forma trazable. \textbf{(Corrección D4, 20/09/2026: se elimina la contradicción entre "en cualquier momento" y "24 horas"; el plazo de 24 horas es el límite vigente.)} & 100\% de las anulaciones registradas con usuario, fecha/hora y motivo, dentro del plazo máximo de 24 horas desde que la sugerencia fue emitida; registro no editable ni eliminable (RNF-06). & CU-06 & RST-05, RST-08 \\
 \hline
 \end{longtable}
 }
@@ -3897,7 +3909,7 @@ formalmente rechazada por el veterinario. \textbf{Flujo principal}
   externo.
 \item
   El motor de IA retorna posibles diagnósticos diferenciales con
-  referencia bibliográfica y nivel de confianza (RNF-09, RNF-16).
+  referencia bibliográfica y nivel de confianza (RNF-09, RNF-18).
 \item
   El sistema muestra al veterinario la sugerencia, los factores
   considerados y el nivel de confianza.
@@ -5207,6 +5219,18 @@ Cuando la presenta al veterinario, \\
 Entonces incluye al menos una referencia bibliográfica científica verificable que la respalda.
 \end{quote}
 
+\begin{quote}
+\textbf{CA-31 (Gherkin) --- RNF-18, corrección D4 (20/09/2026).} CA-16
+cubre el respaldo bibliográfico (RF-18), no la explicabilidad
+(RNF-18); se define aquí un criterio propio para RNF-18, antes citado
+erróneamente con CA-16 en la matriz de trazabilidad (TR-50). \\
+Dado que el módulo de IA genera una sugerencia diagnóstica, \\
+Cuando la presenta al veterinario, \\
+Entonces muestra al menos 3 factores clínicos de mayor peso y un
+indicador de confianza (alto/medio/bajo), en lenguaje comprensible sin
+conocimientos técnicos, antes de que el veterinario pueda decidir.
+\end{quote}
+
 \subparagraph{HU-17 --- RF-19}
 \textbf{Como} veterinario,
 \textbf{quiero} poder ver, modificar o rechazar cualquier sugerencia del módulo de IA,
@@ -5606,6 +5630,29 @@ Trazabilidad Extendida --- Tabla A: identificación, normativa y objetivo (corre
 
 \subsubsection{5.4.2. Tabla B --- Trazabilidad de diseño}\label{matriz-extendida-tabla-b}
 
+\begin{quote}
+\textbf{Nota sobre TR-50 (RNF-18):} la columna ID-EV de esta fila
+(EV-01, EV-02) documenta una correspondencia retrospectiva con
+contenido de entrevistas ya existente, no el origen elicitado del
+requisito. RNF-18 es un \textbf{requisito derivado (no elicitado)},
+incorporado el 01/09/2026 por exigencia directa del criterio C3 de la
+rúbrica, después de concluida la última entrevista (P16, 31/08/2026).
+Ver declaración completa en la Sección 3.3.
+
+\textbf{Nota sobre el mockup MU-010\_Sugerencia\_IA (corrección D5,
+20/09/2026):} el encabezado de la imagen
+(\texttt{03\_Modelado/Mockups/MU-010\_Sugerencia\_IA.png}) rotula la
+pantalla como "RF-17 · RF-18 · RF-19 · RNF-09" y no incluye RNF-18. El
+contenido visual muestra un porcentaje de confianza por diagnóstico
+(82\%/11\%/7\%) y una justificación en prosa con algunos factores
+clínicos, pero no en el formato que exige el criterio de aceptación de
+RNF-18 (indicador de confianza discreto alto/medio/bajo, y al menos 3
+factores clínicos identificados explícitamente, no en párrafo). Se
+declara aquí como \textbf{brecha de implementación de RNF-18 en el
+mockup}, no como requisito satisfecho; no se edita la imagen para
+evitar fabricar evidencia visual no verificada por el equipo.
+\end{quote}
+
 {\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{|
   >{\centering\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.16}}|
@@ -5730,7 +5777,7 @@ TR-48 (RNF-16) & — & Transversal & — & — & Infraestructura/Backend \\
 \hline
 TR-49 (RNF-17) & — & Transversal & — & — & Infraestructura/Backend \\
 \hline
-TR-50 (RNF-18) & EV-01,EV-02 & CU-06 & HU-16 & CA-16 & Módulo IA Diagnóstico \\
+TR-50 (RNF-18) & EV-01,EV-02 & CU-06 & HU-16 & CA-31 & Módulo IA Diagnóstico \\
 \hline
 TR-51 (RST-01) & EV-01 & Transversal & — & — & Infraestructura/Backend \\
 \hline
@@ -6205,8 +6252,11 @@ RF-21 & Modo offline & No aplica a este prototipo web (alcance definido para esc
 \begin{quote}
 La cobertura demostrada alcanza los 13 RF \emph{Must have} centrales del
 sistema. RF-23 y RF-21 quedan marcados según el estado declarado por el
-propio equipo en \texttt{05\_MVP/README.md}, sin verificación adicional de
-mi parte.
+propio equipo en \texttt{05\_MVP/README.md}; no se verificó directamente
+contra el código fuente del prototipo (ver estado pendiente en la tabla
+anterior). \textbf{(Corrección D4, 20/09/2026: se retira la frase "sin
+verificación adicional de mi parte" por estar en primera persona
+singular en un documento de autoría colectiva.)}
 \end{quote}
 
 \subsubsection{6.1.2 Funcionalidades simuladas}\label{s6-1-2-funcionalidades-simuladas}
@@ -6398,7 +6448,19 @@ discusión corresponde a la versión completa reportada en el manuscrito
   el análisis en la información que debe acompañar a una sugerencia de
   IA y en su especificación como requisito verificable (RNF-18,
   CU-06), sin tratar la confianza del usuario o el desempeño del
-  modelo como medidas equivalentes de explicabilidad.
+  modelo como medidas equivalentes de explicabilidad. \textbf{Alcance
+  real declarado:} el guion de entrevista
+  (\texttt{Guion\_Entrevista\_v2.0.pdf}) no incluye preguntas
+  dedicadas a explicabilidad (la pregunta C5, sobre condiciones de
+  confianza, es adyacente pero no equivalente); los 16 participantes
+  (P01–P16) son médicos veterinarios, auxiliares o estudiantes en
+  formación, sin propietarios no clínicos ni personal administrativo
+  puro; y las dos rondas de validación cuantitativa previstas
+  específicamente para explicabilidad (protocolo OSF,
+  \texttt{Guion\_Validacion\_v2\_0}) no se ejecutaron (ver
+  \texttt{07\_Datos/desviaciones.md}, Desviación 1 y declaración D3).
+  Por lo tanto, este documento no afirma requisitos de explicabilidad
+  diferenciados por perfil de usuario.
   \item \textbf{Validez interna:} el cumplimiento de la LOPDP declarado
   en los requisitos legales (RF-26, RF-27, RNF-16, RNF-17, RST-10) fue
   verificado por el propio equipo contra el texto de la ley, sin
@@ -10652,7 +10714,7 @@ que la facturación sea ágil (RNF-02), esté disponible de forma confiable
 incluso offline (RNF-04), proteja datos confidenciales mediante RBAC
 (RNF-05), que las sugerencias de IA incluyan respaldo científico y
 validación veterinaria (RNF-09), y que dichas sugerencias sean
-explicables para el veterinario (RNF-16), ya que sin estas condiciones
+explicables para el veterinario (RNF-18), ya que sin estas condiciones
 de calidad ningún RF anterior es utilizable en producción real.
 \end{quote}
 
@@ -11343,7 +11405,7 @@ TR-48 & RNF-16 & Transversal & — & — & Infraestructura/Backend & No aplica \
 \hline
 TR-49 & RNF-17 & Transversal & — & — & Infraestructura/Backend & No aplica \\
 \hline
-TR-50 & RNF-18 & CU-06 & HU-16 & CA-16 & Módulo IA Diagnóstico & MU-010\_Sugerencia\_IA \\
+TR-50 & RNF-18 & CU-06 & HU-16 & CA-31 & Módulo IA Diagnóstico & MU-010\_Sugerencia\_IA \\
 \hline
 TR-51 & RST-01 & Transversal & — & — & Infraestructura/Backend & No aplica \\
 \hline
