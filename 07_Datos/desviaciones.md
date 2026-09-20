@@ -202,3 +202,35 @@ Contrastando esa fecha (01/08/2026) contra las fechas reales de las 16 entrevist
 **Confirmado por:** Amagua Sacón Robyn Willian, mediante lectura directa de `Guion_Entrevista_v2.0.pdf` y del campo "Rol" de las 16 transcripciones.
 
 **Verificado por:** pendiente de confirmación por el resto del equipo.
+
+## Desviación 8 — Saturación temática (Bloque C, tarea C4) — no alcanzada
+
+**Criterio:** base = orden cronológico P01→P16; tramos de 3 entrevistas
+(Francis et al., 2010); cuando el total no es múltiplo exacto de 3, el
+sobrante se une al último tramo en vez de dejar un tramo de 1 sola entrevista
+(P13–P16, 4 entrevistas). Umbral ≤5% de códigos nuevos sobre el total de 50
+(suma del tramo, no promedio); nivel de código axial, no de categoría amplia.
+
+**Resultado (sobre `mapeo_codigo_abierto_axial_SGCV-IA.csv`, 167/167
+fragmentos con coincidencia literal exacta verificada, ver Bloque C en
+`registro_correcciones.md`)**
+
+| Tramo | Participantes | Códigos nuevos | % sobre 50 |
+|---|---|---|---|
+| 1 | P01–P03 | 21 | 42,0% |
+| 2 | P04–P06 | 9 | 18,0% |
+| 3 | P07–P09 | 7 | 14,0% |
+| 4 | P10–P12 | 6 | 12,0% |
+| 5 | P13–P16 | 7 | 14,0% |
+
+**Conclusión: no se alcanza saturación.** Ningún tramo baja del umbral de 5%;
+el más cercano es el tramo 4 (12,0%). 22 de los 50 códigos axiales tienen un
+solo participante en todo el corpus. Es una limitación del alcance muestral,
+no un error de codificación, y no invalida el resto del análisis de Bloque C
+(C1, C2, C3, C5).
+
+**Fecha de identificación:** 20 de septiembre de 2026.
+
+**Fuente:** `saturacion.py` sobre `mapeo_codigo_abierto_axial_SGCV-IA.csv`,
+salida completa en `curva_saturacion_SGCV-IA.csv` (ambos en
+`02_Evidencias/Codificacion_Tematica/`).
