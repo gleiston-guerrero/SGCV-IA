@@ -38,16 +38,16 @@ reproduce también el componente cuantitativo, no solo el cualitativo.
 - **Transcripciones:** 16 de 16 mínimas — **completas** (`07_Datos/datos_crudos/Entrevistas/`).
 - **Respuestas de cuestionario:** el cuestionario cerró con **n = 210** respuestas
   totales (`07_Datos/resultados/justificacion_muestra.md`), repartidas en 4 perfiles:
-  - Dueño(a) de mascota: 26
-  - Médico veterinario(a): 18
-  - Auxiliar o técnico veterinario: 11
-  - Administrador(a) de clínica veterinaria: 5
+  - Dueño(a) de mascota: 80
+  - Administrador(a) de clínica veterinaria: 45
+  - Médico veterinario(a): 43
+  - Auxiliar o técnico veterinario: 42
 
-  El tamaño total de n=210 supera ampliamente el margen de error objetivo
-  del estudio (~6,8%, ver justificación de muestra). Los subgrupos por
-  perfil individual siguen siendo desiguales; el subgrupo administrador
-  (n=5) se reporta como exploratorio en las comparaciones entre perfiles
-  por su tamaño reducido.
+  El perfil dominante (Dueño(a) de mascota, n=80) ya supera el mínimo
+  n≥60 requerido; con d=0.5 y α=0.05 alcanza una potencia de 0.882 (88.2%)
+  — ver `justificacion_potencia.md`. Aun así, las comparaciones entre
+  perfiles siguen siendo exploratorias, no confirmatorias (ver
+  `07_tamano_efecto.R`).
 - **Codificación temática:** cerrada y verificada (50 códigos axiales en 7 categorías;
   ver `02_Evidencias/Codificacion_Tematica/`).
 
