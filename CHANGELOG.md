@@ -97,6 +97,15 @@ Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
   entrevistas.
 - Completadas las 6 sesiones mínimas de walkthrough
   (`02_Evidencias/Validacion_Walkthrough/`).
+- 1 Requisito Funcional adicional (RF-28, gestión de empleados y
+  permisos), completando el catálogo a **28 RF**; 4 Requisitos No
+  Funcionales adicionales (RNF-18 explicabilidad de la IA, RNF-19
+  equidad, RNF-20 monitoreo posterior al despliegue, RNF-21 supervisión
+  humana/revocabilidad), completando el catálogo a **21 RNF**. *Nota
+  añadida 20/09/2026 (tarea D4 del plan de mejora de datos): esta
+  entrada faltaba en el changelog; el ERS ya reflejaba 28 RF/21 RNF sin
+  que quedara registrado aquí el salto desde los 27 RF/17 RNF de la
+  entrega [2A].*
 
 ### Corregido
 - 2 videos de entrevista de Edison Moncada y 8 de Jaime Ortega, más 2
