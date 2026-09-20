@@ -371,141 +371,126 @@ tabla_final$valor_p_holm <- p.adjust(tabla_final$valor_p, method = "holm")
 **Confirmado por:** Amagua Sacón Robyn Willian.
 
 **Verificado por:** pendiente de confirmación por el resto del equipo.
+
 ---
-## Bloque C — Codificación, saturación y fiabilidad (C1–C5)
 
-**Fecha de esta corrección:** 20/09/2026
-**Tareas cubiertas:** C1 (mapeo axial), C2 (frecuencias), C3 (verificación literal), C4 (saturación), C5 (doble codificación / kappa)
+## Bloque D — ERS: citas, requisitos y trazabilidad
 
-### C1 — Mapeo código abierto → código axial
+### D6 — Amenaza de "caso único" — YA CUMPLIDO, verificado (20/09/2026)
 
-Se construyó `C1_mapeo_codigo_abierto_axial_SGCV-IA.csv`: una fila por cada
-uno de los 167 códigos abiertos de `codificacion_tematica_SGCV-IA.csv`,
-clasificada contra el codebook oficial de 50 códigos axiales
-(`codificacion_axial_SGCV-IA.csv`). Integridad verificada por script:
-0 errores en el cruce fila por fila contra ambas tablas oficiales (texto
-del código abierto, categoría y código axial coinciden exactamente con
-las fuentes; los 16 participantes son válidos P01–P16).
+**Criterio literal del plan:** "Corregir la amenaza de 'caso único': las fotos y las entrevistas corresponden a unas seis clínicas." Criterio de aceptación: "Número de clínicas declarado."
 
-### C2 — Frecuencias axiales
+**Verificación realizada (no se asumió cumplido por lo que dice el plan):**
+1. `01_ERS/ERS_SRS_2B_v2.0.txt`, §8.2 "Amenazas a la validez" → Validez externa, ya declara explícitamente: *"se recolectó evidencia (entrevistas y observación documental) en 6 clínicas distintas (VeterinariaColombia, VeterinariaMacay, VeterinariaPetCat, VeterinariaDrMONG, VeterinariaMediClikPet, Veterinaria911Animal), lo que reduce el riesgo de caso único aislado"*.
+2. Ese texto ya estaba en el archivo subido por Barrionuevo Fuentes (commit `d17455c`, 19/09/2026 22:11) — no se agregó en esta revisión, solo se confirmó que existe y es correcto.
+3. Contraste contra evidencia real: `02_Evidencias/Fotos_Entorno/` (38 fotos) muestra 6 clínicas físicamente distintas por fecha — 2026-06-30 (Colombia, Macay), 2026-07-20/21 (PetCat), 2026-07-25 (DrMONG, MediCli[i]kPet), 2026-07-27 (911Animal) — coincide con la lista de 6 del ERS.
+4. Diferencia menor detectada: el ERS escribe **"VeterinariaMediClikPet"** y la carpeta de fotos usa **"VeterinariaMediCliikPet"** (doble "i"). No afecta el criterio de aceptación (que solo exige declarar el número), pero se deja anotado por si se homogeniza la nomenclatura más adelante.
+5. Se revisó si esto entra en conflicto con el manuscrito (`09_Publicacion/manuscrito_final.tex`, líneas 171 y 231), que describe el estudio como "single case" (metodología Runeson & Höst): no hay conflicto — "el caso" es SGCV-IA como sistema/organización bajo estudio, no el número de sitios de recolección; un estudio de caso único puede legítimamente recolectar evidencia de campo en varias clínicas físicas. El propio §8.2 del ERS ya distingue ambas cosas.
 
-`C2_frecuencias_axiales_SGCV-IA.csv`, generado por
-`calcular_frecuencias_axiales.py` a partir del C1 final. Ejemplo de
-verificación cruzada con el examen suspenso: "Validación/revisión
-obligatoria del veterinario sobre sugerencias de IA" pasa de 4/16
-(cifra original, subestimada) a **9/16 (56,2%)** tras la corrección de
-participante de C3.
+**Conclusión:** D6 ya está cumplido en el ERS vigente; no requirió corrección. Se documenta aquí solo la verificación, para dejar constancia de que se comprobó y no se dio por hecho.
 
-### C3 — Verificación literal de los 167 fragmentos
+**Fecha de esta verificación:** 20 de septiembre de 2026.
 
-Se verificó, fragmento por fragmento, que el texto de
-`codificacion_tematica_SGCV-IA.csv` aparece literal en alguna de las 16
-transcripciones (`verificar_fragmentos.py`). Resultado inicial: 107/167
-con coincidencia exacta directa. Se detectó un **patrón sistemático de
-rotación de participante** (no un error aislado): los códigos declarados
-bajo un participante correspondían, en su mayoría, a la transcripción
-real de otro, en dos ciclos — P01→P03→P04→P01, P02↔P05, P06↔P07 — y un
-ciclo de 7 en P10–P16 (P10→P12→P14→P16→P13→P15→P11→P10). Se corrigió la
-columna `Participante` de C1 en consecuencia (89 filas).
+**Verificado por:** Amagua Sacón Robyn Willian.
 
-Para los fragmentos restantes sin coincidencia exacta se aplicaron dos
-pasadas adicionales:
-1. Chequeo de apoyo temático por palabras clave
-   (`chequeo_tematico_no_encontrados.py`): distinguió fragmentos con tema
-   real disperso en la transcripción de los que no tenían ningún respaldo.
-2. Búsqueda aproximada exhaustiva contra las 16 transcripciones completas
-   (`busqueda_exhaustiva_no_encontrados.py`): resolvió 56 de 60 fragmentos
-   restantes por similitud, todos consistentes con el mismo patrón de
-   rotación ya confirmado por coincidencia exacta.
-3. Los 4 últimos casos (filas 88, 135, 165, 166) se verificaron
-   manualmente contra el texto original: coincidían literalmente, pero el
-   script automático los pasaba por alto porque el texto fuente tiene
-   marcas de tiempo (p. ej. `(11:41)`) incrustadas a mitad de frase, que
-   rompían la coincidencia de substring exacto.
+---
 
-**Corrección tras revisión externa (20/09/2026):** una versión anterior
-de esta entrada afirmó "167/167 (100%) verificados" usando una etiqueta
-contradictoria (`LITERAL_VERIFICADO_APROXIMADO`) para 56 filas que en
-realidad eran reasignaciones por similitud, no citas literales. Se
-corrigió la terminología y el número real declarado bajó a 107/167
-(64,1%), con las 60 restantes explícitamente fuera del criterio de C3
-("Por modificar").
+### D1 — Citas de participantes en el ERS: verificación literal — HALLAZGO DOCUMENTADO, ERS sin editar aún (20/09/2026)
 
-**Corrección final (20/09/2026, mismo día):** en vez de dejarlo en "Por
-modificar", se corrigió la fuente. Para las 60 filas no literales, se
-ubicó el texto verbatim real en la transcripción del participante ya
-identificado (mismo patrón de rotación confirmado con evidencia exacta
-en las otras 89) y se reemplazó el campo `Fragmento` por esa cita real,
-copiada tal cual de la transcripción — no una paráfrasis ni una
-aproximación. Se corrigió también `ID_evidencia` en las 89 filas que ya
-tenían cita literal pero seguían declarando el participante original
-(incorrecto). Se corrigió además el script de verificación para que
-ignore las marcas de tiempo incrustadas a mitad de frase (`(11:41)`),
-que rompían la coincidencia exacta de citas genuinamente literales.
+**Criterio literal del plan:** "Toda cita de un participante en el ERS debe ser literal y localizable (participante y marca de tiempo). La frase atribuida a P02 en RC-17/RF-17, 'si tengo que dar un visto bueno antes, sí' (líneas 2664 y 11863), no aparece en ninguna transcripción. La justificación de RF-18 ('primera opción seleccionada en ambos casos') contradice lo que dicen P01 y P02." Criterio de aceptación: "Cada cita, con su ubicación exacta. Las que no se encuentren se retiran."
 
-**Resultado final: 167/167 fragmentos (100%) con coincidencia literal
-exacta**, confirmado corriendo `verificar_fragmentos.py` de punta a
-punta contra `codificacion_tematica_SGCV-IA_CORREGIDO.csv`, sin ninguna
-clasificación manual — 124 literales directos, 42 con elipsis, 1 solo en
-la transcripción automática. **C3 pasa a "Hecho"** según la tabla de
-coeficientes del propio plan.
+**Estado del hallazgo original del plan:** la frase de P02 señalada por el plan ya no está en el ERS — el equipo la reemplazó en una subida previa (commit `d17455c`, Barrionuevo Fuentes, 19/09/2026). RF-18 también fue reescrito, citando ahora a P10, P11, P14 y P15 en vez de P01/P02.
 
-El archivo `codificacion_tematica_SGCV-IA_CORREGIDO.csv` es el que debe
-subirse al repositorio, en un commit nuevo, reemplazando al original
-(regla 1 del plan: nunca se reescribe el historial de git).
+**Lo que se encontró al verificar ese reemplazo y, por extensión, todas las citas "P0X (‘…’)" del ERS (~30 instancias) contra las 16 transcripciones crudas de `07_Datos/datos_crudos/Entrevistas/` (búsqueda de substring exacto, normalizada solo en mayúsculas/tildes):**
 
-Detalle completo en `C3_verificacion_fragmentos_SGCV-IA.csv` y
-`codificacion_tematica_SGCV-IA_CORREGIDO.csv`.
+**A. Citas con texto verbatim real, pero atribuidas al participante equivocado (evidencia: coincidencia exacta de texto en otra transcripción):**
+| Cita en el ERS | Atribuida a | Texto real pertenece a |
+|---|---|---|
+| "la parte más demorada" (RF, sección búsqueda) | P01 y P02 | **P04** |
+| "es la parte más demorada" | P02 | **P04** |
+| "no sabemos qué pasó con el paciente" | P02 | **P04** |
+| "facilidad de utilizarla" | P02 | **P04** |
+| "en base a la edad va a agarrar el peso" | P01 | **P05** |
+| "confianza moderada porque no se parecen los diagnósticos, ya todo es en la práctica, viendo al paciente, viendo en directo" (RC-17, líneas 2664/11867) | P02 | **P05** |
+| "bajo valor económico" | P01 | **P05** |
+| "que las recomendaciones tengan respaldo científico" (RC-18/RF-18) | P14 | **P12** |
+| cita larga sobre respaldo bibliográfico y confianza (RC-18/RF-18, línea 2724) | P11 | **P15** (verbatim, líneas 15:16 y 15:39 de su transcripción) |
+| cita sobre "animalitos... no puede dar diagnósticos así por así" (RC-18/RF-18, línea 2724) | P15 | **P13** (verbatim, líneas 14:59–15:28 de su transcripción) |
 
-### C4 — Curva de saturación
+**B. Citas que no aparecen en ninguna de las 16 transcripciones (ni siquiera parcialmente, en ningún participante):**
+- P01: "siempre se caducan por falta de precaución"
+- P01: "inculcarle al dueño del perro la alimentación nutritiva adecuada"
+- P01: "se le indica que hay que hacer pruebas de sangre o llevar a una clínica con todos los equipos" (RC-16)
+- P02: "no está bien organizado el tema de buscar por nombre y dueño" (RC-03)
+- P02: "los resultados de exámenes se lo enviamos directamente por WhatsApp"
+- P02: "esperamos que lleguen; si no, no podemos saber"
 
-Criterio declarado: base = orden cronológico real P01→P16 (confirmado
-por el equipo); tramos de 3 entrevistas (Francis et al., 2010) — cuando
-el total no es múltiplo exacto de 3, el sobrante se une al último tramo
-en vez de dejar un tramo de 1 sola entrevista (P13–P16, 4 entrevistas,
-no P13–P15 + P16 suelto: comparar un tramo de 1 contra un umbral pensado
-para 3 sesga la conclusión hacia una saturación falsa); umbral ≤5% de
-códigos nuevos sobre el total de 50 (suma del tramo, no promedio, según
-exige el propio plan de mejora); nivel de código axial, no de categoría
-amplia (a nivel de categoría satura trivialmente por diseño del guion de
-entrevista, no es una medida válida).
+**Interpretación:** las "Actas de Entrevista N.° 1 y 2" del ERS para P01 y P02 (Tabla 20 y Tabla 22, fechadas 23/05 y con entrevistador Anthony Vera Gómez) no corresponden a las transcripciones de `07_Datos/datos_crudos/Entrevistas/` fechadas 26/05/2026 para esos mismos códigos — son instancias de entrevista distintas (misma persona, fecha y contenido distintos) y la de mayo no tiene transcripción cruda en el repositorio, solo el resumen parafraseado del acta. Las citas "textuales" de P01/P02 en RF-02 a RF-07 no son verificables contra ningún archivo del repositorio.
 
-Con el C1 final (167/167 verificado literal): ningún tramo baja del umbral de
-5%; el más cercano es el tramo 4 (P10–P12, 12,0%); el último tramo
-(P13–P16) da 14,0%. **No se alcanza saturación.** 22 de los 50 códigos
-axiales tienen un solo participante en todo el corpus. Curva completa en
-`C4_curva_saturacion_SGCV-IA.csv`; script en `saturacion.py`; conclusión
-declarada en `desviaciones_C4_saturacion.md`.
+**Alcance de esto:** afecta más citas de las que señala literalmente el criterio D1 del plan (que solo nombra 2 casos puntuales). Es un problema de trazabilidad en todo el bloque de RF tempranos basados en P01/P02, no solo en RC-17/RF-17/RF-18.
 
-### C5 — Doble codificación y kappa de Cohen
+**Decisión:** por instrucción explícita de Amagua Sacón, este hallazgo se deja documentado aquí con evidencia verificable, sin editar aún `01_ERS/ERS_SRS_2B_v2.0.txt` — dado que la corrección afecta un documento compartido y el alcance real es mayor al esperado, se prefiere que el equipo lo revise antes de aplicar cambios.
 
-Se reemplaza el cálculo previo (κ=0,364, IC 95% [-0,32, 1,04], sobre
-presencia/ausencia de 7 categorías amplias — 28 observaciones) porque no
-cumplía el criterio de aceptación del plan ("a nivel de código, no de
-presencia de categorías"). Nuevo cálculo: ambos codificadores
-(Marcillo Ponce Alberto Jeanpool y Mesías Quijije Jhon Alexander,
-codificación independiente sobre P02/P07/P13/P16) clasificados contra el
-codebook de 50 códigos axiales; universo comparado: 32 códigos que
-aparecieron en al menos uno de los dos codificadores.
+**Fecha de este hallazgo:** 20 de septiembre de 2026.
 
-**κ = 0,619, IC 95% [0,481, 0,756]** (128 observaciones, acuerdo
-observado 81,25%). Nivel moderado-sustancial. Los 24 desacuerdos son en
-22 de 24 casos por diferencia de cobertura (Mesías extrajo más
-fragmentos, 77 vs. 43), no por interpretación divergente del mismo
-contenido. Hallazgo adicional: ~21% de los fragmentos de Mesías no
-encajan en el codebook actual de 50 códigos, lo que sugiere que el
-codebook (construido principalmente sobre la codificación de Marcillo)
-podría estar incompleto. Detalle en `resultado_kappa_codigo.csv`,
-`kappa_codigo.py` y `resultado_doble_codificacion_codigo.md`.
+**Confirmado por:** Amagua Sacón Robyn Willian.
 
-### Nota sobre la entrada B1 de este mismo archivo
+**Verificado por:** pendiente de confirmación por el resto del equipo.
 
-La entrada B1 (rotación de identidad de audio vía Jaccard + duración)
-está **desactualizada** — contradicha por verificación directa de rol
-autodeclarado en las 16 transcripciones (incluida confirmación directa
-de P15: auxiliar, estudiante, clínica con un solo veterinario) y por el
-contenido real de los archivos, que ya están correctamente etiquetados.
-El error de atribución que corrige C3 ocurrió únicamente al construir
-`codificacion_tematica_SGCV-IA.csv`, no en los archivos de audio o
-transcripción. **Se recomienda corregir o retirar la entrada B1** para
-evitar que contradiga esta corrección del Bloque C.
+---
+
+### D2 — Origen real de RNF-18 declarado — CORREGIDO (20/09/2026)
+
+**Criterio literal:** "Declarar el origen real de RNF-18: se incorporó el 01/09, después de la última entrevista, y el propio ERS lo vincula a la rúbrica. Se traza a códigos reales o se marca como requisito derivado, no elicitado." Aceptación: "Origen explícito en el ERS y en la matriz."
+
+**Corrección aplicada en `01_ERS/ERS_SRS_2B_v2.0.txt`:**
+1. Sección 3.3 (definición de RNF-18): se agregó declaración explícita — incorporado 01/09/2026, después de la última entrevista (P16, 31/08/2026), por exigencia del criterio C3 de la rúbrica; clasificado como **requisito derivado (no elicitado)**; se aclara que los códigos RC-17/RC-18/RC-19 citados como "Fuente" son una correspondencia retrospectiva, no el origen del requisito.
+2. Tabla B de la matriz extendida (TR-50/RNF-18): se agregó la misma nota antes de la tabla.
+
+**Fecha:** 20 de septiembre de 2026. **Confirmado por:** Amagua Sacón Robyn Willian. **Verificado por:** pendiente de confirmación por el resto del equipo.
+
+---
+
+### D3 — Alcance real de la elicitación frente a explicabilidad — CORREGIDO (20/09/2026)
+
+**Criterio literal:** guion sin preguntas de explicabilidad, sin participantes propietarios/administrativos, rondas de validación no ejecutadas; no afirmar requisitos de explicabilidad diferenciados por perfil. Aceptación: "Limitación declarada en el ERS y en desviaciones.md."
+
+**Verificación:** confirmado contra `Guion_Entrevista_v2.0.pdf` (sin preguntas de explicabilidad; C5 es adyacente, no equivalente), campo "Rol" de las 16 transcripciones (todos veterinarios/auxiliares/estudiantes, ninguno propietario no clínico o administrativo puro), y Desviación 1 de `desviaciones.md` (rondas de validación no ejecutadas, ya documentado). El ERS no afirma requisitos de explicabilidad diferenciados por perfil — verificado, correcto, sin cambios necesarios ahí.
+
+**Corrección aplicada:** declaración agregada en `01_ERS/ERS_SRS_2B_v2.0.txt` §8.2 (Amenazas a la validez, validez de constructo) y nueva entrada en `07_Datos/desviaciones.md` ("Declaración — Alcance real de la elicitación frente a la pregunta de investigación sobre explicabilidad").
+
+**Fecha:** 20 de septiembre de 2026. **Confirmado por:** Amagua Sacón Robyn Willian. **Verificado por:** pendiente de confirmación por el resto del equipo.
+
+---
+
+### D4 — Referencias obsoletas, contradicción RNF-21, uso indebido de CA-16, recuentos de requisitos — CORREGIDO (20/09/2026)
+
+**Criterio literal:** corregir referencias obsoletas a RNF-16 como explicabilidad (CU-06, MoSCoW), contradicción de RNF-21 ("en cualquier momento" vs "24 horas"), uso de CA-16 para RNF-18, y recuento de requisitos (28 RF/21 RNF en ERS vs 27/17 en CHANGELOG vs "25 RF formalizados"). Retirar frase "sin verificación adicional de mi parte" (§6.1.1). Aceptación: "Recuentos iguales en todos los documentos, sin referencias rotas."
+
+**Verificado y corregido en `01_ERS/ERS_SRS_2B_v2.0.txt`:**
+1. CU-06 (flujo principal) y justificación MoSCoW citaban "RNF-16" para explicabilidad — corregido a RNF-18 en ambos lugares (RNF-16 es retención/eliminación de datos, sin relación).
+2. RNF-21: descripción decía "en cualquier momento antes de su aplicación clínica" mientras el criterio de aceptación fijaba "24 horas desde la emisión" — reconciliado: "antes de su aplicación clínica y dentro de un plazo máximo de 24 horas desde su emisión, lo que ocurra primero".
+3. CA-16 (bibliografía, RF-18) estaba siendo citado también para RNF-18 (TR-50, 3 filas) en la matriz — CA-16 no cubre factores/indicador de confianza. Se creó **CA-31**, específico para RNF-18, y se actualizaron las 3 filas de TR-50 para citar CA-31 en vez de CA-16.
+4. "25 RF formalizados" (línea señalada por el plan): ya no existe con ese texto en la versión actual — el documento ya dice consistentemente "28 RF" en las dos ocurrencias verificadas (línea ~5417 y ~10883). Verificado además el conteo real por `\subparagraph{RF-NN}`/`\paragraph{RF-01}`: 28 RF (RF-01 a RF-28) y 21 RNF (RNF-01 a RNF-21) — coincide con lo declarado.
+5. `CHANGELOG.md` se quedó en "27 RF"/"17 RNF" (entrega [2A]) y nunca documentó el salto a 28 RF/21 RNF de la entrega [2B] (RF-28, RNF-18 a RNF-21) — se agregó la entrada faltante en el bloque [2B], con nota fechada explicando el faltante.
+6. §6.1.1: retirada la frase "sin verificación adicional de mi parte" (primera persona singular en documento de autoría colectiva), sustituida por una declaración impersonal que mantiene el mismo contenido (no verificado contra código fuente).
+
+**Fecha:** 20 de septiembre de 2026. **Confirmado por:** Amagua Sacón Robyn Willian. **Verificado por:** pendiente de confirmación por el resto del equipo.
+
+---
+
+### D5 — Matriz de trazabilidad: caso de prueba, filas sin evidencia, MU-010 — PARCIAL (20/09/2026)
+
+**Criterio literal:** "Matriz de trazabilidad: añadir la columna de caso de prueba, completar las 35 filas sin evidencia y enlazar hacia atrás con códigos concretos, no solo con la entrevista. MU-010 está etiquetado como RNF-09 y no muestra los factores ni el indicador de confianza." Aceptación: "Ninguna fila vacía sin justificación. Enlaces verificables."
+
+**1. MU-010 — CORREGIDO.** Verificado directamente contra `03_Modelado/Mockups/MU-010_Sugerencia_IA.png`: el encabezado rotula "RF-17 · RF-18 · RF-19 · RNF-09" (RNF-18 ausente, confirma el hallazgo del plan). El contenido muestra confianza como porcentaje por diagnóstico (no como alto/medio/bajo) y factores en prosa (no como lista explícita de ≥3). Se declaró en `01_ERS/ERS_SRS_2B_v2.0.txt` (junto a la nota de TR-50) como brecha de implementación de RNF-18 en el mockup, sin editar la imagen — corregir la imagen requeriría rehacer el mockup, que no corresponde a esta tarea de datos.
+
+**2. Columna "caso de prueba" — NO AGREGADA, por instrucción explícita de Amagua Sacón.** Verificado: no existe ningún caso de prueba (CP-XX ni documento equivalente) en todo el repositorio. Agregar la columna implicaría inventar IDs de pruebas inexistentes, lo que viola la regla de no fabricación de datos. Queda pendiente de que el equipo defina casos de prueba reales antes de agregar esta columna.
+
+**3. 32 filas con columna ID-EV vacía ("—") — IDENTIFICADAS, no completadas fila por fila.** Verificado contra la matriz (`Tabla B — Trazabilidad de diseño`, ~87 filas): 32 filas tienen EV vacío (el plan reporta 35; la diferencia puede deberse a duplicados en la Tabla D.2 del anexo, no verificado). Lista completa:
+- TR-30 (RF-25), TR-42 (RNF-10), TR-43 (RNF-11), TR-46 (RNF-14), TR-48 (RNF-16), TR-49 (RNF-17), TR-54 (RST-04), TR-59 (RST-09), TR-60 (RST-10), TR-61 (RNF-19), TR-62 (RNF-20): requisitos no funcionales/restricciones derivados de análisis legal (C4), rubrica o arquitectura — no elicitados de entrevista. Varios ya tienen justificación textual en otras secciones del ERS (ej. RF-25 declarado "sin evidencia asociada" en "7.2 Hallazgos que modificaron decisiones previas"), pero esa justificación no está enlazada en la fila misma de la matriz.
+- TR-67 a TR-87 (21 filas: RF-04, RF-16, RF-02, RF-05, RF-06, RF-28 ×4, RF-17, RF-13, RF-14, RF-09, RF-10, RF-06, RF-05, RF-08 ×2): filas adicionales que trazan el mismo RF contra distintos casos de uso (CU-02 a CU-10); varias son trazas secundarias de un RF que ya tiene evidencia en su fila principal (Tabla A), pero la fila secundaria no la repite ni la referencia.
+
+**Motivo para no completarlas ahora:** requiere revisar, fila por fila, si cada una debe (a) enlazar la evidencia ya existente de la fila principal del mismo RF, (b) citar el análisis legal/rubrica correspondiente como origen documental, o (c) quedar marcada explícitamente como "sin evidencia — requisito derivado" con su justificación. Es un trabajo de las 32 filas que requiere criterio caso por caso y no se puede resolver de forma mecánica sin revisar cada RF/RNF contra su contexto — se deja pendiente de decisión del equipo antes de tocar la matriz compartida, siguiendo la misma instrucción que para la columna de caso de prueba.
+
+**Fecha:** 20 de septiembre de 2026. **Confirmado por:** Amagua Sacón Robyn Willian. **Verificado por:** pendiente de confirmación por el resto del equipo.
