@@ -1,11 +1,12 @@
 # Reporte de limpieza de datos
 
-Generado: 2026-09-11 14:33:46
+Generado: 2026-09-20 11:49:23
 
 ## Duplicados en la encuesta
 
 - Filas 100% idénticas encontradas y eliminadas: 0
-- Filas con "Marca temporal" duplicada (NO eliminadas, requieren revisión manual): 0
+- Filas con "Marca temporal" duplicada (NO eliminadas, requieren revisión manual): 1
+- Filas duplicadas por CONTENIDO, excluyendo "Marca temporal" y "4. Ciudad" (NO eliminadas, requieren revisión manual): 0
 
 ## Valores faltantes por columna (encuesta)
 
