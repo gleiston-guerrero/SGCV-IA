@@ -62,10 +62,10 @@ la recolección. Se declara como limitación del instrumento en
 
 ## 5. Firmas
 
-| Integrante | Firma | Fecha |
-|---|---|---|
-| Marcillo Ponce Alberto Jeanpool | | |
-| Amagua Sacón Robyn Willian | | |
-| Mesías Quijije Jhon Alexander | | |
-| Vera Gómez Anthony Alfredo | | |
-| Barrionuevo Fuentes Carlos Daniel | | |
+| Integrante | Firma | 
+|---|---|
+| Marcillo Ponce Alberto Jeanpool | | 
+| Amagua Sacón Robyn Willian | |
+| Mesías Quijije Jhon Alexander | |
+| Vera Gómez Anthony Alfredo | |
+| Barrionuevo Fuentes Carlos Daniel | |
