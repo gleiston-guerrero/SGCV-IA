@@ -1,0 +1,61 @@
+Fila,Participante,Codigo_abierto,Palabras_clave,Palabras_presentes_en_transcripcion,Pct_palabras_clave_presentes,Aspecto_con_apoyo_textual
+1,P01,Historial mixto físico-digital básico,"historial, mixto, fisico, digital, basico",historial,20.0,NO
+4,P01,Control de inventario semanal manual,"control, inventario, semanal, manual","control, inventario, manual",75.0,SI
+12,P01,Carga administrativa alta,"carga, administrativa, alta","carga, alta",67.0,SI
+25,P02,Prioridad en protección de datos y soporte técnico,"prioridad, proteccion, datos, soporte, tecnico","datos, soporte, tecnico",60.0,SI
+37,P03,Acceso multiplataforma,"acceso, multiplataforma",acceso,50.0,NO
+39,P04,Búsqueda desorganizada del historial,"busqueda, desorganizada, historial",historial,33.0,NO
+53,P06,Datos incompletos o inexactos del paciente,"datos, incompletos, inexactos, paciente","datos, paciente",50.0,NO
+54,P06,Facturación electrónica mediante SRI,"facturacion, electronica, mediante",facturacion,33.0,NO
+63,P07,Fichas físicas sin respaldo digital,"fichas, fisicas, respaldo, digital",digital,25.0,NO
+65,P07,Campos estándar de ficha clínica,"campos, estandar, ficha, clinica","ficha, clinica",50.0,NO
+66,P07,Limitación del diagnóstico remoto mediante fotos,"limitacion, diagnostico, remoto, mediante, fotos","diagnostico, mediante",40.0,NO
+79,P09,Registro no digitalizado en libreta física y notas de celular,"registro, digitalizado, libreta, fisica, notas, celular","registro, libreta, fisica",50.0,NO
+81,P09,Facturación completamente manual sin software,"facturacion, completamente, manual, software","facturacion, completamente, software",75.0,SI
+82,P09,Ausencia de inventario formal; interés inicial en digitalizarlo,"ausencia, inventario, formal, interes, inicial, digitalizarlo","inventario, formal",33.0,NO
+88,P09,Aceptación moderada-alta de IA diagnóstica (4/5),"aceptacion, moderada, alta, diagnostica","moderada, alta",50.0,NO
+89,P09,Experiencia previa positiva con software veterinario,"experiencia, previa, positiva, software, veterinario","previa, software, veterinario",60.0,SI
+93,P10,Errores de facturación por comprobación manual de procedimientos múltiples,"errores, facturacion, comprobacion, manual, procedimientos, multiples","errores, facturacion, manual, procedimientos",67.0,SI
+94,P10,Dificultad para detectar anticipadamente vencimiento/agotamiento de stock,"dificultad, detectar, anticipadamente, vencimiento, agotamiento, stock","dificultad, vencimiento",33.0,NO
+95,P10,Reasignación de espacios de agenda tras cancelaciones,"reasignacion, espacios, agenda, tras, cancelaciones","agenda, tras",40.0,NO
+96,P10,Seguimiento manual de pacientes vía WhatsApp y llamadas consume tiempo,"seguimiento, manual, pacientes, whatsapp, llamadas, consume, tiempo","seguimiento, manual, pacientes, whatsapp, llamadas, tiempo",86.0,SI
+97,P10,Interés en IA como apoyo para reducir tiempo en historia clínica y tratamiento,"interes, apoyo, reducir, tiempo, historia, clinica, tratamiento","apoyo, reducir, tiempo, historia, clinica, tratamiento",86.0,SI
+98,P10,Confianza moderada en IA como comparación con criterio propio,"confianza, moderada, comparacion, criterio, propio","confianza, moderada, criterio, propio",80.0,SI
+99,P10,Condición de confianza: protección de datos y soporte técnico,"condicion, confianza, proteccion, datos, soporte, tecnico","condicion, confianza, datos, soporte, tecnico",83.0,SI
+101,P10,Necesidad de trazabilidad de cambios (registro de quién modificó la información),"necesidad, trazabilidad, cambios, registro, modifico, informacion","necesidad, registro, informacion",50.0,NO
+104,P11,Errores de facturación por repetición de datos,"errores, facturacion, repeticion, datos","errores, facturacion, datos",75.0,SI
+108,P11,Alta aceptación de IA diagnóstica (4-5/5),"alta, aceptacion, diagnostica",alta,33.0,NO
+109,P11,Rechazo a decisión clínica basada solo en fotos/mensajes sin evaluación presencial,"rechazo, decision, clinica, basada, solo, fotos, mensajes, evaluacion, presencial","decision, clinica, mensajes",33.0,NO
+110,P11,Riesgo de abandono si la herramienta requiere demasiados pasos,"riesgo, abandono, herramienta, requiere, demasiados, pasos","herramienta, demasiados, pasos",50.0,NO
+112,P12,"Registro clínico mixto (sistema básico + fichas físicas), difícil de ordenar con alto volumen","registro, clinico, mixto, sistema, basico, fichas, fisicas, dificil, ordenar, alto, volumen","registro, clinico, sistema, dificil",36.0,NO
+113,P12,Demora en localizar antecedentes registrados por otro profesional,"demora, localizar, antecedentes, registrados, profesional","demora, localizar, antecedentes, profesional",80.0,SI
+114,P12,Errores de facturación por transcripción manual,"errores, facturacion, transcripcion, manual","errores, facturacion, transcripcion, manual",100.0,SI
+115,P12,"Control de inventario en hoja de cálculo externa, detección tardía","control, inventario, hoja, calculo, externa, deteccion, tardia","control, inventario, hoja, calculo",57.0,NO
+116,P12,Impacto de inasistencias frecuentes en horarios no aprovechables,"impacto, inasistencias, frecuentes, horarios, aprovechables","impacto, frecuentes, horarios",60.0,SI
+118,P12,Interés en gráficas/alertas automáticas de evolución de peso,"interes, graficas, alertas, automaticas, evolucion, peso","alertas, evolucion, peso",50.0,NO
+123,P13,"Registro en cuaderno único cronológico, sin fichas individuales por paciente","registro, cuaderno, unico, cronologico, fichas, individuales, paciente","registro, cuaderno, fichas, paciente",57.0,NO
+125,P13,Descuadre de caja por doble registro manual separado,"descuadre, caja, doble, registro, manual, separado","doble, registro, manual",50.0,NO
+127,P13,Ausencia de agenda formal de citas,"ausencia, agenda, formal, citas","agenda, citas",50.0,NO
+128,P13,"Comunicación no estandarizada, dependiente de cada persona","comunicacion, estandarizada, dependiente, cada, persona","comunicacion, cada, persona",60.0,SI
+129,P13,"Total acuerdo (5/5) con IA diagnóstica, valorado como apoyo en formación","total, acuerdo, diagnostica, valorado, apoyo, formacion","total, acuerdo, apoyo, formacion",67.0,SI
+131,P13,Condiciones de confianza: literatura validada y facilidad de uso,"condiciones, confianza, literatura, validada, facilidad","confianza, literatura, validada, facilidad",80.0,SI
+133,P13,Alta frecuencia de cortes de conectividad (4/5),"alta, frecuencia, cortes, conectividad","alta, frecuencia, cortes, conectividad",100.0,SI
+134,P13,Registro fotográfico de evolución clínica vinculado a la ficha,"registro, fotografico, evolucion, clinica, vinculado, ficha","registro, clinica, ficha",50.0,NO
+135,P14,Registro clínico mixto computadora/físico,"registro, clinico, mixto, computadora, fisico","registro, clinico, computadora",60.0,SI
+136,P14,"Falta de vista unificada de antecedentes, vacunas y alergias","falta, vista, unificada, antecedentes, vacunas, alergias","falta, vista, antecedentes, vacunas",67.0,SI
+137,P14,Demoras de facturación por comprobación manual de servicios múltiples,"demoras, facturacion, comprobacion, manual, servicios, multiples","demoras, facturacion, manual, servicios",67.0,SI
+141,P14,Acuerdo alto (4/5) con IA como apoyo para ordenar antecedentes,"acuerdo, alto, apoyo, ordenar, antecedentes","acuerdo, apoyo, antecedentes",60.0,SI
+145,P15,"Registro clínico mixto, información pendiente con alto volumen","registro, clinico, mixto, informacion, pendiente, alto, volumen","registro, clinico, informacion, alto",57.0,NO
+146,P15,Dificultad para ubicar dónde quedó registrada la información,"dificultad, ubicar, quedo, registrada, informacion","dificultad, informacion",40.0,NO
+148,P15,Riesgo de vencimiento/agotamiento no detectado a tiempo,"riesgo, vencimiento, agotamiento, detectado, tiempo",tiempo,20.0,NO
+150,P15,Auxiliar orienta aspectos generales; veterinario valida lo específico,"auxiliar, orienta, aspectos, generales, veterinario, valida, especifico","auxiliar, orienta, veterinario, valida, especifico",71.0,SI
+151,P15,"Total acuerdo (5/5) con IA sugiriendo diagnósticos, con revisión profesional","total, acuerdo, sugiriendo, diagnosticos, revision, profesional","total, acuerdo, diagnosticos, revision, profesional",83.0,SI
+155,P15,Solicitud de gestión de tareas operativas del personal auxiliar,"solicitud, gestion, tareas, operativas, personal, auxiliar","gestion, personal, auxiliar",50.0,NO
+156,P16,Registro en cuadernos físicos y hojas de Excel,"registro, cuadernos, fisicos, hojas, excel","registro, fisicos",40.0,NO
+157,P16,Duplicación manual de datos ya existentes en fichas anteriores,"duplicacion, manual, datos, existentes, fichas, anteriores","datos, anteriores",33.0,NO
+159,P16,Medicamentos vencidos sin alerta previa,"medicamentos, vencidos, alerta, previa","medicamentos, vencidos, alerta",75.0,SI
+160,P16,Cancelaciones frecuentes sin recordatorio automático,"cancelaciones, frecuentes, recordatorio, automatico","frecuentes, recordatorio, automatico",75.0,SI
+162,P16,Desconfianza en fuentes de internet no validadas usadas por propietarios,"desconfianza, fuentes, internet, validadas, usadas, propietarios","internet, propietarios",33.0,NO
+163,P16,"Acuerdo alto (4/5) con IA sugiriendo diagnósticos, decisión final del veterinario","acuerdo, alto, sugiriendo, diagnosticos, decision, final, veterinario","acuerdo, alto, decision, final, veterinario",71.0,SI
+165,P16,Condiciones de confianza: revisión veterinaria y protección de datos,"condiciones, confianza, revision, veterinaria, proteccion, datos","confianza, revision, veterinaria, proteccion, datos",83.0,SI
+166,P16,Necesidad de acceso multiplataforma y rapidez por alta rotación de personal,"necesidad, acceso, multiplataforma, rapidez, alta, rotacion, personal","necesidad, acceso, alta",43.0,NO
