@@ -65,13 +65,27 @@ preguntas_likert <- list(
   )
 )
 
-columnas_no_encontradas <- setdiff(names(preguntas_likert), names(encuesta))
-if (length(columnas_no_encontradas) > 0) {
-  stop(
-    "Estas columnas de preguntas Likert no se encontraron en encuesta_limpia.csv:\n",
-    paste(" -", columnas_no_encontradas, collapse = "\n")
-  )
+# Resolución por PREFIJO (no texto exacto completo): el formulario cambió de
+# redacción en algún punto de la recolección ("clínica veterinaria" ->
+# "veterinaria" / "centro veterinario", ver 07_Datos/desviaciones.md).
+prefijos_busqueda <- c(
+  "1. ¿Cómo califica la organización y gestión de la información en",
+  "3. ¿Qué tan importante considera el uso de un sistema informático para mejorar",
+  "5. ¿Qué tan útil considera recibir recordatorios de citas, vacunas, tratamientos o controles veterinarios",
+  "6. ¿Qué tan de acuerdo está con el uso de Inteligencia Artificial como apoyo para mejorar"
+)
+nombres_resueltos <- character(0)
+for (prefijo in prefijos_busqueda) {
+  encontrada <- grep(prefijo, names(encuesta), value = TRUE, fixed = TRUE)
+  if (length(encontrada) != 1) {
+    stop(sprintf(
+      "No se encontró (o se encontró más de una vez) una columna que empiece con '%s' en encuesta_limpia.csv.",
+      prefijo
+    ))
+  }
+  nombres_resueltos <- c(nombres_resueltos, encontrada)
 }
+names(preguntas_likert) <- nombres_resueltos
 
 resultados <- list()
 
