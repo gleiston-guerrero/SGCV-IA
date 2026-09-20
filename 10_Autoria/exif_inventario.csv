@@ -42,22 +42,22 @@ nombre_archivo,fecha_captura,dispositivo,hash_sha256
 10_Autoria/fotos_equipo/2026-06-30_equipo_clinica_02.jpg,2026:06:30 09:40:49,Xiaomi Redmi A3x,2c8920c5a10c6fa606a8995e3a2d806fb156d16fdfac5cb99733e88b1a05567a
 10_Autoria/fotos_equipo/2026-09-10_equipo_reunion_virtual_01.png,No disponible (EXIF no preservado en el archivo),No disponible (EXIF no preservado en el archivo),8d144128a0489df62ff24c698723138c84a3d30103764987758a045d27aba8f6
 10_Autoria/fotos_equipo/2026-09-10_equipo_reunion_virtual_02.png,No disponible (EXIF no preservado en el archivo),No disponible (EXIF no preservado en el archivo),15c8bedaecefbb29adc8c38fadf5c6720ec49ddce5fce1642bfee2545588c65a
-02_Evidencias/Fotos_Entorno/2026-06-30_VeterinariaColombia_Exterior_01.jpeg,2026:06:30 09:37:10,Xiaomi Redmi A3x,1a16114acc8632b31f5bd17ff7cc79d7d67d0996b43ccba043e2916a8fff8269
-02_Evidencias/Fotos_Entorno/2026-06-30_VeterinariaColombia_Recepcion_01.jpeg,2026:06:30 09:40:33,Xiaomi Redmi A3x,bcaf3715d9d16b42fd28f8c48c499a00d5e3bec9bb02240ad0edaa640749574e
-02_Evidencias/Fotos_Entorno/2026-06-30_VeterinariaMacay_AtencionVeterinaria_01.jpeg,"No disponible (formato PNG, sin soporte EXIF)","No disponible (formato PNG, sin soporte EXIF)",e721eb7b9395610e412d692756a4c6125c48e6f5401d8a4edc27ee890ee3d2f6
-02_Evidencias/Fotos_Entorno/2026-06-30_VeterinariaMacay_Exterior_01.jpeg,2026:06:30 09:27:20,Xiaomi Redmi A3x,87bccced6cd7a18acdc8f36d7f1abc4630a09ea797481250542c9068186edeec
-02_Evidencias/Fotos_Entorno/2026-06-30_VeterinariaMacay_Recepcion_01.jpeg,"No disponible (formato PNG, sin soporte EXIF)","No disponible (formato PNG, sin soporte EXIF)",5c4a7b330d00690165eb3b576ab8b8b470363f55763cb31606119d31fd6b1a2d
-02_Evidencias/Fotos_Entorno/2026-07-20_VeterinariaPetCat_Exterior_01.jpeg,2026:07:20 09:28:39,Xiaomi Redmi A3x,1a644c00f1733e1407bed0f5863dce2273a9182026bb877d4bc17bc47e372875
-02_Evidencias/Fotos_Entorno/2026-07-21_VeterinariaPetCat_AtencionVeterinaria_01.png,"No disponible (formato PNG, sin soporte EXIF)","No disponible (formato PNG, sin soporte EXIF)",317b31faf18bf662dfb3b77c70f13cec030c8c09d57886766478bc449db57476
-02_Evidencias/Fotos_Entorno/2026-07-25_VeterinariaDrMONG_AtencionVeterinaria_01.jpeg,2026:07:25 12:52:14,Xiaomi Redmi A3x,988abc2bce144e166b522bf03e543af531687db11b2c4afff5c93929dfcd6648
-02_Evidencias/Fotos_Entorno/2026-07-25_VeterinariaDrMONG_Exterior_01.jpeg,2026:07:25 13:59:55,Xiaomi Redmi A3x,bba105fc899f4beafee3f7268223ab9ff695f7d9c139d673e4c481d50c3bd4bc
-02_Evidencias/Fotos_Entorno/2026-07-25_VeterinariaDrMONG_Recepcion_01.jpeg,"No disponible (formato PNG, sin soporte EXIF)","No disponible (formato PNG, sin soporte EXIF)",ba9b384b55bf501b43d7d91ab92a947168d190ef6de405cbe1caec5db4ead546
-02_Evidencias/Fotos_Entorno/2026-07-25_VeterinariaMediCliikPet_Consultorio_01.jpeg,"No disponible (formato PNG, sin soporte EXIF)","No disponible (formato PNG, sin soporte EXIF)",4ef979c6456947080e89f1963158971addf2d4d529fb94bc69c8d81e88e127f0
-02_Evidencias/Fotos_Entorno/2026-07-25_VeterinariaMediCliikPet_Consultorio_02.jpeg,"No disponible (formato PNG, sin soporte EXIF)","No disponible (formato PNG, sin soporte EXIF)",4ef979c6456947080e89f1963158971addf2d4d529fb94bc69c8d81e88e127f0
-02_Evidencias/Fotos_Entorno/2026-07-25_VeterinariaMediCliikPet_Exterior_01.jpeg,2026:07:25 14:00:23,Xiaomi Redmi A3x,b3c6abac89c49f6e571901ae7872c345c59008f91a755ffb53aa56b5039e9e49
-02_Evidencias/Fotos_Entorno/2026-07-25_VeterinariaMediCliikPet_Exterior_02.jpeg,2026:07:25 14:00:32,Xiaomi Redmi A3x,b11467c8a6744b2fa83754d3002be6f28c18e7ef7d29cd089f683dddc883b67d
-02_Evidencias/Fotos_Entorno/2026-07-27_Veterinaria911Animal_AtencionVeterinaria_01.jpeg,2026:07:27 11:12:23,Xiaomi Redmi A3x,0d5f3ed1010ea045c8e2c0527a37d52b52b68901d9290e09bb24f4ffd07d176a
-02_Evidencias/Fotos_Entorno/2026-07-27_Veterinaria911Animal_Consultorio_01.jpeg,2026:07:27 11:12:18,Xiaomi Redmi A3x,11626de748435f0ec7a00c8579083d2ab2503fd3355a8a84826607d883bab96d
-02_Evidencias/Fotos_Entorno/2026-07-27_Veterinaria911Animal_Exterior_01.jpeg,2026:07:27 11:13:32,Xiaomi Redmi A3x,47f88ca08e6e4edb1f868e11c0741b094c18a23a322d993b49b05b4bf0a447d0
-02_Evidencias/Fotos_Entorno/2026-07-27_Veterinaria911Animal_Recepcion_01.jpeg,2026:07:27 11:13:24,Xiaomi Redmi A3x,6cb998e04a65ecb6553cc685f549b2af55cdbb38d6e939fac9e3dd8a9bfe8c73
-02_Evidencias/Fotos_Entorno/2026-07-27_Veterinaria911Animal_Recepcion_02.jpeg,2026:07:27 11:12:09,Xiaomi Redmi A3x,b222225071b6290e91612a3d0116de0ce860cb9ed040720f6fa6180afd56f9d5
+02_Evidencias/Fotos_Entorno/2026-06-30_Clinica02_Exterior_01.jpeg,2026:06:30 09:37:10,Xiaomi Redmi A3x,1a16114acc8632b31f5bd17ff7cc79d7d67d0996b43ccba043e2916a8fff8269
+02_Evidencias/Fotos_Entorno/2026-06-30_Clinica02_Recepcion_01.jpeg,2026:06:30 09:40:33,Xiaomi Redmi A3x,bcaf3715d9d16b42fd28f8c48c499a00d5e3bec9bb02240ad0edaa640749574e
+02_Evidencias/Fotos_Entorno/2026-06-30_Clinica04_AtencionVeterinaria_01.jpeg,"No disponible (formato PNG, sin soporte EXIF)","No disponible (formato PNG, sin soporte EXIF)",e721eb7b9395610e412d692756a4c6125c48e6f5401d8a4edc27ee890ee3d2f6
+02_Evidencias/Fotos_Entorno/2026-06-30_Clinica04_Exterior_01.jpeg,2026:06:30 09:27:20,Xiaomi Redmi A3x,87bccced6cd7a18acdc8f36d7f1abc4630a09ea797481250542c9068186edeec
+02_Evidencias/Fotos_Entorno/2026-06-30_Clinica04_Recepcion_01.jpeg,"No disponible (formato PNG, sin soporte EXIF)","No disponible (formato PNG, sin soporte EXIF)",5c4a7b330d00690165eb3b576ab8b8b470363f55763cb31606119d31fd6b1a2d
+02_Evidencias/Fotos_Entorno/2026-07-20_Clinica06_Exterior_01.jpeg,2026:07:20 09:28:39,Xiaomi Redmi A3x,1a644c00f1733e1407bed0f5863dce2273a9182026bb877d4bc17bc47e372875
+02_Evidencias/Fotos_Entorno/2026-07-21_Clinica06_AtencionVeterinaria_01.png,"No disponible (formato PNG, sin soporte EXIF)","No disponible (formato PNG, sin soporte EXIF)",317b31faf18bf662dfb3b77c70f13cec030c8c09d57886766478bc449db57476
+02_Evidencias/Fotos_Entorno/2026-07-25_Clinica03_AtencionVeterinaria_01.jpeg,2026:07:25 12:52:14,Xiaomi Redmi A3x,988abc2bce144e166b522bf03e543af531687db11b2c4afff5c93929dfcd6648
+02_Evidencias/Fotos_Entorno/2026-07-25_Clinica03_Exterior_01.jpeg,2026:07:25 13:59:55,Xiaomi Redmi A3x,bba105fc899f4beafee3f7268223ab9ff695f7d9c139d673e4c481d50c3bd4bc
+02_Evidencias/Fotos_Entorno/2026-07-25_Clinica03_Recepcion_01.jpeg,"No disponible (formato PNG, sin soporte EXIF)","No disponible (formato PNG, sin soporte EXIF)",ba9b384b55bf501b43d7d91ab92a947168d190ef6de405cbe1caec5db4ead546
+02_Evidencias/Fotos_Entorno/2026-07-25_Clinica05_Consultorio_01.jpeg,"No disponible (formato PNG, sin soporte EXIF)","No disponible (formato PNG, sin soporte EXIF)",4ef979c6456947080e89f1963158971addf2d4d529fb94bc69c8d81e88e127f0
+02_Evidencias/Fotos_Entorno/2026-07-25_Clinica05_Consultorio_02.jpeg,"No disponible (formato PNG, sin soporte EXIF)","No disponible (formato PNG, sin soporte EXIF)",4ef979c6456947080e89f1963158971addf2d4d529fb94bc69c8d81e88e127f0
+02_Evidencias/Fotos_Entorno/2026-07-25_Clinica05_Exterior_01.jpeg,2026:07:25 14:00:23,Xiaomi Redmi A3x,b3c6abac89c49f6e571901ae7872c345c59008f91a755ffb53aa56b5039e9e49
+02_Evidencias/Fotos_Entorno/2026-07-25_Clinica05_Exterior_02.jpeg,2026:07:25 14:00:32,Xiaomi Redmi A3x,b11467c8a6744b2fa83754d3002be6f28c18e7ef7d29cd089f683dddc883b67d
+02_Evidencias/Fotos_Entorno/2026-07-27_Clinica01_AtencionVeterinaria_01.jpeg,2026:07:27 11:12:23,Xiaomi Redmi A3x,0d5f3ed1010ea045c8e2c0527a37d52b52b68901d9290e09bb24f4ffd07d176a
+02_Evidencias/Fotos_Entorno/2026-07-27_Clinica01_Consultorio_01.jpeg,2026:07:27 11:12:18,Xiaomi Redmi A3x,11626de748435f0ec7a00c8579083d2ab2503fd3355a8a84826607d883bab96d
+02_Evidencias/Fotos_Entorno/2026-07-27_Clinica01_Exterior_01.jpeg,2026:07:27 11:13:32,Xiaomi Redmi A3x,47f88ca08e6e4edb1f868e11c0741b094c18a23a322d993b49b05b4bf0a447d0
+02_Evidencias/Fotos_Entorno/2026-07-27_Clinica01_Recepcion_01.jpeg,2026:07:27 11:13:24,Xiaomi Redmi A3x,6cb998e04a65ecb6553cc685f549b2af55cdbb38d6e939fac9e3dd8a9bfe8c73
+02_Evidencias/Fotos_Entorno/2026-07-27_Clinica01_Recepcion_02.jpeg,2026:07:27 11:12:09,Xiaomi Redmi A3x,b222225071b6290e91612a3d0116de0ce860cb9ed040720f6fa6180afd56f9d5
