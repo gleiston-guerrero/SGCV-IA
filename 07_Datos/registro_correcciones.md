@@ -494,3 +494,45 @@ tabla_final$valor_p_holm <- p.adjust(tabla_final$valor_p, method = "holm")
 **Motivo para no completarlas ahora:** requiere revisar, fila por fila, si cada una debe (a) enlazar la evidencia ya existente de la fila principal del mismo RF, (b) citar el análisis legal/rubrica correspondiente como origen documental, o (c) quedar marcada explícitamente como "sin evidencia — requisito derivado" con su justificación. Es un trabajo de las 32 filas que requiere criterio caso por caso y no se puede resolver de forma mecánica sin revisar cada RF/RNF contra su contexto — se deja pendiente de decisión del equipo antes de tocar la matriz compartida, siguiendo la misma instrucción que para la columna de caso de prueba.
 
 **Fecha:** 20 de septiembre de 2026. **Confirmado por:** Amagua Sacón Robyn Willian. **Verificado por:** pendiente de confirmación por el resto del equipo.
+
+## Bloque E — MVP
+
+### E1 — README del MVP fiel al prototipo real — VERIFICADO, sin cambios necesarios (20/09/2026)
+
+*Criterio literal:* "Ajustar 05_MVP/README.md a lo que existe: el inicio de sesión se valida en el navegador con credenciales fijas, el frontend no usa el backend, y las sugerencias de IA son valores fijos (68/19/13 %). Retirar los enlaces al vídeo del propietario anterior y a Videos_Demostracion/." Aceptación: "El README describe fielmente el prototipo."
+
+*Verificación realizada (contra el código, no contra lo que dice el propio README):*
+1. Login: el HTML valida credenciales fijas embebidas (vet@sgcv.cl / admin@sgcv.cl, admin@sgcv.cl / adm123) directamente en el navegador, sin llamar al backend — coincide con lo declarado.
+2. Backend: 05_MVP/backend/ existe pero el frontend no lo consume; el propio README lo declara así ("no integrado con el frontend en esta versión").
+3. Sugerencias de IA: confianza:[{pct:68},{pct:19},{pct:13}] en el generador de sugerencias del HTML — coincide exacto con el 68/19/13 % declarado.
+4. Enlaces de vídeo: no se encontró ningún enlace roto al vídeo del propietario anterior ni a Videos_Demostracion/ en el README actual.
+
+*Conclusión:* E1 ya estaba cumplido; no requirió corrección.
+
+*Fecha de esta verificación:* 20 de septiembre de 2026.
+
+---
+
+### E2 — Estado de RNF-18 en el MVP — HALLAZGO: implementado, pero no declarado así (20/09/2026)
+
+*Criterio literal:* "RNF-18: implementar los tres factores y el indicador de confianza, o marcarlo como no implementado en la matriz." Aceptación: "Estado de RNF-18 coherente entre MVP, ERS y matriz."
+
+*Hallazgo:* el README del MVP no declara el estado de RNF-18 de forma directa — remite a 04_Trazabilidad/matriz_trazabilidad.csv ("implementado en el MVP solo si consta ahí como tal; de lo contrario, se declara como no implementado"). Al verificar el código fuente de SGCV-IA_Prototipo_Funcional.html directamente (no el README ni la matriz), se encontró que RNF-18 *sí está implementado* en el módulo de Sugerencias Diagnósticas por IA:
+
+1. *Indicador de confianza:* sección "Confianza del modelo" con barra de porcentaje por cada diagnóstico alternativo (confianza:[{dx:"Gastroenteritis aguda",pct:82},{dx:"Pancreatitis leve",pct:11},{dx:"Intoxicación",pct:7}] en el caso de ejemplo precargado).
+2. *Factores:* campo detalle con explicación en prosa de los datos clínicos que motivan la sugerencia ("Basado en los síntomas presentados (vómitos, inapetencia de 48h, fiebre leve 39.2 °C y mucosas levemente pálidas)...").
+3. *Referencia bibliográfica:* campo referencia con cita completa (Ettinger, S.J. & Feldman, E.C., 2017).
+
+Esto contrasta con el hallazgo de D5 (mockup MU-010, que no muestra RNF-18 en su encabezado): el prototipo funcional va más adelantado que el mockup estático y que lo que el propio README se anima a declarar.
+
+*Nota sobre el formato:* la matriz y el ERS describen RNF-18 en términos de "nivel de confianza" (alto/medio/bajo); el MVP lo muestra como porcentaje por diagnóstico alternativo, no como una etiqueta alto/medio/bajo explícita. Es una implementación real del requisito, aunque en un formato distinto al descrito textualmente en el ERS — se deja anotado para que el equipo decida si homogeniza el formato o declara el porcentaje como la forma válida de "indicador de confianza".
+
+*Pendiente de aplicar (no se tocó en esta verificación, por ser un documento compartido):*
+1. Actualizar 05_MVP/README.md para declarar explícitamente que RNF-18 está implementado (confianza por diagnóstico + factores en prosa + referencia bibliográfica), en vez de remitir de forma condicional a la matriz.
+2. Actualizar 04_Trazabilidad/matriz_trazabilidad.csv (fila TR-50): marcar RNF-18 como implementado en el MVP y citar CA-31 (creado en D4) en vez de CA-16.
+
+*Fecha de este hallazgo:* 20 de septiembre de 2026.
+
+---
+
+*Subtotal del bloque E:* E1 verificado sin cambios; E2 con hallazgo documentado, corrección de README/matriz pendiente de aplicar por el equipo.
