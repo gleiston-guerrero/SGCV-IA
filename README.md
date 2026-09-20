@@ -112,7 +112,7 @@ El componente empírico del proyecto trabaja el **Enfoque 3 de la guía de evalu
 swh:1:dir:61ecd6edd0a82807ae244055a854fa84afbd0810
 ```
 
-> **Nota de consistencia:** estos son los identificadores oficiales, iguales a los de `CITATION.cff`. `11_Defensa/guion.md` y `presentacion.pptx`, y `06_Experimento/README.md`/`06_Experimento/prompts_llm/README.md`, todavía citan un DOI de Zenodo (`10.5281/zenodo.22238486`) y un OSF (`osf.io/wkg32`) distintos — quedaron sin actualizar cuando se unificó aquí. Corregirlos antes de la defensa, y confirmar además contra el sitio de OSF/Zenodo (sin sesión iniciada) que `r5p8d` y `22558095` son efectivamente los correctos: la unificación anterior se hizo por consistencia interna entre documentos, no por verificación directa contra las plataformas.
+> **Nota de consistencia (actualizada 19/09/2026):** estos son los identificadores oficiales, iguales a los de `CITATION.cff`. Se verificó de nuevo, archivo por archivo, que `11_Defensa/guion.md`, `11_Defensa/presentacion.pptx`, `06_Experimento/README.md` y `06_Experimento/prompts_llm/README.md` ya usan `osf.io/r5p8d` y `10.5281/zenodo.22558095` en todas sus menciones — la referencia anterior a un DOI (`10.5281/zenodo.22238486`) y un OSF (`osf.io/wkg32`) distintos en estos archivos ya no corresponde al estado actual del repositorio y se retira de esta nota. Pendiente real (tarea G7 del plan de mejora de datos): `r5p8d` y `22558095` siguen sin confirmarse por verificación directa contra los sitios de OSF y Zenodo (solo por consistencia interna entre documentos); ver `07_Datos/desviaciones.md` para la declaración sobre la fecha de registro en OSF.
 
 ---
 
