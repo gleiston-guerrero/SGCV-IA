@@ -185,45 +185,20 @@ Contrastando esa fecha (01/08/2026) contra las fechas reales de las 16 entrevist
 
 **Verificado por:** pendiente de confirmación por el resto del equipo.
 
-## Desviación 8 — Saturación temática (Bloque C, tarea C4) — no alcanzada
+---
 
-**Nota de fusión (20/09/2026):** esta entrada llegó numerada "Desviación 6" en el commit original de Bloque C; se renumera a 8 aquí para no chocar con las Desviaciones 6 y 7 de Bloque A, agregadas en paralelo. Sin cambios de contenido.
+## Declaración — Alcance real de la elicitación frente a la pregunta de investigación sobre explicabilidad (tarea D3 del plan de mejora de datos)
 
-**Esta es la versión corregida y definitiva.** Una versión anterior
-declaró saturación basándose en un tramo final de una sola entrevista
-(P16 sola, 2,0%) comparado contra un umbral de 5% pensado para tramos de
-3 — una comparación inválida, señalada correctamente en revisión externa:
-un tramo de 1 entrevista tiene estructuralmente menos probabilidad de
-aportar códigos nuevos que uno de 3, así que "satura" en esas condiciones
-no es una conclusión metodológicamente sostenible.
+**Qué se declara:** el componente empírico del proyecto (16 entrevistas semiestructuradas, P01–P16) no fue diseñado específicamente para responder la pregunta de investigación sobre explicabilidad de la IA (RQ2), y su cobertura real de esa pregunta es limitada en tres aspectos, verificados directamente:
 
-**Criterio corregido:** base = orden cronológico P01→P16; tramos de 3
-entrevistas (Francis et al., 2010); cuando el total no es múltiplo exacto
-del tamaño de tramo, el sobrante se une al último tramo en vez de dejarlo
-suelto (P13–P16, 4 entrevistas, en vez de P13–P15 + P16 solo). Umbral
-≤5% de códigos nuevos sobre el total de 50 (suma del tramo, no
-promedio); nivel de código axial, no de categoría amplia.
+1. **El guion de entrevista no incluye preguntas de explicabilidad.** `06_Experimento/ instrumentos/Guion_Entrevista_v2.0.pdf` (secciones A–D, preguntas A1–D5) no contiene ninguna pregunta sobre qué información debería acompañar a una sugerencia de IA para que sea comprensible (factores, nivel de confianza, etc.). La pregunta C5 ("condición más importante para confiar en un sistema con IA") es adyacente pero no equivale a una pregunta de explicabilidad: mide condiciones de confianza/adopción, no comprensibilidad de la salida del sistema.
+2. **No hubo participantes propietarios ni administrativos puros.** El instrumento está dirigido formalmente a "médicos veterinarios y personal administrativo de clínicas", pero los 16 participantes reclutados (P01–P16) son todos médicos veterinarios, auxiliares o estudiantes en formación veterinaria — ninguno se identifica como propietario no clínico o personal administrativo sin funciones clínicas (P02 es "Veterinario/Administrador de clínica", un rol híbrido, no un administrativo puro). Verificado contra el campo "Rol" de las 16 transcripciones y las actas de entrevista del ERS.
+3. **Las rondas de validación cuantitativa no se ejecutaron.** Ver Desviación 1 de este mismo documento: el protocolo de validación específico de explicabilidad (dos rondas, 12 participantes, instrumento "Guion de validación v2.0") fue diseñado pero nunca aplicado.
 
-**Resultado (sobre el C1 final: 167/167 fragmentos con coincidencia
-literal exacta verificada, ver C3)**
+**Consecuencia:** cualquier hallazgo sobre explicabilidad de la IA en el ERS o el manuscrito debe leerse como derivado de una interpretación posterior de entrevistas generales (no diseñadas para esa pregunta) sobre una muestra sin participantes propietarios/administrativos puros, y sin la validación cuantitativa prevista. El ERS (§8.2, Amenazas a la validez) no afirma requisitos de explicabilidad diferenciados por perfil de usuario, lo cual es correcto y se mantiene así.
 
-| Tramo | Participantes | Códigos nuevos | % sobre 50 |
-|---|---|---|---|
-| 1 | P01–P03 | 21 | 42,0% |
-| 2 | P04–P06 | 9 | 18,0% |
-| 3 | P07–P09 | 7 | 14,0% |
-| 4 | P10–P12 | 6 | 12,0% |
-| 5 | P13–P16 | 7 | 14,0% |
+**Fecha de esta declaración:** 20 de septiembre de 2026.
 
-**Conclusión: no se alcanza saturación.** Ningún tramo baja del umbral de
-5%; el más cercano es el tramo 4 (12,0%). 22 de los 50 códigos axiales
-tienen un solo participante en todo el corpus.
+**Confirmado por:** Amagua Sacón Robyn Willian, mediante lectura directa de `Guion_Entrevista_v2.0.pdf` y del campo "Rol" de las 16 transcripciones.
 
-Esto es una limitación del alcance muestral, no un error de codificación,
-y no invalida el resto del análisis (C1, C2, C3, C5).
-
-**Fecha de identificación:** 20 de septiembre de 2026.
-
-**Fuente:** `saturacion.py` (corregido) sobre
-`mapeo_codigo_abierto_axial_SGCV-IA.csv` (167/167 verificado literal),
-salida completa en `curva_saturacion_SGCV-IA.csv`.
+**Verificado por:** pendiente de confirmación por el resto del equipo.
