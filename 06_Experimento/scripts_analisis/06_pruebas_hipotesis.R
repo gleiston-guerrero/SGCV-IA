@@ -58,6 +58,28 @@ preguntas_likert <- list(
   )
 )
 
+# Resolución por PREFIJO (no texto exacto completo): el formulario cambió de
+# redacción en algún punto de la recolección ("clínica veterinaria" ->
+# "veterinaria" / "centro veterinario", ver 07_Datos/desviaciones.md).
+prefijos_busqueda <- c(
+  "1. ¿Cómo califica la organización y gestión de la información en",
+  "3. ¿Qué tan importante considera el uso de un sistema informático para mejorar",
+  "5. ¿Qué tan útil considera recibir recordatorios de citas, vacunas, tratamientos o controles veterinarios",
+  "6. ¿Qué tan de acuerdo está con el uso de Inteligencia Artificial como apoyo para mejorar"
+)
+nombres_resueltos <- character(0)
+for (prefijo in prefijos_busqueda) {
+  encontrada <- grep(prefijo, names(encuesta), value = TRUE, fixed = TRUE)
+  if (length(encontrada) != 1) {
+    stop(sprintf(
+      "No se encontró (o se encontró más de una vez) una columna que empiece con '%s' en encuesta_limpia.csv.",
+      prefijo
+    ))
+  }
+  nombres_resueltos <- c(nombres_resueltos, encontrada)
+}
+names(preguntas_likert) <- nombres_resueltos
+
 perfiles <- sort(unique(encuesta[[col_perfil]]))
 pares_perfiles <- combn(perfiles, 2, simplify = FALSE)
 
@@ -100,25 +122,28 @@ for (pregunta in names(preguntas_likert)) {
   })
 
   tabla_pregunta <- do.call(rbind, filas_pregunta)
-
-  # Corrección Holm-Bonferroni DENTRO de esta pregunta (familia = las 6 comparaciones)
-  tabla_pregunta$valor_p_holm <- p.adjust(tabla_pregunta$valor_p, method = "holm")
-  tabla_pregunta$valor_p <- round(tabla_pregunta$valor_p, 4)
-  tabla_pregunta$valor_p_holm <- round(tabla_pregunta$valor_p_holm, 4)
-  tabla_pregunta$significativo_holm_0.05 <- tabla_pregunta$valor_p_holm < 0.05
-
   filas_resultado[[pregunta]] <- tabla_pregunta
 }
 
 tabla_final <- do.call(rbind, filas_resultado)
 rownames(tabla_final) <- NULL
 
-cat("== Pruebas de hipótesis: comparación entre perfiles, por pregunta (con corrección Holm-Bonferroni) ==\n")
+# Corrección Holm-Bonferroni sobre TODAS las comparaciones del experimento
+# juntas (4 preguntas x 6 pares de perfiles = 24 comparaciones), no una
+# familia de 6 por pregunta por separado -- así lo exige el criterio de
+# aceptación de la tarea A6 del plan de mejora de datos: aplicar la
+# corrección sobre "todas las comparaciones (24), no dentro de cada ítem".
+tabla_final$valor_p_holm <- p.adjust(tabla_final$valor_p, method = "holm")
+tabla_final$valor_p <- round(tabla_final$valor_p, 4)
+tabla_final$valor_p_holm <- round(tabla_final$valor_p_holm, 4)
+tabla_final$significativo_holm_0.05 <- tabla_final$valor_p_holm < 0.05
+
+cat("== Pruebas de hipótesis: comparación entre perfiles, por pregunta (con corrección Holm-Bonferroni sobre las 24 comparaciones) ==\n")
 print(tabla_final, row.names = FALSE)
 
 n_significativas <- sum(tabla_final$significativo_holm_0.05)
 cat(sprintf(
-  "\n%d de %d comparaciones resultaron significativas después de la corrección Holm-Bonferroni (α = 0.05).\n",
+  "\n%d de %d comparaciones resultaron significativas después de la corrección Holm-Bonferroni sobre el total de comparaciones (α = 0.05).\n",
   n_significativas, nrow(tabla_final)
 ))
 cat("Recordatorio: resultado EXPLORATORIO, no confirmatorio -- ver 07_tamano_efecto.R (cálculo de potencia).\n")
