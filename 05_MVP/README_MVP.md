@@ -76,7 +76,7 @@ En esta versión del MVP, las sugerencias diagnósticas (RF-17/RF-18/RF-19) mues
 
 * El frontend no está integrado con el backend: la autenticación se valida en el navegador y el estado no persiste en SQLite. Es una limitación declarada del alcance de esta entrega, no una capacidad demostrada.
 * Las sugerencias diagnósticas por IA son valores fijos de ejemplo (68/19/13 %), no un modelo real.
-* RNF-18 (explicabilidad de la IA: factores + indicador de confianza): ver estado actual en `04_Trazabilidad/matriz_trazabilidad.csv` — implementado en el MVP solo si consta ahí como tal; de lo contrario, se declara como no implementado.
+* RNF-18 (explicabilidad de la IA: factores + indicador de confianza): **implementado** en el módulo Sugerencias Diagnósticas por IA — indicador de confianza como porcentaje por diagnóstico alternativo (sección "Confianza del modelo"), factores explicados en prosa en el campo `detalle` (datos clínicos que motivan la sugerencia), y referencia bibliográfica en el campo `referencia`. El formato del indicador de confianza es porcentaje por diagnóstico, no la etiqueta alto/medio/bajo descrita en el ERS — ver `04_Trazabilidad/matriz_trazabilidad.csv` (TR-50) y `07_Datos/registro_correcciones.md` (Bloque E, tarea E2) para el detalle completo.
 * Para la defensa (Sección 8.4 de la guía) se debe preparar un video corto que cubra específicamente los 2 escenarios de la matriz de trazabilidad, y depositarlo en `09_Defensa/video_defensa.mp4`.
 
 ---
