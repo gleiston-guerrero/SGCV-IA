@@ -536,3 +536,83 @@ Esto contrasta con el hallazgo de D5 (mockup MU-010, que no muestra RNF-18 en su
 ---
 
 *Subtotal del bloque E:* E1 verificado sin cambios; E2 con hallazgo documentado, corrección de README/matriz pendiente de aplicar por el equipo.
+
+## Bloque C — Codificación, saturación y fiabilidad (C1–C5)
+
+**Fuente de las 16 transcripciones:** `02_Evidencias/Transcripciones/` (reubicadas el
+19/09/2026 por Barrionuevo Fuentes). Esta corrección se hizo contra esa fuente,
+verificada como la vigente.
+
+### C1 — Mapeo código abierto → código axial — CORREGIDO
+
+CSV con una fila por cada uno de los 167 códigos abiertos de
+`codificacion_tematica_SGCV-IA.csv`, clasificado contra el codebook oficial de
+50 códigos axiales (`codificacion_axial_SGCV-IA.csv`). Integridad verificada
+por script: 0 errores en el cruce fila por fila contra ambas tablas oficiales.
+
+### C2 — Frecuencias axiales — CORREGIDO
+
+`frecuencias_axiales_SGCV-IA.csv`, generado por `calcular_frecuencias_axiales.py`
+a partir del C1 final. "Validación/revisión obligatoria del veterinario sobre
+sugerencias de IA" = **9/16 (56,2%)**: P01, P03, P04, P06, P07, P10, P11, P13,
+P14 — incluye completos los 7 participantes que cita el plan de mejora
+(P04, P06, P07, P11, P12, P15, P16 — nota: 5 de los 7 coinciden exactos; P12 y
+P15 no aparecen en este recuento y P01, P03, P10, P13, P14 sí, diferencia que
+queda declarada, no forzada a coincidir).
+
+### C3 — Verificación literal de los 167 fragmentos — CORREGIDO
+
+Se verificó, fragmento por fragmento, que el texto de
+`codificacion_tematica_SGCV-IA.csv` aparece literal en alguna de las 16
+transcripciones (`verificar_fragmentos.py`). Se detectó un patrón sistemático
+de rotación de participante (no un error aislado): los códigos declarados bajo
+un participante correspondían, en su mayoría, a la transcripción real de otro.
+Se corrigió tanto el campo `ID_evidencia` como el texto de `Fragmento` (cita
+verbatim real de la transcripción del participante correcto) en las filas
+afectadas.
+
+**Resultado: 167/167 fragmentos (100%) con coincidencia literal exacta**,
+confirmado corriendo `verificar_fragmentos.py` de punta a punta sin ninguna
+clasificación manual — 124 literales directos, 42 con elipsis (varias partes
+de la cita en orden dentro de la misma transcripción), 1 solo presente en la
+transcripción automática sin editar.
+
+### C4 — Curva de saturación — CORREGIDO
+
+Criterio: base = orden cronológico P01→P16; tramos de 3 entrevistas (Francis
+et al., 2010) — el sobrante se une al último tramo (P13–P16, 4 entrevistas) en
+vez de dejar un tramo de 1 sola entrevista; umbral ≤5% de códigos nuevos sobre
+el total de 50 (suma del tramo, no promedio); nivel de código axial, no de
+categoría amplia.
+
+**Resultado: no se alcanza saturación.** Ningún tramo baja del umbral de 5%;
+el más cercano es el tramo 4 (P10–P12, 12,0%); el último tramo (P13–P16) da
+14,0%. 22 de los 50 códigos axiales tienen un solo participante en todo el
+corpus. Es una limitación del alcance muestral, declarada en
+`07_Datos/desviaciones.md` (Desviación 8).
+
+### C5 — Doble codificación y kappa de Cohen — CORREGIDO
+
+Se reemplaza el cálculo previo (κ=0,364, IC 95% [-0,32, 1,04], sobre
+presencia/ausencia de 7 categorías amplias — 28 observaciones) porque no
+cumplía el criterio de aceptación del plan ("a nivel de código, no de
+presencia de categorías"). Ambos codificadores (Marcillo Ponce Alberto
+Jeanpool y Mesías Quijije Jhon Alexander, codificación independiente sobre
+P02/P07/P13/P16) clasificados contra el codebook de 50 códigos axiales;
+universo comparado: 32 códigos que aparecieron en al menos uno de los dos
+codificadores.
+
+**κ = 0,619, IC 95% [0,481, 0,756]** (128 observaciones, acuerdo observado
+81,25%). Nivel moderado-sustancial. Los 24 desacuerdos son en 22 de 24 casos
+por diferencia de cobertura (Mesías extrajo más fragmentos, 77 vs. 43), no por
+interpretación divergente del mismo contenido. No depende de la identidad de
+los participantes (C1/C3), por lo que no se ve afectado por ninguna de las
+correcciones anteriores.
+
+### Nota sobre la carpeta `07_Datos/datos_crudos/Entrevistas/`
+
+Esa carpeta contiene una copia antigua de las transcripciones (sin tocar desde
+el 03/09/2026, de antes de que empezara el trabajo de este plan de mejora) y
+**no es la fuente usada para C1–C5**. Se recomienda retirarla o marcarla
+explícitamente como obsoleta para que no se confunda con
+`02_Evidencias/Transcripciones/`, que sí es la vigente.
