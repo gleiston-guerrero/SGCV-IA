@@ -50,6 +50,29 @@ preguntas_likert <- list(
     "Totalmente en desacuerdo" = 1, "En desacuerdo" = 2, "Neutral" = 3, "De acuerdo" = 4, "Totalmente de acuerdo" = 5
   )
 )
+
+# Resolución por PREFIJO (no texto exacto completo): el formulario cambió de
+# redacción en algún punto de la recolección ("clínica veterinaria" ->
+# "veterinaria" / "centro veterinario", ver 07_Datos/desviaciones.md).
+prefijos_busqueda <- c(
+  "1. ¿Cómo califica la organización y gestión de la información en",
+  "3. ¿Qué tan importante considera el uso de un sistema informático para mejorar",
+  "5. ¿Qué tan útil considera recibir recordatorios de citas, vacunas, tratamientos o controles veterinarios",
+  "6. ¿Qué tan de acuerdo está con el uso de Inteligencia Artificial como apoyo para mejorar"
+)
+nombres_resueltos <- character(0)
+for (prefijo in prefijos_busqueda) {
+  encontrada <- grep(prefijo, names(encuesta), value = TRUE, fixed = TRUE)
+  if (length(encontrada) != 1) {
+    stop(sprintf(
+      "No se encontró (o se encontró más de una vez) una columna que empiece con '%s' en encuesta_limpia.csv.",
+      prefijo
+    ))
+  }
+  nombres_resueltos <- c(nombres_resueltos, encontrada)
+}
+names(preguntas_likert) <- nombres_resueltos
+
 etiquetas_cortas <- c("1. Organización actual", "3. Importancia del sistema", "5. Utilidad de recordatorios", "6. Acuerdo con IA")
 
 perfiles <- sort(unique(encuesta[[col_perfil]]))
@@ -74,7 +97,7 @@ bp <- barplot(
   names.arg = nombres_cortos_orden,
   col = "#4472C4", border = NA,
   ylab = "Número de participantes",
-  main = "Distribución de participantes por perfil (n = 60)",
+  main = sprintf("Distribución de participantes por perfil (n = %d)", sum(as.integer(conteo_perfiles))),
   las = 2
 )
 text(bp, as.integer(conteo_perfiles) + 1.2, labels = as.integer(conteo_perfiles))
