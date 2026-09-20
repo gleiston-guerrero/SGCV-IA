@@ -14,10 +14,12 @@
 # datos_crudos / la evidencia de codificación tal como está en el repositorio.
 # ==============================================================================
 
-# --- 0. Rutas (relativas a 06_Experimento/scripts_analisis/) ------------------
-ruta_entrada  <- "../../02_Evidencias/Codificacion_Tematica/codificacion_tematica_SGCV-IA.csv"
-ruta_tabla    <- "../resultados/tabla_saturacion_codigos_abiertos.csv"
-ruta_figura   <- "../resultados/curva_saturacion_codigos_abiertos.png"
+# --- 0. Rutas (relativas a ESTA carpeta: dataset_zenodo/ es un paquete
+#        plano y autocontenido -- entrada y salidas viven junto al script,
+#        no en la estructura de carpetas del repositorio principal) --------
+ruta_entrada  <- "codificacion_tematica_SGCV-IA.csv"
+ruta_tabla    <- "tabla_saturacion_codigos_abiertos.csv"
+ruta_figura   <- "curva_saturacion_codigos_abiertos.png"
 
 dir.create(dirname(ruta_tabla), recursive = TRUE, showWarnings = FALSE)
 
