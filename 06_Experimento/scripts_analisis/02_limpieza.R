@@ -53,12 +53,31 @@ if (n_duplicados_exactos > 0) {
 #    revisión humana.
 duplicados_marca_temporal <- sum(duplicated(encuesta[["Marca temporal"]]))
 
+# c) Duplicados de CONTENIDO: dos filas cuyas respuestas coinciden en todas
+#    las columnas EXCEPTO "Marca temporal" y "4. Ciudad" -- estas dos son las
+#    únicas columnas que varían de forma casi automática entre respuestas
+#    (fecha/hora de envío y la ciudad que la persona escribe), así que una
+#    fila que coincide en todo lo demás (rol, edad, sexo, y las 10 preguntas
+#    de la encuesta, incluidas las de texto libre) es indistinguible de una
+#    copia de otra, aunque la marca temporal y la ciudad difieran. Igual que
+#    en (b), esto NO se elimina automáticamente: se cuenta y se documenta
+#    para revisión humana (tarea A4 del plan de mejora de datos).
+col_ciudad <- grep("^4\\. Ciudad", names(encuesta), value = TRUE)
+cols_contenido <- setdiff(names(encuesta), c("Marca temporal", col_ciudad))
+filas_duplicadas_contenido <- duplicated(encuesta[, cols_contenido, drop = FALSE])
+n_duplicados_contenido <- sum(filas_duplicadas_contenido)
+
 lineas_reporte <- c(
   lineas_reporte,
   "## Duplicados en la encuesta",
   "",
   sprintf("- Filas 100%% idénticas encontradas y eliminadas: %d", n_duplicados_exactos),
   sprintf("- Filas con \"Marca temporal\" duplicada (NO eliminadas, requieren revisión manual): %d", duplicados_marca_temporal),
+  sprintf(
+    "- Filas duplicadas por CONTENIDO, excluyendo \"Marca temporal\" y \"%s\" (NO eliminadas, requieren revisión manual): %d",
+    if (length(col_ciudad) == 1) col_ciudad else "4. Ciudad",
+    n_duplicados_contenido
+  ),
   ""
 )
 
