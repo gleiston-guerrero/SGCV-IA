@@ -57,6 +57,28 @@ preguntas_likert <- list(
   )
 )
 
+# Resolución por PREFIJO (no texto exacto completo): el formulario cambió de
+# redacción en algún punto de la recolección ("clínica veterinaria" ->
+# "veterinaria" / "centro veterinario", ver 07_Datos/desviaciones.md).
+prefijos_busqueda <- c(
+  "1. ¿Cómo califica la organización y gestión de la información en",
+  "3. ¿Qué tan importante considera el uso de un sistema informático para mejorar",
+  "5. ¿Qué tan útil considera recibir recordatorios de citas, vacunas, tratamientos o controles veterinarios",
+  "6. ¿Qué tan de acuerdo está con el uso de Inteligencia Artificial como apoyo para mejorar"
+)
+nombres_resueltos <- character(0)
+for (prefijo in prefijos_busqueda) {
+  encontrada <- grep(prefijo, names(encuesta), value = TRUE, fixed = TRUE)
+  if (length(encontrada) != 1) {
+    stop(sprintf(
+      "No se encontró (o se encontró más de una vez) una columna que empiece con '%s' en encuesta_limpia.csv.",
+      prefijo
+    ))
+  }
+  nombres_resueltos <- c(nombres_resueltos, encontrada)
+}
+names(preguntas_likert) <- nombres_resueltos
+
 perfiles <- sort(unique(encuesta[[col_perfil]]))
 pares_perfiles <- combn(perfiles, 2, simplify = FALSE)
 N_BOOTSTRAP <- 10000
