@@ -145,6 +145,22 @@ Contrastando esa fecha (01/08/2026) contra las fechas reales de las 16 entrevist
 **Confirmado por:** Anthony Alfredo Vera Gómez.
 
 **Verificado por:** pendiente — a resolver cuando se trabaje el Bloque A.
+**Actualización (20/09/2026) — el retiro no se mantuvo:** al revisar el estado
+actual del repositorio, los 16 archivos de 02_Evidencias/Transcripciones/
+estaban de vuelta en el árbol público (no se pudo determinar en qué subida
+puntual volvieron a aparecer). Se encontró además que 2 de esos 16 archivos
+(P04 y P07) tenían el nombre real del participante filtrado en el texto de
+la transcripción automática sin editar, no solo el contenido de la
+entrevista en general. Se redactaron esos 2 nombres por el código de
+participante correspondiente (ver Bloque G en registro_correcciones.md
+para el detalle) y se corrigió LICENSE-DATA.txt, que no mencionaba esta
+carpeta en su lista de datos privados. Los otros 14 archivos de
+02_Evidencias/Transcripciones/ y los 16 de datos_crudos/Entrevistas/
+siguen en el árbol público, contraviniendo lo que este documento declaraba
+como ya resuelto — la consecuencia práctica es que run_all.R vuelve a
+poder leerlos sin fallar (la falla descrita arriba ya no ocurre), pero a
+costa de que los datos confidenciales sigan expuestos. Sigue pendiente el
+retiro real hacia el contenedor cifrado.
 
 ## Desviación 6 — Redacción del formulario de encuesta cambió durante la recolección
 
