@@ -64,7 +64,10 @@ la recolección. Se declara como limitación del instrumento en
 
 **Barrionuevo Fuentes Carlos Daniel** — Confirmo lo declarado en este
   documento. 20/09/2026.
+  
    **Vera Gómez Anthony Alfredo** — Confirmo lo declarado en este
   documento. 20/09/2026
+  
    **Mesías Quijije Jhon Alexander** — Confirmo lo declarado en este documento.
+   
   **Marcillo Ponce Alberto Jeanpool** — Confirmo lo declarado en este.  20/09/2026 
