@@ -3,18 +3,30 @@ LICENSE-DATA.txt
 
 Alcance
 -------
-Esta licencia aplica a los datos contenidos en el directorio 07_Datos/ del
-proyecto SGCV-IA. No aplica al código fuente del sistema, que se rige por su
-propia licencia de software.
+Esta licencia aplica a los datos de investigación del proyecto SGCV-IA,
+sin importar en qué carpeta del repositorio se encuentren: 07_Datos/,
+02_Evidencias/ y 09_Publicacion/dataset_zenodo/ contienen distintas copias
+o derivados de la misma evidencia recolectada con los participantes, y
+todas quedan cubiertas por esta licencia. No aplica al código fuente del
+sistema, que se rige por su propia licencia de software.
 
 Datos privados (acceso restringido, sin excepción)
 -----------------------------------------------------
-Los siguientes archivos contienen información personal identificable y/o
-fueron recolectados bajo consentimiento informado que restringe
-expresamente su difusión a terceros:
+Los siguientes archivos y carpetas contienen información personal
+identificable y/o fueron recolectados bajo consentimiento informado que
+restringe expresamente su difusión a terceros:
 
-  - datos_crudos/encuesta_respuestas_crudas.csv
-  - datos_crudos/Entrevistas/*.md
+  - 07_Datos/datos_crudos/encuesta_respuestas_crudas.csv
+  - 07_Datos/datos_crudos/Entrevistas/*.md
+  - 02_Evidencias/Transcripciones/*.md
+
+Las tres transcripciones de 02_Evidencias/Transcripciones/*.md son la copia
+vigente y completa de las 16 entrevistas (identificadas por código de
+participante P01-P16 en el nombre de archivo, pero con la transcripción
+automática sin editar en el cuerpo del documento, que puede contener texto
+adicional no revisado). 07_Datos/datos_crudos/Entrevistas/*.md es una copia
+anterior de las mismas 16 entrevistas, sin uso activo en el análisis vigente.
+Ambas quedan bajo la misma restricción.
 
 Conforme al consentimiento informado firmado por cada participante
 (ver ejemplo: 2026-05-26_Consentimiento_P01_Entrevista.pdf), estos datos son
@@ -24,6 +36,17 @@ bajo ninguna circunstancia sin autorización expresa adicional de cada
 participante. Estos archivos NO se publican ni se depositan en ningún
 repositorio público. Su acceso queda restringido permanentemente al equipo
 de investigación del proyecto.
+
+Datos anonimizados (destinados a depósito público)
+---------------------------------------------------
+09_Publicacion/dataset_zenodo/Transcripciones_P01-P16/*.md es un derivado
+de las transcripciones anteriores, preparado específicamente para el
+depósito público en Zenodo: usa únicamente el código de participante
+(P01-P16), sin nombres ni otro dato directamente identificable, siguiendo
+el procedimiento descrito en 09_Publicacion/dataset_zenodo/ANONYMIZATION.md.
+Esta carpeta es la única de las tres destinada a publicarse; las dos
+carpetas de la sección anterior nunca deben copiarse ni enlazarse hacia
+aquí sin repetir el procedimiento de anonimización completo.
 
 Datos procesados y agregados (publicables)
 ---------------------------------------------
