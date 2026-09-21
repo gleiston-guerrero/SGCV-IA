@@ -73,6 +73,6 @@ la recolección. Se declara como limitación del instrumento en
   **Marcillo Ponce Alberto Jeanpool** — Confirmo lo declarado en este.  20/09/2026 
     
    **Amagua Sacon Robyn Willian** — Confirmo lo declarado en este
-  documento. 20/09/2026
+  documento. 20/09/2026 
   
    **Mesías Quijije Jhon Alexander** — Confirmo lo declarado en este documento. 20/09/2026
