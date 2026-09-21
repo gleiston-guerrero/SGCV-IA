@@ -245,6 +245,26 @@ Las 16 notas ya traían, antes de esta corrección, un campo de fecha visible qu
 
 **Fecha de esta corrección:** 19 de septiembre de 2026.
 
+---
+
+### G2 (actualización) — El retiro no se mantuvo; 2 nombres reales encontrados y redactados (20/09/2026)
+
+**Hallazgo:** al revisar el estado actual del árbol público, `02_Evidencias/Transcripciones/` tenía de vuelta sus 16 archivos `.md` (el retiro del 19/09 no se mantuvo — no se pudo determinar en qué subida puntual volvieron a aparecer, ninguna de las subidas revisadas menciona haberlos reincorporado a propósito). Al verificar su contenido específicamente en busca de nombres propios filtrados en la transcripción automática (más allá del riesgo genérico de confidencialidad ya declarado), se encontraron **2 casos reales**:
+- `2026-07-25_Transcripcion_P04_Entrevista.md`: "Dr. Edison Uncada" en el párrafo de transcripción automática sin editar.
+- `2026-07-27_Transcripcion_P07_Entrevista.md`: "Dr. Brian Steven Monserrat" en el mismo tipo de párrafo.
+
+Los otros 14 archivos de esa carpeta, y los 16 de `datos_crudos/Entrevistas/` (también de vuelta en el árbol público), no mostraron el mismo patrón de nombre filtrado en la verificación realizada, pero siguen siendo datos confidenciales expuestos según lo que ya declaraba `LICENSE-DATA.txt`.
+
+**Corrección aplicada:**
+1. Se redactaron los 2 nombres reales encontrados, reemplazándolos por el código de participante (`Dr. P04`, `Dr. P07`). Cambio mínimo verificado: 1 línea modificada por archivo, sin tocar el resto del contenido ni la estructura.
+2. Se corrigió `07_Datos/LICENSE-DATA.txt`: a diferencia de lo que declaraba la corrección del 19/09 ("su texto ya describía correctamente la política"), el texto **sí tenía un vacío real** — nunca mencionaba `02_Evidencias/Transcripciones/*.md` en su lista de datos privados, solo `datos_crudos/Entrevistas/*.md`. Se amplió el alcance de la licencia a las tres ubicaciones reales de las transcripciones (`07_Datos/`, `02_Evidencias/`, `09_Publicacion/`) y se agregó una sección explícita aclarando que `09_Publicacion/dataset_zenodo/Transcripciones_P01-P16/` es la única de las tres pensada para publicarse (ya anonimizada según su propio `ANONYMIZATION.md`), y que las otras dos nunca deben copiarse ahí sin repetir ese procedimiento.
+
+**Lo que sigue sin resolver:** el retiro real de los archivos hacia el contenedor cifrado (`02_Evidencias/00_Restringido/`) no se volvió a aplicar — se decidió, en esta revisión, redactar los nombres reales encontrados en vez de retirar de nuevo toda la carpeta, para no repetir el ciclo de retiro→reaparición sin entender antes por qué sigue pasando. Declarado también como actualización de la Desviación 5 en `desviaciones.md`.
+
+**Fecha de este hallazgo y corrección:** 20 de septiembre de 2026.
+
+**Verificado por:** confirmado contra el árbol de archivos real (0 ocurrencias de ambos nombres tras la corrección, en las 2 archivos y en el resto del repositorio); pendiente de confirmación por el resto del equipo sobre el retiro real hacia el contenedor cifrado.
+
 **Confirmado por:** Anthony Alfredo Vera Gómez.
 
 **Verificado por:** pendiente de confirmación por el resto del equipo.
@@ -362,7 +382,7 @@ tabla_final$valor_p_holm <- p.adjust(tabla_final$valor_p, method = "holm")
 
 **Hallazgo (verificado directamente, no por confianza en el texto del plan):**
 1. Las categorías reales de la pregunta de años de experiencia en `encuesta_respuestas_crudas.csv` (210 filas) son "Menos de 1 años", "De 2 a 5 años", "De 6 a 10 años", "Más de 10 años", "No aplica" — sin tramo "1–2 años".
-2. `CreationDate` de ambas copias del PDF del instrumento (`08_Etica/Encuesta_Consentimiento.pdf`, `06_Experimento/ instrumentos/Encuesta_Consentimiento_Formato_A1.pdf`) es 30/07/2026; la primera respuesta de la encuesta tiene marca temporal 27/07/2026 09:38:53 — 3 días antes.
+2. `CreationDate` de ambas copias del PDF del instrumento (`08_Etica/Encuesta_Consentimiento.pdf`, `06_Experimento/instrumentos/Encuesta_Consentimiento_Formato_A1.pdf`) es 30/07/2026; la primera respuesta de la encuesta tiene marca temporal 27/07/2026 09:38:53 — 3 días antes.
 
 **Corrección aplicada:** ambos hallazgos quedan declarados en `07_Datos/desviaciones.md`, Desviación 7, con la evidencia y su consecuencia sobre la interpretación de los datos de experiencia y sobre cualquier afirmación de que el instrumento antecede a la recolección.
 
@@ -401,7 +421,7 @@ tabla_final$valor_p_holm <- p.adjust(tabla_final$valor_p, method = "holm")
 
 **Estado del hallazgo original del plan:** la frase de P02 señalada por el plan ya no está en el ERS — el equipo la reemplazó en una subida previa (commit `d17455c`, Barrionuevo Fuentes, 19/09/2026). RF-18 también fue reescrito, citando ahora a P10, P11, P14 y P15 en vez de P01/P02.
 
-**Lo que se encontró al verificar ese reemplazo y, por extensión, todas las citas "P0X (‘…’)" del ERS (~30 instancias) contra las 16 transcripciones crudas de `07_Datos/datos_crudos/Entrevistas/` (búsqueda de substring exacto, normalizada solo en mayúsculas/tildes):**
+**Lo que se encontró al verificar ese reemplazo y, por extensión, todas las citas "P0X ('…')" del ERS (~30 instancias) contra las 16 transcripciones crudas de `07_Datos/datos_crudos/Entrevistas/` (búsqueda de substring exacto, normalizada solo en mayúsculas/tildes):**
 
 **A. Citas con texto verbatim real, pero atribuidas al participante equivocado (evidencia: coincidencia exacta de texto en otra transcripción):**
 | Cita en el ERS | Atribuida a | Texto real pertenece a |
