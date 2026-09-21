@@ -61,18 +61,16 @@ la recolección. Se declara como limitación del instrumento en
    repositorio — tarea A3.
 
 ## 5. Firmas
+ **Amagua Sacon Robyn Willian** — Confirmo lo declarado en este
+  documento. 20/09/2026 
 
 **Barrionuevo Fuentes Carlos Daniel** — Confirmo lo declarado en este
   documento. 20/09/2026.
   
    **Vera Gómez Anthony Alfredo** — Confirmo lo declarado en este
   documento. 20/09/2026
-  
 
    
   **Marcillo Ponce Alberto Jeanpool** — Confirmo lo declarado en este documento.  20/09/2026 
-    
-   **Amagua Sacon Robyn Willian** — Confirmo lo declarado en este
-  documento. 20/09/2026 
   
    **Mesías Quijije Jhon Alexander** — Confirmo lo declarado en este documento. 20/09/2026
