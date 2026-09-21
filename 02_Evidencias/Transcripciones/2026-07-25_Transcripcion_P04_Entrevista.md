@@ -70,7 +70,7 @@ P04: Gracias.
 
 (Transcrito por TurboScribe. Actualizar a Ilimitado para eliminar este mensaje.)
 
-Estamos aquí con el Dr. Edison Uncada, el cual nos va a llenar con entrevistas para la reproducción de datos para la clínica veterinaria con integración de intervención artificial. Primeramente vamos a leer un poco qué es lo que se va a hacer en esta entrevista, que va a formar parte de la investigación institucional orientada al diseño y desarrollo del sistema de gestión para la clínica veterinaria con el soporte de intervención artificial. Su participación es completamente voluntaria.
+Estamos aquí con el Dr. P04, el cual nos va a llenar con entrevistas para la reproducción de datos para la clínica veterinaria con integración de intervención artificial. Primeramente vamos a leer un poco qué es lo que se va a hacer en esta entrevista, que va a formar parte de la investigación institucional orientada al diseño y desarrollo del sistema de gestión para la clínica veterinaria con el soporte de intervención artificial. Su participación es completamente voluntaria.
 
 Los datos obtenidos serán tratados de forma confidencial, utilizando únicamente confines académicos e investigativos, y no serán compartidos con terceros sin su autorización expresa. Asimismo, solicitamos su consentimiento para realizar la grabación de audio o video durante la entrevista con el único propósito de facilitar el análisis de la populación. Dichas grabaciones serán manejadas de manera confidencial y utilizadas exclusivamente para esta investigación.
 
