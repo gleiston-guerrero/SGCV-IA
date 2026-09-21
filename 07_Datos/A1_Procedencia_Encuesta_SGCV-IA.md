@@ -75,4 +75,4 @@ la recolección. Se declara como limitación del instrumento en
    **Amagua Sacon Robyn Willian** — Confirmo lo declarado en este
   documento. 20/09/2026
   
-   **Mesías Quijije Jhon Alexander** — Confirmo lo declarado en este documento.
+   **Mesías Quijije Jhon Alexander** — Confirmo lo declarado en este documento. 20/09/2026
