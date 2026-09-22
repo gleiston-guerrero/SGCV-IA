@@ -374,10 +374,9 @@ El directorio:
 06_Experimento/scripts_analisis/
 ```
 
-contiene por ahora **1 solo script** (`03_curva_saturacion_codigos_abiertos.R`, curva de
-saturación a nivel de código abierto — distinto del script de saturación axial del pipeline
-de `07_Datos/`). Este directorio quedó pendiente de consolidarse con `07_Datos/scripts/`; por
-ahora conviven ambos.
+contiene **9 scripts** (`01_importar_datos.R` a `09_tablas.R`) más el orquestador `run_all.R`.
+Desde el 14/09/2026, `07_Datos/scripts/run_all.R` ejecuta también este `run_all.R` como parte
+del mismo pipeline reproducible, consolidando ambos directorios en una sola orden.
 
 ---
 
@@ -550,9 +549,9 @@ Actualmente:
 * El MVP se encuentra documentado y funcional.
 * El protocolo experimental está registrado.
 * Los datos crudos del componente empírico están depositados en `07_Datos/` (n=210 respuestas de encuesta, 16 transcripciones) y el pipeline de `07_Datos/scripts/` reproduce, con una sola orden y sin intervención manual, exactamente los resultados actualmente commiteados.
-* El manuscrito tiene contenido sustantivo, con pendientes puntuales antes del envío (ORCID y verificación cruzada de codificación ya resueltos); los scripts de `06_Experimento/scripts_analisis/` (saturación a nivel de código abierto) siguen pendientes de consolidarse con el pipeline de `07_Datos/`.
+* El manuscrito tiene contenido sustantivo, con pendientes puntuales antes del envío (ORCID y verificación cruzada de codificación ya resueltos); los scripts de `06_Experimento/scripts_analisis/` (9 de 9) ya están consolidados con el pipeline de `07_Datos/` desde el 14/09/2026.
 * La evidencia de autoría (`10_Autoria/`) está completa: 12 de 12 elementos.
-* Los materiales de defensa (`11_Defensa/`) están completos (5 de 5 archivos), con la salvedad de que `guion.md` y `presentacion.pptx` aún citan el DOI/OSF antiguos y deben corregirse antes de la defensa.
+* Los materiales de defensa (`11_Defensa/`) están completos (5 de 5 archivos), ya verificados (19/09/2026): `guion.md` y `presentacion.pptx` usan el DOI/OSF vigentes, no los antiguos.
 
 ---
 
