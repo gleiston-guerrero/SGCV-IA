@@ -133,5 +133,11 @@ Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 ## [1B] - 2026-06-30
 
+> **Nota (20/09/2026, tarea H1 del plan de mejora de datos):** esta fecha (30/06/2026) es
+> anterior al primer commit del repositorio (19/07/2026, `6cdc7ef`). No es un error: la
+> entrega 1B se realizó fuera de este repositorio (como documento entregado directamente al
+> docente) antes de que el equipo creara el repositorio de GitHub. Se documenta aquí para que
+> la fecha no se lea como una inconsistencia sin explicación.
+
 ### Añadido
 - Primera versión del ERS/SRS parcial: introducción, descripción general preliminar, RF/RNF iniciales.
