@@ -28,7 +28,7 @@ TR-26,—,—,Transversal (OE-01/02/03),Equipo de desarrollo,"EV-01,EV-02",RF-21
 TR-27,LOPDP,Art. 4,Transversal (OE-01/02/03),Equipo de desarrollo,"EV-01,EV-02",RF-22,CU-01,HU-19,CA-19,Módulo Autenticación/Usuarios,MU-001_Login,Principal,Flujo principal / requisito base
 TR-28,LOPDP,Art. 4 (auditoría),OE-01,Médico veterinario,EV-02,RF-23,CU-03,"HU-27 — Como administrador del sistema, quiero que cada modificación a un historial clínico quede registrada con usuario, fecha y descripción, para auditar cambios y cumplir con la trazabilidad exigida por la LOPDP.","Toda modificación genera un registro de auditoría (usuario, fecha, descripción) que no puede editarse ni eliminarse retroactivamente, conforme a RNF-06.",Backend Historiales Clínicos,MU-032_Log_De_Auditoria,Principal,Flujo principal / requisito base
 TR-29,—,—,Transversal (OE-01/02/03),Equipo de desarrollo,EV-04,RF-24,CU-01,HU-20,CA-20,Módulo Autenticación/Usuarios,MU-001_Login,Principal,Flujo principal / requisito base
-TR-30,—,—,OE-03,Propietario o administrador de la clínica,—,RF-25,Transversal,HU-21,CA-21,Backend Reportes,MU-033_Reportes_Gerenciales,Principal,Flujo principal / requisito base
+TR-30,—,—,OE-03,Propietario o administrador de la clínica,"Derivado — Fuente: SGCVIA_RF_RNF_Cuantificables.docx (Entrega 1B), RF-25",RF-25,Transversal,HU-21,CA-21,Backend Reportes,MU-033_Reportes_Gerenciales,Principal,Flujo principal / requisito base
 TR-31,LOPDP,"Art. 7, 8",Transversal (LOPDP),Propietario de la mascota,EV-04,RF-26,Transversal,HU-14,CA-14,Módulo Legal/Consentimiento,Falta crear (no existe en el catálogo de 33 MU),Principal,Flujo principal / requisito base
 TR-32,LOPDP,Art. 12-15,Transversal (LOPDP),Propietario de la mascota,EV-04,RF-27,Transversal,HU-15,CA-15,Módulo Legal/Consentimiento,Falta crear (no existe en el catálogo de 33 MU),Principal,Flujo principal / requisito base
 TR-33,ISO/IEC 25010,—,Transversal (OE-01/02/03),Equipo de desarrollo,EV-02,RNF-01,CU-03,HU-03,CA-03,Backend Historiales Clínicos,MU-003_Buscar_Paciente,Principal,Flujo principal / requisito base
@@ -40,49 +40,49 @@ TR-38,LOPDP,Art. 4,OE-01,Médico veterinario,"EV-01,EV-02",RNF-06,CU-03,HU-27,CA
 TR-39,ISO/IEC 25010,—,Transversal (OE-01/02/03),Personal administrativo,"EV-01,EV-02",RNF-07,Transversal,HU-18,CA-18,Frontend Web/Móvil,Transversal,Principal,Flujo principal / requisito base
 TR-40,ISO/IEC 25010,—,Transversal (OE-01/02/03),Equipo de desarrollo,"EV-01,EV-02",RNF-08,Transversal,HU-01,CA-01,Frontend Web/Móvil,Transversal,Principal,Flujo principal / requisito base
 TR-41,ISO/IEC 25010 + LOPDP,Art. 25/26/30/31,OE-02,Médico veterinario,"EV-01,EV-02",RNF-09,CU-06,HU-13,CA-13,Módulo IA Diagnóstico,MU-010_Sugerencia_IA,E2,Confianza de la sugerencia de IA por debajo del umbral (RNF-09) — deriva la decisión al veterinario
-TR-42,ISO/IEC 25010 + LOPDP,Art. 33/34/35,Transversal (OE-01/02/03),Equipo de desarrollo,—,RNF-10,CU-06,—,—,Módulo IA Diagnóstico,No aplica,E1,Motor de IA externo no responde o servicio caído (RNF-10) — continúa la consulta sin sugerencia
-TR-43,ISO/IEC 25010,—,Transversal (OE-01/02/03),Equipo de desarrollo,—,RNF-11,Transversal,—,—,Infraestructura/Backend,No aplica,Principal,Flujo principal / requisito base
+TR-42,ISO/IEC 25010 + LOPDP,Art. 33/34/35,Transversal (OE-01/02/03),Equipo de desarrollo,Normativo,RNF-10,CU-06,—,—,Módulo IA Diagnóstico,No aplica,E1,Motor de IA externo no responde o servicio caído (RNF-10) — continúa la consulta sin sugerencia
+TR-43,ISO/IEC 25010,—,Transversal (OE-01/02/03),Equipo de desarrollo,Normativo,RNF-11,Transversal,—,—,Infraestructura/Backend,No aplica,Principal,Flujo principal / requisito base
 TR-44,ISO/IEC 25010 + LOPDP,"Art. 25/26/30/31, Art. 37/39",Transversal (OE-01/02/03),Equipo de desarrollo,EV-02,RNF-12,Transversal,—,—,Infraestructura/Backend,No aplica,Principal,Flujo principal / requisito base
 TR-45,ISO/IEC 25010,—,Transversal (OE-01/02/03),Equipo de desarrollo,"EV-14,EV-16",RNF-13,Transversal,—,—,Infraestructura/Backend,No aplica,Principal,Flujo principal / requisito base
-TR-46,ISO/IEC 25010,—,Transversal (OE-01/02/03),Equipo de desarrollo,—,RNF-14,Transversal,—,—,Infraestructura/Backend,No aplica,Principal,Flujo principal / requisito base
+TR-46,ISO/IEC 25010,—,Transversal (OE-01/02/03),Equipo de desarrollo,Normativo,RNF-14,Transversal,—,—,Infraestructura/Backend,No aplica,Principal,Flujo principal / requisito base
 TR-47,ISO/IEC 25010,—,Transversal (OE-01/02/03),Personal administrativo,"EV-07,EV-13,EV-18",RNF-15,Transversal,HU-18,CA-18,Frontend Web/Móvil,Transversal,Principal,Flujo principal / requisito base
-TR-48,LOPDP,Art. 10 lit. i),Transversal (LOPDP),Comité de ética / protección de datos (LOPDP),—,RNF-16,Transversal,—,—,Infraestructura/Backend,No aplica,Principal,Flujo principal / requisito base
-TR-49,LOPDP,"Art. 43, 46",Transversal (LOPDP),Comité de ética / protección de datos (LOPDP),—,RNF-17,Transversal,—,—,Infraestructura/Backend,No aplica,Principal,Flujo principal / requisito base
+TR-48,LOPDP,Art. 10 lit. i),Transversal (LOPDP),Comité de ética / protección de datos (LOPDP),Normativo,RNF-16,Transversal,—,—,Infraestructura/Backend,No aplica,Principal,Flujo principal / requisito base
+TR-49,LOPDP,"Art. 43, 46",Transversal (LOPDP),Comité de ética / protección de datos (LOPDP),Normativo,RNF-17,Transversal,—,—,Infraestructura/Backend,No aplica,Principal,Flujo principal / requisito base
 TR-50,LOPDP,Art. 20,OE-02,Médico veterinario,"EV-01,EV-02",RNF-18,CU-06,HU-16,CA-31,Módulo IA Diagnóstico,MU-010_Sugerencia_IA,Principal,"Flujo principal / requisito base — Implementado en el MVP (ver 05_MVP/README.md; detalle en 07_Datos/registro_correcciones.md, Bloque E, tarea E2)"
 TR-51,—,—,Transversal,Equipo de desarrollo,EV-01,RST-01,Transversal,—,—,Infraestructura/Backend,No aplica,Principal,Flujo principal / requisito base
 TR-52,—,—,Transversal,Equipo de desarrollo,"EV-05,EV-18",RST-02,CU-01,HU-01,CA-01,Módulo Autenticación/Usuarios,Transversal,Principal,Flujo principal / requisito base
 TR-53,—,—,Transversal,Equipo de desarrollo,"EV-15,EV-16",RST-03,Transversal,HU-26,CA-26,Infraestructura/Backend,No aplica,Principal,Flujo principal / requisito base
-TR-54,—,—,OE-02,Equipo de desarrollo,—,RST-04,CU-06,—,—,Módulo IA Diagnóstico,No aplica,Principal,Flujo principal / requisito base
+TR-54,—,—,OE-02,Equipo de desarrollo,"Derivado — ERS Sección 3.5 (Arquitectónica), RST-04",RST-04,CU-06,—,—,Módulo IA Diagnóstico,No aplica,Principal,Flujo principal / requisito base
 TR-55,LOPDP,Art. 20,OE-02,Equipo de desarrollo,"EV-01,EV-14,EV-17",RST-05,CU-06,HU-13,CA-13,Módulo IA Diagnóstico,MU-010_Sugerencia_IA,Principal,Flujo principal / requisito base
 TR-56,—,—,Transversal,Equipo de desarrollo,"EV-14,EV-16",RST-06,CU-01,HU-19,CA-19,Módulo Autenticación/Usuarios,MU-001_Login,Principal,Flujo principal / requisito base
 TR-57,LOPDP,Art. 4,OE-01,Equipo de desarrollo,EV-12,RST-07,CU-03,HU-27,CA-27,Backend Historiales Clínicos,MU-032_Log_De_Auditoria,Principal,Flujo principal / requisito base
 TR-58,LOPDP,Art. 20,OE-02,Equipo de desarrollo,"EV-01,EV-02,EV-13",RST-08,CU-06,HU-17,CA-17,Módulo IA Diagnóstico,MU-010_Sugerencia_IA,Principal,Flujo principal / requisito base
-TR-59,—,Sec. 1.2,Transversal,Equipo de desarrollo,—,RST-09,Transversal,—,—,Infraestructura/Backend,No aplica,Principal,Flujo principal / requisito base
-TR-60,LOPDP,"Art. 47, 48",Transversal (LOPDP),Comité de ética / protección de datos (LOPDP),—,RST-10,Transversal,—,—,Infraestructura/Backend,No aplica,Principal,Flujo principal / requisito base
-TR-61,—,—,OE-02,Equipo de desarrollo,—,RNF-19,CU-06,HU-28,CA-28,Módulo IA Diagnóstico,MU-010_Sugerencia_IA,Principal,Flujo principal / requisito base
-TR-62,—,—,OE-02,Equipo de desarrollo,—,RNF-20,CU-06,HU-29,CA-29,Módulo IA Diagnóstico,MU-010_Sugerencia_IA,Principal,Flujo principal / requisito base
+TR-59,—,Sec. 1.2,Transversal,Equipo de desarrollo,"Derivado — ERS Sección 1.2 (Alcance del producto), RST-09",RST-09,Transversal,—,—,Infraestructura/Backend,No aplica,Principal,Flujo principal / requisito base
+TR-60,LOPDP,"Art. 47, 48",Transversal (LOPDP),Comité de ética / protección de datos (LOPDP),Normativo,RST-10,Transversal,—,—,Infraestructura/Backend,No aplica,Principal,Flujo principal / requisito base
+TR-61,—,—,OE-02,Equipo de desarrollo,"Derivado — Guía de desarrollo Entrega 4 (2B) Sección 8 + Criterio C4 (legal), RNF-19",RNF-19,CU-06,HU-28,CA-28,Módulo IA Diagnóstico,MU-010_Sugerencia_IA,Principal,Flujo principal / requisito base
+TR-62,—,—,OE-02,Equipo de desarrollo,"Derivado — Guía de desarrollo Entrega 4 (2B) Sección 8, RNF-20",RNF-20,CU-06,HU-29,CA-29,Módulo IA Diagnóstico,MU-010_Sugerencia_IA,Principal,Flujo principal / requisito base
 TR-63,—,"RST-05, RST-08 (supervisión humana)",OE-02,Médico veterinario,"EV-01,EV-02",RNF-21,CU-06,HU-17,CA-17,Módulo IA Diagnóstico,MU-010_Sugerencia_IA,Principal,Flujo principal / requisito base
 TR-64,—,—,Transversal (OE-01/02/03),Personal administrativo / Veterinario / Propietario,—,N/A (evento de flujo),CU-01,—,—,Módulo Autenticación/Usuarios,—,A1,Credenciales incorrectas — nuevo intento sin bloquear cuenta
 TR-65,—,—,Transversal (OE-01/02/03),Personal administrativo / Veterinario / Propietario,—,N/A (evento de flujo),CU-01,—,—,Módulo Autenticación/Usuarios,—,A2,Campos obligatorios vacíos — solicita completar antes de reintentar
 TR-66,—,—,Transversal (OE-01/02/03),Personal administrativo / Veterinario / Propietario,—,N/A (evento de flujo),CU-01,—,—,Módulo Autenticación/Usuarios,—,E1,Cuenta inactiva o suspendida — deniega el acceso
-TR-67,—,—,OE-01,Médico veterinario,—,RF-04,CU-02,—,—,Backend Historiales Clínicos,—,A1,Solicita sugerencia de IA — deriva a CU-06
-TR-68,—,—,OE-01,Médico veterinario,—,RF-04,CU-02,—,—,Backend Historiales Clínicos,—,A2,Registra seguimiento nutricional — deriva a CU-07
-TR-69,—,—,OE-01,Médico veterinario,—,RF-04,CU-02,—,—,Backend Historiales Clínicos,—,A3,Registra comunicación con el dueño — deriva a CU-08
-TR-70,—,—,OE-01,Médico veterinario,—,RF-04,CU-02,—,—,Backend Historiales Clínicos,—,E1,Información clínica incompleta/inconsistente — rechaza el guardado
-TR-71,—,—,OE-01,Médico veterinario,—,RF-16,CU-03,—,—,Backend Historiales Clínicos,—,A1,Exporta historial clínico en PDF
-TR-72,—,—,OE-01,Médico veterinario,—,RF-02,CU-03,—,—,Backend Historiales Clínicos,—,E1,Paciente no encontrado con los criterios de búsqueda
-TR-73,—,—,OE-03,Personal administrativo,—,RF-05,CU-04,—,—,Backend Inventario,—,A1,Stock mínimo alcanzado tras salida válida — deriva a CU-09 (alerta)
-TR-74,—,—,OE-03,Personal administrativo,—,RF-06,CU-04,—,—,Backend Inventario,—,E1,Salida solicitada mayor al stock disponible — rechaza la operación
-TR-75,—,—,OE-03,Personal administrativo,—,RF-28,CU-05,HU-30,CA-30,Backend Gestión de Personal,—,Principal,Flujo principal de gestion de empleados; CU-05 quedo con trazabilidad completa al agregar RF-28 (resuelto)
-TR-76,—,—,OE-03,Personal administrativo,—,RF-28,CU-05,HU-30,CA-30,Backend Gestión de Personal,—,A1,Asigna permisos al empleado
-TR-77,—,—,OE-03,Personal administrativo,—,RF-28,CU-05,HU-30,CA-30,Backend Gestión de Personal,—,A2,Restablece contraseña del empleado
-TR-78,—,—,OE-03,Personal administrativo,—,RF-28,CU-05,HU-30,CA-30,Backend Gestión de Personal,—,E1,Información inválida al modificar — no guarda hasta corregir
-TR-79,—,—,OE-02,Médico veterinario,—,RF-17,CU-06,—,—,Módulo IA Diagnóstico,—,A1,Veterinario rechaza la sugerencia — se registra el rechazo
-TR-80,—,—,OE-01,Médico veterinario,—,RF-13,CU-07,—,—,Backend Seguimiento Nutricional,—,A1,Datos insuficientes — solicita completar raza/edad/peso
-TR-81,—,—,OE-01,Médico veterinario,—,RF-14,CU-07,—,—,Backend Seguimiento Nutricional,—,E1,Módulo de recomendación falla — queda pendiente de generación
-TR-82,—,—,OE-03,Propietario de la mascota,—,RF-09,CU-08,—,—,Módulo Comunicaciones,—,A1,Falla transitoria del servicio de mensajería — permite reintentar
-TR-83,—,—,OE-03,Propietario de la mascota,—,RF-10,CU-08,—,—,Módulo Comunicaciones,—,E1,Servicio de mensajería no disponible tras reintentos — marca como no entregada
-TR-84,—,—,OE-03,Personal administrativo / Bodeguero,—,RF-06,CU-09,—,—,Backend Inventario,—,A1,No hay alertas activas — muestra centro vacío sin error [ver nota CU-09 abajo]
-TR-85,—,—,OE-03,Personal administrativo / Bodeguero,—,RF-05,CU-09,—,—,Backend Inventario,—,E1,Producto sin fecha de vencimiento registrada — excluye del cálculo automático [ver nota CU-09 abajo]
-TR-86,—,—,OE-03,Personal administrativo,—,RF-08,CU-10,—,—,Backend Facturación,—,A1,Monto incorrecto calculado — ajuste manual antes de confirmar
-TR-87,—,—,OE-03,Personal administrativo,—,RF-08,CU-10,—,—,Backend Facturación,—,E1,Error interno al generar comprobante — cobro queda pendiente de reintento
+TR-67,—,—,OE-01,Médico veterinario,EV-01,RF-04,CU-02,—,—,Backend Historiales Clínicos,—,A1,Solicita sugerencia de IA — deriva a CU-06
+TR-68,—,—,OE-01,Médico veterinario,EV-01,RF-04,CU-02,—,—,Backend Historiales Clínicos,—,A2,Registra seguimiento nutricional — deriva a CU-07
+TR-69,—,—,OE-01,Médico veterinario,EV-01,RF-04,CU-02,—,—,Backend Historiales Clínicos,—,A3,Registra comunicación con el dueño — deriva a CU-08
+TR-70,—,—,OE-01,Médico veterinario,EV-01,RF-04,CU-02,—,—,Backend Historiales Clínicos,—,E1,Información clínica incompleta/inconsistente — rechaza el guardado
+TR-71,—,—,OE-01,Médico veterinario,EV-01,RF-16,CU-03,—,—,Backend Historiales Clínicos,—,A1,Exporta historial clínico en PDF
+TR-72,—,—,OE-01,Médico veterinario,EV-01,RF-02,CU-03,—,—,Backend Historiales Clínicos,—,E1,Paciente no encontrado con los criterios de búsqueda
+TR-73,—,—,OE-03,Personal administrativo,EV-02,RF-05,CU-04,—,—,Backend Inventario,—,A1,Stock mínimo alcanzado tras salida válida — deriva a CU-09 (alerta)
+TR-74,—,—,OE-03,Personal administrativo,EV-01,RF-06,CU-04,—,—,Backend Inventario,—,E1,Salida solicitada mayor al stock disponible — rechaza la operación
+TR-75,—,—,OE-03,Personal administrativo,Derivado — necesidad operativa del equipo (RF-28); no elicitado de entrevista (declarado en ERS),RF-28,CU-05,HU-30,CA-30,Backend Gestión de Personal,—,Principal,Flujo principal de gestion de empleados; CU-05 quedo con trazabilidad completa al agregar RF-28 (resuelto)
+TR-76,—,—,OE-03,Personal administrativo,Derivado — necesidad operativa del equipo (RF-28); no elicitado de entrevista (declarado en ERS),RF-28,CU-05,HU-30,CA-30,Backend Gestión de Personal,—,A1,Asigna permisos al empleado
+TR-77,—,—,OE-03,Personal administrativo,Derivado — necesidad operativa del equipo (RF-28); no elicitado de entrevista (declarado en ERS),RF-28,CU-05,HU-30,CA-30,Backend Gestión de Personal,—,A2,Restablece contraseña del empleado
+TR-78,—,—,OE-03,Personal administrativo,Derivado — necesidad operativa del equipo (RF-28); no elicitado de entrevista (declarado en ERS),RF-28,CU-05,HU-30,CA-30,Backend Gestión de Personal,—,E1,Información inválida al modificar — no guarda hasta corregir
+TR-79,—,—,OE-02,Médico veterinario,EV-01,RF-17,CU-06,—,—,Módulo IA Diagnóstico,—,A1,Veterinario rechaza la sugerencia — se registra el rechazo
+TR-80,—,—,OE-01,Médico veterinario,EV-01,RF-13,CU-07,—,—,Backend Seguimiento Nutricional,—,A1,Datos insuficientes — solicita completar raza/edad/peso
+TR-81,—,—,OE-01,Médico veterinario,EV-01,RF-14,CU-07,—,—,Backend Seguimiento Nutricional,—,E1,Módulo de recomendación falla — queda pendiente de generación
+TR-82,—,—,OE-03,Propietario de la mascota,EV-01,RF-09,CU-08,—,—,Módulo Comunicaciones,—,A1,Falla transitoria del servicio de mensajería — permite reintentar
+TR-83,—,—,OE-03,Propietario de la mascota,EV-02,RF-10,CU-08,—,—,Módulo Comunicaciones,—,E1,Servicio de mensajería no disponible tras reintentos — marca como no entregada
+TR-84,—,—,OE-03,Personal administrativo / Bodeguero,EV-01,RF-06,CU-09,—,—,Backend Inventario,—,A1,No hay alertas activas — muestra centro vacío sin error [ver nota CU-09 abajo]
+TR-85,—,—,OE-03,Personal administrativo / Bodeguero,EV-02,RF-05,CU-09,—,—,Backend Inventario,—,E1,Producto sin fecha de vencimiento registrada — excluye del cálculo automático [ver nota CU-09 abajo]
+TR-86,—,—,OE-03,Personal administrativo,EV-02,RF-08,CU-10,—,—,Backend Facturación,—,A1,Monto incorrecto calculado — ajuste manual antes de confirmar
+TR-87,—,—,OE-03,Personal administrativo,EV-02,RF-08,CU-10,—,—,Backend Facturación,—,E1,Error interno al generar comprobante — cobro queda pendiente de reintento
