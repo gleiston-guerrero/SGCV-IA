@@ -12,13 +12,15 @@ carpeta **no se licencia, no se redistribuye y no forma parte del depósito abie
 | `evidencias_audio_P01aP16.7z.001-002` | Audios originales de entrevista (sin anonimizar) | P01-P16 (16) |
 | `evidencias_consentimientos_P01aP16.7z` | Consentimientos firmados originales (cédula y firma visibles) | P01-P16 (16) |
 | `evidencias_restringidas.7z.001-007` | Pendiente de documentar por el resto del equipo |
-| `evidencias_walkthrough.7z.001-004` | Actas y material original de las 6 sesiones de walkthrough | — |
-| `evidencias_walkthrough_videos.7z.001-003` | Videos originales de las sesiones de walkthrough | — |
+| `evidencias_walkthrough.7z.001-004` | **Obsoleto** — versión inicial del material de las 6 sesiones de walkthrough. Los nombres internos de archivo quedaron mal fechados (todos como `2026-07-20`), contradiciendo las actas y los metadatos de los propios videos. Reemplazado por `evidencias_video_walkthrough_nuevo.7z`; se conserva solo por trazabilidad histórica. | — |
+| `evidencias_walkthrough_videos.7z.001-003` | **Obsoleto** — mismo motivo que la fila anterior; reemplazado por `evidencias_video_walkthrough_nuevo.7z`. | — |
+| `evidencias_video_walkthrough_nuevo.7z.001-004` | **Vigente** — videos de las 6 sesiones de walkthrough (W01-W06) con nombre de archivo y fecha correctos por sesión. Es el paquete que debe usarse para verificar evidencia de walkthrough. | — |
 | `checksums_P03aP16.sha256` | Hashes SHA-256 de los videos, calculados antes de cifrar |
 | `checksums_audio_P01aP16.sha256` | Hashes SHA-256 de los audios, calculados antes de cifrar |
 | `checksums_consentimientos_P01aP16.sha256` | Hashes SHA-256 de los consentimientos, calculados antes de cifrar |
-| `checksums_walkthrough .sha256` | Hashes SHA-256 de los videos de walkthrough, calculados antes de cifrar |
-| `evidencias_walkthrough_videos.7z.sha256` | Hash SHA-256 del volumen cifrado de videos de walkthrough |
+| `checksums_walkthrough .sha256` | **Obsoleto** — hashes del paquete `evidencias_walkthrough.7z` (ver nota arriba) |
+| `checksums_walkthrough_nuevos.sha256` | **Vigente** — hashes SHA-256 de los 6 videos de walkthrough (W01-W06), calculados antes de cifrar. Verificado el 22/09/2026: coincide exactamente con el contenido descifrado de `evidencias_video_walkthrough_nuevo.7z`. |
+| `evidencias_walkthrough_videos.7z.sha256` | **Obsoleto** — hash del volumen cifrado `evidencias_walkthrough_videos.7z` (ver nota arriba) |
 
 ## Notas importantes
 
@@ -36,5 +38,12 @@ carpeta **no se licencia, no se redistribuye y no forma parte del depósito abie
   correspondiente con la contraseña que tiene el docente.
 - Cada hash en los archivos `checksums_*.sha256` corresponde al archivo **original sin
   cifrar**; sirve para verificar la integridad de cada archivo tras descifrar el contenedor.
-- La duración total de video (~202 min) está actualmente por debajo del mínimo de 240 min
-  exigido por la guía, pendiente de revisión por el equipo.
+- **Duración total de video de walkthrough:** medición directa de los 6 videos vigentes
+  (`evidencias_video_walkthrough_nuevo.7z`, verificada el 22/09/2026) da un total de
+  **~46 minutos** (W01 10:04, W02 6:11, W03 6:39, W04 5:27, W05 9:37, W06 8:14), muy por
+  debajo del mínimo de 240 min exigido por la guía. La cifra "~202 min" indicada
+  previamente en esta nota no corresponde a ninguno de los dos paquetes de video
+  disponibles en este repositorio (ni el obsoleto ni el vigente) y debe tratarse como
+  desactualizada o errónea. **Pendiente de revisión por el equipo**: confirmar si faltan
+  grabaciones por subir o si el mínimo debe cubrirse combinando walkthrough con otra
+  evidencia admitida por la guía.
