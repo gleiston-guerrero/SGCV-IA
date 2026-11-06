@@ -1,14 +1,1 @@
-{
-  "name": "sgcv-ia-backend",
-  "version": "1.0.0",
-  "description": "Backend real del MVP SGCV-IA: persistencia en SQLite y autenticacion por rol.",
-  "main": "server.js",
-  "type": "commonjs",
-  "scripts": {
-    "start": "node server.js"
-  },
-  "dependencies": {
-    "better-sqlite3": "^11.3.0",
-    "express": "^4.19.2"
-  }
-}
+
